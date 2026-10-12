@@ -7,6 +7,7 @@
 ## 数据规则
 
 - 模型使用稳定 ID `P001-P100`。保留现有 ID，修改机制或边界时同步来源与相关案例；定理、规律、理论、经验研究、启发式和争议假说不得互相替代。
+- 获奖研究卡使用独立 A 编号，写入 `award-research-*.json`，卡内来源与主张分别使用 `AS-Axxx-n`、`Axxx-Kn`。精确记录奖项关系、所读原研究版本和范围；区分研究结论与分析者生活迁移，按实际用途标为 `direct`、`conditional` 或 `learning_only`。详细规则见 [研究卡维护](skills/civilization-os/references/maintenance.md#获奖研究卡) 。
 - 案例保留 `record_type`。`deep_case` 写背景、记录的动作、结果、迁移条件和限制；`evidence_event` 写可定位事实。仅有目录元数据时，保持事实事件层级。
 - 每个独立事件使用稳定 `event_key`。同一银行 API 行、NCT 研究、年度授奖类别或执法程序不能因多个结果、组别、当事人或附件拆成多条以增加数量。相关事件可交叉引用；共同的底层事件需按实际范围去重。
 - 事实主张使用稳定 `claim_id`，例如 `C061.01`；主张关联已存在的 `source_ids` 与精确 `locator`。来源应指向实际打开过的完整网页、文件或结构化记录，不能把搜索摘要、目录链接或机构信誉当作完整原文核验。
@@ -23,6 +24,7 @@
 | --- | --- |
 | 工作流与触发说明 | `skills/civilization-os/SKILL.md` |
 | 模型卡片 | `skills/civilization-os/references/models-*.json` |
+| 获奖研究与卡内来源 | `skills/civilization-os/references/award-research-*.json`；导航为 `research-index.md` |
 | 案例 | `skills/civilization-os/references/cases.json`、`cases-*.json` |
 | 来源 | `skills/civilization-os/references/sources-*.json` |
 | 事实事件字段快照 | `skills/civilization-os/references/event-data/` |

@@ -51,10 +51,24 @@ Civilization OS 是面向普通人的人生决策与学习 Skill，可以装进 
 | --- | --- |
 | 100 个跨学科模型 | 从不同角度检查遗漏：例如沉没成本看既有投入，机会成本看放弃的选择，贝叶斯看新证据应怎样改变判断；按前提选用，不要求背会全部模型 |
 | 100 个深度案例 | 阅读有出处的事件、来源报告的行动与结果、以及资料局限，检查哪些经验能够迁移，哪些条件不适用 |
+| 16 张获奖研究卡 | 实际阅读获奖材料与研究原文后，说明原理、成立条件、证据和使用步骤；可帮助检查选择，也可用于知识学习 |
 | 900 个事实事件 | 定位具体官方记录与精选字段，为进一步查原文提供入口；字段本身不解释事件原因 |
 | 证据核查与决策复盘流程 | 说明建议依据、关键未知和改变建议的条件；需要复盘时回看当时信息，用户授权后才保存记录 |
 
 执行时按当前问题选取相关模型与资料，模型的前提、证据范围和未知条件都要说明，方便你核对建议。
+
+## 获奖成果怎样帮助你
+
+现在预装 16 张获奖研究卡，涵盖诺贝尔经济学、物理、化学、医学及菲尔兹相关成果。每张卡有研究原理、实际读取出处、成立前提、局限、使用步骤和教学例子。奖项帮助找研究，原研究的证据决定可以推出什么。
+
+| 你的问题或学习目标 | 可读研究 | 怎样改变分析 |
+| --- | --- | --- |
+| “怕亏所以一直不敢选，这真是我的偏好吗？” | 卡尼曼与特沃斯基的前景理论 | 换成同等损益的表述，检查偏好是否受参照点影响；仍由你判断风险和价值 |
+| “奖金可以随便花，工资却舍不得用。” | 塞勒的心理账户 | 查看资金标签是否掩盖总预算、真实成本和其他用途 |
+| “室友共享家务，总有人觉得不公平。” | 奥斯特罗姆的共同资源治理 | 一起讨论参与制定、观察与纠纷处理规则；不把制度设计当作控制他人 |
+| “菲尔兹成果能直接告诉我怎样选人生吗？” | 陶哲轩、米尔扎哈尼、维拉尼、许埈珥相关研究 | 学习精确问题、定理前提与反例，当前 4 张均为学习用途，不直接生成生活建议 |
+
+这些是研究的使用方式和教学情境，没有声称经过个人生活效果实验。模型适用时说明它改变了哪项判断；与问题无关时无需调用。完整内容见 [获奖研究索引](skills/civilization-os/references/research-index.md) 与 [使用流程](skills/civilization-os/references/awards.md) 。
 
 ## 从任何人生问题开始
 
@@ -151,8 +165,11 @@ cd civilization-os
 | 模型卡片 `P001-P100` | 100 | 机制、所需输入、适用条件、限制、误用与出处 |
 | 深度案例 `deep_case` | 100 | 决策背景、记录的动作和结果、主张定位、当前检验与迁移边界 |
 | 事实事件 `evidence_event` | 900 | 可定位的有限事实与精选原始字段快照 |
+| 获奖研究卡 `A001-A016` | 16 | 8 项经济学、4 项科学、4 项菲尔兹相关研究；原理、证据与迁移边界 |
 
 深度案例包括 10 个既有种子案例、50 个 NASA LLIS 经验复盘、30 个 CFPB 执法复盘和 10 个技术案例。事实事件包括 300 个 FDIC 银行失败记录、200 个 CFPB 执法目录事件、250 个 ClinicalTrials.gov 临床结果记录和 150 个诺贝尔科研授奖记录。
+
+获奖研究卡独立于模型和案例计数；现有 150 条诺贝尔事实事件仍只描述授奖事实，16 张研究卡不表示历届奖项已被完整吸收。
 
 **1000 条记录包含两种深度，不是 1000 个完整决策复盘。** 深度案例的格式也不等于完整历史重建；事实事件不提供因果结论。模型映射是本仓库的分析，不能据此认定当事人实际使用了该模型。当前案例关联 37 个模型，另有 63 个模型暂无本地案例关联；目录规模不表示准确率或均衡覆盖。
 
@@ -173,9 +190,14 @@ python -X utf8 skills/civilization-os/scripts/catalog.py show P058 --format md
 python -X utf8 skills/civilization-os/scripts/catalog.py search "退款" --cases --record-type deep_case --case-domain business --limit 5
 python -X utf8 skills/civilization-os/scripts/catalog.py search "随机" --cases --record-type evidence_event --model P050 --case-domain clinical_research --limit 5
 python -X utf8 skills/civilization-os/scripts/catalog.py show C061
+python -X utf8 skills/civilization-os/scripts/catalog.py search "心理账户" --research
+python -X utf8 skills/civilization-os/scripts/catalog.py search "菲尔兹" --research --application learning_only
+python -X utf8 skills/civilization-os/scripts/catalog.py show A002
 ```
 
 `--cases` 切换到案例检索，`--record-type` 选择层级，`--model` 按模型 ID 过滤，`--case-domain` 按案例领域的精确字符串过滤。用 `stats` 查看实际领域，或直接读 [模型索引](skills/civilization-os/references/model-index.md) 与 [案例索引](skills/civilization-os/references/case-index.md) 。
+
+`--research` 检索获奖研究卡，`--application` 可筛选应用状态，研究卡也可用 `--model` 筛选关联模型。`show A002` 显示完整卡，`show AS-A002-1` 显示卡内来源；研究卡与案例筛选不能混用。
 
 这是关键词检索；无结果时换关键词或读索引，不能据此断言没有合适模型或证据。安装后运行脚本时，将命令中的 `skills/civilization-os/` 替换为实际 Skill 路径；数据路径由脚本自身位置确定。
 

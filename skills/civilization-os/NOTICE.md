@@ -10,4 +10,6 @@ MIT 授权不替代第三方原文、数据、论文、商标或图片的权利�
 - Nobel Prize API：精选 API 字段适用该服务的 CC0 与服务条款；许可不延伸到全部网站文章、图像或商标。保留获奖人、份额、年度与官方授奖说明，不暗示官方认可本工具。[官方 API 条款](https://www.nobelprize.org/about/terms-of-use-for-api-nobelprize-org-and-data-nobelprize-org/) 。
 - NASA LLIS、企业事故复盘、论文、教材与其他材料：本库发布原创中文事实改述、分析和定位，未附来源全文。公共访问和机构名称不代表统一 MIT 或 CC0 授权，原文权利仍归相应权利人。
 
+获奖研究卡只分发原创中文解释、必要事实和论文定位，不附第三方论文全文。IMU、作者、期刊和大学材料各自保留原权利；数学定理事实与具体文字、图示、版式的权利不同。研究卡的逐项出处保存在 references/award-research-*.json 的卡内 sources。
+
 完整来源、取样和权利边界见 [仓库数据说明](https://github.com/xiaoshen-kai/civilization-os/blob/main/docs/DATA.md) 。逐项出处见 Skill 的 references/sources-*.json；源码仓库路径前缀为 skills/civilization-os/。

@@ -1,0 +1,593 @@
+[
+  {
+    "id": "A009",
+    "title": "昼夜节律的转录与翻译反馈机制",
+    "keywords": [
+      "昼夜节律",
+      "生物钟",
+      "period",
+      "PER",
+      "timeless",
+      "TTFL",
+      "作息",
+      "基因表达",
+      "Hall",
+      "Rosbash",
+      "Young",
+      "霍尔",
+      "罗斯巴什",
+      "迈克尔·杨"
+    ],
+    "award": {
+      "name": "诺贝尔生理学或医学奖",
+      "year": 2017,
+      "laureates": [
+        "Jeffrey C. Hall",
+        "Michael Rosbash",
+        "Michael W. Young"
+      ],
+      "relation": "三人因揭示控制昼夜节律的分子机制共同获奖。本卡聚焦果蝇 period 相关反馈研究；它是授奖研究脉络的一部分，不表示某一篇论文单独获得该奖。"
+    },
+    "research": {
+      "problem": "没有日夜交替刺激时，生物为什么仍能产生接近一天的节律？period 基因怎样参与这一过程？",
+      "principle": "果蝇 period mRNA 与 PER 蛋白丰度会周期性变化；PER 相关负反馈抑制自身基因表达。反馈中的延迟、蛋白稳定性与其他时钟组分共同参与约 24 小时的振荡，不能只用一个基因开关解释。",
+      "formal_statement": null,
+      "evidence_type": "empirical",
+      "assumptions": [
+        "分子主张主要建立在果蝇、特定时钟基因突变与基因表达实验上。",
+        "必须区分明暗循环中的同步与恒定条件下的自由运行节律。",
+        "PER 反馈属于多组分机制，不能视为无需延迟和其他蛋白的独立振荡器。"
+      ],
+      "limitations": [
+        "1990 年早期实验仍不能单独区分转录与转录后调控，也未直接证明 PER 结合 DNA；作者讲座明确回顾这些歧义及后续实验。",
+        "跨物种存在相似时钟原则，但分子组成并不完全相同。",
+        "本卡未核验人体作息干预效果；果蝇实验不能给出个人最优起床、学习或治疗时间。"
+      ]
+    },
+    "model_ids": [
+      "P023",
+      "P026",
+      "P098"
+    ],
+    "use_when": [
+      "学习生物钟、遗传机制和带有延迟的负反馈。",
+      "讨论作息时，需要区分生物学机制、个人观察与尚未核验的干预效果。"
+    ],
+    "decision_application": {
+      "status": "conditional",
+      "mechanism": "可将活动发生的时间与已有作息作为待了解的条件；分子机制本身不提供个人最优时间表。区分存在内源节律与某种日程对我更好这两种主张。",
+      "steps": [
+        "说明候选日程、工作与家庭约束及本人偏好。",
+        "列出已有的睡眠与精神状态观察，保留任务类型、睡眠时长等混杂因素。",
+        "需要比较日程时，不把个人记录当成确证因果的实验。",
+        "若出现持续困扰或涉及诊疗，把观察和问题用于专业沟通，并核验当前人体证据。"
+      ],
+      "example": {
+        "scenario": "用户想知道，为提高学习表现，是否必须跟随他人的清晨学习日程。",
+        "application": "解释生物钟机制不能推出清晨对每个人都最优。先了解当前作息、实际状态和日程约束，再判断需要补充什么人体证据。",
+        "boundary": "没有测量此人的生物钟相位，没有验证任何日程能提高学习效果，不生成精确作息处方。"
+      },
+      "stop_conditions": [
+        "试图从本卡推出药物、光照或睡眠障碍治疗方案。",
+        "要求仅凭果蝇研究保证某个起床或学习时刻最优。"
+      ]
+    },
+    "misuse": [
+      "把分子机制证据当成任意自律、时间管理方法有效的证据。",
+      "把 PER 抑制表达说成 PER 必然直接结合 DNA。",
+      "把接近 24 小时说成所有条件下都恰好 24 小时。"
+    ],
+    "transfer_note": "作息讨论步骤是本项目作者提出的分析映射，不是获奖论文证明的生活收益；个人选择仍需个人条件与相关人体证据。",
+    "sources": [
+      {
+        "id": "AS-A009-1",
+        "title": "Discoveries of Molecular Mechanisms Controlling the Circadian Rhythm: Scientific Background",
+        "url": "https://www.nobelprize.org/uploads/2018/06/advanced-medicineprize2017.pdf",
+        "publisher": "Nobel Assembly at Karolinska Institutet",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "PDF 第 1--3 页；第 4 页的 TTFL 复杂性与跨物种段落",
+        "supports": "内源节律、PER 反馈、时钟组分和研究对象边界。",
+        "reading_scope": "实际经 urllib 读取 PDF 并提取文字，阅读第 1--3 页及第 4 页 TTFL 延迟和跨物种段落；未重审参考文献所列全部实验。"
+      },
+      {
+        "id": "AS-A009-2",
+        "title": "Circadian Rhythms and the Transcriptional Feedback Loop: Michael Rosbash Nobel Lecture",
+        "url": "https://www.nobelprize.org/uploads/2017/12/rosbash-lecture.pdf",
+        "publisher": "Michael Rosbash / NobelPrize.org",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "PDF 第 15--19 页，印刷第 379--383 页，BACK ON TRACK: GENE EXPRESSION AND THE FEEDBACK LOOP，图 8--10",
+        "supports": "1990 年 mRNA 观察、解释歧义及后续转录与细胞自主反馈实验的作者回顾。",
+        "reading_scope": "实际读作者技术讲座第 15--19 页，定位 Hardin et al. 1990、Hardin et al. 1992、Liu et al. 1992、Zeng et al. 1994；属于作者回顾，不是对上述原论文全文的重审。"
+      },
+      {
+        "id": "AS-A009-3",
+        "title": "Nobel Prize API: Physiology or Medicine 2017",
+        "url": "https://api.nobelprize.org/2/nobelPrize/med/2017",
+        "publisher": "Nobel Prize",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、category、laureates[].knownName 与 motivation",
+        "supports": "获奖者、年份和授奖范围。",
+        "reading_scope": "实际 HTTP 200 读取并解析官方 JSON，仅核验该年该类别获奖字段。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A009-K1",
+        "text": "Hall、Rosbash 和 Young 因控制昼夜节律的分子机制发现共同获 2017 年奖。",
+        "source_ids": [
+          "AS-A009-3"
+        ]
+      },
+      {
+        "id": "A009-K2",
+        "text": "果蝇 period mRNA 与 PER 蛋白周期变化，负反馈及多组分产生的延迟构成主要分子时钟机制的一部分。",
+        "source_ids": [
+          "AS-A009-1",
+          "AS-A009-2"
+        ]
+      },
+      {
+        "id": "A009-K3",
+        "text": "作者回顾说明，1990 年结果仍有转录后调控及间接作用等解释，后续实验逐步缩小解释范围。",
+        "source_ids": [
+          "AS-A009-2"
+        ]
+      },
+      {
+        "id": "A009-K4",
+        "text": "不同生物的时钟并非都使用相同分子组成；果蝇机制证据不能单独给出个人作息干预效果。",
+        "source_ids": [
+          "AS-A009-1"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "核验官方背景、奖项 API 与作者讲座的指定实验章节，未独立复现实验；1990 年 Nature 全文未有效取得；本卡准确使用作者技术讲座，不声称已读该论文全文；未核验当前人体干预指南，作息内容仅为受限分析映射。"
+    }
+  },
+  {
+    "id": "A010",
+    "title": "幽门螺杆菌与溃疡：从观察关联到病因证据",
+    "keywords": [
+      "幽门螺杆菌",
+      "Helicobacter pylori",
+      "胃炎",
+      "消化性溃疡",
+      "病因",
+      "关联与因果",
+      "Marshall",
+      "Warren",
+      "马歇尔",
+      "沃伦"
+    ],
+    "award": {
+      "name": "诺贝尔生理学或医学奖",
+      "year": 2005,
+      "laureates": [
+        "Barry J. Marshall",
+        "J. Robin Warren"
+      ],
+      "relation": "两人因发现幽门螺杆菌及其在胃炎和消化性溃疡中的作用共同获奖。1984 年观察与培养论文是研究起点；授奖范围包含后续形成的病因证据，不表示一次观察研究已经证明全部因果。"
+    },
+    "research": {
+      "problem": "胃黏膜中的弯曲细菌与慢性胃炎、消化性溃疡是否有关，能否被培养并进一步检验其作用？",
+      "principle": "1984 年研究在 100 名接受胃镜的患者中观察到细菌与胃炎、溃疡的关联，并培养出细菌。作者明确指出该类观察研究不能证明因果；后续人体、治疗与流行病学研究共同支持其病因作用。",
+      "formal_statement": null,
+      "evidence_type": "empirical",
+      "assumptions": [
+        "样本来自因临床原因接受胃镜且可安全活检的人群，不是一般人口随机样本。",
+        "组织学、培养和临床测量需要可靠，并检查观察者偏差。",
+        "病因主张需要在关联之外检查时间关系、替代解释与后续干预证据。"
+      ],
+      "limitations": [
+        "1984 年研究未随机分配感染，不能单独排除反向因果和混杂。",
+        "作者承认样本并非严格连续纳入，组织学判断也并非完全盲法。",
+        "感染者不必然出现溃疡，消化性溃疡也不能概括为单一病因。",
+        "2005 年说明是历史授奖材料，不能替代当前诊疗指南。"
+      ]
+    },
+    "model_ids": [
+      "P050",
+      "P098"
+    ],
+    "use_when": [
+      "学习病因假说如何从观察、培养走向多类证据。",
+      "核对把共同出现直接写成已证明原因的健康科普说法。"
+    ],
+    "decision_application": {
+      "status": "learning_only",
+      "mechanism": "学习证据如何更新解释，并为阅读科普或专业沟通准备问题；不从本卡推断用户病因、检查方案或治疗选择。",
+      "steps": [
+        "识别说法对象是研究人群、已确诊患者，还是当前个人。",
+        "分开观察关联、培养和后续病因证据。",
+        "写出原始研究不能排除的解释和需要的验证。",
+        "关联到本人健康时，整理症状、既往资料和疑问用于专业沟通，再核验当前一手指南。"
+      ],
+      "example": {
+        "scenario": "文章把所有胃溃疡归因于压力，或反过来归因于同一种感染。",
+        "application": "说明两个绝对说法均越过证据边界；梳理细菌发现、观察研究限制及后续证据，帮助识别需要追问的问题。",
+        "boundary": "不判断用户是否感染或患病，也不依历史论文给出抗生素、检查或治疗方案。"
+      },
+      "stop_conditions": [
+        "要求将旧论文中的治疗方案用于个人。",
+        "试图模仿感染、自我试药或其他危险历史实验。",
+        "发现一种病原体就认定所有同类症状由它导致。"
+      ]
+    },
+    "misuse": [
+      "把临床样本比例当作当前一般人口感染率。",
+      "将观察论文写成已经完成病因随机试验证明。",
+      "因一项研究挑战旧解释就推论逆主流意见通常正确。"
+    ],
+    "transfer_note": "证据分层与沟通步骤是作者的学习映射，不是个人医疗决策的验证结论，不得迁移成诊疗或处方。",
+    "sources": [
+      {
+        "id": "AS-A010-1",
+        "title": "Nobel Prize API: Physiology or Medicine 2005",
+        "url": "https://api.nobelprize.org/2/nobelPrize/med/2005",
+        "publisher": "Nobel Prize",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、category、laureates[].knownName 与 motivation",
+        "supports": "获奖者、年份和授奖范围。",
+        "reading_scope": "实际 HTTP 200 读取并解析官方奖项 JSON。"
+      },
+      {
+        "id": "AS-A010-2",
+        "title": "The Nobel Prize in Physiology or Medicine 2005: Press release",
+        "url": "https://www.nobelprize.org/prizes/medicine/2005/press-release/",
+        "publisher": "Nobel Assembly at Karolinska Institutet",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "Summary；Peptic ulcer - an infectious disease；The infection is usually asymptomatic but can cause peptic ulcer；Disease or not - interaction between the bacterium and the human host",
+        "supports": "研究历史、多类病因证据，以及感染不等于必然患病。",
+        "reading_scope": "实际 HTTP 200 读取并去除 HTML，阅读摘要、病因证据与宿主差异段落；未将 2005 年治疗与流行率描述当作当前依据。"
+      },
+      {
+        "id": "AS-A010-3",
+        "title": "Marshall and Warren (1984): Unidentified curved bacilli in the stomach of patients with gastritis and peptic ulceration",
+        "url": "https://www.darmzentrum-bern.ch/fileadmin/darmzentrum/Education/Bible_Class/2020/Acid_disease_stomach/marshall_warren_1984.pdf",
+        "publisher": "The Lancet；Darmzentrum Bern 托管论文扫描件",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "印刷第 1311--1314 页正文及第 1315 页续参考文献；Patients and Methods、Results、Sources of Bias、Discussion",
+        "supports": "100 人研究、细菌发现和培养，样本与盲法限制，不能单独证明因果。",
+        "reading_scope": "实际渲染阅读扫描 PDF 第 2--4、6 页正文；第 5 页重复扫描 1313 页；第 7 页底部为该文续参考文献；第 1 页资料封面不纳入交付。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A010-K1",
+        "text": "Marshall 与 Warren 因发现幽门螺杆菌及其在胃炎和溃疡中的作用共同获 2005 年奖。",
+        "source_ids": [
+          "AS-A010-1"
+        ]
+      },
+      {
+        "id": "A010-K2",
+        "text": "1984 年研究在 100 名临床胃镜患者中，58 人标本检出弯曲或螺旋细菌，并从 11 人的标本培养出细菌。",
+        "source_ids": [
+          "AS-A010-3"
+        ]
+      },
+      {
+        "id": "A010-K3",
+        "text": "原论文明确表示该类观察研究不能证明因果，并报告样本纳入和盲法限制。",
+        "source_ids": [
+          "AS-A010-3"
+        ]
+      },
+      {
+        "id": "A010-K4",
+        "text": "2005 年官方说明将人体、治疗与流行病学证据作为病因关联的共同依据，同时说明只有部分感染者出现溃疡。",
+        "source_ids": [
+          "AS-A010-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "读了原始观察论文与历史授奖说明，未逐篇重审全部后续病因研究；未核验当前个体诊疗、筛查或治疗指南，不提供诊疗方案；论文扫描件只用于核验，不重发布封面或全文。"
+    }
+  },
+  {
+    "id": "A011",
+    "title": "准晶：长程有序不必等于平移周期性",
+    "keywords": [
+      "准晶",
+      "quasicrystal",
+      "Shechtman",
+      "二十面体",
+      "电子衍射",
+      "孪晶",
+      "长程有序",
+      "周期性",
+      "材料科学",
+      "谢赫特曼"
+    ],
+    "award": {
+      "name": "诺贝尔化学奖",
+      "year": 2011,
+      "laureates": [
+        "Dan Shechtman"
+      ],
+      "relation": "Shechtman 因发现准晶获奖。1984 年论文由 Shechtman、Blech、Gratias 与 Cahn 合著，合著者身份不能与该奖获奖者身份混同。"
+    },
+    "research": {
+      "problem": "为什么快速冷却的合金出现晶格平移周期性不允许的旋转对称性，却仍产生清晰衍射斑点？",
+      "principle": "1984 年研究发现 Al-Mn 相关相具有二十面体对称性与长程取向有序，衍射图不能由任何 Bravais 晶格索引。多个区域的电子衍射、暗场成像及 X 射线结果检验普通多重孪晶的替代解释，支持长程有序可以不具平移周期性。",
+      "formal_statement": null,
+      "evidence_type": "empirical",
+      "assumptions": [
+        "需在同一晶粒不同区域及多个方向检验衍射特征，不能只靠一张图。",
+        "需要排查能够造成表观非通常对称性的多重孪晶等解释。",
+        "原始发现来自特定合金相，不能未经核验迁移到任意材料。"
+      ],
+      "limitations": [
+        "原论文中的 Al-Mn 相是亚稳态，不能推广为所有准晶的材料条件。",
+        "1984 年结果不是所有准晶原子结构的完整解，也不等于任意无周期图案都是准晶。",
+        "新发现扩展有序材料范围，没有推翻以平移周期性为前提的数学结论。",
+        "衍射与对称性结论没有证明任何生活方式或管理模式更有效。"
+      ]
+    },
+    "model_ids": [
+      "P098",
+      "P099"
+    ],
+    "use_when": [
+      "学习材料有序、晶体定义与测量证据的关系。",
+      "练习面对异常结果时排除替代解释并检查原结论前提。"
+    ],
+    "decision_application": {
+      "status": "learning_only",
+      "mechanism": "用于学习哪个前提需要修订的科学问题，没有直接用于职业、关系或消费选择的准晶公式。",
+      "steps": [
+        "区分数学限制与对真实样本所作的分类假设。",
+        "查看同一样本的多种测量。",
+        "比较多重孪晶与新结构各自的预测。",
+        "写清新证据支持的范围，再判断应扩展什么定义。"
+      ],
+      "example": {
+        "scenario": "学习者看到五重对称衍射图，想知道它是否说明晶体对称性规则全部错误。",
+        "application": "解释传统限制以平移周期性为前提；用原文排除孪晶的证据说明真实有序固体的范围可以更宽。",
+        "boundary": "这是材料科学学习，不类比成人生越不规则越成功或普遍反对共识的方法。"
+      },
+      "stop_conditions": [
+        "要求从准晶直接推出人生、团队或投资策略。",
+        "将异常外观当作足以排除全部替代解释。"
+      ]
+    },
+    "misuse": [
+      "把非周期性说成完全随机。",
+      "把定义扩展说成原数学定理被推翻。",
+      "把坚持研究的经历当作任意坚持都正确的证据。"
+    ],
+    "transfer_note": "模型连接仅指科学检验与前提检查，由本项目作者提出，没有把准晶迁移成经验证的人生收益。",
+    "sources": [
+      {
+        "id": "AS-A011-1",
+        "title": "Nobel Prize API: Chemistry 2011",
+        "url": "https://api.nobelprize.org/2/nobelPrize/che/2011",
+        "publisher": "Nobel Prize",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、category、laureates[].knownName 与 motivation",
+        "supports": "Shechtman 的获奖身份与准晶发现授奖理由。",
+        "reading_scope": "实际 HTTP 200 读取并解析官方奖项 JSON。"
+      },
+      {
+        "id": "AS-A011-2",
+        "title": "The Discovery of Quasicrystals: Scientific Background on the Nobel Prize in Chemistry 2011",
+        "url": "https://www.nobelprize.org/uploads/2018/06/advanced-chemistryprize2011-1.pdf",
+        "publisher": "Royal Swedish Academy of Sciences",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "PDF 第 3--7 页，正文第 1--5 页：Background、The discovery、What are quasicrystals",
+        "supports": "平移周期前提、1984 年发现、孪晶排查、晶体定义扩展。",
+        "reading_scope": "实际读取并提取文字阅读 PDF 第 3--7 页，未逐条核验其余页的结构解法和应用材料。"
+      },
+      {
+        "id": "AS-A011-3",
+        "title": "Shechtman, Blech, Gratias and Cahn (1984): Metallic Phase with Long-Range Orientational Order and No Translational Symmetry",
+        "url": "https://lipn.univ-paris13.fr/~fernique/qc/shechtman.pdf",
+        "publisher": "Physical Review Letters（论文）；LIPN 学术服务器（扫描件托管）",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "印刷第 1951--1953 页；图 1--2；第 1952 页三类孪晶排查结果；第 1953 页亚稳性段落",
+        "supports": "衍射与取向有序、替代解释测试及亚稳性。",
+        "reading_scope": "实际下载并渲染阅读全部 3 页正文及图表；PDF 第 4 页为图 2 重复附页，不误称为新增正文。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A011-K1",
+        "text": "2011 年化学奖授予 Dan Shechtman，理由为发现准晶。",
+        "source_ids": [
+          "AS-A011-1"
+        ]
+      },
+      {
+        "id": "A011-K2",
+        "text": "原论文报告具有二十面体点群对称性与长程取向有序、但不能按 Bravais 晶格索引的金属相。",
+        "source_ids": [
+          "AS-A011-3"
+        ]
+      },
+      {
+        "id": "A011-K3",
+        "text": "原文用暗场成像、汇聚束电子衍射和 X 射线衍射反对普通多重孪晶解释，并指出所研究相的亚稳性。",
+        "source_ids": [
+          "AS-A011-3"
+        ]
+      },
+      {
+        "id": "A011-K4",
+        "text": "官方背景将准晶描述为衍射中长程有序但没有平移周期性的材料，并讨论晶体定义扩展。",
+        "source_ids": [
+          "AS-A011-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "已读原实验正文与官方背景指定章节，未重做衍射或材料制备；未核验当前材料工程应用，保持学习用途，不作跨领域功效承诺。"
+    }
+  },
+  {
+    "id": "A012",
+    "title": "Manabe 气候模型：机制、反馈与模型条件",
+    "keywords": [
+      "Manabe",
+      "Wetherald",
+      "气候模型",
+      "二氧化碳",
+      "水汽反馈",
+      "相对湿度",
+      "辐射对流平衡",
+      "模型假设",
+      "气候敏感度",
+      "真锅淑郎"
+    ],
+    "award": {
+      "name": "诺贝尔物理学奖",
+      "year": 2021,
+      "laureates": [
+        "Syukuro Manabe",
+        "Klaus Hasselmann",
+        "Giorgio Parisi"
+      ],
+      "relation": "奖项的一半由 Manabe 与 Hasselmann 共同获得，表彰地球气候物理建模、量化变率与预测全球变暖；另一半授予 Parisi 的不同复杂系统研究。本卡只聚焦 Manabe 与非该奖获奖者 Richard T. Wetherald 的 1967 年论文，不把三人的研究合为一个模型。"
+    },
+    "research": {
+      "problem": "给定相对湿度分布的大气怎样达到辐射对流平衡，改变 CO2 等条件后平衡温度如何变化？",
+      "principle": "1967 年一维大气柱模型迭代辐射传输与对流调整，并保持给定相对湿度廓线；水汽含量可以随温度变化，形成放大响应的反馈。模型用指定输入做数值对照，研究长期平衡机制。",
+      "formal_statement": "模型平衡状态下，大气顶净入射太阳辐射等于净出射长波辐射；若温度递减率超过指定临界值，则进行对流调整。",
+      "evidence_type": "theoretical",
+      "assumptions": [
+        "大气简化为一维垂直柱，不能直接描述各城市的空间分布。",
+        "相对湿度廓线给定，云、气体分布和地表反照率按实验设定。",
+        "对流以临界温度递减率进行参数化，模型还采用地表零热容量等简化。",
+        "结果是设定条件下的平衡响应，迭代时间不能直接作为现实变暖时间表。"
+      ],
+      "limitations": [
+        "历史模型温升数值不是当前气候敏感度评估或特定地区预测。",
+        "一维模型没有完整海洋、地形和区域输运，不能推出某城市洪水或生活风险。",
+        "机制模型与天气预报的对象、尺度和验证问题不同。",
+        "只阅读指定模型与结果页，未重做算法或核验全部辐射参数。"
+      ]
+    },
+    "model_ids": [
+      "P016",
+      "P026",
+      "P098"
+    ],
+    "use_when": [
+      "学习温室效应、水汽反馈，以及模型输入、参数化和输出的关系。",
+      "判断模型是否能回答局部风险问题，辨别它与长期平衡机制的距离。"
+    ],
+    "decision_application": {
+      "status": "learning_only",
+      "mechanism": "帮助辨别模型能回答什么，不能将大气柱平衡结果作为迁居、资产或生活安排的直接预测工具。",
+      "steps": [
+        "明确所问的时间尺度、空间范围与输出变量。",
+        "检查模型包含的过程、给定条件与缺少的区域因素。",
+        "分开模型数值实验、现实观测与当前综合评估。",
+        "具体居住选择需另查当地当前风险资料，并结合个人需求。"
+      ],
+      "example": {
+        "scenario": "用户想知道早期气候模型能否直接决定应该迁居哪个城市。",
+        "application": "解释一维模型用于平衡机制研究，列出还缺少的当地气候、基础设施与个人条件信息。",
+        "boundary": "不提供城市排名、地区风险数值或某年的温度预测，没有验证它能改善迁居决策。"
+      },
+      "stop_conditions": [
+        "要求用该一维模型生成本地逐日天气或城市风险。",
+        "把旧数值当成当前权威区间，忽略假设直接用于重大选择。"
+      ]
+    },
+    "misuse": [
+      "混同相对湿度固定与水汽绝对含量固定。",
+      "将平衡响应当成给定年份必然发生的实际温度变化。",
+      "只凭模型复杂程度判断准确性。"
+    ],
+    "transfer_note": "模型条件检查是本项目作者的学习映射，不是气候论文验证过的通用人生算法；物理反馈不能未经证据迁移到社会或心理系统。",
+    "sources": [
+      {
+        "id": "AS-A012-1",
+        "title": "Nobel Prize API: Physics 2021",
+        "url": "https://api.nobelprize.org/2/nobelPrize/phy/2021",
+        "publisher": "Nobel Prize",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、laureates[].knownName、portion 与 motivation",
+        "supports": "三位获奖者份额及不同授奖研究范围。",
+        "reading_scope": "实际 HTTP 200 读取并解析官方 JSON，核验三人份额与理由。"
+      },
+      {
+        "id": "AS-A012-2",
+        "title": "Scientific Background for the Nobel Prize in Physics 2021",
+        "url": "https://www.nobelprize.org/uploads/2021/10/sciback_fy_en_21.pdf",
+        "publisher": "Royal Swedish Academy of Sciences",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "PDF 第 8--9 页，印刷第 6--7 页，III C Origins 与 Key Results；第 16 页参考文献 [61]--[63]",
+        "supports": "一维柱、相对湿度与水汽反馈、平衡与瞬态响应区别。",
+        "reading_scope": "实际读取 PDF 并提取文字，读第 8--9 页 Manabe 段落及第 16 页论文定位，未全面重审全部复杂系统内容。"
+      },
+      {
+        "id": "AS-A012-3",
+        "title": "Manabe and Wetherald (1967): Thermal Equilibrium of the Atmosphere with a Given Distribution of Relative Humidity",
+        "url": "https://www.gfdl.noaa.gov/bibliography/related_files/sm6701.pdf",
+        "publisher": "Journal of the Atmospheric Sciences；NOAA GFDL 托管原文",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "印刷第 241--244 页摘要、引言与模型说明；第 251--253 页 CO2 及参数对照；第 259 页离散层比较",
+        "supports": "给定相对湿度、辐射对流平衡、CO2 数值实验与模型简化。",
+        "reading_scope": "实际下载 19 页扫描 PDF，渲染阅读 PDF 第 1--4、11--13、19 页；未读完全部附录与参数推导，不声称完整重算。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A012-K1",
+        "text": "2021 年奖项的一半由 Manabe 与 Hasselmann 共同获得，Parisi 获另一半且授奖研究范围不同。",
+        "source_ids": [
+          "AS-A012-1"
+        ]
+      },
+      {
+        "id": "A012-K2",
+        "text": "1967 年研究以给定相对湿度的一维辐射对流模型计算平衡响应，允许水汽随温度变化。",
+        "source_ids": [
+          "AS-A012-2",
+          "AS-A012-3"
+        ]
+      },
+      {
+        "id": "A012-K3",
+        "text": "原模型给定临界递减率、相对湿度廓线、地表零热容量等条件，其 CO2 对照说明结果依赖湿度设定。",
+        "source_ids": [
+          "AS-A012-3"
+        ]
+      },
+      {
+        "id": "A012-K4",
+        "text": "官方背景区分平衡与瞬态气候响应；原论文并不是本地天气预报或当前地区风险评估。",
+        "source_ids": [
+          "AS-A012-2",
+          "AS-A012-3"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "核验授奖范围、技术背景及原文指定页，未重做数值模型；未核验当前气候敏感度区间或地区风险资料，没有将历史数值当成当前预测。"
+    }
+  }
+]

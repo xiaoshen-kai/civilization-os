@@ -1,0 +1,1026 @@
+[
+  {
+    "id": "A001",
+    "title": "前景理论：参照点、损失厌恶与决策权重",
+    "keywords": [
+      "前景理论",
+      "损失厌恶",
+      "参照点",
+      "风险",
+      "框架效应",
+      "Kahneman",
+      "Tversky",
+      "卡尼曼",
+      "特沃斯基"
+    ],
+    "award": {
+      "name": "瑞典中央银行纪念阿尔弗雷德·诺贝尔经济学奖",
+      "year": 2002,
+      "laureates": [
+        "Daniel Kahneman",
+        "Vernon L. Smith"
+      ],
+      "relation": "2002 年奖项分别表彰卡尼曼将心理研究融入不确定性判断与决策，以及史密斯的实验经济学。本卡聚焦卡尼曼与特沃斯基合著的前景理论；特沃斯基不是该年获奖者，也不把史密斯的成果归入本卡。"
+    },
+    "research": {
+      "problem": "为何相同最终结果经过不同得失表述，会引出不同风险选择？",
+      "principle": "先相对参照点编码得失，再以价值函数和决策权重评价选择。得失敏感性及概率权重可以解释部分偏好变化；这是描述选择的模型。",
+      "formal_statement": "1979 年 regular prospect 的式（1）：V(x,p;y,q)=π(p)v(x)+π(q)v(y)，其中 p+q≤1，且该前景非严格全正或严格全负。π 是决策权重，不是概率；严格全正／全负前景使用另一规则。",
+      "evidence_type": "empirical",
+      "assumptions": [
+        "原论文讨论明确给定的客观／标准概率，研究者假定被试采用给定概率。",
+        "公式中的得失先完成编辑，并相对可说明的参照点定义。"
+      ],
+      "limitations": [
+        "1979 年所读实验说明以学生和大学教师的假想选择为基础，不能直接代表每个人或所有现实情境。",
+        "价值函数可因生存底线等额外后果改变形状；不能把损失厌恶固定为每个人的常数。",
+        "2002 年讲座明确限定：大到可能破产的损失与财富总量框架，不应直接沿用通常的价值函数描述。"
+      ]
+    },
+    "model_ids": [
+      "P038",
+      "P039",
+      "P036"
+    ],
+    "use_when": [
+      "得失表述变化时自己明显改变选择。",
+      "担心损失正在主导消费、职业或风险取舍，但尚未分清现实底线和表达影响。"
+    ],
+    "decision_application": {
+      "status": "conditional",
+      "mechanism": "比较同一结果的不同表述，查明参照点是否暗中替换了真实目标；保留真实情绪和承受能力。",
+      "steps": [
+        "写下参照点：当前状态、期待还是他人比较，并说明它为何重要。",
+        "把各选项改写为相同时间点的最终状态，另列相对当前状态的变化。",
+        "将可核实概率与个人感受分开；未知概率标为未知，不拟造 π。",
+        "检查最坏结果是否触碰基本生活或不可逆底线，再回到自己的价值选择。"
+      ],
+      "example": {
+        "scenario": "教学情境：一份新工作有较高薪资，另有不确定的试用期风险；用户说“不跳槽就是损失涨薪”。",
+        "application": "分别写出留下与跳槽的未来现金流、工作体验和试用失败的后果，核实参照点是当前工作还是期待薪资。改写表述后再看选择是否稳定。",
+        "boundary": "理论不能确定新工作的失败概率，也不能替用户决定收入与稳定孰重；不得因“损失厌恶”标签劝人承担生计风险。"
+      },
+      "stop_conditions": [
+        "损失可能导致基本生活无法维持，应先处理硬约束。",
+        "概率、合同或个人目标不清楚，暂停公式评分，先查证。"
+      ]
+    },
+    "misuse": [
+      "把描述性偏好当作最优决策规则。",
+      "声称所有人损失的痛苦恰好是收益的两倍。",
+      "用框架变化操纵他人或贬低其真实顾虑。"
+    ],
+    "transfer_note": "人生决策的步骤和教学例子是本项目作者对研究机制的条件性映射，未经过效果实验；不代表获奖者提出或验证了这些具体建议。",
+    "sources": [
+      {
+        "id": "AS-A001-1",
+        "title": "Nobel Prize API：2002 年经济学奖",
+        "url": "https://api.nobelprize.org/2/nobelPrize/eco/2002",
+        "publisher": "Nobel Prize Outreach",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、categoryFullName、laureates[].knownName、laureates[].motivation",
+        "supports": "奖项名称、年份、获奖者与官方授奖理由。",
+        "reading_scope": "通过 HTTPS 实际读取本年度 JSON 完整响应；仅奖项元数据，不作为研究机制或迁移效果的证据。"
+      },
+      {
+        "id": "AS-A001-2",
+        "title": "Prospect Theory: An Analysis of Decision under Risk（1979）",
+        "url": "https://msuweb.montclair.edu/~lebelp/KTverskyProspectTheorEc1979.pdf",
+        "publisher": "Econometric Society；Montclair State University 托管论文扫描副本",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "期刊页 263--264、275--280；式（1）、式（2）、The Value Function、The Weighting Function",
+        "supports": "描述性定位、假想选择设计、两种评价规则、参照点与权重的边界。",
+        "reading_scope": "实际取得 31 页 PDF，逐页查看 PDF 页 2--3、14--19 的扫描图像，即期刊页 263--264、275--280；未声称阅读其余全文或后续复现。"
+      },
+      {
+        "id": "AS-A001-3",
+        "title": "Maps of Bounded Rationality：卡尼曼 2002 年获奖讲座",
+        "url": "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf",
+        "publisher": "Nobel Foundation；Daniel Kahneman",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "刊印页 461--465，The wealth frame 及 Figure 6 邻近正文",
+        "supports": "财富框架与得失框架的差别，以及破产风险的模型限制。",
+        "reading_scope": "实际读取 PDF 页 13--17 的可提取正文；未复查讲座全部引文中的实验原始数据。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A001-K1",
+        "text": "官方授奖理由表彰卡尼曼关于人类判断与不确定性决策的心理学贡献；特沃斯基为本研究共同作者，并非 2002 年获奖者。",
+        "source_ids": [
+          "AS-A001-1",
+          "AS-A001-2"
+        ]
+      },
+      {
+        "id": "A001-K2",
+        "text": "1979 年论文将价值赋予参照点的变化，评价时使用不等同于概率的决策权重；regular prospect 与严格全正／全负前景使用不同规则。",
+        "source_ids": [
+          "AS-A001-2"
+        ]
+      },
+      {
+        "id": "A001-K3",
+        "text": "所读原论文采用假想选择说明，原论文与讲座都指出特定资产位置和大额后果会改变简单价值函数的适用性。",
+        "source_ids": [
+          "AS-A001-2",
+          "AS-A001-3"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "只核验列出的原论文页码与作者讲座段落，未做独立复现或系统检索全部后续争议。"
+    }
+  },
+  {
+    "id": "A002",
+    "title": "心理账户：预算分类、收入标签与整体取舍",
+    "keywords": [
+      "心理账户",
+      "预算",
+      "意外收入",
+      "奖金",
+      "消费",
+      "Thaler",
+      "mental accounting",
+      "塞勒"
+    ],
+    "award": {
+      "name": "瑞典中央银行纪念阿尔弗雷德·诺贝尔经济学奖",
+      "year": 2017,
+      "laureates": [
+        "Richard H. Thaler"
+      ],
+      "relation": "2017 年官方理由表彰塞勒对行为经济学的贡献，范围大于心理账户；本卡聚焦其 1999 年作者综述的账户分类与决策机制。"
+    },
+    "research": {
+      "problem": "同样可支配的钱为何会因来源、用途类别和评估周期而被不同对待？",
+      "principle": "人们把金融活动编码、归类并按某个周期评价。账户边界会影响选择，同时可帮助预算和自控。",
+      "formal_statement": null,
+      "evidence_type": "empirical",
+      "assumptions": [
+        "需要区分账户的心理标签与真实法律、税务、流动性限制。",
+        "讨论替代性时，金额及其他约束应相同，不能把不可自由支配的钱当成相同资金。"
+      ],
+      "limitations": [
+        "1999 年文本为作者综合既有研究与实例的综述，不是一项给出统一效应大小的实验。",
+        "预算分类既可能扭曲选择，也可能帮助自控，不能一概消除。",
+        "论文关于特定退休账户增加储蓄的解释提及争议，本卡不据此承诺任何金融产品效果。"
+      ]
+    },
+    "model_ids": [
+      "P051",
+      "P052",
+      "P049"
+    ],
+    "use_when": [
+      "奖金、退款或优惠让自己想花平时不会花的钱。",
+      "多个预算各自合规，但总支出或生活目标出现冲突。"
+    ],
+    "decision_application": {
+      "status": "conditional",
+      "mechanism": "先恢复整体资金约束，再保留用户有意采用的自控规则。",
+      "steps": [
+        "列出真实可支配金额、必须支付的账单与明确预留资金。",
+        "标记哪些分类来自合同或用途限制，哪些只是心理标签。",
+        "用相同金额的普通收入重新描述一次，检查选择是否改变。",
+        "把单次价格换算为相同周期总支出，比较其他用途。",
+        "保留帮助自控的分类，并设置总额复核，不机械追求完全可替代。"
+      ],
+      "example": {
+        "scenario": "教学情境：收到 2000 元奖金，想买一件原先认为太贵的物品。",
+        "application": "先核对本月账单和本人选择的储蓄目标，再问“如果是普通工资增加 2000 元，我仍会这样花吗？”若购买符合目标且可承受，奖金标签本身不构成否定理由。",
+        "boundary": "不能未经询问假定应当储蓄或消费；已被明确指定用途的资金不按自由现金处理。"
+      },
+      "stop_conditions": [
+        "支出会影响必要账单或资金并不可自由使用，先解决约束。",
+        "分类是用户认可的自控措施，不能仅因模型认为非完全可替代而取消。"
+      ]
+    },
+    "misuse": [
+      "把所有心理账户都称为不理性错误。",
+      "将“意外收入”描述为没有机会成本的钱。",
+      "把综述中争议性的储蓄解释当作产品收益证明。"
+    ],
+    "transfer_note": "人生决策的步骤和教学例子是本项目作者对研究机制的条件性映射，未经过效果实验；不代表获奖者提出或验证了这些具体建议。",
+    "sources": [
+      {
+        "id": "AS-A002-1",
+        "title": "Nobel Prize API：2017 年经济学奖",
+        "url": "https://api.nobelprize.org/2/nobelPrize/eco/2017",
+        "publisher": "Nobel Prize Outreach",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、categoryFullName、laureates[].knownName、laureates[].motivation",
+        "supports": "奖项名称、年份、获奖者与官方授奖理由。",
+        "reading_scope": "通过 HTTPS 实际读取本年度 JSON 完整响应；仅奖项元数据，不作为研究机制或迁移效果的证据。"
+      },
+      {
+        "id": "AS-A002-2",
+        "title": "Mental Accounting Matters（1999）",
+        "url": "https://www.anderson.ucla.edu/faculty_pages/keith.chen/negot.%20papers/Thaler_MentalAccounting99.pdf",
+        "publisher": "John Wiley & Sons；UCLA 托管 Richard H. Thaler 原文",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "期刊页 183、185、193--197；BUDGETING、Wealth accounts、Income accounting、Choice bracketing 开头",
+        "supports": "心理账户的三部分、预算和自控双重作用、收入标签及储蓄证据争议。",
+        "reading_scope": "实际取得 24 页 PDF，读取 PDF 页 1、3、11--15 的正文；未复查综述所引全部原始实验或进行当代金融政策核验。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A002-K1",
+        "text": "2017 年奖项表彰塞勒对行为经济学的贡献，心理账户是其中一条研究线索。",
+        "source_ids": [
+          "AS-A002-1",
+          "AS-A002-2"
+        ]
+      },
+      {
+        "id": "A002-K2",
+        "text": "1999 年综述区分结果评价、账户分类和评估边界；预算有辅助取舍及自控两种作用。",
+        "source_ids": [
+          "AS-A002-2"
+        ]
+      },
+      {
+        "id": "A002-K3",
+        "text": "作者讨论的心理非替代性并不等于所有预算均应取消，且所述退休储蓄证据在文中被标注为有争议。",
+        "source_ids": [
+          "AS-A002-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "作者综述的既有实验与历史金融政策未逐一复核；不提供产品收益或政策现状结论。"
+    }
+  },
+  {
+    "id": "A003",
+    "title": "纳什均衡：相互回应与单方改变的边界",
+    "keywords": [
+      "纳什均衡",
+      "博弈论",
+      "合作",
+      "谈判",
+      "最佳回应",
+      "Nash",
+      "纳什"
+    ],
+    "award": {
+      "name": "瑞典中央银行纪念阿尔弗雷德·诺贝尔经济学奖",
+      "year": 1994,
+      "laureates": [
+        "John C. Harsanyi",
+        "John F. Nash Jr.",
+        "Reinhard Selten"
+      ],
+      "relation": "1994 年奖项共同表彰非合作博弈均衡分析。本卡只讲纳什 1950 年有限博弈均衡存在结果，不将其他两位的全部贡献归入该定理。"
+    },
+    "research": {
+      "problem": "当每个人的选择都会影响他人结果，什么组合不会因任何一方单独改动而被改善？",
+      "principle": "在给定其他人的策略时，每个人都选择其最佳回应。这个自洽组合是均衡，而非共同利益最大或道德正确的保证。",
+      "formal_statement": "有限 n 人博弈允许混合策略时至少存在一个均衡。其条件可写为 u_i(s_i*,s_-i*)≥u_i(s_i,s_-i*)，对每位参与者及其可行单方策略成立；这是对原文 self-countering 定义的现代记法。",
+      "evidence_type": "theorem",
+      "assumptions": [
+        "原结果的参与者与各自纯策略集合有限。",
+        "混合策略是纯策略的概率分布，收益按期望评价。",
+        "均衡判断使用同一已定义博弈；策略和收益改变后需重新分析。"
+      ],
+      "limitations": [
+        "存在定理不保证现实互动会收敛到均衡，亦未给出唯一选择预测。",
+        "一般博弈可以有不同均衡收益；纯策略均衡不由该定理保证。",
+        "真实关系中的价值和意愿不能用未经同意的虚构收益数字替代。"
+      ]
+    },
+    "model_ids": [
+      "P009",
+      "P076"
+    ],
+    "use_when": [
+      "共同安排取决于多人的反应，单方面努力反复失效。",
+      "希望检验一个协作方案是否给参与者留下明显退出或违约动机。"
+    ],
+    "decision_application": {
+      "status": "conditional",
+      "mechanism": "查双方回应及可行改变，帮助讨论安排如何稳定；不把身边人视为必须操纵的对手。",
+      "steps": [
+        "确认所有相关人的意愿和可行选项，区分已知偏好与猜测。",
+        "逐项问：其他人按此方案做时，每个人是否愿意单独改动？",
+        "若存在明显改动动机，查原因是负担不均、误解还是缺少协调。",
+        "先尝试沟通或改变安排，再分析改变后的回应；不只追求均衡，还检查公平与总结果。"
+      ],
+      "example": {
+        "scenario": "教学情境：两位室友各自等待对方清洁共用厨房。",
+        "application": "分别确认时间负担和对洁净的要求，检查“轮班但可临时交换”的安排是否让双方都愿意遵守；不在不知道偏好时臆造收益矩阵。",
+        "boundary": "家庭互动不是已知的有限一次博弈。愿意维持关系、情绪和长期反馈可能改变选择；均衡不等于应当接受坏安排。"
+      },
+      "stop_conditions": [
+        "缺少他人的真实意愿或行为证据，保留条件分析，停止确定性预测。",
+        "出现胁迫或越过他人同意，不用均衡稳定为其辩护。"
+      ]
+    },
+    "misuse": [
+      "说纳什定理保证双方都会选择最佳方案。",
+      "把均衡等同公平、效率或不可改变。",
+      "用一次博弈公式确定复杂关系的未来。"
+    ],
+    "transfer_note": "人生决策的步骤和教学例子是本项目作者对研究机制的条件性映射，未经过效果实验；不代表获奖者提出或验证了这些具体建议。",
+    "sources": [
+      {
+        "id": "AS-A003-1",
+        "title": "Nobel Prize API：1994 年经济学奖",
+        "url": "https://api.nobelprize.org/2/nobelPrize/eco/1994",
+        "publisher": "Nobel Prize Outreach",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、categoryFullName、laureates[].knownName、laureates[].motivation",
+        "supports": "奖项名称、年份、获奖者与官方授奖理由。",
+        "reading_scope": "通过 HTTPS 实际读取本年度 JSON 完整响应；仅奖项元数据，不作为研究机制或迁移效果的证据。"
+      },
+      {
+        "id": "AS-A003-2",
+        "title": "Equilibrium Points in n-Person Games（1950）",
+        "url": "https://jmvidal.cse.sc.edu/library/nash50c.pdf",
+        "publisher": "Proceedings of the National Academy of Sciences；University of South Carolina 托管原文",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "PNAS 36，页 48--49，定义、Kakutani 固定点论证、末段一般博弈收益差异",
+        "supports": "有限博弈混合策略均衡存在及其定义、非唯一收益边界。",
+        "reading_scope": "实际读取两页 PDF 中纳什全文；第一页上半及第二页下半的其他论文不作为来源。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A003-K1",
+        "text": "1994 年官方奖项理由为非合作博弈均衡分析，本卡原研究由纳什发表。",
+        "source_ids": [
+          "AS-A003-1",
+          "AS-A003-2"
+        ]
+      },
+      {
+        "id": "A003-K2",
+        "text": "原文以各方最佳回应构成的自回应策略组定义均衡，并对有限博弈的混合策略证明存在性。",
+        "source_ids": [
+          "AS-A003-2"
+        ]
+      },
+      {
+        "id": "A003-K3",
+        "text": "原文说明一般情形下不同均衡的收益未必相同；存在证明本身不是对现实收敛或公平的证明。",
+        "source_ids": [
+          "AS-A003-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "核验数学定义和简短存在论证，不包括现实互动效果验证或其他均衡精炼理论。"
+    }
+  },
+  {
+    "id": "A004",
+    "title": "共同资源治理：参与规则、监督与冲突解决",
+    "keywords": [
+      "共同资源",
+      "公地",
+      "共享",
+      "治理",
+      "合作",
+      "Ostrom",
+      "design principles",
+      "奥斯特罗姆"
+    ],
+    "award": {
+      "name": "瑞典中央银行纪念阿尔弗雷德·诺贝尔经济学奖",
+      "year": 2009,
+      "laureates": [
+        "Elinor Ostrom",
+        "Oliver E. Williamson"
+      ],
+      "relation": "2009 年分别表彰奥斯特罗姆的经济治理、尤其公共资源研究，以及威廉姆森的企业边界研究。本卡仅聚焦奥斯特罗姆的共同资源治理工作。"
+    },
+    "research": {
+      "problem": "共同使用且可能被过度占用的资源，是否只能依靠完全私有化或外部集中命令来维持？",
+      "principle": "一些使用者能够形成持续治理。关键在制度与当地情境的组合：明确边界、参与修改规则、监督、渐进后果、低成本冲突解决等；具体规则不能统一照搬。",
+      "formal_statement": null,
+      "evidence_type": "empirical",
+      "assumptions": [
+        "要识别实际共享且具有使用冲突的资源、合法使用者和管理权限。",
+        "参与者能够沟通，制度的权利和实施边界可说明。",
+        "分析同时考虑资源条件、成本收益分配及外部制度。"
+      ],
+      "limitations": [
+        "讲座综合比较案例、模型和实验；这里不把设计原则表述为必要充分条件或必胜清单。",
+        "讲座明确指出具体成功规则随场景变化，某些研究对原则的刚性解读不适用。",
+        "家庭或社群映射须另查同意、权力和法律条件，不能照搬自然资源制度。"
+      ]
+    },
+    "model_ids": [
+      "P033",
+      "P040",
+      "P079",
+      "P082"
+    ],
+    "use_when": [
+      "合租、家庭或小社群对共用空间与资源长期产生摩擦。",
+      "已有规则无法执行，或受影响者未参与制定规则。"
+    ],
+    "decision_application": {
+      "status": "conditional",
+      "mechanism": "把“大家应该自觉”转成可共同讨论、可修改且有退出或申诉渠道的安排。",
+      "steps": [
+        "明确共享对象、使用者、各自权利与实际冲突，确认资源确实可被占用或耗尽。",
+        "让受影响者共同讨论与本地条件相符的使用和维护规则。",
+        "约定透明、有限且尊重隐私的核对方式，不无限监控。",
+        "先采用提醒、修订或自愿协商的渐进处理，建立便捷的争议与退出办法。",
+        "定期查看资源状况和规则负担，必要时调整；不以“八条原则齐全”代替实际观察。"
+      ],
+      "example": {
+        "scenario": "教学情境：合租者总因公共冰箱占位与清洁争执。",
+        "application": "共同确认可用空间、标签和清洁责任，约定过期物品如何联系本人处理、争议找谁讨论，并允许修改规则。",
+        "boundary": "教学映射不证明家庭能获得研究场地同样的结果；不得擅自丢弃他人物品、罚款或侵入隐私。"
+      },
+      "stop_conditions": [
+        "使用者无协商权或安排越过合法权限，先解决权利问题。",
+        "资源特征与研究结构不对应时，只保留沟通启发，不声称治理原理已被直接验证。"
+      ]
+    },
+    "misuse": [
+      "把公地研究解释成一切共同资源都能自行管理。",
+      "把设计原则当成任何规模社群通用的固定处方。",
+      "为了规则执行而压制异议或忽略强弱双方的权力差异。"
+    ],
+    "transfer_note": "人生决策的步骤和教学例子是本项目作者对研究机制的条件性映射，未经过效果实验；不代表获奖者提出或验证了这些具体建议。",
+    "sources": [
+      {
+        "id": "AS-A004-1",
+        "title": "Nobel Prize API：2009 年经济学奖",
+        "url": "https://api.nobelprize.org/2/nobelPrize/eco/2009",
+        "publisher": "Nobel Prize Outreach",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、categoryFullName、laureates[].knownName、laureates[].motivation",
+        "supports": "奖项名称、年份、获奖者与官方授奖理由。",
+        "reading_scope": "通过 HTTPS 实际读取本年度 JSON 完整响应；仅奖项元数据，不作为研究机制或迁移效果的证据。"
+      },
+      {
+        "id": "AS-A004-2",
+        "title": "Beyond Markets and States: Polycentric Governance of Complex Economic Systems（2009）",
+        "url": "https://www.nobelprize.org/uploads/2018/06/ostrom_lecture.pdf",
+        "publisher": "Nobel Foundation；Elinor Ostrom",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "刊印页 417、421--424；Long-Surviving Resource Institutions、design principles、CPR 实验与沟通段落",
+        "supports": "使用者治理的可能性、多条件设计原则、场景变化及实验沟通机制。",
+        "reading_scope": "实际读取 PDF 页 10、14--17 正文，包含原则表和实验说明；这是作者研究综合，未逐一重新读取所有编码案例或实验数据。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A004-K1",
+        "text": "2009 年官方表彰奥斯特罗姆的经济治理、尤其公共资源分析，本卡与威廉姆森企业边界研究区分。",
+        "source_ids": [
+          "AS-A004-1",
+          "AS-A004-2"
+        ]
+      },
+      {
+        "id": "A004-K2",
+        "text": "作者依据成功与失败制度比较归纳边界、规则参与、监督、渐进后果和冲突解决等原则，同时指出具体有效规则随地方情境不同。",
+        "source_ids": [
+          "AS-A004-2"
+        ]
+      },
+      {
+        "id": "A004-K3",
+        "text": "讲座描述在指定共同资源实验中，重复面对面沟通提高共同回报；该结果不证明所有家庭或社群必然复制同样收益。",
+        "source_ids": [
+          "AS-A004-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "有效读取为获奖者综合讲座的指定页码；没有独立重分析案例编码、原始实验数据或当代制度效果。"
+    }
+  },
+  {
+    "id": "A005",
+    "title": "有限理性与满意解：先定底线，再有限搜索",
+    "keywords": [
+      "有限理性",
+      "满意解",
+      "满足",
+      "搜索",
+      "选择困难",
+      "Simon",
+      "satisficing",
+      "西蒙"
+    ],
+    "award": {
+      "name": "瑞典中央银行纪念阿尔弗雷德·诺贝尔经济学奖",
+      "year": 1978,
+      "laureates": [
+        "Herbert A. Simon"
+      ],
+      "relation": "1978 年官方理由表彰西蒙关于经济组织内决策过程的开创研究。本卡提取其作者讲座对搜索、愿望水平和满意解的阐释，不将一套生活建议说成获奖原文。"
+    },
+    "research": {
+      "problem": "不知道所有选项、后果不确定且计算能力有限时，如何实际完成选择？",
+      "principle": "当选项并非已给定，决策包含搜索。决策者可以设定可调整的愿望水平，找到达到要求的选项时停止，而不假设已知全部选项并求全局最优。",
+      "formal_statement": "在预先说明的接受条件 a 下，依序搜索候选 x；找到满足接受条件的候选即可形成满意解。此处为操作性改写，不是证明全局最优的公式。",
+      "evidence_type": "theoretical",
+      "assumptions": [
+        "候选的基本可行性和接受标准能够在决策期限内检查。",
+        "搜索存在时间、注意力或金钱成本。",
+        "愿望水平可随实际环境更新，但不能静默降低重要底线。"
+      ],
+      "limitations": [
+        "满意解不保证全局最优，也不等于任意选择第一个候选。",
+        "作者提到特定长期环境中可能与考虑搜索成本的最优选择等价，不是所有情境的结论。",
+        "高影响、不可逆或安全相关决定需要充分核验，搜索成本不能替代必要调查。"
+      ]
+    },
+    "model_ids": [
+      "P028",
+      "P007",
+      "P058"
+    ],
+    "use_when": [
+      "租房、购买或职业选项太多，搜索已经挤占生活。",
+      "尚不知所有候选，但能说明核心需求和决策期限。"
+    ],
+    "decision_application": {
+      "status": "conditional",
+      "mechanism": "把无限比较变成透明的接受条件与搜索边界，留下可修订的空间。",
+      "steps": [
+        "先由用户说清必须满足、值得争取和可放弃的条件。",
+        "设一个与影响程度相称的搜索时间和候选范围，保留必要核验。",
+        "按同一标准检查候选，遇到满足条件且风险可承受的方案时考虑停止。",
+        "若没有可行候选，记录原因；经用户认可再改标准、范围或期限。",
+        "选择可逆时预留复查点，发现关键新证据可重新搜索。"
+      ],
+      "example": {
+        "scenario": "教学情境：挑选住处已连续浏览几周，仍无法决定。",
+        "application": "先明确本人预算、通勤和居住底线，安排有限的实际看房；出现满足底线且已核对合同和房况的候选时，可以停止继续无期限比较。",
+        "boundary": "不能为了快速成交降低安全或不可承受预算底线；合同与真实条件的核验仍必要。"
+      },
+      "stop_conditions": [
+        "没有候选满足硬约束，先重看需求或候选来源。",
+        "新证据显示重大风险，暂停“已经满意”的停止规则并核查。"
+      ]
+    },
+    "misuse": [
+      "把有限理性当作不核实信息的借口。",
+      "把满意解说成所有场景的数学最优。",
+      "用助手自己的标准替用户设定人生底线。"
+    ],
+    "transfer_note": "人生决策的步骤和教学例子是本项目作者对研究机制的条件性映射，未经过效果实验；不代表获奖者提出或验证了这些具体建议。",
+    "sources": [
+      {
+        "id": "AS-A005-1",
+        "title": "Nobel Prize API：1978 年经济学奖",
+        "url": "https://api.nobelprize.org/2/nobelPrize/eco/1978",
+        "publisher": "Nobel Prize Outreach",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、categoryFullName、laureates[].knownName、laureates[].motivation",
+        "supports": "奖项名称、年份、获奖者与官方授奖理由。",
+        "reading_scope": "通过 HTTPS 实际读取本年度 JSON 完整响应；仅奖项元数据，不作为研究机制或迁移效果的证据。"
+      },
+      {
+        "id": "AS-A005-2",
+        "title": "Rational Decision-Making in Business Organizations（1978 年获奖讲座）",
+        "url": "https://www.nobelprize.org/uploads/2018/06/simon-lecture.pdf",
+        "publisher": "Nobel Foundation；Herbert A. Simon",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "刊印页 355--357，尤其 Mechanisms of Bounded Rationality 与 Summary",
+        "supports": "搜索、愿望水平、满意解及有限计算；对其 1955、1956 年论文的作者回顾。",
+        "reading_scope": "实际读取 PDF 页 13--15 全部正文；未声称已读取 1955 年原论文全文，也未重新分析组织案例。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A005-K1",
+        "text": "1978 年官方理由是经济组织内决策过程研究，本卡聚焦作者阐述的有限理性机制。",
+        "source_ids": [
+          "AS-A005-1",
+          "AS-A005-2"
+        ]
+      },
+      {
+        "id": "A005-K2",
+        "text": "作者将搜索和满意解列为两个核心概念：找到达到愿望水平的选项即可停止，愿望水平会随经验变化。",
+        "source_ids": [
+          "AS-A005-2"
+        ]
+      },
+      {
+        "id": "A005-K3",
+        "text": "作者只说特定长期条件下动态愿望水平可能与计入搜索成本的最优选择等价，不能泛化为全局最优保证。",
+        "source_ids": [
+          "AS-A005-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "研究机制核验依托作者讲座的指定段落，不把它计为 1955 年全文或后续现实试验的复核。"
+    }
+  },
+  {
+    "id": "A006",
+    "title": "柠檬市场：隐藏质量、逆向选择与可验证保障",
+    "keywords": [
+      "柠檬市场",
+      "逆向选择",
+      "信息不对称",
+      "二手",
+      "质量",
+      "Akerlof",
+      "阿克洛夫"
+    ],
+    "award": {
+      "name": "瑞典中央银行纪念阿尔弗雷德·诺贝尔经济学奖",
+      "year": 2001,
+      "laureates": [
+        "George A. Akerlof",
+        "A. Michael Spence",
+        "Joseph E. Stiglitz"
+      ],
+      "relation": "2001 年共同表彰信息不对称市场分析。本卡仅聚焦阿克洛夫 1970 年隐藏质量与市场机制模型，不把三位的成果混作同一论文。"
+    },
+    "research": {
+      "problem": "当卖方了解质量而买方难以识别，为什么愿意购买的价格反而可能让好产品退出？",
+      "principle": "买方按可观察的平均质量估值，好的卖方可能不愿按该价交易；供应质量随价格变化，进一步降低买方估值，某些模型条件下市场可能消失。保障、信誉和认证可改变信息结构。",
+      "formal_statement": "原论文示例的一般均衡条件为 S(p)=D(p,μ(p))，μ(p) 是在该价格下实际供给的平均质量，不应将其当作固定的全市场均值。",
+      "evidence_type": "theoretical",
+      "assumptions": [
+        "买卖双方对具体质量的信息不同。",
+        "买方不能完全区分质量，质量影响购买价值与卖方是否参加交易。",
+        "原模型中的线性效用、质量均匀分布等为说明机制的简化，不是所有二手市场的事实。"
+      ],
+      "limitations": [
+        "二手汽车被作者明确当作易懂的理论练习，不是一份估计所有汽车市场真实参数的报告。",
+        "逆向选择可发生，不代表每个廉价商品有问题或市场必然崩溃。",
+        "保障、品牌与认证本身也需核实是否真实且可执行。"
+      ]
+    },
+    "model_ids": [
+      "P077"
+    ],
+    "use_when": [
+      "二手购买或服务交易中重要质量难以观察。",
+      "想区分低价本身和低价背后的信息缺口。"
+    ],
+    "decision_application": {
+      "status": "conditional",
+      "mechanism": "将“便宜还是贵”转为“哪些质量仍隐藏，能用什么成本核实或分担风险”。",
+      "steps": [
+        "列出真正影响使用价值的质量项目和当前未知。",
+        "判断谁掌握信息，以及卖方陈述是否可独立核对。",
+        "比较检验、试用、可执行退换或保修的成本与价值。",
+        "以核实后的质量、总成本和最坏损失比较选项，不只按广告均值。",
+        "若关键风险无法核实且后果不可承受，选择退出或降低交易范围。"
+      ],
+      "example": {
+        "scenario": "教学情境：一台二手笔记本价格低于类似报价，卖方只说“状态很好”。",
+        "application": "先查电池、维修记录和所需性能，条件允许时实际测试，再核对退换承诺；不单凭低价断言诈骗。",
+        "boundary": "此卡不能确定设备故障概率；昂贵检验也未必值得，取决于用户预算、用途和潜在损失。"
+      },
+      "stop_conditions": [
+        "无法核实关键质量且损失超出承受范围。",
+        "所谓保障缺少可执行条件，不能当作已消除风险。"
+      ]
+    },
+    "misuse": [
+      "断言所有便宜货都是劣质。",
+      "把模型中无交易的例子当作所有现实市场的必然结局。",
+      "混淆交易前隐藏质量与交易后行为改变。"
+    ],
+    "transfer_note": "人生决策的步骤和教学例子是本项目作者对研究机制的条件性映射，未经过效果实验；不代表获奖者提出或验证了这些具体建议。",
+    "sources": [
+      {
+        "id": "AS-A006-1",
+        "title": "Nobel Prize API：2001 年经济学奖",
+        "url": "https://api.nobelprize.org/2/nobelPrize/eco/2001",
+        "publisher": "Nobel Prize Outreach",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、categoryFullName、laureates[].knownName、laureates[].motivation",
+        "supports": "奖项名称、年份、获奖者与官方授奖理由。",
+        "reading_scope": "通过 HTTPS 实际读取本年度 JSON 完整响应；仅奖项元数据，不作为研究机制或迁移效果的证据。"
+      },
+      {
+        "id": "AS-A006-2",
+        "title": "The Market for “Lemons”: Quality Uncertainty and the Market Mechanism（1970）",
+        "url": "https://www.sfu.ca/~allen/Ackerlof.pdf",
+        "publisher": "Oxford University Press；Simon Fraser University 托管原文",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "期刊页 488--491、499--500；II.A--B、IV Counteracting Institutions、V Conclusion",
+        "supports": "质量选择反馈、模型简化、保障与信誉制度。",
+        "reading_scope": "实际读取 PDF 页 2--5、13--14 正文；未以未复核的历史保险、就业或地区统计支持当代判断。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A006-K1",
+        "text": "2001 年共同表彰信息不对称市场分析，本卡的 1970 年柠檬论文作者为阿克洛夫。",
+        "source_ids": [
+          "AS-A006-1",
+          "AS-A006-2"
+        ]
+      },
+      {
+        "id": "A006-K2",
+        "text": "论文让供应的平均质量随价格而变，在所设简化条件下可出现没有交易的结果；作者说明汽车例子为机制演示而选。",
+        "source_ids": [
+          "AS-A006-2"
+        ]
+      },
+      {
+        "id": "A006-K3",
+        "text": "论文讨论保障、品牌、连锁与资质等减少质量不确定性的制度，但未证明每个实际保障都可靠。",
+        "source_ids": [
+          "AS-A006-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "核验原理论及保障段落；未重分析历史应用统计或测定任一现实交易质量。"
+    }
+  },
+  {
+    "id": "A007",
+    "title": "信号传递：可观察证据与模仿成本",
+    "keywords": [
+      "信号传递",
+      "求职",
+      "证书",
+      "作品集",
+      "信息不对称",
+      "Spence",
+      "signaling",
+      "斯宾塞",
+      "斯彭斯"
+    ],
+    "award": {
+      "name": "瑞典中央银行纪念阿尔弗雷德·诺贝尔经济学奖",
+      "year": 2001,
+      "laureates": [
+        "George A. Akerlof",
+        "A. Michael Spence",
+        "Joseph E. Stiglitz"
+      ],
+      "relation": "2001 年共同表彰信息不对称市场分析。本卡聚焦斯宾塞的信号理论，作者 2001 年讲座重新阐释早期模型，不能将这份回顾误称为 1973 年原论文全文。"
+    },
+    "research": {
+      "problem": "能力或质量无法直接观察时，可见的行为为何有时能传递可信信息，而非只是宣传？",
+      "principle": "信号由知情一方选择，接收者据此判断；是否能区分类型取决于收益、成本和双方预期的相互一致性。昂贵本身并不等于有效。",
+      "formal_statement": "作者讲座的简化两类型例子：生产率 1 与 2；教育 E 的成本分别 E 与 E/2，不提高生产率；工资按门槛 E* 为 1 或 2。在严格选择条件 1<E*<2 下，可形成低类型选 0、高类型选 E* 的分离均衡。数值只属于该教学模型。",
+      "evidence_type": "theoretical",
+      "assumptions": [
+        "接收者看不见重要类型，但能看到某个可选择的信号。",
+        "简化模型中各类型的取得成本不同，行为收益与接收者信念须相互一致。",
+        "简化例子为分离机制的说明；现实教育可能同时提高生产率。"
+      ],
+      "limitations": [
+        "作者明确反对把简化模型理解为教育不提高能力或信息没有效率价值。",
+        "可有多个均衡，现实信号是否有效需查具体市场与接收者。",
+        "有钱花得更多不等于更有能力；真实机会、资源和公平限制必须另行考虑。"
+      ]
+    },
+    "model_ids": [
+      "P077",
+      "P040"
+    ],
+    "use_when": [
+      "在学习、求职或合作中，需要决定投入哪种可信证据。",
+      "正在被高价证书、炫耀或承诺打动，却不知道它们说明什么。"
+    ],
+    "decision_application": {
+      "status": "conditional",
+      "mechanism": "识别接收者需要知道的事实，再考虑可核实且与该事实相关的证据；不等同于购买昂贵标签。",
+      "steps": [
+        "先问接收者需要验证什么能力、质量或可靠性。",
+        "区分可直接检验的表现、真实凭据与仅有声明。",
+        "检查不具备该能力的人是否同样容易获得此信号；同时检查资源差异是否造成误判。",
+        "分别估计学习或产出的真实价值、展示价值及时间成本，不合并成虚构收益。",
+        "优先验证对方实际接受何种证据，再作有限投入。"
+      ],
+      "example": {
+        "scenario": "教学情境：求职者在昂贵证书与小型作品集之间犹豫。",
+        "application": "先核对目标岗位真正要求，再考虑作品能否清楚展示本人承担的任务、过程和结果；证书如有真实准入作用应单独评估。",
+        "boundary": "作品集推荐是作者映射，不由信号定理证明一定更有效；不能凭模型断言证书无用或保证工资上涨。"
+      },
+      "stop_conditions": [
+        "对方实际标准未知，先收集招聘要求或直接询问。",
+        "需要造假、泄露他人资料或超出预算才能维持信号，停止该方案。"
+      ]
+    },
+    "misuse": [
+      "把“花钱越多”直接视为越可信。",
+      "断言教育只有信号作用。",
+      "用证据形式给人的完整价值排序，忽略机会与资源差异。"
+    ],
+    "transfer_note": "人生决策的步骤和教学例子是本项目作者对研究机制的条件性映射，未经过效果实验；不代表获奖者提出或验证了这些具体建议。",
+    "sources": [
+      {
+        "id": "AS-A007-1",
+        "title": "Nobel Prize API：2001 年经济学奖",
+        "url": "https://api.nobelprize.org/2/nobelPrize/eco/2001",
+        "publisher": "Nobel Prize Outreach",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、categoryFullName、laureates[].knownName、laureates[].motivation",
+        "supports": "奖项名称、年份、获奖者与官方授奖理由。",
+        "reading_scope": "通过 HTTPS 实际读取本年度 JSON 完整响应；仅奖项元数据，不作为研究机制或迁移效果的证据。"
+      },
+      {
+        "id": "AS-A007-2",
+        "title": "Signaling in Retrospect and the Informational Structure of Markets（2001 年获奖讲座）",
+        "url": "https://www.nobelprize.org/uploads/2018/06/spence-lecture.pdf",
+        "publisher": "Nobel Foundation；A. Michael Spence",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "刊印页 410--412；The Simplest Job Market Signaling Model 及此前误读提醒",
+        "supports": "两类型成本条件、分离与多均衡、教育生产率的简化边界。",
+        "reading_scope": "实际读取 PDF 页 4--6 的正文及式子；PDF 提取存在字间空格，但数值、条件及限制可辨。未声称阅读 1973 年原论文全文。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A007-K1",
+        "text": "2001 年官方奖项表彰信息不对称市场分析，信号理论为斯宾塞的研究贡献。",
+        "source_ids": [
+          "AS-A007-1",
+          "AS-A007-2"
+        ]
+      },
+      {
+        "id": "A007-K2",
+        "text": "讲座的两类型例子以不同取得成本支撑分离均衡，同时指出预期与实际行为的相互一致及多个均衡的可能。",
+        "source_ids": [
+          "AS-A007-2"
+        ]
+      },
+      {
+        "id": "A007-K3",
+        "text": "教育不提高生产率只是该简化例子的假设；作者明确提醒不能把它推广为现实教育无生产率价值。",
+        "source_ids": [
+          "AS-A007-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "有效读取依托获奖者回顾性技术讲座的指定页码，没有检验现代招聘中的任何证书或作品集效果。"
+    }
+  },
+  {
+    "id": "A008",
+    "title": "延迟接受算法：稳定匹配与提议方的优势",
+    "keywords": [
+      "稳定匹配",
+      "延迟接受",
+      "分配",
+      "志愿",
+      "招生",
+      "Gale",
+      "Shapley",
+      "deferred acceptance",
+      "盖尔",
+      "沙普利",
+      "罗斯"
+    ],
+    "award": {
+      "name": "瑞典中央银行纪念阿尔弗雷德·诺贝尔经济学奖",
+      "year": 2012,
+      "laureates": [
+        "Alvin E. Roth",
+        "Lloyd S. Shapley"
+      ],
+      "relation": "2012 年官方理由表彰稳定分配理论与市场设计实践。1962 年原论文由盖尔与沙普利合著；盖尔不是 2012 年获奖者，罗斯的实践贡献也不能归为该论文作者身份。"
+    },
+    "research": {
+      "problem": "多名申请者与有容量限制的机构各有偏好时，怎样得到没有双方都愿意另换配对的分配？",
+      "principle": "申请者按偏好逐次提议，接收方暂留目前较喜欢且不超过容量的申请，拒绝其余；被拒者继续申请。有限步骤后得到稳定匹配，且申请方提议时对申请方在稳定解中最优。",
+      "formal_statement": "原文 Theorem 1：有限两侧、严格偏好的婚配模型存在稳定匹配。Theorem 2：延迟接受给每位申请者不差于任何其他稳定分配的结果；“最优”限定在稳定解及提议方标准内。",
+      "evidence_type": "theorem",
+      "assumptions": [
+        "两侧有限、偏好排序与容量明确；基本模型没有并列偏好。",
+        "不可接受对象应明确排除，不强迫接受全部选项。",
+        "结论针对给定偏好和规则；伴侣组合、外部性、特殊约束等不能无条件照搬。"
+      ],
+      "limitations": [
+        "稳定不等于每人得到第一选择，也不保证总满意度最大或双方公平。",
+        "原文展示单侧室友配对可不存在稳定解，不能把两侧定理任意扩展。",
+        "作者明确承认数学模型对真实招生有简化；现实机制的申报策略须另查，不能将诚实排序建议推广到未知制度。"
+      ]
+    },
+    "model_ids": [
+      "P007",
+      "P009"
+    ],
+    "use_when": [
+      "已确认采用延迟接受的两侧匹配机制，想理解排序与暂留规则。",
+      "组织自愿的导师、项目或岗位分配，容量和双方偏好可明确表达。"
+    ],
+    "decision_application": {
+      "status": "conditional",
+      "mechanism": "先辨识真实规则，再用小型匹配检查阻挡对；只在约束对应时使用算法结论。",
+      "steps": [
+        "确认机制确为两侧匹配，列容量、不可接受项和明确偏好。",
+        "按真实机制确定谁提议、谁暂留；逐轮记录申请、暂留和拒绝。",
+        "结束后检查是否存在未配对且双方都更愿意彼此的可行阻挡对。",
+        "解释提议方优势及稳定的局部定义，同时检查用户关心的公平与可接受性。",
+        "面对现实招生或求职，核对当前官方规则后再决定如何申报；只理解本算法不等于知道该制度。"
+      ],
+      "example": {
+        "scenario": "教学情境：甲、乙两名学员与 X、Y 两位各有一个名额的导师，自愿参与模拟分配。甲与乙均偏好 X 后 Y；X 偏好乙后甲，Y 偏好甲后乙。",
+        "application": "学员提议第一轮两人都申请 X，X 暂留乙、拒甲；甲随后申请 Y，得到乙--X、甲--Y。甲虽更喜欢 X，但 X 更喜欢乙，因此不存在甲与 X 组成的阻挡对。",
+        "boundary": "教学偏好是明确给定的模拟输入，不证明真实导师有这些偏好；不得用算法代替人的同意或把人际婚姻当作静态排序。"
+      },
+      "stop_conditions": [
+        "实际规则、容量或偏好存在未知，暂停确定性匹配建议。",
+        "非两侧、特殊组合或外部性改变结构时，不沿用基本存在与最优结论。"
+      ]
+    },
+    "misuse": [
+      "说“稳定匹配”保证所有人满意或总幸福最大。",
+      "把婚配故事当作寻找人生伴侣的通用建议。",
+      "在未知招生制度里承诺诚实排序必然最优。"
+    ],
+    "transfer_note": "人生决策的步骤和教学例子是本项目作者对研究机制的条件性映射，未经过效果实验；不代表获奖者提出或验证了这些具体建议。",
+    "sources": [
+      {
+        "id": "AS-A008-1",
+        "title": "Nobel Prize API：2012 年经济学奖",
+        "url": "https://api.nobelprize.org/2/nobelPrize/eco/2012",
+        "publisher": "Nobel Prize Outreach",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "awardYear、categoryFullName、laureates[].knownName、laureates[].motivation",
+        "supports": "奖项名称、年份、获奖者与官方授奖理由。",
+        "reading_scope": "通过 HTTPS 实际读取本年度 JSON 完整响应；仅奖项元数据，不作为研究机制或迁移效果的证据。"
+      },
+      {
+        "id": "AS-A008-2",
+        "title": "College Admissions and the Stability of Marriage（1962）",
+        "url": "https://www.or.mist.i.u-tokyo.ac.jp/takeda/FreshmanCourse/GaleShapley.pdf",
+        "publisher": "Mathematical Association of America；University of Tokyo 托管原文",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "American Mathematical Monthly 69，页 9--15；Sections 2--6、Theorems 1--2、roommates 反例",
+        "supports": "严格偏好、稳定定义、算法与最优范围、室友反例及现实简化。",
+        "reading_scope": "实际取得 8 页扫描 PDF，逐页查看 PDF 页 2--8，即原文期刊页 9--15；末页下半另一篇贷款文章不计入本卡。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A008-K1",
+        "text": "2012 年获奖者为罗斯与沙普利；1962 年原文作者为盖尔与沙普利，二者关系须区分。",
+        "source_ids": [
+          "AS-A008-1",
+          "AS-A008-2"
+        ]
+      },
+      {
+        "id": "A008-K2",
+        "text": "原文的两侧严格偏好模型由延迟接受构造稳定分配，并证明申请方在稳定分配集合中的最优性。",
+        "source_ids": [
+          "AS-A008-2"
+        ]
+      },
+      {
+        "id": "A008-K3",
+        "text": "原文给出稳定配对不一定存在的室友反例，并提醒数学简化不能直接视为现实招生完整解决方案。",
+        "source_ids": [
+          "AS-A008-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "读取原文完整研究部分，但没有核验任何现行招生制度或特殊约束的后续推广。"
+    }
+  }
+]

@@ -49,7 +49,8 @@ def load_database(root: Path = ROOT) -> dict[str, list[dict]]:
     if not source_paths:
         raise ValueError("Missing sources-*.json")
     sources = [row for path in source_paths for row in read_rows(path)]
-    return {"models": models, "cases": cases, "sources": sources}
+    research = [row for path in sorted(refs.glob("award-research-*.json")) for row in read_rows(path)]
+    return {"models": models, "cases": cases, "sources": sources, "research": research}
 
 
 def record_type(row: dict) -> str:
@@ -60,6 +61,182 @@ def origin_group(row: dict) -> str:
     """A grouping key identifies information origin, not independent replication."""
     value = row.get("origin_group", row.get("publisher", ""))
     return value if isinstance(value, str) else ""
+
+
+APPLICATIONS = {"direct", "conditional", "learning_only"}
+RESEARCH_KINDS = {"theorem", "empirical", "theoretical", "official_synthesis"}
+
+
+def check_research(rows: object, model_ids: set[str], occupied: set[str]) -> list[str]:
+    """Check traceability structure; reading scope and scientific validity need review."""
+    errors = []
+    if not isinstance(rows, list) or any(not isinstance(row, dict) for row in rows):
+        return ["research: expected an array of objects"]
+    seen = set(occupied)
+    source_ids = set()
+    claim_ids = set()
+
+    def text(obj: dict, key: str, label: str) -> None:
+        if not isinstance(obj.get(key), str) or not obj[key].strip():
+            errors.append(f"{label}: missing/non-text {key}")
+
+    def strings(obj: dict, key: str, label: str, allow_empty=False) -> list[str]:
+        value = obj.get(key)
+        if not isinstance(value, list) or any(not isinstance(x, str) or not x.strip() for x in value):
+            errors.append(f"{label}: {key} must be a string array")
+            return []
+        if not value and not allow_empty:
+            errors.append(f"{label}: {key} cannot be empty")
+        if len(set(value)) != len(value):
+            errors.append(f"{label}: duplicate {key}")
+        return value
+
+    def date_value(value: object, label: str) -> None:
+        try:
+            if not isinstance(value, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+                raise ValueError
+            date.fromisoformat(value)
+        except ValueError:
+            errors.append(f"{label}: invalid checked_on date")
+
+    def object_field(obj: dict, key: str, label: str) -> dict:
+        value = obj.get(key)
+        if not isinstance(value, dict):
+            errors.append(f"{label}: {key} must be an object")
+            return {}
+        return value
+
+    for row in rows:
+        label = str(row.get("id", "research"))
+        if not re.fullmatch(r"A\d{3,}", label) or label in seen:
+            errors.append(f"{label}: invalid/duplicate research ID")
+        seen.add(label)
+        for key in ("title", "transfer_note"):
+            text(row, key, label)
+        for key in ("keywords", "use_when", "misuse"):
+            strings(row, key, label)
+        for mid in strings(row, "model_ids", label, allow_empty=True):
+            if mid not in model_ids:
+                errors.append(f"{label}: unknown model {mid}")
+        award = object_field(row, "award", label)
+        for key in ("name", "relation"):
+            text(award, key, label + ".award")
+        if type(award.get("year")) is not int or not 1901 <= award["year"] <= 9999:
+            errors.append(f"{label}: invalid award year")
+        strings(award, "laureates", label + ".award")
+        research = object_field(row, "research", label)
+        for key in ("problem", "principle"):
+            text(research, key, label + ".research")
+        for key in ("assumptions", "limitations"):
+            strings(research, key, label + ".research")
+        kind = research.get("evidence_type")
+        if not isinstance(kind, str) or kind not in RESEARCH_KINDS:
+            errors.append(f"{label}: invalid research evidence_type")
+        if "formal_statement" not in research or (research["formal_statement"] is not None and
+                                                   not isinstance(research["formal_statement"], str)):
+            errors.append(f"{label}: formal_statement must be text or null")
+        app = object_field(row, "decision_application", label)
+        status = app.get("status")
+        if not isinstance(status, str) or status not in APPLICATIONS:
+            errors.append(f"{label}: invalid application status")
+        text(app, "mechanism", label + ".application")
+        strings(app, "steps", label + ".application")
+        strings(app, "stop_conditions", label + ".application")
+        example = object_field(app, "example", label + ".application")
+        for key in ("scenario", "application", "boundary"):
+            text(example, key, label + ".example")
+        verification = object_field(row, "verification", label)
+        if verification.get("status") != "checked":
+            errors.append(f"{label}: unchecked research must stay outside library")
+        date_value(verification.get("checked_on"), label)
+        text(verification, "limitations", label + ".verification")
+        sources = row.get("sources")
+        if not isinstance(sources, list) or not sources or any(not isinstance(x, dict) for x in sources):
+            errors.append(f"{label}: sources must be a nonempty object array")
+            sources = []
+        local_sources = set()
+        types = set()
+        for source in sources:
+            sid = source.get("id")
+            if not isinstance(sid, str) or not re.fullmatch(re.escape("AS-" + label) + r"-\d+", sid):
+                errors.append(f"{label}: invalid local source ID")
+                continue
+            if sid in source_ids or sid in seen:
+                errors.append(f"{label}: duplicate/global collision source ID {sid}")
+            source_ids.add(sid)
+            local_sources.add(sid)
+            for key in ("title", "publisher", "locator", "supports", "reading_scope"):
+                text(source, key, sid)
+            try:
+                raw_url = source.get("url") if isinstance(source.get("url"), str) else ""
+                url = urlparse(raw_url)
+                valid_url = (url.scheme in {"http", "https"} and bool(url.hostname)
+                             and not any(c.isspace() for c in raw_url)
+                             and url.username is None and url.password is None)
+                # Accessing port also validates bracket/port syntax.
+                url.port
+            except ValueError:
+                valid_url = False
+            if not valid_url:
+                errors.append(f"{sid}: invalid absolute URL")
+            date_value(source.get("checked_on"), sid)
+            st = source.get("source_type")
+            if not isinstance(st, str) or st not in {"primary", "official_summary"}:
+                errors.append(f"{sid}: invalid source_type")
+            else:
+                types.add(st)
+        if not {"primary", "official_summary"}.issubset(types):
+            errors.append(f"{label}: award summary and primary research reading required")
+        claims = row.get("claims")
+        if not isinstance(claims, list) or not claims or any(not isinstance(x, dict) for x in claims):
+            errors.append(f"{label}: claims must be a nonempty object array")
+            claims = []
+        used_sources = set()
+        for claim in claims:
+            cid = claim.get("id")
+            if not isinstance(cid, str) or not re.fullmatch(re.escape(label) + r"-K\d+", cid):
+                errors.append(f"{label}: invalid claim ID")
+            elif cid in claim_ids or cid in seen or cid in source_ids:
+                errors.append(f"{label}: duplicate/global collision claim ID {cid}")
+            else:
+                claim_ids.add(cid)
+            text(claim, "text", label + ".claim")
+            for sid in strings(claim, "source_ids", label + ".claim"):
+                if sid not in local_sources:
+                    errors.append(f"{label}: claim source {sid} is not card-local")
+                used_sources.add(sid)
+        if local_sources - used_sources:
+            errors.append(f"{label}: unused research source")
+    return errors
+
+
+def search_research(rows: list[dict], query: str, limit: int,
+                    application: str | None = None, model: str | None = None) -> list[dict]:
+    terms = [x.casefold() for x in TOKEN.split(query.strip()) if x]
+    if not terms:
+        raise ValueError("Search requires at least one keyword")
+    if type(limit) is not int or not 1 <= limit <= 100:
+        raise ValueError("--limit must be between 1 and 100")
+    matches = []
+    for row in rows:
+        app = row["decision_application"]
+        if application and app["status"] != application:
+            continue
+        if model and model not in row["model_ids"]:
+            continue
+        title = row["title"].casefold()
+        words = " ".join(row["keywords"]).casefold()
+        body = " ".join([row["research"]["problem"], row["research"]["principle"],
+                         *row["use_when"], app["mechanism"], *app["steps"],
+                         row["award"]["name"], *row["award"]["laureates"]]).casefold()
+        score = sum(10 if x in title else 4 if x in words else 1 if x in body else 0 for x in terms)
+        if score:
+            matches.append({"id": row["id"], "title": row["title"], "match_score": score,
+                            "award": row["award"], "model_ids": row["model_ids"],
+                            "application_status": app["status"],
+                            "checked_on": row["verification"]["checked_on"],
+                            "limitation": row["verification"]["limitations"]})
+    return sorted(matches, key=lambda x: (-x["match_score"], x["id"]))[:limit]
 
 
 def check_database(db: dict[str, list[dict]], root: Path | None = None) -> list[str]:
@@ -307,6 +484,9 @@ def check_database(db: dict[str, list[dict]], root: Path | None = None) -> list[
                     if isinstance(reverse, list) and case_id not in reverse:
                         error(f"{case_id}: model {model_id} lacks reverse case link")
 
+    occupied = model_ids | case_ids | source_ids | set(seen_claim_ids)
+    errors.extend(check_research(db.get("research", []), model_ids, occupied))
+
     if root is not None:
         for path in sorted(root.rglob("*.md")):
             body = path.read_text(encoding="utf-8-sig")
@@ -353,12 +533,22 @@ def check_manifest(manifest: object, db: dict[str, list[dict]]) -> list[str]:
 
 
 def database_counts(db: dict[str, list[dict]]) -> dict[str, int]:
-    return {"models": len(db["models"]), "cases": len(db["cases"]),
-            "sources": len(db["sources"]),
-            "deep_cases": sum(record_type(row) == "deep_case" for row in db["cases"]),
-            "evidence_events": sum(record_type(row) == "evidence_event" for row in db["cases"]),
-            "claims": sum(len(row["claims"]) for row in db["cases"]
-                          if isinstance(row.get("claims"), list))}
+    counts = {"models": len(db["models"]), "cases": len(db["cases"]),
+              "sources": len(db["sources"]),
+              "deep_cases": sum(record_type(row) == "deep_case" for row in db["cases"]),
+              "evidence_events": sum(record_type(row) == "evidence_event" for row in db["cases"]),
+              "claims": sum(len(row["claims"]) for row in db["cases"]
+                            if isinstance(row.get("claims"), list))}
+    rows = db.get("research", [])
+    # Legacy schema 2.0 libraries need no research counters. Invalid research data
+    # remains reportable by check_research rather than crashing manifest checks.
+    if isinstance(rows, list) and rows:
+        counts.update({"research_cards": len(rows),
+                       "research_sources": sum(len(row["sources"]) for row in rows
+                                               if isinstance(row, dict) and isinstance(row.get("sources"), list)),
+                       "research_claims": sum(len(row["claims"]) for row in rows
+                                              if isinstance(row, dict) and isinstance(row.get("claims"), list))})
+    return counts
 
 
 def positive_text(value: object) -> str:
@@ -428,6 +618,8 @@ def database_stats(db: dict[str, list[dict]]) -> dict:
     case_groups = {origin_group(source_map[sid]) for row in db["cases"]
                    for sid in row.get("source_ids", []) if sid in source_map}
     return {**database_counts(db),
+            "research_applications": dict(sorted(Counter(x["decision_application"]["status"]
+                                                         for x in db.get("research", [])).items())),
             "record_types": dict(sorted(Counter(record_type(row) for row in db["cases"]).items())),
             "model_kinds": dict(sorted(Counter(x["kind"] for x in db["models"]).items())),
             "case_domains": dict(sorted(Counter(x["domain"] for x in db["cases"]).items())),
@@ -481,14 +673,17 @@ def main(argv: list[str] | None = None) -> int:
     commands = parser.add_subparsers(dest="command", required=True)
     search = commands.add_parser("search", help="Search short keywords, without network or writes")
     search.add_argument("query")
-    search.add_argument("--cases", action="store_true")
+    selection = search.add_mutually_exclusive_group()
+    selection.add_argument("--cases", action="store_true")
+    selection.add_argument("--research", action="store_true", help="Search award research cards")
+    search.add_argument("--application", choices=sorted(APPLICATIONS))
     search.add_argument("--limit", type=int, default=8)
     search.add_argument("--domain", choices=sorted(DOMAINS))
     search.add_argument("--kind", choices=sorted(KINDS))
     search.add_argument("--record-type", choices=sorted(RECORD_TYPES))
-    search.add_argument("--model", help="Filter cases linked to a model, e.g. P058")
+    search.add_argument("--model", help="Filter cases or research linked to a model, e.g. P058")
     search.add_argument("--case-domain", help="Filter by the exact case domain string")
-    show = commands.add_parser("show", help="Show one model, case or source by ID")
+    show = commands.add_parser("show", help="Show a model, case, research card or source by ID")
     show.add_argument("id")
     show.add_argument("--format", choices=["json", "md"], default="json")
     commands.add_parser("stats")
@@ -497,6 +692,18 @@ def main(argv: list[str] | None = None) -> int:
     try:
         db = load_database()
         if args.command == "search":
+            if args.application and not args.research:
+                raise ValueError("--application requires --research")
+            if args.research:
+                if args.kind or args.domain or args.record_type or args.case_domain:
+                    raise ValueError("--research cannot combine with model/case-only filters")
+                model = args.model.upper() if args.model else None
+                if model and model not in {row["id"] for row in db["models"]}:
+                    raise ValueError(f"Unknown model ID: {args.model}")
+                output({"note": "获奖研究卡的生活应用是本次分析；learning_only 用于知识学习，不能直接给人生建议。",
+                        "results": search_research(db["research"], args.query, args.limit,
+                                                   args.application, model)})
+                return 0
             if args.cases and (args.kind or args.domain):
                 raise ValueError("--cases cannot combine with model --kind or --domain")
             if not args.cases and (args.record_type or args.model or args.case_domain):
@@ -507,10 +714,16 @@ def main(argv: list[str] | None = None) -> int:
             rows = search_rows(db["cases" if args.cases else "models"], args.query,
                                args.limit, args.domain, args.kind, args.record_type,
                                model, args.case_domain)
+            if not args.cases:
+                for match in rows:
+                    match["research_card_ids"] = [card["id"] for card in db["research"]
+                                                   if match["id"] in card["model_ids"]]
             output({"note": "匹配分数只用于检索排序，不是决策权重；证据事件不能等同于完整决策或因果复盘。",
                     "results": rows})
         elif args.command == "show":
-            matches = [x for group in db.values() for x in group if x.get("id") == args.id.upper()]
+            records = [x for group in db.values() for x in group]
+            records.extend(source for row in db["research"] for source in row["sources"])
+            matches = [x for x in records if x.get("id") == args.id.upper()]
             if not matches:
                 raise ValueError(f"Unknown ID: {args.id}")
             if len(matches) != 1:

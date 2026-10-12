@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "library_version": "2.1.1",
+  "library_version": "2.2.0",
   "checked_on": "2026-10-12",
   "counts": {
     "models": 100,
@@ -8,6 +8,9 @@
     "sources": 213,
     "deep_cases": 100,
     "evidence_events": 900,
-    "claims": 2100
+    "claims": 2100,
+    "research_cards": 16,
+    "research_sources": 42,
+    "research_claims": 54
   }
 }

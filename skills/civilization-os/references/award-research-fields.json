@@ -1,0 +1,597 @@
+[
+  {
+    "id": "A013",
+    "title": "Villani：最优运输、熵与非线性 Landau 阻尼",
+    "keywords": [
+      "菲尔兹奖",
+      "Villani",
+      "最优运输",
+      "Wasserstein",
+      "熵",
+      "Landau 阻尼",
+      "Vlasov",
+      "相混合",
+      "菲尔兹",
+      "维拉尼"
+    ],
+    "award": {
+      "name": "Fields Medal",
+      "year": 2010,
+      "laureates": [
+        "Cédric Villani"
+      ],
+      "relation": "IMU 授奖说明强调非线性 Landau 阻尼与 Boltzmann 方程趋于平衡的证明，并介绍其最优运输贡献。本卡选取相关研究中的两个学习入口；不把最优运输整体或每篇论文说成独立获奖项目。"
+    },
+    "research": {
+      "problem": "如何比较具有同等总质量的分布，以及如何解释无碰撞的粒子系统中宏观场衰减而微观演化仍可逆？",
+      "principle": "最优运输在给定边缘分布与运输成本下选择运输计划；Wasserstein 几何使分布本身成为可研究的空间。Landau 阻尼则通过相混合解释宏观场的衰减：速度不同的粒子造成更细的相空间结构，不能把场变小直接解释成总能量或细粒度熵被耗散。两条研究线的数学对象和前提不同。",
+      "formal_statement": "在紧致度量空间 X 上，W2(mu,nu)^2 = min_{pi in Pi(mu,nu)} integral d(x,y)^2 d pi，其中 Pi 的两个边缘分别是 mu 与 nu。对满足原文定理 2.6 稳定性、解析性、势函数及小扰动条件的周期空间非线性 Vlasov 系统，宏观力场 F(t) 指数衰减至 0；完整分布的收敛为弱收敛，不能改写成所有细节在强范数下趋于常数。",
+      "evidence_type": "theorem",
+      "assumptions": [
+        "运输部分以相同总质量的概率测度及明确的平方距离成本为前提；本卡读取的基本表述采用紧致度量空间。",
+        "Landau 定理采用位置空间为周期环面、速度空间为实数空间的无碰撞 Vlasov 模型。",
+        "背景速度分布满足解析界与稳定性条件 (L)，势的 Fourier 系数满足原文的衰减界，扰动在指定解析范数与加权积分范数下足够小。",
+        "原文存在部分 Gevrey 推广；本卡正式表述以定理 2.6 的解析版本为准，不把它泛化到任意光滑初值。"
+      ],
+      "limitations": [
+        "运输成本、质量与位置必须有清晰数学含义；不能把人的价值、意愿或关系直接当作可运输质量。",
+        "Landau 阻尼不覆盖任意初始分布、任意势函数或大扰动；宏观观察的趋稳与微观强收敛不同。",
+        "两项结论不能推出个人情绪、组织或社会冲突必然自行平息。",
+        "本卡核对研究声明与限定条件，未逐步审计完整长篇证明。"
+      ]
+    },
+    "model_ids": [
+      "P003",
+      "P004",
+      "P007",
+      "P098"
+    ],
+    "use_when": [
+      "学习如何把分布比较写成受约束的数学问题。",
+      "学习宏观观测、微观状态和不同收敛概念的区别。",
+      "追问物理模型为何需要稳定性、正则性和小扰动前提。"
+    ],
+    "decision_application": {
+      "status": "learning_only",
+      "mechanism": "提供数学与物理学习材料。相关 P 编号是学习检索入口，不能据此声称最优运输或阻尼已验证普通人生决策效果。",
+      "steps": [
+        "先区分要学习的是运输成本最小化，还是无碰撞动力系统的宏观场衰减。",
+        "运输练习写出两端分布、成本与边缘约束；比较至少两种可行计划。",
+        "阻尼学习列出方程、背景状态、正则性、稳定性与扰动范围，再辨认结论观察的是哪个量。",
+        "分别标出定理、解释和自己提出的类比；跨域类比需另行建立变量与证据。"
+      ],
+      "example": {
+        "scenario": "数学练习：一维位置 0、2 各放半单位质量，要转为位置 1、3 各半单位，成本取距离平方。",
+        "application": "计划 0→1、2→3 的总成本为 1；交叉计划 0→3、2→1 的总成本为 5。比较展示了同样满足边缘约束的计划可以有不同成本。再提问：若总质量不同或成本不同，原问题应如何改写？",
+        "boundary": "这是编写者构造的基础练习，不是 Villani 的新定理或人生建议，也未展示 Landau 阻尼的证明。"
+      },
+      "stop_conditions": [
+        "无法定义分布、成本或方程时，不输出带有数学权威感的优化结论。",
+        "问题属于人际关系或情绪时，停止引用 Landau 阻尼预测结果，回到具体行为与证据。"
+      ]
+    },
+    "misuse": [
+      "把 Landau 阻尼等同于 Boltzmann 碰撞导致的熵增。",
+      "把所有运输理论归为 Villani 一人首创，忽略 Monge、Kantorovich、Brenier、McCann 等贡献。",
+      "只看到场衰减就宣称系统全部信息消失。",
+      "用最优运输替代用户自己的价值判断。"
+    ],
+    "transfer_note": "学习步骤和教学算例由编写者设计；它们不是原研究关于人生决策的实验结论。只有另行建立问题、变量和适用条件后，才能讨论数学应用。",
+    "sources": [
+      {
+        "id": "AS-A013-1",
+        "title": "Fields Medal -- Cédric Villani",
+        "url": "https://www.mathunion.org/fileadmin/IMU/ICM2010/offline/www.icm2010.in/prize-winners-2010/fields-medal-cedric-villani.html",
+        "publisher": "International Mathematical Union / ICM 2010",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "授奖理由及研究介绍段落",
+        "supports": "2010 年奖项关系、Boltzmann／Landau／最优运输贡献的区别。",
+        "reading_scope": "有效读取 IMU 保存的 ICM 2010 官方 Villani 页面正文；不是只读取搜索摘要。"
+      },
+      {
+        "id": "AS-A013-2",
+        "title": "Mouhot and Villani -- On Landau damping",
+        "url": "https://arxiv.org/html/0904.2760v5",
+        "publisher": "arXiv；作者 Clément Mouhot、Cédric Villani",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "Sections 2.3--2.4，Theorem 2.6，equations (2.13)--(2.20)",
+        "supports": "非线性阻尼、解析与稳定性前提、小扰动、弱／强收敛区别及能量与熵守恒。",
+        "reading_scope": "有效读取 arXiv v5 的 HTML 转换文本：定理 2.6 及 2.4 的相关评论；同时读取摘要页核对 v5 为 2009-12-06 版本，正式期刊发表为 2011 年。未通读完整证明；HTML 转换页的处理日期不当作研究发表日期。"
+      },
+      {
+        "id": "AS-A013-3",
+        "title": "John Lott -- Optimal transport and Ricci curvature for metric-measure spaces",
+        "url": "https://math.berkeley.edu/~lott/0610154.pdf",
+        "publisher": "作者 John Lott 的 UC Berkeley 主页",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "Introduction；Section 1，equations (1.1)--(1.2)",
+        "supports": "运输计划的边缘约束、平方距离成本、Wasserstein 距离及 Monge 映射与计划的区别。",
+        "reading_scope": "有效读取作者站 PDF，页眉标注 arXiv math/0610154v3（2007-07-30）；读取 PDF 第 1--5 页的引言和最优运输定义。这是研究作者的综述，非 Lott--Villani 原论文证明全文。"
+      },
+      {
+        "id": "AS-A013-4",
+        "title": "Horng-Tzer Yau -- The work of Cédric Villani",
+        "url": "https://www.mathunion.org/fileadmin/IMU/ICM2010/offline/www.icm2010.in/wp-content/icmfiles/laudaions/fields4.pdf",
+        "publisher": "International Mathematical Union / ICM 2010",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "Section 3，Optimal Transportation and Curvature；Section 4 开头",
+        "supports": "Villani 最优运输研究与动力方程研究的关系及前人归属。",
+        "reading_scope": "有效读取 IMU 官方赞辞 PDF 的 Section 3 与 Section 4 开头（PDF 第 4--6 页）；未将赞辞当作原始证明。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A013-K1",
+        "text": "IMU 的 2010 年授奖说明强调 Villani 的非线性 Landau 阻尼与 Boltzmann 平衡收敛工作，并另述最优运输贡献。",
+        "source_ids": [
+          "AS-A013-1",
+          "AS-A013-4"
+        ]
+      },
+      {
+        "id": "A013-K2",
+        "text": "平方成本的 Wasserstein 距离通过满足给定边缘分布的运输计划求最小成本；一般计划不必来自单个 Monge 映射。",
+        "source_ids": [
+          "AS-A013-3"
+        ]
+      },
+      {
+        "id": "A013-K3",
+        "text": "Mouhot--Villani 的解析非线性阻尼定理要求背景稳定性、势函数界与指定范数下的小扰动；宏观力场衰减不等同于完整分布强收敛。",
+        "source_ids": [
+          "AS-A013-2"
+        ]
+      },
+      {
+        "id": "A013-K4",
+        "text": "该无碰撞 Vlasov 演化保持总能量与细粒度熵；相混合涉及信息在空间与速度变量间的转移。",
+        "source_ids": [
+          "AS-A013-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "核对官方授奖说明、研究定理与部分技术评论，以及作者最优运输综述；未完整审计 Boltzmann、Landau 或 Ricci 曲率证明，未验证人生决策迁移。"
+    }
+  },
+  {
+    "id": "A014",
+    "title": "Green--Tao：质数中的任意长等差数列",
+    "keywords": [
+      "菲尔兹奖",
+      "Terence Tao",
+      "Ben Green",
+      "质数",
+      "等差数列",
+      "相对密度",
+      "伪随机",
+      "迁移原理",
+      "菲尔兹",
+      "陶哲轩"
+    ],
+    "award": {
+      "name": "Fields Medal",
+      "year": 2006,
+      "laureates": [
+        "Terence Tao"
+      ],
+      "relation": "IMU 授奖范围包括偏微分方程、组合数学、调和分析与加性数论。Green--Tao 定理是其中加性数论的学习入口，研究由 Ben Green 与 Terence Tao 合作完成；不称 Ben Green 为本奖得主，也不称 2007 年版本独立获得 2006 年奖。"
+    },
+    "research": {
+      "problem": "质数在整数中的密度趋于 0，仍然是否包含任意长的等差结构？怎样把适用于稠密集合的结论转移到特定稀疏集合？",
+      "principle": "先承认普通正密度定理无法直接覆盖全部质数，再构造具有受控伪随机性质的包络，并要求相对密度。迁移原理把已有的 Szemerédi 定理引入这一新环境；伪随机不是日常语言中的看起来随机。",
+      "formal_statement": "对每个正整数 k，存在无穷多组正整数 a、d（d>0），使 a,a+d,...,a+(k-1)d 全部为质数。更强版本：若 A 是质数的子集且 limsup_{N→∞} |A∩[1,N]|/pi(N)>0，则 A 包含无穷多条任意给定长度 k 的非平凡等差数列。",
+      "evidence_type": "theorem",
+      "assumptions": [
+        "主定理中的对象是质数与整数等差数列，不要求质数在全体整数中有正密度。",
+        "质数子集版本要求相对于质数的正上密度；不能把任意无限子集直接代入。",
+        "证明的迁移步骤有正式的线性形式条件与相关条件，并借用 Szemerédi 定理等既有结果。"
+      ],
+      "limitations": [
+        "存在性结论不承诺在任意小范围内找到所需数列，也不提供日常问题的快速搜索保证。",
+        "不能仅凭有限样本表现随机，就断言论文的伪随机前提成立。",
+        "证明处理的是特定数论结构，不表示所有稀缺资源、机会或个人经历都必然存在相同结构。",
+        "本卡未逐步审计完整证明及其引用定理。"
+      ]
+    },
+    "model_ids": [
+      "P002",
+      "P004",
+      "P098"
+    ],
+    "use_when": [
+      "学习存在性定理、构造例子和高效算法之间的区别。",
+      "学习普通密度与相对密度的分母差异。",
+      "理解跨领域借用定理前为什么必须建立严格的桥接条件。"
+    ],
+    "decision_application": {
+      "status": "learning_only",
+      "mechanism": "用于数论与证明方法学习；迁移原理的术语不能自动转成适用于普通人生问题的规律。",
+      "steps": [
+        "明确数列长度 k 与非零公差 d；把主定理改写成量词表达。",
+        "检验一个小例子，同时说明例子不能证明对全部 k 成立。",
+        "区分质数的整数密度与某个质数子集的相对密度。",
+        "学习原文为何引入伪随机包络，并列出借用结论的额外前提。"
+      ],
+      "example": {
+        "scenario": "学习者问：质数越来越稀疏，为什么还能有长等差数列？",
+        "application": "先检查 5、11、17、23、29 是长度 5、公差 6 的质数等差数列。再区分三个命题：这个例子存在；每个 k 都有例子；在给定搜索上限内能迅速找到例子。只有第二项是本卡定理的核心结论。",
+        "boundary": "算例与教学顺序由编写者设计；它们不证明定理，不预测个人机会，也不承诺搜索效率。"
+      },
+      "stop_conditions": [
+        "用户问题没有整数、质数或可验证的数学结构时，不借本定理作结果预测。",
+        "仅有看起来随机的样本时，不声称已满足伪随机或相对密度条件。"
+      ]
+    },
+    "misuse": [
+      "把任意无限质数子集都说成必有任意长等差数列。",
+      "把存在性证明等同于容易找到或很快发生。",
+      "把证明中的伪随机与独立同分布混为一谈。",
+      "把合作者 Ben Green 写成 2006 年菲尔兹奖得主。"
+    ],
+    "transfer_note": "本卡将量词、分母和桥接前提整理成学习练习，是编写者的教学映射；不提出经验证的人生决策收益。",
+    "sources": [
+      {
+        "id": "AS-A014-1",
+        "title": "Fields Medals 2006 -- Terence Tao",
+        "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2006",
+        "publisher": "International Mathematical Union",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "Terence Tao 的授奖条目",
+        "supports": "得主、年份与整体授奖范围。",
+        "reading_scope": "有效读取 IMU 官方 2006 年奖项页的 Terence Tao 条目，非搜索摘要。"
+      },
+      {
+        "id": "AS-A014-2",
+        "title": "Ben Green and Terence Tao -- The primes contain arbitrarily long arithmetic progressions",
+        "url": "https://arxiv.org/html/math/0404188v6",
+        "publisher": "arXiv；作者 Ben Green、Terence Tao",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "Section 1，Theorems 1.1--1.2；Section 2 的迁移与伪随机包络说明",
+        "supports": "主定理、相对密度版本、证明思路与既有定理依赖。",
+        "reading_scope": "有效读取 arXiv v6 HTML 的摘要、Section 1 及 Section 2 的相关论述；另读摘要页核对 2004 年初稿与 2007 年 v6 日期。未通读 56 页证明及附录，也未声称审计引用定理。"
+      },
+      {
+        "id": "AS-A014-3",
+        "title": "ICM 2006 -- Terence Tao plenary lecture announcement",
+        "url": "https://www.mathunion.org/fileadmin/IMU/ICM2006/offline/icm2006.mathunion.org/press/bulletins/bulletin15/index.html",
+        "publisher": "International Mathematical Union / ICM 2006",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "Tao 与 Green 合作证明质数等差数列的介绍",
+        "supports": "该数论工作在 2006 年以前已形成，以及 Ben Green 的共同作者身份。",
+        "reading_scope": "有效读取 IMU 保存的 ICM 2006 官方公告正文中关于 Green 与 Tao 的研究介绍；不把公告当作定理证明。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A014-K1",
+        "text": "Tao 的 2006 年奖项表彰多个数学领域的贡献；质数等差数列工作由 Green 与 Tao 合作完成。",
+        "source_ids": [
+          "AS-A014-1",
+          "AS-A014-2",
+          "AS-A014-3"
+        ]
+      },
+      {
+        "id": "A014-K2",
+        "text": "质数含有无穷多条每个给定长度的等差数列；质数子集推广需要相对正上密度。",
+        "source_ids": [
+          "AS-A014-2"
+        ]
+      },
+      {
+        "id": "A014-K3",
+        "text": "证明通过具有形式条件的伪随机包络与迁移原理借用 Szemerédi 定理，不能把普通稠密集合定理直接应用于质数。",
+        "source_ids": [
+          "AS-A014-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "核对 IMU 授奖范围、合作关系与原论文定理和证明思路；未完整审计证明，未验证跨到个人决策的经验效果。"
+    }
+  },
+  {
+    "id": "A015",
+    "title": "Mirzakhani：双曲曲面上的简单闭测地线计数",
+    "keywords": [
+      "菲尔兹奖",
+      "Maryam Mirzakhani",
+      "双曲几何",
+      "黎曼曲面",
+      "模空间",
+      "测地线",
+      "渐近",
+      "动力学",
+      "菲尔兹",
+      "米尔扎哈尼"
+    ],
+    "award": {
+      "name": "Fields Medal",
+      "year": 2014,
+      "laureates": [
+        "Maryam Mirzakhani"
+      ],
+      "relation": "IMU 表彰其对黎曼曲面及模空间几何与动力学的贡献。本卡选取早期简单闭测地线计数结果作学习入口，不把某个单独公式等同于全部授奖成果，也不以 2014 年之后发表的论文替代当时贡献。"
+    },
+    "research": {
+      "problem": "给定双曲曲面，长度不超过 L 的闭测地线有多少？增加不自相交的简单性约束后，计数增长是否仍然相同？",
+      "principle": "计数对象的约束会改变增长结构。简单闭测地线计数与测度层、映射类群作用及模空间体积联系起来；在固定曲面上通过这些结构研究大 L 极限，而不是只由少量曲线外推增长。",
+      "formal_statement": "对固定闭合、连通、可定向的双曲曲面 X，亏格 g≥2，设 s_X(L) 为长度≤L 的简单闭测地线数，则 s_X(L) ~ c_X L^(6g-6)，c_X>0。符号 ~ 意为二者比值在 L→∞ 时趋于 1。本卡采用闭曲面特例；原作者稿还讨论带 n 个尖点的有限面积情形及 6g-6+2n 指数。",
+      "evidence_type": "theorem",
+      "assumptions": [
+        "本卡正式表述固定闭合、连通、可定向的双曲曲面，亏格至少为 2。",
+        "只计简单闭测地线，不把自相交曲线、重复遍历或任意路径混入。",
+        "结果描述长度上限趋于无穷时的渐近行为，系数取决于曲面几何。"
+      ],
+      "limitations": [
+        "渐近公式不是任意有限 L 的精确计数，也不能不加误差分析地给出数值精度。",
+        "一般闭测地线与简单闭测地线是不同计数问题；不能把一种增长率套入另一种。",
+        "不同拓扑或几何设置需检查相应定理，不把可定向双曲曲面的条件静默取消。",
+        "曲面、长度与曲线都不是人生选择的自动对应物；本卡不提供所谓最优人生路径定理。"
+      ]
+    },
+    "model_ids": [
+      "P003",
+      "P010",
+      "P098"
+    ],
+    "use_when": [
+      "学习约束改变后为什么必须重新定义计数对象。",
+      "练习渐近等价、精确等式与有限样本估计的区别。",
+      "了解几何与动力学如何在原研究中连接。"
+    ],
+    "decision_application": {
+      "status": "learning_only",
+      "mechanism": "用于几何与渐近分析学习。拓扑模型编号只提供阅读导航，不把曲面定理当作普通人生选择的证明。",
+      "steps": [
+        "定义曲面、亏格、测地线与不自相交；画出简单和非简单曲线作对照。",
+        "说清计数对象，再解释 ~ 的极限含义。",
+        "在 g=2 的特例代入指数，辨认哪些推断仅在大 L 下成立。",
+        "再阅读原文如何用映射类群作用、测度层和模空间体积研究计数，不以比喻替代证明。"
+      ],
+      "example": {
+        "scenario": "学习者把 g=2 时的 s_X(L) ~ c_X L^6 理解为：长度翻倍，数量一定精确增加 64 倍。",
+        "application": "指出原式是渐近关系，可推出 s_X(2L)/s_X(L)→64，但不能保证某个有限 L 上比值恰等于 64。再让学习者说明 c_X 与 X 的关系，以及为什么不能把非简单闭测地线混进样本。",
+        "boundary": "这是编写者从定理设计的练习，不是有限长度计数的实测结果，也不是现实机会增长的预测。"
+      },
+      "stop_conditions": [
+        "用户寻求人生选项或路径建议，而没有可定义的几何问题时，停止引用本定理计算最优路线。",
+        "需要有限 L 的精确数字而没有误差界或计算资料时，不以渐近式冒充精确答案。"
+      ]
+    },
+    "misuse": [
+      "把简单闭曲线的多项式增长与一般闭测地线的指数增长混为一谈。",
+      "把渐近等价改写成有限范围的精确等式。",
+      "把几何中的测地线当作所有生活目标共同认可的最短人生路径。",
+      "把后来的合作成果或发表日期错写为 2014 年单篇获奖事实。"
+    ],
+    "transfer_note": "步骤与算例是编写者的学习映射；没有原研究证据支持将测地线增长定理直接迁移到个人机会、职业或关系决策。",
+    "sources": [
+      {
+        "id": "AS-A015-1",
+        "title": "Fields Medals 2014 -- Maryam Mirzakhani",
+        "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2014",
+        "publisher": "International Mathematical Union",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "Maryam Mirzakhani 授奖条目",
+        "supports": "2014 年得主及黎曼曲面、模空间几何与动力学的授奖范围。",
+        "reading_scope": "有效读取 IMU 官方 2014 年奖项页的 Mirzakhani 条目。"
+      },
+      {
+        "id": "AS-A015-2",
+        "title": "Maryam Mirzakhani -- Growth of the number of simple closed geodesics on hyperbolic surfaces",
+        "url": "https://www.math.stonybrook.edu/~mlyubich/Archive/Geometry/Teichmuller%20Space/Mirz1.pdf",
+        "publisher": "Stony Brook University 数学系保存的作者稿",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "Introduction，Theorems 1.1--1.2，Corollary 1.3；Background 开头",
+        "supports": "计数定义、渐近指数、系数与曲面关系、测度层和模空间的连接。",
+        "reading_scope": "有效读取作者稿 PDF 第 1--6 页，封面日期 2004-04-11，全文 27 页；读取引言、所列定理及背景开头，未通读后续证明，未将作者稿当成期刊排版版本。"
+      },
+      {
+        "id": "AS-A015-3",
+        "title": "The Work of Maryam Mirzakhani",
+        "url": "https://www.mathunion.org/fileadmin/IMU/Prizes/Fields/2014/news_release_mirzakhani.pdf",
+        "publisher": "International Mathematical Union",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "PDF 第 1--2 页，简单与一般闭测地线的介绍",
+        "supports": "授奖研究背景及两类计数的区别。",
+        "reading_scope": "有效读取 IMU 官方研究介绍 PDF 前两页中有关黎曼曲面及闭测地线计数的段落；这是官方介绍，非原始定理证明。"
+      },
+      {
+        "id": "AS-A015-4",
+        "title": "Growth of the number of simple closed geodesics on hyperbolic surfaces -- publication record",
+        "url": "https://annals.math.princeton.edu/2008/168-1/p03",
+        "publisher": "Annals of Mathematics",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "Volume 168 (2008)，Issue 1，pages 97--125；作者与 DOI",
+        "supports": "该研究的期刊版本题名、作者与刊载年份。",
+        "reading_scope": "有效读取期刊条目元数据；该条目未展示证明全文，因此不用于宣称通读正式期刊版本。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A015-K1",
+        "text": "Mirzakhani 的 2014 年菲尔兹奖授奖范围为黎曼曲面及其模空间的几何与动力学。",
+        "source_ids": [
+          "AS-A015-1"
+        ]
+      },
+      {
+        "id": "A015-K2",
+        "text": "固定闭合可定向双曲曲面上的简单闭测地线数量有 c_X L^(6g-6) 的渐近形式；这与一般闭测地线计数是不同问题。",
+        "source_ids": [
+          "AS-A015-2",
+          "AS-A015-3"
+        ]
+      },
+      {
+        "id": "A015-K3",
+        "text": "研究把计数与测度层、映射类群作用以及模空间体积相联系；本卡只核对引言中的定理声明与解释，未完整审计证明。",
+        "source_ids": [
+          "AS-A015-2"
+        ]
+      },
+      {
+        "id": "A015-K4",
+        "text": "所选研究有 2004 年作者稿，并刊载于 Annals of Mathematics 168 (2008)，第 97--125 页。",
+        "source_ids": [
+          "AS-A015-2",
+          "AS-A015-4"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "核对 IMU 授奖、作者稿的定理与限定对象以及期刊元数据；未通读全文证明、未验证有限 L 数值误差或人生类比。"
+    }
+  },
+  {
+    "id": "A016",
+    "title": "Huh 与合作者：拟阵的 Hodge 理论与对数凹性",
+    "keywords": [
+      "菲尔兹奖",
+      "June Huh",
+      "拟阵",
+      "matroid",
+      "Hodge",
+      "对数凹性",
+      "特征多项式",
+      "组合几何",
+      "独立集",
+      "菲尔兹",
+      "许埈珥",
+      "许俊珥"
+    ],
+    "award": {
+      "name": "Fields Medal",
+      "year": 2022,
+      "laureates": [
+        "June Huh"
+      ],
+      "relation": "IMU 授奖包括把 Hodge 理论引入组合学、拟阵猜想、Lorentzian 多项式等多项贡献。本卡聚焦 Karim Adiprasito、June Huh 与 Eric Katz 共同完成的拟阵 Hodge 理论与对数凹性，不将全部授奖贡献归为这一篇论文。"
+    },
+    "research": {
+      "problem": "有限拟阵的特征多项式系数为何满足对数凹性？几何方法如何超越可由向量配置实现的拟阵，处理一般组合对象？",
+      "principle": "为拟阵构造具有 Hodge 性质的代数结构，证明 hard Lefschetz 与 Hodge--Riemann 关系，再由相应不等式推出组合系数的对数凹性。研究扩大了几何工具可严格处理的对象；跨域不是仅凭相似名称。",
+      "formal_statement": "有限无环元拟阵 M 的秩为 r，写 chi_M(lambda)=sum_{k=0}^r (-1)^k w_k lambda^(r-k)，其中 w_k≥0，则 w_k^2≥w_(k-1) w_(k+1)（1≤k<r）。一般有限拟阵按大小计数的独立集数 f_k 也满足 f_k^2≥f_(k-1) f_(k+1)。",
+      "evidence_type": "theorem",
+      "assumptions": [
+        "对象必须是有限拟阵，满足独立性的遗传与交换公理；任意可行集合系统不自动构成拟阵。",
+        "特征多项式对数凹性使用交替系数的绝对值，不能对带符号系数直接照搬非负序列定义。",
+        "本卡特征多项式表述采用无环元情形以避免零多项式的退化情况；独立集计数结论可表述于一般有限拟阵。",
+        "原研究的 Chow 环与 Hodge 结论有正式的代数和凸性条件；只测出数据对数凹并不证明这些结构存在。"
+      ],
+      "limitations": [
+        "对数凹性约束相邻项的形状，不能直接等同于经济学中的个人边际效用递减。",
+        "现实任务的时间、成本、偏好和互相依赖未必满足拟阵交换公理。",
+        "样本序列通过某几个不等式不能证明总体来自拟阵，不能证明因果或最优人生选择。",
+        "本卡核对论文的定义、主要定理与推论；未完整审计 72 页证明。"
+      ]
+    },
+    "model_ids": [
+      "P001",
+      "P008",
+      "P098"
+    ],
+    "use_when": [
+      "学习怎样把独立性抽象为可检验的公理。",
+      "学习对数凹、单峰与任意增长趋势的区别。",
+      "研究几何思想进入组合问题时需要建立哪些正式结构。"
+    ],
+    "decision_application": {
+      "status": "learning_only",
+      "mechanism": "提供组合数学学习与结构核对练习。只有独立性公理和目标函数另行成立时，才可进一步研究相应优化问题；本卡的对数凹定理本身不保证优化算法或生活决策表现。",
+      "steps": [
+        "先定义地面集与独立集，检查空集、遗传性和交换性质。",
+        "对小拟阵按大小列出独立集数，再计算相邻项对数凹不等式。",
+        "分清特征多项式交替系数与其绝对值。",
+        "学习原论文如何构造 Chow 环并取得 Hodge 关系，保留证明中结构与数值观察的区别。"
+      ],
+      "example": {
+        "scenario": "数学练习：地面集为 {a,b,c}，所有大小不超过 2 的子集独立，构成均匀拟阵 U_(2,3)。",
+        "application": "独立集计数为 (1,3,3)，检查中间项 3^2≥1×3。随后让学习者检查集合族 {∅,{a},{b},{c},{a,b}}：从 {c} 向更大的 {a,b} 添加 a 或 b 都不独立，故交换公理失败，即使其计数外观也可能满足对数凹。",
+        "boundary": "编写者构造的练习展示必要的结构核对；少量计算不证明一般定理，更不表明现实选项集合满足拟阵条件。"
+      },
+      "stop_conditions": [
+        "可行集合不满足交换公理时，不借拟阵定理宣称其规律或算法保证。",
+        "用户只提供生活趋势数据时，不套用 Hodge 理论解释行为或预测结果。"
+      ]
+    },
+    "misuse": [
+      "把非负绝对值系数与交替带符号系数混为一谈。",
+      "把所有约束优化问题当作拟阵。",
+      "把对数凹性自动解读为边际收益递减或最佳选项个数。",
+      "只记住 Huh，遗漏 Adiprasito 与 Katz 对所选论文的共同贡献。"
+    ],
+    "transfer_note": "教学步骤与小集合算例由编写者设计。现实问题的拟阵建模需要另行检验，不能把本卡作为未经验证的生活规律。",
+    "sources": [
+      {
+        "id": "AS-A016-1",
+        "title": "June Huh -- Fields Medal 2022 citation",
+        "url": "https://www.mathunion.org/fileadmin/IMU/Prizes/Fields/2022/IMU_Fields22_Huh_citation.pdf",
+        "publisher": "International Mathematical Union",
+        "source_type": "official_summary",
+        "checked_on": "2026-10-12",
+        "locator": "Short citation 与 Long citation",
+        "supports": "2022 年授奖范围及 Adiprasito--Huh--Katz 合作研究的关系。",
+        "reading_scope": "有效读取 IMU 官方一页授奖 PDF 的短、长说明；非搜索摘要。"
+      },
+      {
+        "id": "AS-A016-2",
+        "title": "Adiprasito, Huh and Katz -- Hodge theory for combinatorial geometries",
+        "url": "https://web.math.princeton.edu/~huh/MatroidHodge.pdf",
+        "publisher": "作者 June Huh 的 Princeton University 主页；Annals of Mathematics 188 (2018)",
+        "source_type": "primary",
+        "checked_on": "2026-10-12",
+        "locator": "Section 1，Definition 1.3 与 Theorem 1.4；Section 9.2，Proposition 9.8 与 Theorem 9.9",
+        "supports": "拟阵对象、代数构造、Hodge 关系及特征多项式与独立集计数的对数凹结论。",
+        "reading_scope": "有效读取作者站期刊排版 PDF，第 381--385 页的引言、定义及主定理，并读取第 445--447 页的相关引理和结论；PDF 共 72 页。未逐步审计中间完整证明，也不将结论声称为独立复证。"
+      }
+    ],
+    "claims": [
+      {
+        "id": "A016-K1",
+        "text": "Huh 的 2022 年授奖包括把 Hodge 理论引入组合学；IMU 明确列出 Adiprasito、Huh 与 Katz 对一般拟阵 Hodge 理论的合作。",
+        "source_ids": [
+          "AS-A016-1"
+        ]
+      },
+      {
+        "id": "A016-K2",
+        "text": "该研究为拟阵关联的代数结构证明 hard Lefschetz 与 Hodge--Riemann 关系，并由此推出特征多项式绝对值系数对数凹。",
+        "source_ids": [
+          "AS-A016-2"
+        ]
+      },
+      {
+        "id": "A016-K3",
+        "text": "论文的结论还包括拟阵独立集数按大小组成的序列对数凹；所论对象是满足公理的拟阵，不是任意集合系统。",
+        "source_ids": [
+          "AS-A016-2"
+        ]
+      }
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "limitations": "核对官方授奖、期刊作者版的定义、主定理与第 9 节推论；未完整审计证明，未验证现实约束满足拟阵公理或生活效果。"
+    }
+  }
+]

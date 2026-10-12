@@ -15,6 +15,14 @@
 
 新条目可放入独立 `cases-<topic>.json` 及对应 `sources-<topic>.json`。保持当前记录字段语义与 ID 唯一性，不能用新 ID 绕过旧事实修订。无支持的候选留在用户指定研究区，不混入已核验事实；修改模型范围需先明确授权，并同步模型索引及相关验证约束。
 
+## 获奖研究卡
+
+获奖研究卡独立存于 `award-research-<topic>.json`，使用稳定 A 编号，卡内来源用 `AS-Axxx-n`，主张用 `Axxx-Kn`。它不增加模型数、历史案例数或案例来源数；清单另计研究卡、研究来源条目和研究主张，来源条目不等于独立研究。
+
+新增前按研究对象、核心成果和论文身份去重。实际读官方授奖材料与原论文、作者稿或技术报告，记录 `reading_scope`、版本、定位与核验日；未读证明不能声称完整证明检查。每条研究主张连接卡内具体来源。获奖关系应精确到整体贡献与所选研究，不把共同研究者都称为获奖者。
+
+区分原结论与 `transfer_note` 的分析者迁移；`decision_application.status` 标为 `direct`、`conditional` 或 `learning_only`。生活步骤与示例不能伪装成研究检验过的效果，缺少操作意义时保留学习用途。更新 [research-index.md](research-index.md)、清单与相关文档，再运行整库、检索及现实使用验证。未核验候选不进入正式卡片。
+
 ## 四批事实事件与快照
 
 `references/event-data/` 是四批精选字段的核验快照；`event_records.py` 只从这些快照确定性生成现有 FDIC、CFPB、ClinicalTrials.gov、Nobel 四批共 900 条记录，没有联网抓取功能，也不自动扩批次。

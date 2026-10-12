@@ -20,10 +20,10 @@ description: "用跨学科模型和可追溯证据辅助普通人各类人生决
 | 选模型 | [model-index.md](references/model-index.md)，再读选中的模型卡 |
 | 查历史案例、事实事件或案例覆盖 | [case-index.md](references/case-index.md) |
 | 核验主张、讨论因果、引用当前事实 | [evidence.md](references/evidence.md) |
-| 学习获奖研究成果 | [awards.md](references/awards.md) |
+| 学习获奖研究，或用其检查当前选择 | [awards.md](references/awards.md)，再按主题读 [research-index.md](references/research-index.md) 与选中研究卡 |
 | 用户授权保存、扩库或维护 | [maintenance.md](references/maintenance.md) |
 
-路径相对于本 Skill 目录。模型在 `references/models-*.json`；案例在 `references/cases.json` 与 `cases-*.json`；来源在 `sources-*.json`；四类事实事件的精选原始字段在 `references/event-data/`。不要一次读入全部记录。
+路径相对于本 Skill 目录。模型在 `references/models-*.json`；案例在 `references/cases.json` 与 `cases-*.json`；来源在 `sources-*.json`；四类事实事件的精选原始字段在 `references/event-data/`。获奖研究在 `references/award-research-*.json`，使用 A 编号，卡内来源为 AS 编号；独立于模型与案例。不要一次读入全部记录。
 
 有 Python 时，将 `<skill-dir>` 替换为实际绝对路径：
 
@@ -35,6 +35,9 @@ python "<skill-dir>/scripts/catalog.py" search "监管" --cases --record-type ev
 python "<skill-dir>/scripts/catalog.py" search "约束" --cases --model P007 --limit 5
 python "<skill-dir>/scripts/catalog.py" show C011
 python "<skill-dir>/scripts/catalog.py" show D-NASA001
+python "<skill-dir>/scripts/catalog.py" search "心理账户" --research
+python "<skill-dir>/scripts/catalog.py" search "菲尔兹" --research --application learning_only
+python "<skill-dir>/scripts/catalog.py" show A002
 python "<skill-dir>/scripts/catalog.py" stats
 ```
 
@@ -45,6 +48,8 @@ python "<skill-dir>/scripts/catalog.py" stats
 1. **理清要决定什么。** 接住用户的困惑，区分想被理解、澄清方向、比较选项或马上行动。按需了解目标、时间窗、实际约束、不可接受的损失与价值偏好；选项未知时一起找选项。只询问会改变方向的缺口，其余用明确的条件假设继续；不代设家庭责任、承受力或人生目标。
 2. **拆出依据与取舍。** 分开已知事实、用户陈述、推断、待验证假设和价值选择。感受与价值偏好是决策输入，不当作需要外部证明的事实；只在问题定义妨碍解决时重构问题。
 3. **选相关模型。** 通常用 2 至 4 个互补模型，说明各自改变哪项判断、所需输入和失效条件。简单问题可以不用；数量不是完成标准。类比与模型不能替代对具体人的理解。
+   选到获奖研究时先看 `decision_application.status`、前提与限制。只有能说明它会改变当前哪项判断时才读并使用；`learning_only` 支持理解与练习，不直接生成生活建议。具体使用步骤见 [awards.md](references/awards.md)，未命中研究卡不限制问题或代替按需查证。
+
 4. **核查关键事实。** 读取实际出处与限制。涉及当前政策、价格、产品、市场、医疗、法律或金融事实与专业建议时查询当下一手来源；不为理解个人感受而强制检索。历史案例注明迁移条件和本次分析映射。
 5. **比较可行路径。** 先检查硬约束，再按用户重视的维度比较取舍、机会成本、风险与可逆性；必要时纳入维持现状、暂缓或分步选择。未知概率不编百分比；主观评分明确性质并检查敏感性。关系、尊严、健康与意义不能默认折算为金钱，也不强求唯一最优解。
 6. **落实合适的下一步。** 给出建议及成立条件、会改变建议的信息和可行的第一步；按需要增加投入上限、观察信号、停止条件和复盘触发点。简单选择可直接短答，重大选择可分步推进；试验与指标只在合适时使用，涉及他人的步骤应尊重其意愿与边界。
