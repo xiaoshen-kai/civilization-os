@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "D-NASA001",
+    "title": "NASA LLIS 历史条目 58：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C011：Lesson ID=58 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 58,
+    "original_record_url": "https://llis.nasa.gov/lesson/58",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 1,
+        "lesson_id": 58
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 1,
+        "lesson_id": 58
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 1,
+        "lesson_id": 58
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA002",
+    "title": "NASA LLIS 历史条目 53：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C012：Lesson ID=53 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 53,
+    "original_record_url": "https://llis.nasa.gov/lesson/53",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 4,
+        "lesson_id": 53
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 4,
+        "lesson_id": 53
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 4,
+        "lesson_id": 53
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA003",
+    "title": "NASA LLIS 历史条目 1377：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C013：Lesson ID=1377 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1377,
+    "original_record_url": "https://llis.nasa.gov/lesson/1377",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 122,
+        "lesson_id": 1377
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 122,
+        "lesson_id": 1377
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 122,
+        "lesson_id": 1377
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA004",
+    "title": "NASA LLIS 历史条目 4456：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C014：Lesson ID=4456 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 4456,
+    "original_record_url": "https://llis.nasa.gov/lesson/4456",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 6,
+        "lesson_id": 4456
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 6,
+        "lesson_id": 4456
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 6,
+        "lesson_id": 4456
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA005",
+    "title": "NASA LLIS 历史条目 10：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C015：Lesson ID=10 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 10,
+    "original_record_url": "https://llis.nasa.gov/lesson/10",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 8,
+        "lesson_id": 10
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 8,
+        "lesson_id": 10
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 8,
+        "lesson_id": 10
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA006",
+    "title": "NASA LLIS 历史条目 1229：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C016：Lesson ID=1229 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1229,
+    "original_record_url": "https://llis.nasa.gov/lesson/1229",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 9,
+        "lesson_id": 1229
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 9,
+        "lesson_id": 1229
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 9,
+        "lesson_id": 1229
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA007",
+    "title": "NASA LLIS 历史条目 395：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C017：Lesson ID=395 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 395,
+    "original_record_url": "https://llis.nasa.gov/lesson/395",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 10,
+        "lesson_id": 395
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 10,
+        "lesson_id": 395
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 10,
+        "lesson_id": 395
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA008",
+    "title": "NASA LLIS 历史条目 1336：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C018：Lesson ID=1336 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1336,
+    "original_record_url": "https://llis.nasa.gov/lesson/1336",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 14,
+        "lesson_id": 1336
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 14,
+        "lesson_id": 1336
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 14,
+        "lesson_id": 1336
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA009",
+    "title": "NASA LLIS 历史条目 1069：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C019：Lesson ID=1069 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1069,
+    "original_record_url": "https://llis.nasa.gov/lesson/1069",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 16,
+        "lesson_id": 1069
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 16,
+        "lesson_id": 1069
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 16,
+        "lesson_id": 1069
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA010",
+    "title": "NASA LLIS 历史条目 634：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C020：Lesson ID=634 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 634,
+    "original_record_url": "https://llis.nasa.gov/lesson/634",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 123,
+        "lesson_id": 634
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 123,
+        "lesson_id": 634
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 123,
+        "lesson_id": 634
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA011",
+    "title": "NASA LLIS 历史条目 282：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C021：Lesson ID=282 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 282,
+    "original_record_url": "https://llis.nasa.gov/lesson/282",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 18,
+        "lesson_id": 282
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 18,
+        "lesson_id": 282
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 18,
+        "lesson_id": 282
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA012",
+    "title": "NASA LLIS 历史条目 1254：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C022：Lesson ID=1254 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1254,
+    "original_record_url": "https://llis.nasa.gov/lesson/1254",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 20,
+        "lesson_id": 1254
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 20,
+        "lesson_id": 1254
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 20,
+        "lesson_id": 1254
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA013",
+    "title": "NASA LLIS 历史条目 451：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C023：Lesson ID=451 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 451,
+    "original_record_url": "https://llis.nasa.gov/lesson/451",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 22,
+        "lesson_id": 451
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 22,
+        "lesson_id": 451
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 22,
+        "lesson_id": 451
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA014",
+    "title": "NASA LLIS 历史条目 77：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C024：Lesson ID=77 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 77,
+    "original_record_url": "https://llis.nasa.gov/lesson/77",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 24,
+        "lesson_id": 77
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 24,
+        "lesson_id": 77
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 24,
+        "lesson_id": 77
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA015",
+    "title": "NASA LLIS 历史条目 105：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C025：Lesson ID=105 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 105,
+    "original_record_url": "https://llis.nasa.gov/lesson/105",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 26,
+        "lesson_id": 105
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 26,
+        "lesson_id": 105
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 26,
+        "lesson_id": 105
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA016",
+    "title": "NASA LLIS 历史条目 556：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C026：Lesson ID=556 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 556,
+    "original_record_url": "https://llis.nasa.gov/lesson/556",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 27,
+        "lesson_id": 556
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 27,
+        "lesson_id": 556
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 27,
+        "lesson_id": 556
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA017",
+    "title": "NASA LLIS 历史条目 1275：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C027：Lesson ID=1275 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1275,
+    "original_record_url": "https://llis.nasa.gov/lesson/1275",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 28,
+        "lesson_id": 1275
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 28,
+        "lesson_id": 1275
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 28,
+        "lesson_id": 1275
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA018",
+    "title": "NASA LLIS 历史条目 531：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C028：Lesson ID=531 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 531,
+    "original_record_url": "https://llis.nasa.gov/lesson/531",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 33,
+        "lesson_id": 531
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 33,
+        "lesson_id": 531
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 33,
+        "lesson_id": 531
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA019",
+    "title": "NASA LLIS 历史条目 50：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C029：Lesson ID=50 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 50,
+    "original_record_url": "https://llis.nasa.gov/lesson/50",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 34,
+        "lesson_id": 50
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 34,
+        "lesson_id": 50
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 34,
+        "lesson_id": 50
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA020",
+    "title": "NASA LLIS 历史条目 203：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C030：Lesson ID=203 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 203,
+    "original_record_url": "https://llis.nasa.gov/lesson/203",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 38,
+        "lesson_id": 203
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 38,
+        "lesson_id": 203
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 38,
+        "lesson_id": 203
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA021",
+    "title": "NASA LLIS 历史条目 914：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C031：Lesson ID=914 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 914,
+    "original_record_url": "https://llis.nasa.gov/lesson/914",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 150,
+        "lesson_id": 914
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 150,
+        "lesson_id": 914
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 150,
+        "lesson_id": 914
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA022",
+    "title": "NASA LLIS 历史条目 1：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C032：Lesson ID=1 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1,
+    "original_record_url": "https://llis.nasa.gov/lesson/1",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 204,
+        "lesson_id": 1
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 204,
+        "lesson_id": 1
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 204,
+        "lesson_id": 1
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA023",
+    "title": "NASA LLIS 历史条目 1593：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C033：Lesson ID=1593 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1593,
+    "original_record_url": "https://llis.nasa.gov/lesson/1593",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 210,
+        "lesson_id": 1593
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 210,
+        "lesson_id": 1593
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 210,
+        "lesson_id": 1593
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA024",
+    "title": "NASA LLIS 历史条目 287：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C034：Lesson ID=287 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 287,
+    "original_record_url": "https://llis.nasa.gov/lesson/287",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 211,
+        "lesson_id": 287
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 211,
+        "lesson_id": 287
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 211,
+        "lesson_id": 287
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA025",
+    "title": "NASA LLIS 历史条目 1849：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C035：Lesson ID=1849 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1849,
+    "original_record_url": "https://llis.nasa.gov/lesson/1849",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 215,
+        "lesson_id": 1849
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 215,
+        "lesson_id": 1849
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 215,
+        "lesson_id": 1849
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA026",
+    "title": "NASA LLIS 历史条目 305：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C036：Lesson ID=305 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 305,
+    "original_record_url": "https://llis.nasa.gov/lesson/305",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 216,
+        "lesson_id": 305
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 216,
+        "lesson_id": 305
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 216,
+        "lesson_id": 305
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA027",
+    "title": "NASA LLIS 历史条目 1780：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C037：Lesson ID=1780 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1780,
+    "original_record_url": "https://llis.nasa.gov/lesson/1780",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 217,
+        "lesson_id": 1780
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 217,
+        "lesson_id": 1780
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 217,
+        "lesson_id": 1780
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA028",
+    "title": "NASA LLIS 历史条目 1200：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C038：Lesson ID=1200 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1200,
+    "original_record_url": "https://llis.nasa.gov/lesson/1200",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 220,
+        "lesson_id": 1200
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 220,
+        "lesson_id": 1200
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 220,
+        "lesson_id": 1200
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA029",
+    "title": "NASA LLIS 历史条目 360：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C039：Lesson ID=360 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 360,
+    "original_record_url": "https://llis.nasa.gov/lesson/360",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 221,
+        "lesson_id": 360
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 221,
+        "lesson_id": 360
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 221,
+        "lesson_id": 360
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA030",
+    "title": "NASA LLIS 历史条目 524：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C040：Lesson ID=524 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 524,
+    "original_record_url": "https://llis.nasa.gov/lesson/524",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 223,
+        "lesson_id": 524
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 223,
+        "lesson_id": 524
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 223,
+        "lesson_id": 524
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA031",
+    "title": "NASA LLIS 历史条目 1391：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C041：Lesson ID=1391 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1391,
+    "original_record_url": "https://llis.nasa.gov/lesson/1391",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 224,
+        "lesson_id": 1391
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 224,
+        "lesson_id": 1391
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 224,
+        "lesson_id": 1391
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA032",
+    "title": "NASA LLIS 历史条目 371：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C042：Lesson ID=371 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 371,
+    "original_record_url": "https://llis.nasa.gov/lesson/371",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 228,
+        "lesson_id": 371
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 228,
+        "lesson_id": 371
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 228,
+        "lesson_id": 371
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA033",
+    "title": "NASA LLIS 历史条目 581：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C043：Lesson ID=581 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 581,
+    "original_record_url": "https://llis.nasa.gov/lesson/581",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 229,
+        "lesson_id": 581
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 229,
+        "lesson_id": 581
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 229,
+        "lesson_id": 581
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA034",
+    "title": "NASA LLIS 历史条目 1090：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C044：Lesson ID=1090 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1090,
+    "original_record_url": "https://llis.nasa.gov/lesson/1090",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 231,
+        "lesson_id": 1090
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 231,
+        "lesson_id": 1090
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 231,
+        "lesson_id": 1090
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA035",
+    "title": "NASA LLIS 历史条目 435：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C045：Lesson ID=435 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 435,
+    "original_record_url": "https://llis.nasa.gov/lesson/435",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 234,
+        "lesson_id": 435
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 234,
+        "lesson_id": 435
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 234,
+        "lesson_id": 435
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA036",
+    "title": "NASA LLIS 历史条目 1721：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C046：Lesson ID=1721 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1721,
+    "original_record_url": "https://llis.nasa.gov/lesson/1721",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 236,
+        "lesson_id": 1721
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 236,
+        "lesson_id": 1721
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 236,
+        "lesson_id": 1721
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA037",
+    "title": "NASA LLIS 历史条目 430：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C047：Lesson ID=430 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 430,
+    "original_record_url": "https://llis.nasa.gov/lesson/430",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 239,
+        "lesson_id": 430
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 239,
+        "lesson_id": 430
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 239,
+        "lesson_id": 430
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA038",
+    "title": "NASA LLIS 历史条目 2419：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C048：Lesson ID=2419 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 2419,
+    "original_record_url": "https://llis.nasa.gov/lesson/2419",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 240,
+        "lesson_id": 2419
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 240,
+        "lesson_id": 2419
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 240,
+        "lesson_id": 2419
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA039",
+    "title": "NASA LLIS 历史条目 1204：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C049：Lesson ID=1204 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1204,
+    "original_record_url": "https://llis.nasa.gov/lesson/1204",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 242,
+        "lesson_id": 1204
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 242,
+        "lesson_id": 1204
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 242,
+        "lesson_id": 1204
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA040",
+    "title": "NASA LLIS 历史条目 3762：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C050：Lesson ID=3762 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 3762,
+    "original_record_url": "https://llis.nasa.gov/lesson/3762",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 243,
+        "lesson_id": 3762
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 243,
+        "lesson_id": 3762
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 243,
+        "lesson_id": 3762
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA041",
+    "title": "NASA LLIS 历史条目 945：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C051：Lesson ID=945 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 945,
+    "original_record_url": "https://llis.nasa.gov/lesson/945",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 151,
+        "lesson_id": 945
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 151,
+        "lesson_id": 945
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 151,
+        "lesson_id": 945
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA042",
+    "title": "NASA LLIS 历史条目 1230：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C052：Lesson ID=1230 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1230,
+    "original_record_url": "https://llis.nasa.gov/lesson/1230",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 250,
+        "lesson_id": 1230
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 250,
+        "lesson_id": 1230
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 250,
+        "lesson_id": 1230
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA043",
+    "title": "NASA LLIS 历史条目 6757：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C053：Lesson ID=6757 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 6757,
+    "original_record_url": "https://llis.nasa.gov/lesson/6757",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 83,
+        "lesson_id": 6757
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 83,
+        "lesson_id": 6757
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 83,
+        "lesson_id": 6757
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA044",
+    "title": "NASA LLIS 历史条目 1192：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C054：Lesson ID=1192 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1192,
+    "original_record_url": "https://llis.nasa.gov/lesson/1192",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 86,
+        "lesson_id": 1192
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 86,
+        "lesson_id": 1192
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 86,
+        "lesson_id": 1192
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA045",
+    "title": "NASA LLIS 历史条目 626：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C055：Lesson ID=626 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 626,
+    "original_record_url": "https://llis.nasa.gov/lesson/626",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 89,
+        "lesson_id": 626
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 89,
+        "lesson_id": 626
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 89,
+        "lesson_id": 626
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA046",
+    "title": "NASA LLIS 历史条目 4417：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C056：Lesson ID=4417 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 4417,
+    "original_record_url": "https://llis.nasa.gov/lesson/4417",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 92,
+        "lesson_id": 4417
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 92,
+        "lesson_id": 4417
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 92,
+        "lesson_id": 4417
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA047",
+    "title": "NASA LLIS 历史条目 550：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C057：Lesson ID=550 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 550,
+    "original_record_url": "https://llis.nasa.gov/lesson/550",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 99,
+        "lesson_id": 550
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 99,
+        "lesson_id": 550
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 99,
+        "lesson_id": 550
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA048",
+    "title": "NASA LLIS 历史条目 1319：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C058：Lesson ID=1319 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 1319,
+    "original_record_url": "https://llis.nasa.gov/lesson/1319",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 101,
+        "lesson_id": 1319
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 101,
+        "lesson_id": 1319
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 101,
+        "lesson_id": 1319
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA049",
+    "title": "NASA LLIS 历史条目 595：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C059：Lesson ID=595 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 595,
+    "original_record_url": "https://llis.nasa.gov/lesson/595",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 109,
+        "lesson_id": 595
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 109,
+        "lesson_id": 595
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 109,
+        "lesson_id": 595
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  },
+  {
+    "id": "D-NASA050",
+    "title": "NASA LLIS 历史条目 664：官方 MIKA 三字段快照",
+    "url": "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Driving_Event_Doccano.json",
+    "additional_urls": [
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Lesson(s)_Learned_Doccano.json",
+      "https://raw.githubusercontent.com/nasa/mika/ecbc1f12aca5317b6ea622bf49d956660bd0f19a/data/doccano/LLIS_Recommendation(s)_Doccano.json"
+    ],
+    "publisher": "NASA；官方 nasa/mika 仓库",
+    "source_type": "primary",
+    "origin_group": "nasa-llis",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "C060：Lesson ID=664 的 Driving Event、Lesson(s) Learned、Recommendation(s) 字段；参见三条主张定位。",
+    "limitations": "同一机构经验条目的三个字段是同一证据组。官方 GitHub 是实际读取的固定版本；当前 LLIS 网站返回页面壳，未将其视为另外一份已读证据。历史现场记录、文中附件及后续整改结果未统一交叉核对。",
+    "mirror_note": "NASA 官方 MIKA 历史 LLIS 数据快照，固定仓库提交；文件历史最新提交日期为 2022-08-16。",
+    "repo_commit": "ecbc1f12aca5317b6ea622bf49d956660bd0f19a",
+    "snapshot_history_commit": "7d5133c97e635b7943b91abf953f212f0a3b6372",
+    "snapshot_history_date": "2022-08-16",
+    "lesson_id": 664,
+    "original_record_url": "https://llis.nasa.gov/lesson/664",
+    "record_locators": {
+      "Driving Event": {
+        "file": "LLIS_Driving_Event_Doccano.json",
+        "line": 142,
+        "lesson_id": 664
+      },
+      "Lesson(s) Learned": {
+        "file": "LLIS_Lesson(s)_Learned_Doccano.json",
+        "line": 142,
+        "lesson_id": 664
+      },
+      "Recommendation(s)": {
+        "file": "LLIS_Recommendation(s)_Doccano.json",
+        "line": 142,
+        "lesson_id": 664
+      }
+    },
+    "artifact_sha256": {
+      "LLIS_Driving_Event_Doccano.json": "c419726f8abeef59382f841509f1ebbea378eb83f232428ba9e12ede2a27f523",
+      "LLIS_Lesson(s)_Learned_Doccano.json": "024d03a982dbd916606aa1f6959e0610b2eabdb5597506844e56e7bd82f25ae4",
+      "LLIS_Recommendation(s)_Doccano.json": "dacbce5ce5c9492935fbb5384f716dacf5070de5f79bdbc025a7748d9d0c81fd"
+    },
+    "reuse_note": "只发布原创中文事实改述及来源定位，不附三份原文快照。仓库未提供单独数据 CC0 声明，不将 NASA 域名或公共访问等同于统一内容许可。"
+  }
+]

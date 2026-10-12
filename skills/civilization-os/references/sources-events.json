@@ -1,0 +1,54 @@
+[
+  {
+    "id": "R-FDIC",
+    "title": "FDIC Bank Failures and Assistance Data",
+    "url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+    "publisher": "Federal Deposit Insurance Corporation",
+    "source_type": "primary",
+    "origin_group": "fdic-failure-data",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "300 条 FAILURE 记录的 ID、名称、地点、生效失败日期及最后申报资产、存款字段；字段定义另见官方 failure_properties.yaml。",
+    "limitations": "按年份覆盖选样；不是失败原因复盘。QBFASSET 和 QBFDEP 单位为千美元，属于生效日前最后申报值；NULL 不表示 0。核验快照不代表当前数据库。",
+    "rights_reference": "https://catalog.data.gov/dataset/bank-failures-and-assistance-data"
+  },
+  {
+    "id": "R-CFPB",
+    "title": "CFPB Enforcement Actions Directory",
+    "url": "https://www.consumerfinance.gov/enforcement/actions/",
+    "publisher": "Consumer Financial Protection Bureau",
+    "source_type": "primary",
+    "origin_group": "cfpb-enforcement-index",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "16 页官方目录所列条目、Date filed 和案例链接；选取 200 个未计入深度复盘的条目。",
+    "limitations": "本来源不证明指控成立、罚款支付、完整事实或最新终止状态。深度案例另有实际全文读取的命令、诉状或公告。政府原创内容与外链第三方材料权利不同。",
+    "rights_reference": "https://www.consumerfinance.gov/privacy/website-privacy-policy/"
+  },
+  {
+    "id": "R-CTG",
+    "title": "ClinicalTrials.gov API v2: posted randomized interventional studies",
+    "url": "https://clinicaltrials.gov/api/v2/studies",
+    "publisher": "National Library of Medicine / ClinicalTrials.gov",
+    "source_type": "primary",
+    "origin_group": "clinicaltrials-registry",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "250 个已公开结果记录的登记号、分配方式、状态、首次结果提交及公开日期、一个主要终点和最多 4 个测量单元；包含原始单位、分母与日期类型。",
+    "limitations": "资料由申办者或研究者申报，收录不等于政府认可疗效。不是完整统计分析，不提供治疗推荐。本包为 2026-10-12 检查的历史选取快照，不反映最当前或最准确的 NLM 数据；第三方文本不一概属于公有领域。",
+    "rights_reference": "https://www.nlm.nih.gov/databases/download.html"
+  },
+  {
+    "id": "R-NOBEL",
+    "title": "Nobel Prize API 2.1: yearly scientific prize records",
+    "url": "https://api.nobelprize.org/2.1/nobelPrizes?limit=1000",
+    "publisher": "Nobel Prize Outreach",
+    "source_type": "primary",
+    "origin_group": "nobel-prize-api",
+    "publication_date": null,
+    "checked_on": "2026-10-12",
+    "supports": "物理学、化学、生理学或医学各 50 个年度类别记录；同一奖项全部获奖者、份额和授奖说明。",
+    "limitations": "抽样覆盖截至 2025 年的获奖记录，不是完整数据库；奖项不能代替原始研究和可复现验证。数据服务条款为 CC0，使用不代表官方背书，不使用其标志。",
+    "rights_reference": "https://www.nobelprize.org/about/terms-of-use-for-api-nobelprize-org-and-data-nobelprize-org/"
+  }
+]

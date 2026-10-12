@@ -1,0 +1,863 @@
+[
+  {
+    "id": "C091",
+    "record_type": "deep_case",
+    "event_key": "postmortem:gitlab:2017-01-31",
+    "title": "GitLab 2017：主库误删与失效备份",
+    "event_time": "2017-01-31",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "GitLab 报告工程师在修复复制时误删主库目录，GitLab.com 中断并丢失部分元数据；代码仓库未遭同类数据丢失。",
+      "报告指出常规 pg_dump 备份因版本不匹配失败，失败邮件也未被送达；恢复使用了约 6 小时前的快照。"
+    ],
+    "decision_context": "复制失效后需要重建从库，恢复路径依赖备份是否真正可用。",
+    "observed_actions": [
+      "终止误删后查找备份，使用较新的 LVM 快照恢复数据库。",
+      "公布改进项，包括恢复演练、环境区分、监测及数据持久性责任人。"
+    ],
+    "outcomes": [
+      "服务恢复，但部分数据库修改无法恢复；不能把公开改进计划视为已长期消除风险。"
+    ],
+    "model_ids": [
+      "P032",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C091.01",
+        "claim": "GitLab 报告工程师在修复复制时误删主库目录，GitLab.com 中断并丢失部分元数据；代码仓库未遭同类数据丢失。",
+        "source_ids": [
+          "D-TECH001"
+        ],
+        "locator": "开头、Timeline 中约 23:30 UTC 段与 Data loss impact",
+        "evidence_strength": "reported",
+        "causal_limit": "运营方自述可支持事故流程及其诊断；未独立重演，也不证明所有后续改进效果。"
+      },
+      {
+        "claim_id": "C091.02",
+        "claim": "报告指出常规 pg_dump 备份因版本不匹配失败，失败邮件也未被送达；恢复使用了约 6 小时前的快照。",
+        "source_ids": [
+          "D-TECH001"
+        ],
+        "locator": "Broken recovery procedures / Database backups using pg_dump；Recovering GitLab.com",
+        "evidence_strength": "reported",
+        "causal_limit": "运营方自述可支持事故流程及其诊断；未独立重演，也不证明所有后续改进效果。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH001"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "运营方自述可支持事故流程及其诊断；未独立重演，也不证明所有后续改进效果。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "恢复能力需要用实际演练与告警闭环确认，单纯列举多种备份方式不足以建立信心。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "数据库",
+      "备份",
+      "恢复",
+      "误删",
+      "灾难恢复",
+      "GitLab"
+    ],
+    "decision_review": {
+      "observed_choice": "终止误删后查找备份，使用较新的 LVM 快照恢复数据库。",
+      "analysis": "恢复能力需要用实际演练与告警闭环确认，单纯列举多种备份方式不足以建立信心。",
+      "next_test": "在隔离环境成功恢复一份最新备份，并测量可恢复时间和丢失窗口。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "在隔离环境成功恢复一份最新备份，并测量可恢复时间和丢失窗口。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  },
+  {
+    "id": "C092",
+    "record_type": "deep_case",
+    "event_key": "postmortem:cloudflare:2019-07-02",
+    "title": "Cloudflare 2019：WAF 正则规则导致全球 CPU 耗尽",
+    "event_time": "2019-07-02",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Cloudflare 报告新 WAF 规则的正则回溯耗尽处理 HTTP 流量的 CPU，核心代理服务中断 27 分钟。",
+      "功能测试未检测失控的 CPU 使用；规则迅速全球发布，团队停用 WAF 后流量恢复，再经局部测试重启。"
+    ],
+    "decision_context": "安全规则需要快速响应威胁，但规则也在真实请求上执行并消耗共享资源。",
+    "observed_actions": [
+      "基于 CPU 与运行栈定位 WAF，执行全球停用。",
+      "局部验证回滚和反例后重新启用规则系统，公布后续测试改进。"
+    ],
+    "outcomes": [
+      "代理流量在停用后恢复；系统后续长期可靠性不由这份报告单独证明。"
+    ],
+    "model_ids": [
+      "P082",
+      "P091",
+      "P095"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C092.01",
+        "claim": "Cloudflare 报告新 WAF 规则的正则回溯耗尽处理 HTTP 流量的 CPU，核心代理服务中断 27 分钟。",
+        "source_ids": [
+          "D-TECH002"
+        ],
+        "locator": "文章开头、What happened、13:42 至 14:09 UTC 段",
+        "evidence_strength": "reported",
+        "causal_limit": "诊断来自厂商事后报告，不能把软件失控称为物理熵增或数学混沌。"
+      },
+      {
+        "claim_id": "C092.02",
+        "claim": "功能测试未检测失控的 CPU 使用；规则迅速全球发布，团队停用 WAF 后流量恢复，再经局部测试重启。",
+        "source_ids": [
+          "D-TECH002"
+        ],
+        "locator": "What went wrong / 测试段；Quicksilver；14:07 至 14:52 UTC 段",
+        "evidence_strength": "reported",
+        "causal_limit": "诊断来自厂商事后报告，不能把软件失控称为物理熵增或数学混沌。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH002"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "诊断来自厂商事后报告，不能把软件失控称为物理熵增或数学混沌。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "改变阻断行为与限制计算成本是不同检查；模拟模式同样需要资源上限和逐步扩大范围。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "WAF",
+      "正则",
+      "CPU",
+      "灰度",
+      "发布",
+      "Cloudflare"
+    ],
+    "decision_review": {
+      "observed_choice": "基于 CPU 与运行栈定位 WAF，执行全球停用。",
+      "analysis": "改变阻断行为与限制计算成本是不同检查；模拟模式同样需要资源上限和逐步扩大范围。",
+      "next_test": "测试最坏输入的 CPU 时间、规则终止能力和小范围部署错误率。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "测试最坏输入的 CPU 时间、规则终止能力和小范围部署错误率。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  },
+  {
+    "id": "C093",
+    "record_type": "deep_case",
+    "event_key": "postmortem:cloudflare:2020-07-17",
+    "title": "Cloudflare 2020：路由配置将骨干流量集中到 Atlanta",
+    "event_time": "2020-07-17",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Cloudflare 报告一次骨干路由配置错误把流量引向 Atlanta，部分地区故障 27 分钟，全网流量约降一半。",
+      "团队停用 Atlanta 路由器恢复流量，并改变本地路由优先级；最大前缀限制当时属于计划措施。"
+    ],
+    "decision_context": "为缓解链路拥堵而修改路由，需要检查过滤条件改变后的传播范围。",
+    "observed_actions": [
+      "确认流量集中后将故障路由器退出骨干。",
+      "部署本地优先级修改，宣布继续增加传播限制。"
+    ],
+    "outcomes": [
+      "受影响边缘服务恢复；部分日志和指标随后才完全恢复。"
+    ],
+    "model_ids": [
+      "P008",
+      "P082",
+      "P091"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C093.01",
+        "claim": "Cloudflare 报告一次骨干路由配置错误把流量引向 Atlanta，部分地区故障 27 分钟，全网流量约降一半。",
+        "source_ids": [
+          "D-TECH003"
+        ],
+        "locator": "文章开头三段；Timeline",
+        "evidence_strength": "reported",
+        "causal_limit": "厂商报告支持本次配置链路；不证明所有网络必然在同一阈值失效。"
+      },
+      {
+        "claim_id": "C093.02",
+        "claim": "团队停用 Atlanta 路由器恢复流量，并改变本地路由优先级；最大前缀限制当时属于计划措施。",
+        "source_ids": [
+          "D-TECH003"
+        ],
+        "locator": "What happened and what we’re doing about it；两条改进措施",
+        "evidence_strength": "reported",
+        "causal_limit": "厂商报告支持本次配置链路；不证明所有网络必然在同一阈值失效。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH003"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "厂商报告支持本次配置链路；不证明所有网络必然在同一阈值失效。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "局部配置可能改变全网最优路径，应预演路由传播和异常集中，而不只检查配置语法。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "BGP",
+      "路由",
+      "网络",
+      "集中",
+      "配置",
+      "Cloudflare"
+    ],
+    "decision_review": {
+      "observed_choice": "确认流量集中后将故障路由器退出骨干。",
+      "analysis": "局部配置可能改变全网最优路径，应预演路由传播和异常集中，而不只检查配置语法。",
+      "next_test": "演练错误前缀传播时，受影响节点数和流量集中度是否受控。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "演练错误前缀传播时，受影响节点数和流量集中度是否受控。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  },
+  {
+    "id": "C094",
+    "record_type": "deep_case",
+    "event_key": "postmortem:meta-engineering:2021-10-04",
+    "title": "Facebook 2021：骨干中断使 DNS 与恢复工具同时失效",
+    "event_time": "2021-10-04",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Facebook 报告维护命令意外断开骨干连接，命令审查工具中的缺陷未阻止该操作。",
+      "DNS 节点撤销 BGP 公告，常用远程及带外访问也受阻；工程师到场恢复骨干并逐步恢复服务。"
+    ],
+    "decision_context": "全局骨干维护需要保留独立控制、发现服务和应急入口。",
+    "observed_actions": [
+      "派工程师现场排障，执行安全访问流程。",
+      "恢复骨干后控制服务恢复负载，并复盘未覆盖的全局故障场景。"
+    ],
+    "outcomes": [
+      "运营方报告服务恢复后未出现新的系统性故障；没有提供反事实对照。"
+    ],
+    "model_ids": [
+      "P008",
+      "P032",
+      "P082",
+      "P095"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C094.01",
+        "claim": "Facebook 报告维护命令意外断开骨干连接，命令审查工具中的缺陷未阻止该操作。",
+        "source_ids": [
+          "D-TECH004"
+        ],
+        "locator": "开头至审查工具缺陷段",
+        "evidence_strength": "reported",
+        "causal_limit": "自述根因和取舍不能证明特定安全设计在其他系统中最优。"
+      },
+      {
+        "claim_id": "C094.02",
+        "claim": "DNS 节点撤销 BGP 公告，常用远程及带外访问也受阻；工程师到场恢复骨干并逐步恢复服务。",
+        "source_ids": [
+          "D-TECH004"
+        ],
+        "locator": "DNS/BGP、现场恢复与 storm drills 段",
+        "evidence_strength": "reported",
+        "causal_limit": "自述根因和取舍不能证明特定安全设计在其他系统中最优。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH004"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "自述根因和取舍不能证明特定安全设计在其他系统中最优。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "平时提高安全性的隔离措施可能增加故障恢复成本，应把应急通道纳入同一约束分析。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "DNS",
+      "BGP",
+      "带外",
+      "骨干",
+      "安全",
+      "恢复",
+      "Facebook"
+    ],
+    "decision_review": {
+      "observed_choice": "派工程师现场排障，执行安全访问流程。",
+      "analysis": "平时提高安全性的隔离措施可能增加故障恢复成本，应把应急通道纳入同一约束分析。",
+      "next_test": "断开业务骨干时，仍可通过独立通道定位和恢复关键节点。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "断开业务骨干时，仍可通过独立通道定位和恢复关键节点。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  },
+  {
+    "id": "C095",
+    "record_type": "deep_case",
+    "event_key": "postmortem:atlassian:2022-04-05",
+    "title": "Atlassian 2022：应用 ID 与站点 ID 混用导致删除事故",
+    "event_time": "2022-04-05",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Atlassian 报告清理旧应用时收到整站 ID，删除 API 接受两种对象类型且未给类型警告，883 个站点被删除。",
+      "最终确认 775 个客户受影响，部分客户中断最长约 14 天；全部站点到 4 月 18 日恢复。"
+    ],
+    "decision_context": "跨团队传递删除目标，要求验证对象类型和恢复能力，而非仅验证调用端点。",
+    "observed_actions": [
+      "启动跨团队恢复，将多产品站点逐个还原与验证。",
+      "公布软删除、恢复自动化和多站点演练改进方向。"
+    ],
+    "outcomes": [
+      "站点恢复；报告中的长期整改承诺不代表其后来效果已核验。"
+    ],
+    "model_ids": [
+      "P002",
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C095.01",
+        "claim": "Atlassian 报告清理旧应用时收到整站 ID，删除 API 接受两种对象类型且未给类型警告，883 个站点被删除。",
+        "source_ids": [
+          "D-TECH005"
+        ],
+        "locator": "Executive summary / What happened；两条问题及执行段",
+        "evidence_strength": "reported",
+        "causal_limit": "按公司最终复盘使用 775 客户与 883 站点，不能混用早期约 400 客户估算。"
+      },
+      {
+        "claim_id": "C095.02",
+        "claim": "最终确认 775 个客户受影响，部分客户中断最长约 14 天；全部站点到 4 月 18 日恢复。",
+        "source_ids": [
+          "D-TECH005"
+        ],
+        "locator": "Executive summary；实际客户数与恢复时间说明",
+        "evidence_strength": "reported",
+        "causal_limit": "按公司最终复盘使用 775 客户与 883 站点，不能混用早期约 400 客户估算。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH005"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "按公司最终复盘使用 775 客户与 883 站点，不能混用早期约 400 客户估算。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "同一接口接受不同对象的 ID 会隐藏危险歧义；验证应绑定对象类型、范围和可撤销性。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "对象类型",
+      "删除",
+      "ID",
+      "协作",
+      "接口",
+      "Atlassian"
+    ],
+    "decision_review": {
+      "observed_choice": "启动跨团队恢复，将多产品站点逐个还原与验证。",
+      "analysis": "同一接口接受不同对象的 ID 会隐藏危险歧义；验证应绑定对象类型、范围和可撤销性。",
+      "next_test": "错误对象类型和超出授权范围的 ID 在生产写入前被确定性拒绝。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "错误对象类型和超出授权范围的 ID 在生产写入前被确定性拒绝。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  },
+  {
+    "id": "C096",
+    "record_type": "deep_case",
+    "event_key": "postmortem:slack-engineering:2021-01-04",
+    "title": "Slack 2021：网络降级、自动扩缩容与监控依赖相互放大",
+    "event_time": "2021-01-04",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Slack 报告网络丢包增加后，CPU 等待下降触发缩容，随后线程占用又推动扩容；配置服务遭遇资源瓶颈。",
+      "监控面板与其数据库跨 VPC，依赖故障中的 Transit Gateway；AWS 增加网关容量后网络恢复。"
+    ],
+    "decision_context": "节后突增流量遇到网络降级，需要检查扩缩容信号和配置链路的能力。",
+    "observed_actions": [
+      "停止缩容，修复配置服务并清理无法服务的实例。",
+      "与云厂商协同增容，宣布负载测试和监控依赖调整。"
+    ],
+    "outcomes": [
+      "服务从中断转为降级，最终网络恢复；没有独立证明某一项动作单独产生全部改善。"
+    ],
+    "model_ids": [
+      "P026",
+      "P082",
+      "P091"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C096.01",
+        "claim": "Slack 报告网络丢包增加后，CPU 等待下降触发缩容，随后线程占用又推动扩容；配置服务遭遇资源瓶颈。",
+        "source_ids": [
+          "D-TECH006"
+        ],
+        "locator": "7am PST 前后、自动扩缩容与 provision-service 段",
+        "evidence_strength": "reported",
+        "causal_limit": "厂商事后叙述包含多项同时变化，不能用它估计单项改进的因果效应。"
+      },
+      {
+        "claim_id": "C096.02",
+        "claim": "监控面板与其数据库跨 VPC，依赖故障中的 Transit Gateway；AWS 增加网关容量后网络恢复。",
+        "source_ids": [
+          "D-TECH006"
+        ],
+        "locator": "架构、10:40am PST 恢复、Monitoring 改进段",
+        "evidence_strength": "reported",
+        "causal_limit": "厂商事后叙述包含多项同时变化，不能用它估计单项改进的因果效应。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH006"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "厂商事后叙述包含多项同时变化，不能用它估计单项改进的因果效应。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "控制信号可能在故障下失真；扩容依赖自身受损的配置系统，会形成第二个瓶颈。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "控制",
+      "自动扩缩容",
+      "丢包",
+      "监控",
+      "VPC",
+      "Slack"
+    ],
+    "decision_review": {
+      "observed_choice": "停止缩容，修复配置服务并清理无法服务的实例。",
+      "analysis": "控制信号可能在故障下失真；扩容依赖自身受损的配置系统，会形成第二个瓶颈。",
+      "next_test": "注入网络延迟时，容量控制不会持续减小有效服务能力，监控仍能查询。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "注入网络延迟时，容量控制不会持续减小有效服务能力，监控仍能查询。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  },
+  {
+    "id": "C097",
+    "record_type": "deep_case",
+    "event_key": "postmortem:fastly:2021-06-08",
+    "title": "Fastly 2021：合法配置触发潜伏的软件缺陷",
+    "event_time": "2021-06-08",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Fastly 报告 5 月部署的缺陷被 6 月 8 日一次合法客户配置触发，85% 的网络返回错误。",
+      "公司报告停用相关配置后，49 分钟内 95% 的网络恢复正常；永久修复从当日 17:25 UTC 开始部署。"
+    ],
+    "decision_context": "通过配置空间触发的缺陷可能绕过常规发布测试，需要区分止血与永久修复。",
+    "observed_actions": [
+      "监测、隔离触发配置并停用，之后开始分发缺陷修复。",
+      "宣布完整复盘并查明测试为何漏过该组合。"
+    ],
+    "outcomes": [
+      "公告记录恢复进展与修复部署开始，不证明当时已完成全部长期整改。"
+    ],
+    "model_ids": [
+      "P091",
+      "P082",
+      "P099"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C097.01",
+        "claim": "Fastly 报告 5 月部署的缺陷被 6 月 8 日一次合法客户配置触发，85% 的网络返回错误。",
+        "source_ids": [
+          "D-TECH007"
+        ],
+        "locator": "What happened 的部署、合法配置与影响段",
+        "evidence_strength": "reported",
+        "causal_limit": "事故主体的初期报告，数据是其自述；并未提供完整测试集或独立因果研究。"
+      },
+      {
+        "claim_id": "C097.02",
+        "claim": "公司报告停用相关配置后，49 分钟内 95% 的网络恢复正常；永久修复从当日 17:25 UTC 开始部署。",
+        "source_ids": [
+          "D-TECH007"
+        ],
+        "locator": "开头恢复说明；Timeline 和 permanent fix 段",
+        "evidence_strength": "reported",
+        "causal_limit": "事故主体的初期报告，数据是其自述；并未提供完整测试集或独立因果研究。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH007"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "事故主体的初期报告，数据是其自述；并未提供完整测试集或独立因果研究。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "先隔离已证实触发条件，再用反例验证，不把客户合法操作当错误归责。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "配置组合",
+      "潜伏缺陷",
+      "隔离",
+      "测试",
+      "Fastly"
+    ],
+    "decision_review": {
+      "observed_choice": "监测、隔离触发配置并停用，之后开始分发缺陷修复。",
+      "analysis": "先隔离已证实触发条件，再用反例验证，不把客户合法操作当错误归责。",
+      "next_test": "对边界配置组合执行回归，并测量隔离故障配置后的错误率。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "对边界配置组合执行回归，并测量隔离故障配置后的错误率。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  },
+  {
+    "id": "C098",
+    "record_type": "deep_case",
+    "event_key": "postmortem:roblox:2021-10-28",
+    "title": "Roblox 2021：高负载下的流式功能与持久化争用",
+    "event_time": "2021-10-28 至 2021-10-31",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Roblox 报告中断持续 73 小时，高读写负载下 Consul 流式功能发生争用，BoltDB 还暴露出异常性能问题。",
+      "停用流式功能改善写延迟，但仍需处理慢 leader、重建缓存并逐步开放用户流量。"
+    ],
+    "decision_context": "已在较小范围有效的优化，在实际混合负载和冷启动恢复中需要重新验证。",
+    "observed_actions": [
+      "用性能剖析定位争用，停用流式功能并临时避免慢节点担任 leader。",
+      "修复缓存部署，按观察到的稳定性逐步恢复用户访问。"
+    ],
+    "outcomes": [
+      "到 10 月 31 日服务恢复；持久化根因部分是在事故后继续分析确认。"
+    ],
+    "model_ids": [
+      "P007",
+      "P082",
+      "P091",
+      "P098"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C098.01",
+        "claim": "Roblox 报告中断持续 73 小时，高读写负载下 Consul 流式功能发生争用，BoltDB 还暴露出异常性能问题。",
+        "source_ids": [
+          "D-TECH008"
+        ],
+        "locator": "摘要两条根因；Root Causes Found",
+        "evidence_strength": "reported",
+        "causal_limit": "厂商联合排障报告，不能据此假定所有更高核心数机器都更差，或所有流式设计都不适用。"
+      },
+      {
+        "claim_id": "C098.02",
+        "claim": "停用流式功能改善写延迟，但仍需处理慢 leader、重建缓存并逐步开放用户流量。",
+        "source_ids": [
+          "D-TECH008"
+        ],
+        "locator": "Root Causes Found、Restoring Caching Service、The Return of Players",
+        "evidence_strength": "reported",
+        "causal_limit": "厂商联合排障报告，不能据此假定所有更高核心数机器都更差，或所有流式设计都不适用。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH008"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "厂商联合排障报告，不能据此假定所有更高核心数机器都更差，或所有流式设计都不适用。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "局部吞吐优化不能替代混合负载验证；恢复还要验证从零启动依赖链。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "性能",
+      "争用",
+      "冷启动",
+      "Consul",
+      "BoltDB",
+      "Roblox"
+    ],
+    "decision_review": {
+      "observed_choice": "用性能剖析定位争用，停用流式功能并临时避免慢节点担任 leader。",
+      "analysis": "局部吞吐优化不能替代混合负载验证；恢复还要验证从零启动依赖链。",
+      "next_test": "在高读写并存和冷缓存条件下复测延迟、争用和系统启动顺序。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "在高读写并存和冷缓存条件下复测延迟、争用和系统启动顺序。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  },
+  {
+    "id": "C099",
+    "record_type": "deep_case",
+    "event_key": "postmortem:google-cloud:2019-06-02",
+    "title": "Google Cloud 2019：跨地点维护自动化同时停掉控制平面",
+    "event_time": "2019-06-02",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Google 报告两项配置和一个维护自动化缺陷组合，使多个地点的网络控制任务同时被停调度。",
+      "静态运行保护只维持数分钟，随后网络容量下降；故障还影响诊断工具，恢复需重建和分发配置。"
+    ],
+    "decision_context": "多个逻辑管理副本如果共用跨地点维护规则，可能遭同一次控制动作失效。",
+    "observed_actions": [
+      "停止触发维护的自动化，恢复控制平面和配置。",
+      "公告增加跨地点停止任务保护及持续恢复演练。"
+    ],
+    "outcomes": [
+      "各服务与地区恢复时点不同；报告不能合并为一个精确全局中断时长。"
+    ],
+    "model_ids": [
+      "P032",
+      "P082",
+      "P091"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C099.01",
+        "claim": "Google 报告两项配置和一个维护自动化缺陷组合，使多个地点的网络控制任务同时被停调度。",
+        "source_ids": [
+          "D-TECH009"
+        ],
+        "locator": "ROOT CAUSE AND REMEDIATION 的两项配置与软件缺陷段",
+        "evidence_strength": "reported",
+        "causal_limit": "服务方正式事故报告，可支持其诊断；不能把多地区不同影响压缩为全体相同损失。"
+      },
+      {
+        "claim_id": "C099.02",
+        "claim": "静态运行保护只维持数分钟，随后网络容量下降；故障还影响诊断工具，恢复需重建和分发配置。",
+        "source_ids": [
+          "D-TECH009"
+        ],
+        "locator": "fail static、工具竞争、配置重建和恢复段",
+        "evidence_strength": "reported",
+        "causal_limit": "服务方正式事故报告，可支持其诊断；不能把多地区不同影响压缩为全体相同损失。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH009"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "服务方正式事故报告，可支持其诊断；不能把多地区不同影响压缩为全体相同损失。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "冗余要检查共同控制路径；应急工具也要在业务网络拥堵时保持可用。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "控制平面",
+      "维护",
+      "共同原因",
+      "冗余",
+      "Google Cloud"
+    ],
+    "decision_review": {
+      "observed_choice": "停止触发维护的自动化，恢复控制平面和配置。",
+      "analysis": "冗余要检查共同控制路径；应急工具也要在业务网络拥堵时保持可用。",
+      "next_test": "演练跨地点维护错误时，至少一个独立控制和诊断路径仍能运行。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "演练跨地点维护错误时，至少一个独立控制和诊断路径仍能运行。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  },
+  {
+    "id": "C100",
+    "record_type": "deep_case",
+    "event_key": "postmortem:github:2018-10-21",
+    "title": "GitHub 2018：短暂网络分区导致跨区域数据库拓扑不兼容",
+    "event_time": "2018-10-21 至 2018-10-22",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "GitHub 报告网络中断 43 秒触发跨区域数据库切换，应用无法适应新拓扑，服务降级持续 24 小时 11 分钟。",
+      "两地区存在未相互复制的写入，团队选择保全数据完整性，恢复并同步数据库，期间暂停部分 webhook 和 Pages 工作。"
+    ],
+    "decision_context": "自动切换不仅需要数据库层可达，还需要应用延迟假设和写入一致性允许新拓扑。",
+    "observed_actions": [
+      "选择向前恢复而不立即强行切回，保留已收到的数据。",
+      "同步副本、重建稳定拓扑并处理排队事件。"
+    ],
+    "outcomes": [
+      "服务恢复；报告称没有用户数据丢失，但少量写入仍在人工对账，不应声称所有记录当时已核清。"
+    ],
+    "model_ids": [
+      "P032",
+      "P082",
+      "P095"
+    ],
+    "model_mapping_note": "这是本次分析的模型映射；不声称事故当事人使用过这些编号或本 Skill。",
+    "claims": [
+      {
+        "claim_id": "C100.01",
+        "claim": "GitHub 报告网络中断 43 秒触发跨区域数据库切换，应用无法适应新拓扑，服务降级持续 24 小时 11 分钟。",
+        "source_ids": [
+          "D-TECH010"
+        ],
+        "locator": "Background、网络分区与 Incident timeline",
+        "evidence_strength": "reported",
+        "causal_limit": "运维主体报告，数据完整性声明保留其手工对账边界；不是任意系统都应接受一天中断的证明。"
+      },
+      {
+        "claim_id": "C100.02",
+        "claim": "两地区存在未相互复制的写入，团队选择保全数据完整性，恢复并同步数据库，期间暂停部分 webhook 和 Pages 工作。",
+        "source_ids": [
+          "D-TECH010"
+        ],
+        "locator": "2018 October 21 23:13/23:19 UTC 段；恢复与 Next steps",
+        "evidence_strength": "reported",
+        "causal_limit": "运维主体报告，数据完整性声明保留其手工对账边界；不是任意系统都应接受一天中断的证明。"
+      }
+    ],
+    "source_ids": [
+      "D-TECH010"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "independent_source_groups": 1,
+      "limitations": "运维主体报告，数据完整性声明保留其手工对账边界；不是任意系统都应接受一天中断的证明。"
+    },
+    "transfer_conditions": [
+      "需要以具体依赖图、故障注入和恢复结果确认当前系统具有相同机制。",
+      "故障恢复中优先级要明确；自动化配置应与应用可承受的拓扑和延迟绑定。"
+    ],
+    "non_transfer_conditions": [
+      "不能据单一厂商事故推断当前产品必然失败；成本、权限和数据风险不同。",
+      "整改建议、实施状态和后来实际效果需要分别核验。"
+    ],
+    "keywords": [
+      "数据库",
+      "网络分区",
+      "切换",
+      "一致性",
+      "GitHub"
+    ],
+    "decision_review": {
+      "observed_choice": "选择向前恢复而不立即强行切回，保留已收到的数据。",
+      "analysis": "故障恢复中优先级要明确；自动化配置应与应用可承受的拓扑和延迟绑定。",
+      "next_test": "网络分区演练中，切换策略不会生成应用不可支持的拓扑，并可追踪未复制写入。",
+      "stop_condition": "出现不可恢复数据损失、超出授权范围或扩大故障时停止实验并保全证据。",
+      "status": "analyst_proposal_not_historical_action",
+      "proposed_check": "网络分区演练中，切换策略不会生成应用不可支持的拓扑，并可追踪未复制写入。",
+      "metric": "关键路径失败数、恢复时间、数据丢失窗口和变化的影响范围。",
+      "application_boundary": "检验在隔离环境进行；这是本次分析提出的方案，不能作为历史已完成措施或效果证据。"
+    }
+  }
+]

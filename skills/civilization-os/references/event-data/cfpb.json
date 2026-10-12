@@ -1,0 +1,2305 @@
+{
+  "dataset": "cfpb",
+  "source_id": "R-CFPB",
+  "retrievals": [
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=1",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "1374b42c59f1bdc3db239c221fc8dff7848c6280e0f1193cf60fdcb52a74cf17"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=2",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "726378e53b8df40c80fcb1e01296b874dbc1cd69fa82dabf74ccb318c644c4c7"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=3",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "f987301278c7d6ae8242cd2d5a0113e9091dce66a0e465f4b80149c4c79d24c9"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=4",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "9d764d8f9290e4e5f7d0234055aa9cbe33ecfcc0d1aa927661215465c0603c62"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=5",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "105e57bc3f2693818e992c7f5835f403a0d5d66312f51c6bcc24eab323dd6435"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=6",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "1b67c2ac2871d495a6733af0880eb1136f0da67d4ffe36ffd2113a578b166fc1"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=7",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "a118f058c94c85b4c3a42ed4e5cd091795b54a09b221f585c3f0e9555d7a724d"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=8",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "572dbb44797cf6c46b589c5ff1086329a5d075e63f345a8d671113eb3eaa24b9"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=9",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "35e484451d612024b4c68600d2aaa73781ab956a225755b016bf21e358bfbeac"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=10",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "48d8eb913426be6e65bd48070e457676ae897dd4973f7afb0490949de0dccf74"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=11",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "38e3e553ffea7e299529e11b926ee21bba8e03b3e017f350d86761502db125a4"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=12",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "85a16c2e958cbc6b10a1147e13252628c887bcfbc83ec59a6fbe45b2884be886"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=13",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "539b4baf3ab6bbb0028a552de3362baa49f420a57c4f08ca72af33af5251595d"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=14",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "613f8607d75089632480ce5d6e5b725f128a8aabe8e294cd2c3542aaf904284d"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=15",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "561f396887e42a0c90e5e7ff6f0793de3cb77f60b6385d631c477810bf1d53d3"
+    },
+    {
+      "source_url": "https://www.consumerfinance.gov/enforcement/actions/?page=16",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "52878c73e15415a63a8391b37d46abc9a99f8c0002939e238608e71017e1a420"
+    }
+  ],
+  "selection_rule": "Exclude all 30 deep-case URLs and the related Goldman/Apple Card episode. Sort by date and URL, round-robin over available years until 200. No legal conclusion or current disposition inferred from the index.",
+  "records": [
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/chance-edward-gordon-dba-gordon-associates",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/chance-edward-gordon-dba-gordon-associates/",
+      "fields": {
+        "title": "Chance Edward Gordon d/b/a Gordon & Associates, Abraham Michael Pessar et al.",
+        "date_filed": "2012-07-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/chance-edward-gordon-dba-gordon-associates/",
+        "description": "The CFPB announced actions to halt two alleged mortgage loan modification scams it believes ripped-off thousands of struggling homeowners across the country.",
+        "index_page": 16
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/genworth-mortgage-insurance-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/genworth-mortgage-insurance-corporation/",
+      "fields": {
+        "title": "Genworth Mortgage Insurance Corporation",
+        "date_filed": "2013-04-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/genworth-mortgage-insurance-corporation/",
+        "description": "The CFPB filed complaints and proposed consent orders against four national mortgage insurance companies in order to stop improper kickbacks paid by...",
+        "index_page": 16
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/fidelity-mortgage-corporation-mark-figert",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/fidelity-mortgage-corporation-mark-figert/",
+      "fields": {
+        "title": "Fidelity Mortgage Corporation and Mark Figert",
+        "date_filed": "2014-01-16",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/fidelity-mortgage-corporation-mark-figert/",
+        "description": "CFPB ordered a Missouri mortgage lender, Fidelity Mortgage Corporation, and its former owner and current president, Mark Figert, to pay $81,076 for...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/genuine-title-jp-morgan",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/genuine-title-jp-morgan/",
+      "fields": {
+        "title": "JPMorgan Chase Bank, N.A.",
+        "date_filed": "2015-01-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/genuine-title-jp-morgan/",
+        "description": "CFPB and the Maryland Attorney General took action against Wells Fargo and JPMorgan Chase for an illegal marketing-services-kickback scheme they...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/y-king-s-corp-db-herbies-auto-sales",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/y-king-s-corp-db-herbies-auto-sales/",
+      "fields": {
+        "title": "Y King S Corp., d/b/a Herbies Auto Sales",
+        "date_filed": "2016-01-21",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/y-king-s-corp-db-herbies-auto-sales/",
+        "description": "The Bureau took action against Herbies Auto Sales, a buy-here pay-here used car dealer, for abusive financing schemes, hiding auto finance charges and...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/equifax-inc-and-equifax-consumer-services-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/equifax-inc-and-equifax-consumer-services-llc/",
+      "fields": {
+        "title": "Equifax Inc. and Equifax Consumer Services LLC",
+        "date_filed": "2017-01-03",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/equifax-inc-and-equifax-consumer-services-llc/",
+        "description": "The Bureau took action against Equifax, Inc. and its subsidiary for deceiving consumers about the usefulness and actual cost of credit scores they sold to...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/security-group-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/security-group-inc/",
+      "fields": {
+        "title": "Security Group, Inc., Security Finance Corporation of Spartanburg, Professional Financial Services Corp., et al.",
+        "date_filed": "2018-06-13",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/security-group-inc/",
+        "description": "Bureau announced a settlement with Security Group Inc., a South Carolina corporation, and its subsidiaries, Security Finance Corporation of Spartanburg and...",
+        "index_page": 8
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/usaa-federal-savings-bank",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/usaa-federal-savings-bank/",
+      "fields": {
+        "title": "USAA Federal Savings Bank",
+        "date_filed": "2019-01-03",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/usaa-federal-savings-bank/",
+        "description": "The CFPB announced a settlement with USAA Federal Savings Bank, a federally chartered savings association headquartered in...",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/monster-loans-lend-tech-loans-and-associated-student-loan-debt-relief-companies",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/monster-loans-lend-tech-loans-and-associated-student-loan-debt-relief-companies/",
+      "fields": {
+        "title": "Monster Loans, Lend Tech Loans, and Student Loan Debt Relief Companies",
+        "date_filed": "2020-01-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/monster-loans-lend-tech-loans-and-associated-student-loan-debt-relief-companies/",
+        "description": "On January 9, 2020, the Bureau filed a lawsuit in the U.S. District Court for the Central District of California against Chou Team Realty, LLC, d/b/a Monster Loans, Lend Tech Loans, associated student loan debt-relief companies and individuals.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/1st-alliance-lending-llc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/1st-alliance-lending-llc-et-al/",
+      "fields": {
+        "title": "1st Alliance Lending, LLC, John Christopher DiIorio, Kevin Robert St. Lawrence, and Socrates Aramburu",
+        "date_filed": "2021-01-15",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/1st-alliance-lending-llc-et-al/",
+        "description": "On January 15, 2021, the Bureau filed a lawsuit in the United States District Court for the District of Connecticut against 1st Alliance Lending, LLC, John Christopher DiIorio, Kevin Robert St. Lawrence, and Socrates Aramburu.",
+        "index_page": 5
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/craig-manseth-jacob-adamo-darren-turco-united-debt-holding-llc-jtm-capital-management-llc-and-united-holdings-group-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/craig-manseth-jacob-adamo-darren-turco-united-debt-holding-llc-jtm-capital-management-llc-and-united-holdings-group-llc/",
+      "fields": {
+        "title": "Craig Manseth, Jacob Adamo, Darren Turco, United Debt Holding LLC, JTM Capital Management, LLC, and United Holdings Group, LLC",
+        "date_filed": "2022-01-10",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/craig-manseth-jacob-adamo-darren-turco-united-debt-holding-llc-jtm-capital-management-llc-and-united-holdings-group-llc/",
+        "description": "On January 10, 2022, the Bureau filed a lawsuit in the United States District Court for the Western District of New York against several individual debt collectors and buyers, and their companies.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/credit-acceptance-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/credit-acceptance-corporation/",
+      "fields": {
+        "title": "Credit Acceptance Corporation",
+        "date_filed": "2023-01-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/credit-acceptance-corporation/",
+        "description": "On January 4, 2023, the Bureau and New York Attorney General Letitia James filed a joint lawsuit in the United States District Court for the Southern District of New York against Credit Acceptance Corporation, an indirect auto lender that funds and services car loans for subprime and deep-subprime consumers.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/stratfs-llc-fka-strategic-financial-solutions-llc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/stratfs-llc-fka-strategic-financial-solutions-llc-et-al/",
+      "fields": {
+        "title": "StratFS, LLC f/k/a Strategic Financial Solutions, LLC, et al.",
+        "date_filed": "2024-01-10",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/stratfs-llc-fka-strategic-financial-solutions-llc-et-al/",
+        "description": "On January 10, 2024, the Bureau and seven state attorneys general filed a complaint and sought a temporary restraining order and preliminary injunction against StratFS, LLC f/k/a Strategic Financial Solutions, LLC, as well as its holding company Strategic Family, Inc.; various of its subsidiaries, and as individuals: SFS Chief Executive Officer Ryan Sasson, Jason Blust, Daniel Blumkin, and Albert Ian Behar.",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/vanderbilt-mortgage-finance-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/vanderbilt-mortgage-finance-inc/",
+      "fields": {
+        "title": "Vanderbilt Mortgage & Finance, Inc.",
+        "date_filed": "2025-01-06",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/vanderbilt-mortgage-finance-inc/",
+        "description": "On January 6, 2025, the Bureau filed a lawsuit against Vanderbilt Mortgage & Finance, Inc.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/american-express-bank-fsb",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/american-express-bank-fsb/",
+      "fields": {
+        "title": "American Express Bank, FSB",
+        "date_filed": "2012-10-01",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/american-express-bank-fsb/",
+        "description": "This action is the result of a multi-part federal investigation which found that at every stage of the consumer experience, from marketing to enrollment to...",
+        "index_page": 16
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/mortgage-guaranty-insurance-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/mortgage-guaranty-insurance-corporation/",
+      "fields": {
+        "title": "Mortgage Guaranty Insurance Corporation",
+        "date_filed": "2013-04-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/mortgage-guaranty-insurance-corporation/",
+        "description": "The CFPB filed complaints and proposed consent orders against four national mortgage insurance companies in order to stop improper kickbacks paid by...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/phh-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/phh-corporation/",
+      "fields": {
+        "title": "PHH Corporation, PHH Mortgage Corporation, PHH Home Loans, LLC, Atrium Insurance Corporation, and Atrium Reinsurance Corporation",
+        "date_filed": "2014-01-29",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/phh-corporation/",
+        "description": "CFPB initiated an administrative proceeding against PHH Corporation and its affiliates (PHH), alleging PHH harmed consumers through a mortgage insurance...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/genuine-title-wells-fargo",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/genuine-title-wells-fargo/",
+      "fields": {
+        "title": "Wells Fargo Bank, N.A.",
+        "date_filed": "2015-01-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/genuine-title-wells-fargo/",
+        "description": "CFPB and the Maryland Attorney General took action against Wells Fargo and JPMorgan Chase for an illegal marketing-services-kickback scheme they...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation/",
+      "fields": {
+        "title": "Toyota Motor Credit Corporation",
+        "date_filed": "2016-02-02",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation/",
+        "description": "The Bureau and Department of Justice (DOJ) resolved an action with Toyota Motor Credit Corporation, under which Toyota Motor Credit will change its pricing...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/transunion-interactive-inc-transunion-llc-and-transunion",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/transunion-interactive-inc-transunion-llc-and-transunion/",
+      "fields": {
+        "title": "TransUnion Interactive, Inc., TransUnion, LLC, and TransUnion",
+        "date_filed": "2017-01-03",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/transunion-interactive-inc-transunion-llc-and-transunion/",
+        "description": "The Bureau took action against TransUnion and its subsidiaries for deceiving consumers about the usefulness and actual cost of credit scores they sold to...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/citibank-na-2018",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/citibank-na-2018/",
+      "fields": {
+        "title": "Citibank, N.A.",
+        "date_filed": "2018-06-29",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/citibank-na-2018/",
+        "description": "Today the Bureau of Consumer Financial Protection (Bureau) announced a settlement with Citibank, N.A.",
+        "index_page": 8
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/sterling-jewelers-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/sterling-jewelers-inc/",
+      "fields": {
+        "title": "Sterling Jewelers, Inc.",
+        "date_filed": "2019-01-16",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/sterling-jewelers-inc/",
+        "description": "The CFPB and the People of the State of New York today settled claims against Sterling Jewelers Inc.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/citizens-bank",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/citizens-bank/",
+      "fields": {
+        "title": "Citizens Bank, N.A.",
+        "date_filed": "2020-01-30",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/citizens-bank/",
+        "description": "On January 30, 2020, the Bureau filed a lawsuit against Citizens Bank, N.A. (Citizens), alleging violations of the Truth and Lending Act (TILA) and its implementing Regulation Z, including TILA provisions passed under the Fair Credit Billing Act (FCBA) and Credit Card Accountability Responsibility and Disclosure Act (CARD Act), as well as violations of the Consumer Financial Protection Act of 2010 (CFPA) due to its violations of TILA and Regulation Z.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/nexus-services-inc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/nexus-services-inc-et-al/",
+      "fields": {
+        "title": "Nexus Services, Inc., Libre by Nexus, Inc., Micheal Donovan, Richard Moore, and Evan Ajin",
+        "date_filed": "2021-02-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/nexus-services-inc-et-al/",
+        "description": "On February 22, 2021, the Bureau filed a lawsuit in the United States District Court for the Western District of Virginia against Nexus Services, Inc. (Nexus Services), Libre by Nexus, Inc. (Libre), and their principals, Micheal Donovan, Richard Moore, and Evan Ajin.",
+        "index_page": 5
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/edfinancial-services",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/edfinancial-services/",
+      "fields": {
+        "title": "Edfinancial Services",
+        "date_filed": "2022-03-30",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/edfinancial-services/",
+        "description": "On March 30, 2022, the Bureau issued an order against Edfinancial Services, LLC. (Edfinancial). Edfinancial, headquartered in Knoxville, Tennessee, is a student loan servicer that services both FFELP loans, which are loans from private companies, and Direct Loans, which are loans directly from the Department of Education.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/tmx-finance-llc-2023",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/tmx-finance-llc-2023/",
+      "fields": {
+        "title": "TMX Finance LLC",
+        "date_filed": "2023-02-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/tmx-finance-llc-2023/",
+        "description": "On February 23, 2023, the Bureau issued an order against TitleMax parent company TMX Finance LLC, which extends consumer loans that are secured by the title to the borrower’s car.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/pennsylvania-higher-education-assistance-agency-and-national-collegiate-student-loan-trusts",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/pennsylvania-higher-education-assistance-agency-and-national-collegiate-student-loan-trusts/",
+      "fields": {
+        "title": "Pennsylvania Higher Education Assistance Agency, and National Collegiate Student Loan Trusts",
+        "date_filed": "2024-05-06",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/pennsylvania-higher-education-assistance-agency-and-national-collegiate-student-loan-trusts/",
+        "description": "On May 6, 2024, the Consumer Financial Protection Bureau filed a complaint and two proposed stipulated final judgments to resolve the Bureau’s claims against the National Collegiate Student Loan Trusts (the Trusts) and the Pennsylvania Higher Education Assistance Agency d/b/a American Education Services (PHEAA), respectively.",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/experian-information-solutions-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/experian-information-solutions-inc/",
+      "fields": {
+        "title": "Experian Information Solutions, Inc.",
+        "date_filed": "2025-01-07",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/experian-information-solutions-inc/",
+        "description": "On January 7, 2025, the Bureau filed a lawsuit against Experian Information Solutions, Inc., one of the largest consumer reporting agencies in the country.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/american-express-centurion-bank",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/american-express-centurion-bank/",
+      "fields": {
+        "title": "American Express Centurion Bank",
+        "date_filed": "2012-10-01",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/american-express-centurion-bank/",
+        "description": "This action is the result of a multi-part federal investigation which found that at every stage of the consumer experience, from marketing to enrollment to...",
+        "index_page": 16
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/radian-guaranty-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/radian-guaranty-inc/",
+      "fields": {
+        "title": "Radian Guaranty, Inc.",
+        "date_filed": "2013-04-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/radian-guaranty-inc/",
+        "description": "The CFPB filed complaints and proposed consent orders against four national mortgage insurance companies in order to stop improper kickbacks paid by...",
+        "index_page": 16
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/1st-alliance-lending",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/1st-alliance-lending/",
+      "fields": {
+        "title": "1st Alliance Lending, LLC (First Alliance)",
+        "date_filed": "2014-02-24",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/1st-alliance-lending/",
+        "description": "The Bureau ordered a Connecticut mortgage lender, 1st Alliance Lending, LLC (First Alliance), to pay an $83,000 civil money penalty for violating federal...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/genuine-title",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/genuine-title/",
+      "fields": {
+        "title": "Wells Fargo Bank, N.A., JPMorgan Chase Bank, N.A., Elaine Oliphant Cohen, and Todd Cohen",
+        "date_filed": "2015-01-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/genuine-title/",
+        "description": "CFPB and the Maryland Attorney General took action against Wells Fargo and JPMorgan Chase for an illegal marketing-services-kickback scheme they...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/citibank-department-stores-national-bank-citifinancial-servicing",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/citibank-department-stores-national-bank-citifinancial-servicing/",
+      "fields": {
+        "title": "Citibank, N.A., Department Stores National Bank, and CitiFinancial Servicing, LLC",
+        "date_filed": "2016-02-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/citibank-department-stores-national-bank-citifinancial-servicing/",
+        "description": "The Bureau took two separate actions against Citibank for illegal debt sales and debt collection practices. This action is against both Citibank and two...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/works-lentz-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/works-lentz-inc/",
+      "fields": {
+        "title": "Works & Lentz, Inc.; Works & Lentz of Tulsa, Inc., and Harry A. Lentz, Jr.",
+        "date_filed": "2017-01-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/works-lentz-inc/",
+        "description": "The CFPB is taking action against two medical debt collection law firms and their president for falsely representing that...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/national-credit-adjusters-llc-and-bradley-hochstein",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/national-credit-adjusters-llc-and-bradley-hochstein/",
+      "fields": {
+        "title": "National Credit Adjusters, LLC and Bradley Hochstein",
+        "date_filed": "2018-07-13",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/national-credit-adjusters-llc-and-bradley-hochstein/",
+        "description": "Today the Bureau announced a settlement with National Credit Adjusters, LLC (NCA), a privately-held company headquartered in Hutchinson, Kansas, and its...",
+        "index_page": 8
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/mark-corbett",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/mark-corbett/",
+      "fields": {
+        "title": "Mark Corbett",
+        "date_filed": "2019-01-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/mark-corbett/",
+        "description": "The Bureau found that Corbett violated the Consumer Financial Protection Act of 2010 by misrepresenting to consumers that the contracts he facilitates are...",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/candy-kern-fuller-howard-sutter-iii-and-upstate-law-group-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/candy-kern-fuller-howard-sutter-iii-and-upstate-law-group-llc/",
+      "fields": {
+        "title": "Candy Kern-Fuller, Howard Sutter III, and Upstate Law Group LLC",
+        "date_filed": "2020-02-20",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/candy-kern-fuller-howard-sutter-iii-and-upstate-law-group-llc/",
+        "description": "On February 20, 2020, the Bureau, the South Carolina Department of Consumer Affairs, and the State of Arkansas Attorney General Leslie Rutledge filed a...",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/brightspeed-solutions-inc-and-kevin-howard",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/brightspeed-solutions-inc-and-kevin-howard/",
+      "fields": {
+        "title": "BrightSpeed Solutions, Inc. and Kevin Howard",
+        "date_filed": "2021-03-03",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/brightspeed-solutions-inc-and-kevin-howard/",
+        "description": "On March 3, 2021, the Bureau filed a lawsuit in the U.S. District Court for the Northern District of Illinois against BrightSpeed Solutions, Inc. (BrightSpeed) and its founder and former chief executive officer, Kevin Howard.",
+        "index_page": 5
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/transunion-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/transunion-et-al/",
+      "fields": {
+        "title": "TransUnion; Trans Union, LLC; TransUnion Interactive, Inc.; and John T. Danaher",
+        "date_filed": "2022-04-12",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/transunion-et-al/",
+        "description": "On April 12, 2022, the Bureau filed a lawsuit in the federal district court for the Northern District of Illinois against TransUnion, parent company of one of the three nationwide consumer reporting agencies, and two of its subsidiaries, TransUnion, LLC, TransUnion Interactive, Inc. (collectively, the TransUnion Companies), which are headquartered in Chicago, Illinois, as well as former executive John Danaher.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/rmk-financial-corp-majestic-home-loan-mhl",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/rmk-financial-corp-majestic-home-loan-mhl/",
+      "fields": {
+        "title": "RMK Financial Corp. d/b/a Majestic Home Loan or MHL",
+        "date_filed": "2023-02-27",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/rmk-financial-corp-majestic-home-loan-mhl/",
+        "description": "On February 27, 2023, the Consumer Financial Protection Bureau (Bureau) issued an order against RMK Financial Corp. (RMK), a California-based mortgage lender that also does business under the name Majestic Home Loans.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/solo-funds",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/solo-funds/",
+      "fields": {
+        "title": "SoLo Funds, Inc.",
+        "date_filed": "2024-05-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/solo-funds/",
+        "description": "On May 17, 2024, the Bureau filed a lawsuit against SoLo Funds, Inc. (SoLo), a fintech company that operates a nationwide website and mobile-application based peer-to-peer lending platform through which consumers can obtain small-dollar, short-term loans.",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/capital-one-national-association-and-capital-one-financial-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/capital-one-national-association-and-capital-one-financial-corporation/",
+      "fields": {
+        "title": "Capital One, National Association, and Capital One Financial Corporation",
+        "date_filed": "2025-01-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/capital-one-national-association-and-capital-one-financial-corporation/",
+        "description": "On January 14, 2025, the Bureau filed a lawsuit against Capital One, N.A., a national bank with over $480 billion in assets, and its parent holding company, Capital One Financial Corp.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/american-express-travel-related-services",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/american-express-travel-related-services/",
+      "fields": {
+        "title": "American Express Travel Related Services Company, Inc.",
+        "date_filed": "2012-10-01",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/american-express-travel-related-services/",
+        "description": "This action is the result of a multi-part federal investigation which found that at every stage of the consumer experience, from marketing to enrollment to...",
+        "index_page": 16
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/united-guaranty-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/united-guaranty-corporation/",
+      "fields": {
+        "title": "United Guaranty Corporation",
+        "date_filed": "2013-04-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/united-guaranty-corporation/",
+        "description": "The CFPB filed complaints and proposed consent orders against four national mortgage insurance companies in order to stop improper kickbacks paid by...",
+        "index_page": 16
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/itt-educational-services",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/itt-educational-services/",
+      "fields": {
+        "title": "ITT Educational Services, Inc.",
+        "date_filed": "2014-02-26",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/itt-educational-services/",
+        "description": "On February 26, 2014, the CFPB filed a lawsuit against ITT Educational Services, Inc. (ITT) in the U.S. District Court for the Southern District of Indiana.",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/continental-finance-company",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/continental-finance-company/",
+      "fields": {
+        "title": "Continental Finance Company, LLC",
+        "date_filed": "2015-02-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/continental-finance-company/",
+        "description": "CFPB ordered Continental Finance Company LLC, a subprime credit card company based in Delaware, to refund an estimated $2.7 million to approximately 98,000...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/citibank",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/citibank/",
+      "fields": {
+        "title": "Citibank, N.A.",
+        "date_filed": "2016-02-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/citibank/",
+        "description": "The Bureau took two separate actions against Citibank for illegal debt sales and debt collection practices. In this action, the CFPB ordered Citibank to...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/tcf-national-bank",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/tcf-national-bank/",
+      "fields": {
+        "title": "TCF National Bank",
+        "date_filed": "2017-01-19",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/tcf-national-bank/",
+        "description": "The Bureau of Consumer Financial Protection (Bureau) obtained a federal district court order approving its settlement with TCF National Bank regarding its marketing and sale of overdraft services.",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/triton-management-group-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/triton-management-group-inc/",
+      "fields": {
+        "title": "Triton Management Group, Inc.",
+        "date_filed": "2018-07-19",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/triton-management-group-inc/",
+        "description": "The Bureau today announced a settlement with Triton Management Group, Inc., a small dollar lender that operates in Alabama, Mississippi, and South Carolina...",
+        "index_page": 8
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/enova-international-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/enova-international-inc/",
+      "fields": {
+        "title": "Enova International, Inc.",
+        "date_filed": "2019-01-25",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/enova-international-inc/",
+        "description": "On January 25, 2019, the Bureau issued an order against Enova International, Inc. The Bureau found that Enova violated the Consumer Financial Protection Act of 2010 by debiting consumers’ bank accounts without authorization.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/fifth-third-bank-national-association",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/fifth-third-bank-national-association/",
+      "fields": {
+        "title": "Fifth Third Bank, National Association",
+        "date_filed": "2020-03-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/fifth-third-bank-national-association/",
+        "description": "On March 9, 2020, the Bureau filed a lawsuit in federal district court in the Northern District of Illinois against Fifth Third Bank, National Association.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/student-loan-pro-judith-noh-syed-faisal-gilani-and-fnza-marketing-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/student-loan-pro-judith-noh-syed-faisal-gilani-and-fnza-marketing-llc/",
+      "fields": {
+        "title": "Student Loan Pro, Judith Noh, Syed Faisal Gilani, and FNZA Marketing, LLC",
+        "date_filed": "2021-03-16",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/student-loan-pro-judith-noh-syed-faisal-gilani-and-fnza-marketing-llc/",
+        "description": "On March 16, 2021, the Bureau filed a lawsuit against Student Loan Pro, a California sole proprietorship that telemarketed and provided debt-relief services focused on federal student-loan debt; Judith Noh, its owner; and Syed Gilani, its manager and owner-in-fact.",
+        "index_page": 5
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/moneygram-international-inc-and-moneygram-payment-systems-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/moneygram-international-inc-and-moneygram-payment-systems-inc/",
+      "fields": {
+        "title": "MoneyGram International, Inc. and MoneyGram Payment Systems, Inc.",
+        "date_filed": "2022-04-21",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/moneygram-international-inc-and-moneygram-payment-systems-inc/",
+        "description": "On April 21, 2022, the Bureau filed a lawsuit jointly with the Attorney General of New York against MoneyGram International, Inc. and MoneyGram Payment Systems, Inc. (collectively, MoneyGram), nonbank remittance transfer providers headquartered in Dallas, Texas.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/portfolio-recovery-associates-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/portfolio-recovery-associates-llc/",
+      "fields": {
+        "title": "Portfolio Recovery Associates, LLC",
+        "date_filed": "2023-03-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/portfolio-recovery-associates-llc/",
+        "description": "On March 23, 2023, the Bureau filed a complaint and proposed stipulated final judgment and order to resolve the Bureau's claims against Portfolio Recovery...",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/western-benefits-group-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/western-benefits-group-llc/",
+      "fields": {
+        "title": "Western Benefits Group, LLC",
+        "date_filed": "2024-05-20",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/western-benefits-group-llc/",
+        "description": "On May 20, 2024, the Bureau issued an order against Western Benefits Group, LLC, a telemarketer and seller of student-loan debt-relief services, headquartered in Pleasanton, California.",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/american-honda-finance-corporation-2025",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/american-honda-finance-corporation-2025/",
+      "fields": {
+        "title": "American Honda Finance Corporation",
+        "date_filed": "2025-01-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/american-honda-finance-corporation-2025/",
+        "description": "On January 17, 2025, the Bureau issued an order against American Honda Finance Corporation to address its violations relating to its furnishing of inaccurate consumer reporting information.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/national-legal-help-center",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/national-legal-help-center/",
+      "fields": {
+        "title": "Najia Jalan, National Legal Help Center, Inc., and Richard K. Nelson",
+        "date_filed": "2012-12-03",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/national-legal-help-center/",
+        "description": "The CFPB took action against two California residents Najia Jalan and Richard K. Nelson and their operation, National Legal Help Center, which appears to...",
+        "index_page": 16
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/premier-consulting-group-llc-and-law-office-michael-lupolover",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/premier-consulting-group-llc-and-law-office-michael-lupolover/",
+      "fields": {
+        "title": "Premier Consulting Group LLC and Law Office of Michael Lupolover",
+        "date_filed": "2013-05-07",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/premier-consulting-group-llc-and-law-office-michael-lupolover/",
+        "description": "The CFPB filed a complaint in a federal district court in New York against two debt-relief service providers that allegedly charged consumers illegal...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/bank-america-fia-card-services",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/bank-america-fia-card-services/",
+      "fields": {
+        "title": "Bank of America, N.A. and FIA Card Services, N.A.",
+        "date_filed": "2014-04-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/bank-america-fia-card-services/",
+        "description": "CFPB has ordered Bank of America, N.A. and FIA Card Services, N.A. to provide an estimated $727 million in relief to consumers harmed by practices related...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/new-day-financial",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/new-day-financial/",
+      "fields": {
+        "title": "New Day Financial, LLC",
+        "date_filed": "2015-02-10",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/new-day-financial/",
+        "description": "On February 10, 2015, the Bureau issued an order against New Day Financial, LLC (NewDay), a Maryland-based, nonbank mortgage lender owned by Chrysalis Holdings, a private company focused on originating refinance mortgage loans guaranteed by the United States Department of Veterans Affairs.",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/faloni-associates",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/faloni-associates/",
+      "fields": {
+        "title": "Faloni & Associates, LLC",
+        "date_filed": "2016-02-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/faloni-associates/",
+        "description": "The Bureau took two separate actions against Citibank for illegal debt sales and debt collection practices. This action is against both Citibank and two...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/citifinancial-servicing-llc-de-citifinancial-company-de-citifinancial-services-inc-mn-and-citifinancial-inc-wv",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/citifinancial-servicing-llc-de-citifinancial-company-de-citifinancial-services-inc-mn-and-citifinancial-inc-wv/",
+      "fields": {
+        "title": "CitiFinancial Servicing, LLC (DE), CitiFinancial Company (DE), CitiFinancial Services, Inc. (MN), and CitiFinancial, Inc. (WV)",
+        "date_filed": "2017-01-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/citifinancial-servicing-llc-de-citifinancial-company-de-citifinancial-services-inc-mn-and-citifinancial-inc-wv/",
+        "description": "The Bureau took separate actions against CitiFinancial Servicing and CitiMortgage, Inc. for giving the runaround to struggling homeowners seeking options to...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/future-income-payments-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/future-income-payments-llc/",
+      "fields": {
+        "title": "Future Income Payments, LLC, Scott Kohn, and related entities",
+        "date_filed": "2018-09-13",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/future-income-payments-llc/",
+        "description": "On September 13, 2018, the Bureau filed a lawsuit against Future Income Payments, LLC, Scott Kohn, and several related entities.",
+        "index_page": 8
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/cash-tyme",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/cash-tyme/",
+      "fields": {
+        "title": "Cash Tyme",
+        "date_filed": "2019-02-05",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/cash-tyme/",
+        "description": "The Bureau found that Cash Tyme violated the Consumer Financial Protection Act of 2010 by debiting consumers’ bank accounts without authorization.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/cottonwood-financial-ltd",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/cottonwood-financial-ltd/",
+      "fields": {
+        "title": "Cottonwood Financial, Ltd., d/b/a Cash Store",
+        "date_filed": "2020-04-01",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/cottonwood-financial-ltd/",
+        "description": "On April 1, 2020, the Consumer Financial Protection Bureau issued a consent order against Cottonwood Financial, Ltd., which does business under the name Cash Store.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/yorba-capital-management-llc-and-daniel-portilla-jr",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/yorba-capital-management-llc-and-daniel-portilla-jr/",
+      "fields": {
+        "title": "Yorba Capital Management, LLC and Daniel Portilla, Jr.",
+        "date_filed": "2021-04-06",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/yorba-capital-management-llc-and-daniel-portilla-jr/",
+        "description": "On April 6, 2021, the Bureau issued a consent order against Yorba Capital Management, LLC, a third-party debt collection company, headquartered in Anaheim California, and its former sole owner and managing member, Daniel Portilla, Jr.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/bank-of-america-na",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/bank-of-america-na/",
+      "fields": {
+        "title": "Bank of America, N.A.",
+        "date_filed": "2022-05-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/bank-of-america-na/",
+        "description": "On May 4, 2022, the Bureau issued a consent order against Bank of America, N.A., an insured depository institution, to address Bank of America’s processing of garnishment notices.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/james-r-carnes-melissa-c-carnes-james-r-carnes-revocable-trust-melissa-c-carnes-revocable-trust",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/james-r-carnes-melissa-c-carnes-james-r-carnes-revocable-trust-melissa-c-carnes-revocable-trust/",
+      "fields": {
+        "title": "James R. Carnes; Melissa C. Carnes; James R. Carnes Revocable Trust; Melissa C. Carnes Revocable Trust",
+        "date_filed": "2023-04-05",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/james-r-carnes-melissa-c-carnes-james-r-carnes-revocable-trust-melissa-c-carnes-revocable-trust/",
+        "description": "On April 5, 2023, the Bureau filed a lawsuit against James R. Carnes and his wife, Melissa C. Carnes, both individually and in their roles as co-trustees of two trusts, as a result of James Carnes’s efforts to conceal assets and avoid paying a judgment of more than $43 million to the Bureau.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/pennsylvania-higher-education-assistance-agency-pheaa-dba-american-education-services-or-aes",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/pennsylvania-higher-education-assistance-agency-pheaa-dba-american-education-services-or-aes/",
+      "fields": {
+        "title": "Pennsylvania Higher Education Assistance Agency (PHEAA) d/b/a American Education Services or AES",
+        "date_filed": "2024-05-31",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/pennsylvania-higher-education-assistance-agency-pheaa-dba-american-education-services-or-aes/",
+        "description": "On May 31, 2024, the Bureau filed a lawsuit against the Pennsylvania Higher Education Assistance Agency (PHEAA), a student loan servicer and guaranty agency headquartered in Harrisburg, Pennsylvania, which does business as American Education Services or AES.",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/draper-kramer-mortgage-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/draper-kramer-mortgage-corporation/",
+      "fields": {
+        "title": "Draper & Kramer Mortgage Corporation",
+        "date_filed": "2025-01-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/draper-kramer-mortgage-corporation/",
+        "description": "On January 17, 2025, the Bureau filed a complaint and proposed consent order to resolve allegations against Draper & Kramer Mortgage Corporation (Draper), a non-depository mortgage lender based in Downers Grove, Illinois.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/payday-loan-debt-solution",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/payday-loan-debt-solution/",
+      "fields": {
+        "title": "Payday Loan Debt Solution, Inc., and Sanjeet Parvani",
+        "date_filed": "2012-12-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/payday-loan-debt-solution/",
+        "description": "The CFPB and State partners took action against Payday Loan Debt Solution, Inc and filed an order in federal district court in Miami.",
+        "index_page": 16
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/paul-taylor-paul-taylor-homes-limited-paul-taylor-corp",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/paul-taylor-paul-taylor-homes-limited-paul-taylor-corp/",
+      "fields": {
+        "title": "Paul Taylor, Paul Taylor Homes Limited, and Paul Taylor Corp",
+        "date_filed": "2013-05-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/paul-taylor-paul-taylor-homes-limited-paul-taylor-corp/",
+        "description": "The Bureau ordered a Texas homebuilder, Paul Taylor, to surrender more than $100,000 he received in kickbacks for referring Mortgages business to Benchmark...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/jrhbw-realty-inc-dba-realtysouth-titlesouth-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/jrhbw-realty-inc-dba-realtysouth-titlesouth-llc/",
+      "fields": {
+        "title": "JRHBW Realty, Inc., d/b/a RealtySouth; TitleSouth, LLC",
+        "date_filed": "2014-05-28",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/jrhbw-realty-inc-dba-realtysouth-titlesouth-llc/",
+        "description": "The Bureau ordered RealtySouth, the largest real estate firm in Alabama, to pay $500,000 for inadequate disclosures that could leave consumers unaware of...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/all-financial-services",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/all-financial-services/",
+      "fields": {
+        "title": "All Financial Services, LLC",
+        "date_filed": "2015-02-12",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/all-financial-services/",
+        "description": "The Bureau took action against three reverse mortgage lenders, All Financial Services, Flagship Financial Group and American Preferred Lending for...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/solomon-and-solomon",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/solomon-and-solomon/",
+      "fields": {
+        "title": "Solomon & Solomon, P.C.",
+        "date_filed": "2016-02-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/solomon-and-solomon/",
+        "description": "The Bureau took two separate actions against Citibank for illegal debt sales and debt collection practices. This action is against both Citibank and two...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/citimortgage-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/citimortgage-inc/",
+      "fields": {
+        "title": "CitiMortgage, Inc.",
+        "date_filed": "2017-01-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/citimortgage-inc/",
+        "description": "The Bureau took separate actions against CitiFinancial Servicing and CitiMortgage, Inc. for giving the runaround to struggling homeowners seeking options to...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/bluestem-brands-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/bluestem-brands-inc/",
+      "fields": {
+        "title": "Bluestem Brands, Inc.; Bluestem Enterprises, Inc.; and Bluestem Sales, Inc., also doing business as Fingerhut and Gettington.com",
+        "date_filed": "2018-10-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/bluestem-brands-inc/",
+        "description": "The Bureau and Bluestem Brands, Inc.; Bluestem Enterprises, Inc.; and Bluestem Sales, Inc. (the Bluestem companies), have filed an administrative consent...",
+        "index_page": 8
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/conduent-education-services-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/conduent-education-services-llc/",
+      "fields": {
+        "title": "Conduent Education Services, LLC",
+        "date_filed": "2019-05-01",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/conduent-education-services-llc/",
+        "description": "The CFPB today announced a settlement with Conduent Education Services, LLC (CES).",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/specialized-loan-servicing-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/specialized-loan-servicing-llc/",
+      "fields": {
+        "title": "Specialized Loan Servicing, LLC",
+        "date_filed": "2020-05-11",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/specialized-loan-servicing-llc/",
+        "description": "On May 11 2020, the Consumer Financial Protection Bureau (Bureau) issued a consent order against Specialized Loan Servicing, LLC (SLS), a mortgage-loan servicer in Colorado.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/settleit-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/settleit-inc/",
+      "fields": {
+        "title": "SettleIt, Inc.",
+        "date_filed": "2021-04-13",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/settleit-inc/",
+        "description": "On April 13, 2021, the Bureau filed a proposed stipulated final judgment and order in U.S. District Court to resolve allegations that SettleIt, Inc., a California-based debt-settlement company, violated the Telemarketing Sales Rule and engaged in abusive acts and practices under the Consumer Financial Protection Act.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/ram-payment-llc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/ram-payment-llc-et-al/",
+      "fields": {
+        "title": "RAM Payment, LLC, also dba Reliant; Account Management Systems, LLC, fka Reliant Account Management; Gregory Winters; and Stephen Chaya",
+        "date_filed": "2022-05-11",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/ram-payment-llc-et-al/",
+        "description": "On May 11, 2022, the Bureau issued an order against Tennessee-based RAM Payment, LLC and Account Management Systems, LLC (AMS) and AMS’s co-founders, Gregory Winters and Stephen Chaya.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/onemain-financial-holdings-llc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/onemain-financial-holdings-llc-et-al/",
+      "fields": {
+        "title": "OneMain Financial Holdings, LLC; OneMain Financial Group, LLC; OneMain Financial (HI), Inc.; OneMain Financial, Inc.; OneMain Financial of Minnesota, Inc.",
+        "date_filed": "2023-05-31",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/onemain-financial-holdings-llc-et-al/",
+        "description": "On May 31, 2023, the Consumer Financial Protection Bureau (Bureau) issued an order against OneMain Financial Holdings, LLC; OneMain Financial Group, LLC; OneMain Financial (HI), Inc.; OneMain Financial, Inc.; and OneMain Financial of Minnesota, Inc. (collectively referred to as OneMain). OneMain is an Indiana-based personal loan installment lender with more than 1,400 branches across 44 states.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/novad-management-consulting-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/novad-management-consulting-llc/",
+      "fields": {
+        "title": "NOVAD Management Consulting, LLC",
+        "date_filed": "2024-06-18",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/novad-management-consulting-llc/",
+        "description": "On June 18, 2024, the Bureau issued an order against NOVAD Management Consulting, LLC. NOVAD ran a loan-servicing operation that serviced home equity conversion mortgages, or reverse mortgage loans, on behalf of the Department of Housing and Urban Development (HUD).",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/synapse-financial-technologies-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/synapse-financial-technologies-inc/",
+      "fields": {
+        "title": "Synapse Financial Technologies, Inc.",
+        "date_filed": "2025-08-21",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/synapse-financial-technologies-inc/",
+        "description": "On August 21, 2025, the Bureau commenced an adversary proceeding and filed a complaint and proposed stipulated final judgment and order against Synapse Financial Technologies, Inc.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/american-debt-settlement-solutions-inc-michael-depanni",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/american-debt-settlement-solutions-inc-michael-depanni/",
+      "fields": {
+        "title": "American Debt Settlement Solutions, Inc.,and Michael DiPanni",
+        "date_filed": "2013-05-30",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/american-debt-settlement-solutions-inc-michael-depanni/",
+        "description": "CFPB filed a complaint in a federal district court against a Florida debt-relief company that misled consumers across the country and charged illegal fees...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/stonebridge-title-services",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/stonebridge-title-services/",
+      "fields": {
+        "title": "Stonebridge Title Services, Inc.",
+        "date_filed": "2014-06-12",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/stonebridge-title-services/",
+        "description": "The Bureau ordered a New Jersey company, Stonebridge Title Services Inc., to pay $30,000 for paying illegal kickbacks for referrals.",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/american-preferred",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/american-preferred/",
+      "fields": {
+        "title": "American Preferred Lending, Inc.",
+        "date_filed": "2015-02-12",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/american-preferred/",
+        "description": "CFPB took action against three reverse mortgage lenders, All Financial Services, Flagship Financial Group and American Preferred Lending, for misleading...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/dwolla",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/dwolla/",
+      "fields": {
+        "title": "Dwolla, Inc.",
+        "date_filed": "2016-03-02",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/dwolla/",
+        "description": "The Bureau took action against online payment platform Dwolla for deceiving consumers about its data security practices and the safety of its online payment...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/vincent-howard-lawrence-w-williamson-howard-law-pc-williamson-law-firm-llc-and-williamson-howard-llp",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/vincent-howard-lawrence-w-williamson-howard-law-pc-williamson-law-firm-llc-and-williamson-howard-llp/",
+      "fields": {
+        "title": "Vincent Howard, Lawrence W. Williamson, Howard Law, P.C., The Williamson Law Firm, LLC, and Williamson & Howard, LLP",
+        "date_filed": "2017-01-30",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/vincent-howard-lawrence-w-williamson-howard-law-pc-williamson-law-firm-llc-and-williamson-howard-llp/",
+        "description": "The CFPB today took action against a ring of law firms and attorneys who collaborated to charge illegal fees to consumers seeking debt relief.",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/cash-express-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/cash-express-llc/",
+      "fields": {
+        "title": "Cash Express, LLC",
+        "date_filed": "2018-10-24",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/cash-express-llc/",
+        "description": "The Bureau today announced a settlement with Cash Express, LLC, a small-dollar lender based in Cookeville, Tenn., that offers high-cost, short-term loans...",
+        "index_page": 8
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/pgx-holdings-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/pgx-holdings-inc/",
+      "fields": {
+        "title": "Progrexion Marketing, Inc.; PGX Holdings, Inc.; Progrexion Teleservices, Inc.; eFolks, LLC; CreditRepair.com, Inc.; John C. Heath, Attorney at Law, PLLC, d/b/a/ Lexington Law",
+        "date_filed": "2019-05-02",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/pgx-holdings-inc/",
+        "description": "On May 2, 2019, the Bureau filed suit against PGX Holdings, Inc. and its subsidiaries, Progrexion Marketing, Inc., Progrexion Teleservices, Inc., CreditRepair.com, Inc., and eFolks, LLC (collectively, Progrexion) and against John C. Heath, Attorney at Law PC (Lexington Law), which does business as Lexington Law.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/commonwealth-equity-group-dba-key-credit-repair-nikitas-tsoukales",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/commonwealth-equity-group-dba-key-credit-repair-nikitas-tsoukales/",
+      "fields": {
+        "title": "Commonwealth Equity Group, LLC (d/b/a Key Credit Repair); Nikitas Tsoukales (a/k/a Nikitas Tsoukalis)",
+        "date_filed": "2020-05-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/commonwealth-equity-group-dba-key-credit-repair-nikitas-tsoukales/",
+        "description": "On May 22, 2020, the Bureau and Commonwealth of Massachusetts Attorney General Maura Healey jointly filed a lawsuit against Commonwealth Equity Group, LLC, which does business as Key Credit Repair, and Nikitas Tsoukales (also known as Nikitas Tsoukalis), Key Credit Repair’s president and owner.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/douglas-mackinnon-amy-mackinnon-mary-kate-mackinnon-and-matthew-mackinnon",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/douglas-mackinnon-amy-mackinnon-mary-kate-mackinnon-and-matthew-mackinnon/",
+      "fields": {
+        "title": "Douglas MacKinnon, Amy MacKinnon, Mary-Kate MacKinnon, and Matthew MacKinnon",
+        "date_filed": "2021-04-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/douglas-mackinnon-amy-mackinnon-mary-kate-mackinnon-and-matthew-mackinnon/",
+        "description": "On April 22, 2021, the Bureau filed a lawsuit against Douglas MacKinnon, who operated a debt-collection enterprise, and Amy MacKinnon, Mary-Kate MacKinnon, and Matthew MacKinnon, relatives of Douglas MacKinnon.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/frank-ronald-gebase-jr",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/frank-ronald-gebase-jr/",
+      "fields": {
+        "title": "Frank Ronald Gebase, Jr.",
+        "date_filed": "2022-06-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/frank-ronald-gebase-jr/",
+        "description": "On June 9, 2022, the Bureau filed a lawsuit in the United States District Court for the Southern District of California against Frank R. Gebase Jr., along with a proposed stipulated final judgment and order.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/phoenix-financial-services-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/phoenix-financial-services-llc/",
+      "fields": {
+        "title": "Phoenix Financial Services, LLC",
+        "date_filed": "2023-06-08",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/phoenix-financial-services-llc/",
+        "description": "On June 8, 2023, the Consumer Financial Protection Bureau (Bureau) issued an order against Phoenix Financial Services, LLC (Phoenix), an Indiana-based debt collector that collects primarily past-due medical debts and furnishes information about consumers to consumer reporting agencies (CRAs).",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/sutherland-global-services-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/sutherland-global-services-inc/",
+      "fields": {
+        "title": "Sutherland Global Services, Inc., Sutherland Mortgage Services, Inc., and Sutherland Government Solutions, Inc.",
+        "date_filed": "2024-06-18",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/sutherland-global-services-inc/",
+        "description": "On June 18, 2024, the Bureau issued an order against Sutherland Global Services, Inc., Sutherland Mortgage Services, Inc., and Sutherland Government Solutions, Inc. Sutherland ran a loan-servicing operation that serviced home equity conversion mortgages, or reverse mortgage loans, on behalf of the Department of Housing and Urban Development (HUD)",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/3d-resorts-bluegrass",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/3d-resorts-bluegrass/",
+      "fields": {
+        "title": "3D Resorts-Bluegrass, LLC (Green Farm)",
+        "date_filed": "2013-06-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/3d-resorts-bluegrass/",
+        "description": "In the bankruptcy action, the CFPB filed a proof of claim related to potential violations including alleged misrepresentations by a developer/lot seller and...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/suntrust-mortgage-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/suntrust-mortgage-inc/",
+      "fields": {
+        "title": "SunTrust Mortgage, Inc.",
+        "date_filed": "2014-06-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/suntrust-mortgage-inc/",
+        "description": "The Bureau, Department of Justice (DOJ), Department of Housing and Urban Development (HUD), and attorneys general in 49 states and the District of Columbia...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/flagship-financial",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/flagship-financial/",
+      "fields": {
+        "title": "Flagship Financial Group, LLC",
+        "date_filed": "2015-02-12",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/flagship-financial/",
+        "description": "CFPB took action against three reverse mortgage lenders, All Financial Services, Flagship Financial Group and American Preferred Lending, for misleading...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/student-aid-institute-steven-lamont",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/student-aid-institute-steven-lamont/",
+      "fields": {
+        "title": "Student Aid Institute, Steven Lamont",
+        "date_filed": "2016-03-30",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/student-aid-institute-steven-lamont/",
+        "description": "The Bureau took action to halt a student loan debt relief scam that illegally tricked borrowers into paying fees for federal loan benefits and...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/planet-home-lending-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/planet-home-lending-llc/",
+      "fields": {
+        "title": "Planet Home Lending, LLC",
+        "date_filed": "2017-01-31",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/planet-home-lending-llc/",
+        "description": "The Bureau took action against Planet Home Lending, LLC, a mortgage servicer headquartered in Meriden, Connecticut, for accepting payments for mortgage business referrals from Prospect Mortgage, LLC and for improper use of credit reports for marketing purposes.",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/santander-consumer-usa-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/santander-consumer-usa-inc/",
+      "fields": {
+        "title": "Santander Consumer USA, Inc.",
+        "date_filed": "2018-11-20",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/santander-consumer-usa-inc/",
+        "description": "The Bureau of Consumer Financial Protection announced a settlement with Santander Consumer USA Inc., a consumer financial services company based in Dallas...",
+        "index_page": 8
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/forster-garbus-llp",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/forster-garbus-llp/",
+      "fields": {
+        "title": "Forster & Garbus, LLP",
+        "date_filed": "2019-05-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/forster-garbus-llp/",
+        "description": "On May 17, 2019, the Bureau filed suit against Forster & Garbus, LLP, a debt-collection law firm based in Commack, New York.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/main-street-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/main-street-et-al/",
+      "fields": {
+        "title": "Main Street Personal Finance, Inc., ACAC, Inc. d/b/a Approved Cash Advance, and Quik Lend, Inc.",
+        "date_filed": "2020-06-02",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/main-street-et-al/",
+        "description": "On June 2, 2020, the Bureau announced a settlement with Main Street Personal Finance, Inc. and its subsidiaries.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/nationwide-equities-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/nationwide-equities-corporation/",
+      "fields": {
+        "title": "Nationwide Equities Corporation",
+        "date_filed": "2021-04-27",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/nationwide-equities-corporation/",
+        "description": "On April 27, 2021, the Bureau issued a consent order against Nationwide Equities Corporation (NWEC), a reverse mortgage broker and lender.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+      "fields": {
+        "title": "Populus Financial Group, Inc., d/b/a ACE Cash Express, Inc.",
+        "date_filed": "2022-07-12",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/populus-financial-group-inc-d-b-a-ace-cash-express-inc/",
+        "description": "On July 12, 2022, the Bureau filed a lawsuit in the U.S. District Court for the Northern District of Texas against Populus Financial Group, Inc., which does business as ACE Cash Express, Inc. (“ACE”).",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/aci-worldwide-corp-and-aci-payments-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/aci-worldwide-corp-and-aci-payments-inc/",
+      "fields": {
+        "title": "ACI Worldwide Corp. and ACI Payments Inc.",
+        "date_filed": "2023-06-27",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/aci-worldwide-corp-and-aci-payments-inc/",
+        "description": "On June 27, 2023, the Bureau issued an order against ACI Worldwide Corp. and ACI Payments Inc. (collectively, ACI), a nationwide payment processor headquartered in Elkhorn, Nebraska.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/fifth-third-bank-na-fpi-2024",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/fifth-third-bank-na-fpi-2024/",
+      "fields": {
+        "title": "Fifth Third Bank, N.A.",
+        "date_filed": "2024-07-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/fifth-third-bank-na-fpi-2024/",
+        "description": "On July 9, 2024, the Bureau issued an order against Fifth Third Bank, N.A., a national bank that, among other things, offers and services motor vehicle loans to consumers directly and through a variety of vehicle dealers.",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/dealers-financial-services-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/dealers-financial-services-llc/",
+      "fields": {
+        "title": "Dealers’ Financial Services, LLC",
+        "date_filed": "2013-06-26",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/dealers-financial-services-llc/",
+        "description": "The CFPB ordered U.S. Bank and one of its nonbank partner companies, Dealers' Financial Services, to end deceptive marketing and lending practices targeting...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/synchrony-bank-fka-ge-capital-retail-bank",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/synchrony-bank-fka-ge-capital-retail-bank/",
+      "fields": {
+        "title": "Synchrony Bank, f/k/a GE Capital Retail Bank",
+        "date_filed": "2014-06-19",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/synchrony-bank-fka-ge-capital-retail-bank/",
+        "description": "The Bureau ordered GE Capital Retail Bank, now known as Synchrony Bank, to provide an estimated $225 million in relief to consumers harmed by illegal and...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/universal-debt-payment-solutions-llc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/universal-debt-payment-solutions-llc-et-al/",
+      "fields": {
+        "title": "Universal Debt & Payment Solutions, LLC, Universal Debt Solutions, LLC, WNY Account Solutions, LLC, and Associated Companies and Individuals",
+        "date_filed": "2015-03-26",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/universal-debt-payment-solutions-llc-et-al/",
+        "description": "On March 26, 2015, the Bureau filed a complaint against a group of individuals, their companies, and their service providers alleging unlawful conduct related to a phantom debt collection operation.",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/davit-gasparyan-k-david-gasparyan",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/davit-gasparyan-k-david-gasparyan/",
+      "fields": {
+        "title": "Davit Gasparyan, a/k/a David Gasparyan",
+        "date_filed": "2016-04-21",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/davit-gasparyan-k-david-gasparyan/",
+        "description": "The CFPB took action on April 21, 2016 against Davit Gasparyan, a/k/a David Gasparyan, co-founder of T3Leads, a company that...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/prospect-mortgage-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/prospect-mortgage-llc/",
+      "fields": {
+        "title": "Prospect Mortgage LLC",
+        "date_filed": "2017-01-31",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/prospect-mortgage-llc/",
+        "description": "The CFPB took action against Prospect Mortgage, LLC, a major mortgage lender, for paying illegal kickbacks for mortgage...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/village-capital-and-investment-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/village-capital-and-investment-llc/",
+      "fields": {
+        "title": "Village Capital and Investment, LLC",
+        "date_filed": "2018-12-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/village-capital-and-investment-llc/",
+        "description": "The Bureau of Consumer Financial Protection has filed a complaint in federal court in the District of Nevada alleging a claim of deception against Village...",
+        "index_page": 8
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/servis-one-inc-db-bsi-financial-services",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/servis-one-inc-db-bsi-financial-services/",
+      "fields": {
+        "title": "Servis One, Inc., d/b/a BSI Financial Services",
+        "date_filed": "2019-05-29",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/servis-one-inc-db-bsi-financial-services/",
+        "description": "The Bureau today announced a settlement with BSI Financial Services (BSI), a mortgage servicer headquartered in Irving, Texas. BSI Financial Services is the...",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/harbour-portfolio-advisors-llc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/harbour-portfolio-advisors-llc-et-al/",
+      "fields": {
+        "title": "Harbour Portfolio Advisors, LLC; National Asset Advisors, LLC; and National Asset Mortgage, LLC",
+        "date_filed": "2020-06-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/harbour-portfolio-advisors-llc-et-al/",
+        "description": "On June 23, 2020, the Consumer Financial Protection Bureau settled with Harbour Portfolio Advisors, LLC (Harbour); National Asset Advisors, LLC (NAA); and National Asset Mortgage, LLC (NAM), companies that worked together to issue contracts for deeds to consumers.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/3rd-generation-inc-dba-california-auto-finance",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/3rd-generation-inc-dba-california-auto-finance/",
+      "fields": {
+        "title": "3rd Generation, Inc. d/b/a California Auto Finance",
+        "date_filed": "2021-05-21",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/3rd-generation-inc-dba-california-auto-finance/",
+        "description": "On May 21, 2021, the Bureau issued a consent order against 3rd Generation, Inc., a California corporation doing business as California Auto Finance (California Auto).",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/hyundai-capital-america",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/hyundai-capital-america/",
+      "fields": {
+        "title": "Hyundai Capital America",
+        "date_filed": "2022-07-26",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/hyundai-capital-america/",
+        "description": "On July 26, 2022, the Bureau issued a consent order against Hyundai Capital America (HCA), a nonbank automotive finance company based in Irvine, California.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/prehired-llc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/prehired-llc-et-al/",
+      "fields": {
+        "title": "Prehired, LLC, Prehired Recruiting, LLC, and Prehired Accelerator, LLC",
+        "date_filed": "2023-07-13",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/prehired-llc-et-al/",
+        "description": "On July 13, 2023, the Bureau and several state partners filed a complaint in an adversary proceeding against Prehired, LLC, Prehired Recruiting, LLC, and Prehired Accelerator, LLC.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/acima-allred",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/acima-allred/",
+      "fields": {
+        "title": "Acima Holdings, LLC; Acima Digital, LLC; and Aaron Allred",
+        "date_filed": "2024-07-26",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/acima-allred/",
+        "description": "On July 26, 2024, the Bureau filed a lawsuit against Acima Holdings, LLC and Acima Digital, LLC (collectively, “Acima”), and Acima’s founder and former CEO, Aaron Allred (“Allred”).",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/dealers-financial-services",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/dealers-financial-services/",
+      "fields": {
+        "title": "U.S. Bank National Association",
+        "date_filed": "2013-06-26",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/dealers-financial-services/",
+        "description": "The CFPB ordered U.S. Bank and one of its nonbank partner companies, Dealers' Financial Services, to end deceptive marketing and lending practices targeting...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/ace-cash-express",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/ace-cash-express/",
+      "fields": {
+        "title": "ACE Cash Express, Inc.",
+        "date_filed": "2014-07-10",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/ace-cash-express/",
+        "description": "The CFPB took enforcement action against ACE Cash Express, one of the largest payday lenders in the United States, for pushing payday borrowers into a cycle...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/national-corrective-group",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/national-corrective-group/",
+      "fields": {
+        "title": "National Corrective Group, Inc. (NCG), American Justice Solutions, Inc. d/b/a Corrective Solutions, et al.",
+        "date_filed": "2015-03-30",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/national-corrective-group/",
+        "description": "CFPB took action against the National Corrective Group, a nationwide debt collection operation and its chief executive officer for using deceptive threats...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/dmitry-fomichev",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/dmitry-fomichev/",
+      "fields": {
+        "title": "Dmitry Fomichev",
+        "date_filed": "2016-04-21",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/dmitry-fomichev/",
+        "description": "The Bureau took action on April 21, 2016 against Dmitry Fomichev, co-founder of T3Leads, a company that resold loan applications containing sensitive...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/rgc-services-inc-dba-remax-gold-coast-realtors",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/rgc-services-inc-dba-remax-gold-coast-realtors/",
+      "fields": {
+        "title": "RGC Services, Inc. dba Re/Max Gold Coast Realtors",
+        "date_filed": "2017-01-31",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/rgc-services-inc-dba-remax-gold-coast-realtors/",
+        "description": "The CFPB took action against Re/Max Gold Coast Realtors, a real estate broker in California, for accepting illegal kickbacks...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/state-farm-bank-fsb",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/state-farm-bank-fsb/",
+      "fields": {
+        "title": "State Farm Bank, FSB",
+        "date_filed": "2018-12-06",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/state-farm-bank-fsb/",
+        "description": "The Bureau of Consumer Financial Protection (Bureau) announced a settlement with State Farm Bank, FSB, a federal savings association headquartered in Bloomington, Ill.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/freedom-mortgage-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/freedom-mortgage-corporation/",
+      "fields": {
+        "title": "Freedom Mortgage Corporation",
+        "date_filed": "2019-06-05",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/freedom-mortgage-corporation/",
+        "description": "The Bureau today announced a settlement with Freedom Mortgage Corporation (Freedom), one of the ten largest Home Mortgage Disclosure Act (HMDA) reporters...",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/my-loan-doctor-llc-edgar-radjabli",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/my-loan-doctor-llc-edgar-radjabli/",
+      "fields": {
+        "title": "My Loan Doctor LLC and Edgar Radjabli",
+        "date_filed": "2020-07-06",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/my-loan-doctor-llc-edgar-radjabli/",
+        "description": "On July 6, 2020, the Consumer Financial Protection Bureau (Bureau) filed a lawsuit against My Loan Doctor LLC, a Delaware company operating in West Palm Beach, Florida and New York City and doing business as Loan Doctor (Loan Doctor), and its founder, Edgar Radjabli.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/burlington-financial-group-llc-richard-burnham-katherine-burnham-sang-yi",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/burlington-financial-group-llc-richard-burnham-katherine-burnham-sang-yi/",
+      "fields": {
+        "title": "Burlington Financial Group, LLC, Richard Burnham, Katherine Burnham, and Sang Yi",
+        "date_filed": "2021-06-28",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/burlington-financial-group-llc-richard-burnham-katherine-burnham-sang-yi/",
+        "description": "On June 28, 2021, the Bureau filed a lawsuit in the United States District Court for the Northern District of Georgia, and on the following day, the Bureau filed a proposed stipulated final judgment and order against Burlington Financial Group, LLC, and its principals, Richard Burnham, Katherine Burnham, and Sang Yi, which the court entered the same day.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/trident-mortgage-company-lp",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/trident-mortgage-company-lp/",
+      "fields": {
+        "title": "Trident Mortgage Company, LP",
+        "date_filed": "2022-07-27",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/trident-mortgage-company-lp/",
+        "description": "On July 27, 2022, the Bureau, together with the United States Department of Justice (DOJ), filed a complaint and proposed consent order in the United States District Court for the Eastern District of Pennsylvania to resolve their allegations against Trident Mortgage Company, LP (Trident).",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/snap-finance-llc-snap-rto-llc-snap-second-look-llc-snap-us-holdings-llc-snap-finance-holdings-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/snap-finance-llc-snap-rto-llc-snap-second-look-llc-snap-us-holdings-llc-snap-finance-holdings-llc/",
+      "fields": {
+        "title": "Snap Finance LLC, Snap RTO LLC, Snap Second Look LLC, Snap U.S. Holdings LLC, Snap Finance Holdings LLC",
+        "date_filed": "2023-07-19",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/snap-finance-llc-snap-rto-llc-snap-second-look-llc-snap-us-holdings-llc-snap-finance-holdings-llc/",
+        "description": "On July 19, 2023, the Bureau filed a lawsuit against Snap Finance LLC, Snap RTO LLC, Snap Second Look LLC, Snap U.S. Holdings LLC, and Snap Finance Holdings LLC (collectively, Snap), a group of interrelated companies headquartered in West Valley, Utah.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/fay-servicing-llc-2024",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/fay-servicing-llc-2024/",
+      "fields": {
+        "title": "Fay Servicing, LLC",
+        "date_filed": "2024-08-21",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/fay-servicing-llc-2024/",
+        "description": "On August 21, 2024, the Bureau issued an order against Fay Servicing, LLC, a residential mortgage servicer headquartered in Tampa, Florida.",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/castle-cooke-mortgage",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/castle-cooke-mortgage/",
+      "fields": {
+        "title": "Castle & Cooke Mortgage, LLC; Matthew A. Pineda, individually; and Buck L. Hawkins",
+        "date_filed": "2013-07-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/castle-cooke-mortgage/",
+        "description": "The CFPB filed a complaint in federal district court against a Utah-based mortgage company, Castle & Cooke Mortgage LLC, and two of its officers for...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/frederick-hanna-associates",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/frederick-hanna-associates/",
+      "fields": {
+        "title": "Frederick J. Hanna & Associates, P.C., Frederick J. Hanna, Joseph C. Cooling, and Robert A. Winter",
+        "date_filed": "2014-07-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/frederick-hanna-associates/",
+        "description": "CFPB filed a lawsuit in a federal district court against a Georgia-based firm, Frederick J. Hanna & Associates, and its three principal partners for...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/rmk-financial-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/rmk-financial-corporation/",
+      "fields": {
+        "title": "R M K Financial Corporation d/b/a Majestic Home Loans",
+        "date_filed": "2015-04-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/rmk-financial-corporation/",
+        "description": "On April 9, 2015, the CFPB issued an order against RMK Financial Corporation for deceptive mortgage advertising practices and failure to comply with the...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/new-century-financial-services-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/new-century-financial-services-inc/",
+      "fields": {
+        "title": "New Century Financial Services, Inc.",
+        "date_filed": "2016-04-25",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/new-century-financial-services-inc/",
+        "description": "The Bureau ordered the debt collection law firm Pressler & Pressler, LLP, two principal partners, and New Century Financial Services, Inc., a debt buyer, to...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/willamette-legacy-llc-dba-keller-williams-mid-willamette",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/willamette-legacy-llc-dba-keller-williams-mid-willamette/",
+      "fields": {
+        "title": "Willamette Legacy, LLC dba Keller Williams Mid-Willamette",
+        "date_filed": "2017-01-31",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/willamette-legacy-llc-dba-keller-williams-mid-willamette/",
+        "description": "The CFPB took action against Keller Williams Mid-Willamette, a real estate broker in Oregon, for accepting illegal kickbacks...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/student-cu-connect-cuso-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/student-cu-connect-cuso-llc/",
+      "fields": {
+        "title": "Student CU Connect CUSO, LLC",
+        "date_filed": "2019-06-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/student-cu-connect-cuso-llc/",
+        "description": "The Bureau today announced a settlement with Student CU Connect CUSO, LLC (CUSO), a company set up to hold and manage private loans for students at ITT...",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/timemark-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/timemark-et-al/",
+      "fields": {
+        "title": "Timemark, Inc., Timothy Lenihan, Sr., Mark Nagler, and Casey Gassaway",
+        "date_filed": "2020-07-07",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/timemark-et-al/",
+        "description": "On July 7, 2020, the Consumer Financial Protection Bureau settled with Timemark, Inc., a company based in Deerfield Beach, Florida, that provides debt-relief services to consumers with federal student-loan debt, and with its owners and officers, Timothy Lenihan, Sr., Mark Nagler, and Casey Gassaway.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/greensky-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/greensky-llc/",
+      "fields": {
+        "title": "GreenSky, LLC",
+        "date_filed": "2021-07-12",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/greensky-llc/",
+        "description": "On July 12, 2021, the Bureau issued a consent order against GreenSky LLC (GreenSky), a financial technology company that services and facilitates the origination of consumer loans.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/hello-digit-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/hello-digit-llc/",
+      "fields": {
+        "title": "Hello Digit, LLC",
+        "date_filed": "2022-08-10",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/hello-digit-llc/",
+        "description": "On August 10, 2022, the Bureau issued an order against Hello Digit, LLC (“Digit”), a financial-technology company that offers consumers an automated-savings tool.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/usasf-servicing-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/usasf-servicing-llc/",
+      "fields": {
+        "title": "USASF Servicing, LLC",
+        "date_filed": "2023-08-02",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/usasf-servicing-llc/",
+        "description": "On August 2, 2023, the Bureau filed a lawsuit against USASF Servicing, LLC, an auto-loan servicer headquartered in Lawrenceville, Georgia.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/new-day-financial-2024",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/new-day-financial-2024/",
+      "fields": {
+        "title": "New Day Financial, LLC",
+        "date_filed": "2024-08-29",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/new-day-financial-2024/",
+        "description": "On August 29, 2024, the Bureau issued an order against New Day Financial, LLC (NewDay USA), a nonbank direct mortgage lender headquartered in West Palm Beach, Florida, specializing in offering refinance mortgage loans guaranteed by the United States Department of Veterans Affairs.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/morgan-drexen-inc-walter-ledda",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/morgan-drexen-inc-walter-ledda/",
+      "fields": {
+        "title": "Morgan Drexen, Inc. and Walter Ledda",
+        "date_filed": "2013-08-20",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/morgan-drexen-inc-walter-ledda/",
+        "description": "The CFPB filed a lawsuit in federal district court against a Nevada corporation, Morgan Drexen, Inc., and its president and chief executive officer, Walter...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/residential-litigation-group-aka-hoffman-law",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/residential-litigation-group-aka-hoffman-law/",
+      "fields": {
+        "title": "Michael Harper, Ben Wilcox, Marc Hoffman et al.",
+        "date_filed": "2014-07-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/residential-litigation-group-aka-hoffman-law/",
+        "description": "The Bureau filed a lawsuit against the Hoffman Law Group and its affiliated companies and principals that collected more than $12 million in illegal advance...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/sw-tax-loans-navajo-nation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/sw-tax-loans-navajo-nation/",
+      "fields": {
+        "title": "S/W Tax Loans, Inc. formerly d/b/a Fast Refund Loans, Inc.; J Thomas Development of NM, Inc. formerly d/b/a H&R Block; Dennis R. Gonzales; and Jeffrey Scott Thomas",
+        "date_filed": "2015-04-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/sw-tax-loans-navajo-nation/",
+        "description": "The CFPB announced that, together with the Navajo Nation, it is taking action against companies and individuals who operated an illegal tax-refund scheme.",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/pressler-pressler-llp-sheldon-h-pressler-and-gerard-j-felt",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/pressler-pressler-llp-sheldon-h-pressler-and-gerard-j-felt/",
+      "fields": {
+        "title": "Pressler & Pressler, LLP, Sheldon H. Pressler, and Gerard J. Felt",
+        "date_filed": "2016-04-25",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/pressler-pressler-llp-sheldon-h-pressler-and-gerard-j-felt/",
+        "description": "The Bureau ordered the debt collection law firm Pressler & Pressler, LLP, two principal partners, and New Century Financial Services, Inc., a debt buyer, to...",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/unirush-llc-and-mastercard-international-incorporated",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/unirush-llc-and-mastercard-international-incorporated/",
+      "fields": {
+        "title": "UniRush LLC and Mastercard International Incorporated",
+        "date_filed": "2017-02-01",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/unirush-llc-and-mastercard-international-incorporated/",
+        "description": "The Bureau took action against Mastercard and UniRush for breakdowns that left tens of thousands of economically vulnerable RushCard users unable to access...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/equifax-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/equifax-inc/",
+      "fields": {
+        "title": "Equifax, Inc.",
+        "date_filed": "2019-07-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/equifax-inc/",
+        "description": "On July 22, 2019, the Bureau, the Federal Trade Commission (FTC), and 48 states, the District of Columbia and Puerto Rico announced a global settlement with...",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/gst-factoring-inc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/gst-factoring-inc-et-al/",
+      "fields": {
+        "title": "GST Factoring, Inc., Champion Marketing Solutions, LLC, Rick Graff, Gregory Trimarche, Scott Freda, Amanda Johanson, David Mize, Jacob Slaughter, and Daniel Ruggiero",
+        "date_filed": "2020-07-13",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/gst-factoring-inc-et-al/",
+        "description": "On July 13, 2020, the Bureau filed a complaint in the federal district court for the Central District of California against GST Factoring, Inc., which runs a student-loan debt-relief business in Texas, and two of its owners, Rick Graff and Gregory Trimarche, as well as Champion Marketing Solutions, LLC, a customer service and marketing company, and its owner, Scott Freda. The Bureau also filed suit against four attorneys, California attorneys Amanda Johanson and Jacob Slaughter, Arizona attorney David Mize, and Florida attorney Daniel Ruggiero.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/better-future-forward-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/better-future-forward-inc/",
+      "fields": {
+        "title": "Better Future Forward, Inc.",
+        "date_filed": "2021-09-07",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/better-future-forward-inc/",
+        "description": "On September 7, 2021, the Bureau issued a consent order against Better Future Forward, Inc.; Better Future Forward Manager, LLC; Better Future Forward Opportunity ISA Fund (CP1), LLC; and Better Future Forward Opportunity ISA Fund (CH1), LLC (collectively, “BFF”), which are companies that provide students with income-share agreements (ISAs) to finance postsecondary education.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/regions-bank_2022",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/regions-bank_2022/",
+      "fields": {
+        "title": "Regions Bank",
+        "date_filed": "2022-09-28",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/regions-bank_2022/",
+        "description": "On September 28, 2022, the Bureau issued an order against Regions Bank, a bank headquartered in Birmingham, Alabama with consolidated assets over $163 billion.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/freedom-mortgage-corporation-2023-respa",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/freedom-mortgage-corporation-2023-respa/",
+      "fields": {
+        "title": "Freedom Mortgage Corporation",
+        "date_filed": "2023-08-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/freedom-mortgage-corporation-2023-respa/",
+        "description": "On August 17, 2023, the Bureau issued an order against Freedom Mortgage Corporation (Freedom), a residential mortgage loan originator and servicer headquartered in Boca Raton, Florida.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/reliant-holdings-inc-dba-horizon-card-services-and-robert-kane",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/reliant-holdings-inc-dba-horizon-card-services-and-robert-kane/",
+      "fields": {
+        "title": "Reliant Holdings, Inc. d/b/a Horizon Card Services; and Robert Kane",
+        "date_filed": "2024-09-13",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/reliant-holdings-inc-dba-horizon-card-services-and-robert-kane/",
+        "description": "On September 13, 2024, the Bureau filed a lawsuit against Reliant Holdings, Inc., d/b/a Horizon Card Services and Robert Kane, its sole shareholder, owner, and chief executive officer.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/jpmorgan-chase-bank-usa",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/jpmorgan-chase-bank-usa/",
+      "fields": {
+        "title": "JPMorgan Chase Bank, N.A.; and Chase Bank USA, N.A.",
+        "date_filed": "2013-09-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/jpmorgan-chase-bank-usa/",
+        "description": "The CFPB ordered Chase Bank USA, N.A. and JPMorgan Chase Bank, N.A. to refund an estimated $309 million to more than 2.1 million customers for illegal...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/stephen-siringoringo-alfred-clausen-joshua-cobb-and-corporation-clausen-and-cobb-man",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/stephen-siringoringo-alfred-clausen-joshua-cobb-and-corporation-clausen-and-cobb-man/",
+      "fields": {
+        "title": "Stephen Lyster Siringoringo also d/b/a Siringoringo Law Firm, Clausen & Cobb Management Company, Inc., and Joshua Cobb",
+        "date_filed": "2014-07-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/stephen-siringoringo-alfred-clausen-joshua-cobb-and-corporation-clausen-and-cobb-man/",
+        "description": "The Bureau, the Federal Trade Commission (FTC), and 15 states announced a sweep against foreclosure relief scammers that used deceptive marketing tactics to...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/military-assistance-company",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/military-assistance-company/",
+      "fields": {
+        "title": "Fort Knox National Company and Military Assistance Company, LLC.",
+        "date_filed": "2015-04-20",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/military-assistance-company/",
+        "description": "CFPB took action against Fort Knox National Company and its subsidiary, Military Assistance Company, for charging servicemembers millions of dollars in...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/all-american-check-cashing-inc-mid-state-finance-inc-db-thrifty-check-advance-and-michael-gray",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/all-american-check-cashing-inc-mid-state-finance-inc-db-thrifty-check-advance-and-michael-gray/",
+      "fields": {
+        "title": "All American Check Cashing, Inc., Mid-State Finance, Inc. (d/b/a Thrifty Check Advance), and Michael Gray",
+        "date_filed": "2016-05-11",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/all-american-check-cashing-inc-mid-state-finance-inc-db-thrifty-check-advance-and-michael-gray/",
+        "description": "On May 11, 2016, the Bureau filed a complaint against two companies, All American Check Cashing, Inc. and Mid-State Finance, Inc., which offer check-cashing services and payday loans, and their president and sole owner, Michael Gray.",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/woodbridge-coins-and-jewelry-exchange-inc-db-woodbridge-gold-pawn",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/woodbridge-coins-and-jewelry-exchange-inc-db-woodbridge-gold-pawn/",
+      "fields": {
+        "title": "Woodbridge Coins and Jewelry Exchange, Inc. d/b/a Woodbridge Gold & Pawn",
+        "date_filed": "2017-02-02",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/woodbridge-coins-and-jewelry-exchange-inc-db-woodbridge-gold-pawn/",
+        "description": "The Bureau and the Attorney General of Virginia took action against Woodbridge Coins and Jewelry Exchange, Inc., doing business as Woodbridge Gold & Pawn...",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/andrew-gamber-voyager-financial-group-llc-baic-inc-sobell-corp",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/andrew-gamber-voyager-financial-group-llc-baic-inc-sobell-corp/",
+      "fields": {
+        "title": "Andrew Gamber, Voyager Financial Group, LLC, BAIC, Inc., SoBell Corp",
+        "date_filed": "2019-08-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/andrew-gamber-voyager-financial-group-llc-baic-inc-sobell-corp/",
+        "description": "On August 14, 2019, the CFPB filed a proposed stipulated judgment with Andrew Gamber, Voyager Financial Group, LLC, BAIC, Inc., and SoBell Corp.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/townstone-financial-inc-and-barry-sturner",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/townstone-financial-inc-and-barry-sturner/",
+      "fields": {
+        "title": "Townstone Financial, Inc. and Barry Sturner",
+        "date_filed": "2020-07-15",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/townstone-financial-inc-and-barry-sturner/",
+        "description": "On July 15, 2020, the Bureau filed a lawsuit against Townstone Financial, Inc., a nonbank retail-mortgage creditor and broker based in Chicago. Illinois. The Bureau alleged that Townstone violated the Equal Credit Opportunity Act (ECOA); its implementing regulation, Regulation B; and the Consumer Financial Protection Act (CFPA).",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/lendup-loans-llc-2",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/lendup-loans-llc-2/",
+      "fields": {
+        "title": "LendUp Loans, LLC",
+        "date_filed": "2021-09-08",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/lendup-loans-llc-2/",
+        "description": "On September 8, 2021, the Bureau filed a lawsuit in the United States District Court for the Northern District of California against LendUp Loans, LLC.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/moneylion-technologies-inc-ml-plus-llc-and-other-subsidiaries",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/moneylion-technologies-inc-ml-plus-llc-and-other-subsidiaries/",
+      "fields": {
+        "title": "MoneyLion Technologies Inc., ML Plus, LLC, and other subsidiaries",
+        "date_filed": "2022-09-29",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/moneylion-technologies-inc-ml-plus-llc-and-other-subsidiaries/",
+        "description": "On September 29, 2022, the Bureau filed a lawsuit against MoneyLion Technologies Inc. (MoneyLion), ML Plus, LLC, and 37 MoneyLion lending subsidiaries.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/realty-connect-usa-long-island-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/realty-connect-usa-long-island-inc/",
+      "fields": {
+        "title": "Realty Connect USA Long Island, Inc.",
+        "date_filed": "2023-08-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/realty-connect-usa-long-island-inc/",
+        "description": "On August 17, 2023, the Bureau issued an order against Realty Connect USA Long Island, Inc. (Realty Connect), a real estate brokerage firm based in Suffolk County, New York.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/ejudicate-inc-dba-brief",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/ejudicate-inc-dba-brief/",
+      "fields": {
+        "title": "Ejudicate, Inc., d/b/a Brief",
+        "date_filed": "2024-10-10",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/ejudicate-inc-dba-brief/",
+        "description": "On October 10, 2024, the Bureau issued an order against Ejudicate, Inc., d/b/a Brief, a company based in Los Angeles, California.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/meracord-llc-linda-remsberg",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/meracord-llc-linda-remsberg/",
+      "fields": {
+        "title": "Meracord LLC and Linda Remsberg",
+        "date_filed": "2013-10-03",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/meracord-llc-linda-remsberg/",
+        "description": "The Bureau announced an enforcement action against Meracord LLC, a leading debt-settlement payment processor, for allegedly helping others to collect...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/the-mortgage-law-group-llp-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/the-mortgage-law-group-llp-et-al/",
+      "fields": {
+        "title": "The Mortgage Law Group, LLP d/b/a The Law Firm of Macey, Aleman & Searns, Consumer First Legal Group LLC, Thomas G. Macey, Jeffrey J. Aleman, Jason Searns, and Harold E. Stafford",
+        "date_filed": "2014-07-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/the-mortgage-law-group-llp-et-al/",
+        "description": "On July 22, 2014, the Bureau filed a complaint against The Mortgage Law Group, LLP (TMLG), the Consumer First Legal Group, LLC (CFLG), and attorneys Thomas Macey, Jeffrey Aleman, Jason Searns, and Harold Stafford.",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/green-tree-servicing-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/green-tree-servicing-llc/",
+      "fields": {
+        "title": "Green Tree Servicing, LLC",
+        "date_filed": "2015-04-21",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/green-tree-servicing-llc/",
+        "description": "The Bureau and the Federal Trade Commission (FTC) took action against Green Tree Servicing, LLC, for mistreating mortgage borrowers who were trying to save...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/david-eghbali",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/david-eghbali/",
+      "fields": {
+        "title": "David Eghbali",
+        "date_filed": "2016-05-25",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/david-eghbali/",
+        "description": "The CFPB took action against a former Wells Fargo employee for an illegal mortgage-fee-shifting scheme.",
+        "index_page": 11
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/rd-legal-funding-llc-rd-legal-finance-llc-rd-legal-funding-partners-lp-and-roni-dersovitz",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/rd-legal-funding-llc-rd-legal-finance-llc-rd-legal-funding-partners-lp-and-roni-dersovitz/",
+      "fields": {
+        "title": "RD Legal Funding, LLC, RD Legal Finance, LLC, RD Legal Funding Partners, LP, and Roni Dersovitz",
+        "date_filed": "2017-02-07",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/rd-legal-funding-llc-rd-legal-finance-llc-rd-legal-funding-partners-lp-and-roni-dersovitz/",
+        "description": "On February 7, 2017, the CFPB and the New York Attorney General filed a complaint against RD Legal Funding, LLC, two related entities, and the companies’ founder and owner, Roni Dersovitz.",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/maxitransfers-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/maxitransfers-corporation/",
+      "fields": {
+        "title": "Maxitransfers Corporation",
+        "date_filed": "2019-08-27",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/maxitransfers-corporation/",
+        "description": "On August 27, 2019, the CFPB settled with Maxitransfers Corporation, which provides remittance transfer services that allow...",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/prime-choice-funding-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/prime-choice-funding-inc/",
+      "fields": {
+        "title": "Prime Choice Funding, Inc.",
+        "date_filed": "2020-07-24",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/prime-choice-funding-inc/",
+        "description": "On July 24, 2020, the Consumer Financial Protection Bureau issued a consent order against Prime Choice Funding, Inc. (Prime Choice), a California corporation that is licensed as a mortgage broker or lender in about 35 states and the District of Columbia. The Bureau found that Prime Choice violated the CFPA’s prohibition against deceptive acts and practices, the MAP Rule, and Regulation Z.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/daniel-a-rosen-inc-dba-credit-repair-cloud-and-daniel-rosen",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/daniel-a-rosen-inc-dba-credit-repair-cloud-and-daniel-rosen/",
+      "fields": {
+        "title": "Daniel A. Rosen, Inc., d/b/a Credit Repair Cloud, and Daniel Rosen",
+        "date_filed": "2021-09-20",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/daniel-a-rosen-inc-dba-credit-repair-cloud-and-daniel-rosen/",
+        "description": "On September 20, 2021, the Bureau filed a lawsuit against Credit Repair Cloud — a Los Angeles, California, company that since at least 2013 has provided an “all-in-one solution” for people to start their own credit repair businesses — and its owner and CEO, Daniel Rosen.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/choice-money-transfer",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/choice-money-transfer/",
+      "fields": {
+        "title": "Choice Money Transfer, Inc. d/b/a Small World Money Transfer",
+        "date_filed": "2022-10-04",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/choice-money-transfer/",
+        "description": "On October 4, 2022, the Bureau issued an order against Choice Money Transfer, Inc., which does business as Small World Money Transfer (Choice Money).",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/heights-finance-holding-co-fka-southern-management-corporation-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/heights-finance-holding-co-fka-southern-management-corporation-et-al/",
+      "fields": {
+        "title": "Heights Finance Holding Co. f/k/a Southern Management Corporation, et al.",
+        "date_filed": "2023-08-22",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/heights-finance-holding-co-fka-southern-management-corporation-et-al/",
+        "description": "On August 22, 2023, the Bureau filed a lawsuit against Heights Finance Holding Co. f/k/a Southern Management Corporation as well as its wholly owned, state-licensed subsidiaries.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/fairway-independent-mortgage-corporation",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/fairway-independent-mortgage-corporation/",
+      "fields": {
+        "title": "Fairway Independent Mortgage Corporation",
+        "date_filed": "2024-10-15",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/fairway-independent-mortgage-corporation/",
+        "description": "On October 15, 2024, the Bureau, together with the United States Department of Justice, filed a complaint and proposed consent order to resolve their allegations against Fairway Independent Mortgage Corporation.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/mortgage-master-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/mortgage-master-inc/",
+      "fields": {
+        "title": "Mortgage Master, Inc.",
+        "date_filed": "2013-10-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/mortgage-master-inc/",
+        "description": "The Bureau ordered Mortgage Master to pay a civil penalty of $425,000, correct and resubmit its 2011 HMDA data, and develop and implement an effective HMDA...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/colfax-capital-corporation-culver-capital-llc-ronald-wilson-william-collins",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/colfax-capital-corporation-culver-capital-llc-ronald-wilson-william-collins/",
+      "fields": {
+        "title": "Colfax Capital Corporation, Culver Capital, LLC, Ronald Wilson, and William Collins",
+        "date_filed": "2014-07-29",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/colfax-capital-corporation-culver-capital-llc-ronald-wilson-william-collins/",
+        "description": "CFPB and 13 state attorneys general obtained approximately $92 million in debt relief from Colfax Capital Corporation and Culver Capital, LLC, also...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/regions-bank",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/regions-bank/",
+      "fields": {
+        "title": "Regions Bank",
+        "date_filed": "2015-04-28",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/regions-bank/",
+        "description": "On April 28, 2015, the Bureau issued a consent order against Regions Bank, which is headquartered in Birmingham, Alabama, operates approximately 1,700 retail branches and 2,000 ATMs across 16 states.",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/intercept-corporation-db-intercepteft-bryan-smith-and-craig-dresser",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/intercept-corporation-db-intercepteft-bryan-smith-and-craig-dresser/",
+      "fields": {
+        "title": "Intercept Corporation, d/b/a InterceptEFT, Bryan Smith, and Craig Dresser",
+        "date_filed": "2016-06-06",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/intercept-corporation-db-intercepteft-bryan-smith-and-craig-dresser/",
+        "description": "The CFPB filed suit against payment processer Intercept Corporation and two of its executives, Bryan Smith and Craig...",
+        "index_page": 10
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/nationstar-mortgage-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/nationstar-mortgage-llc/",
+      "fields": {
+        "title": "Nationstar Mortgage LLC",
+        "date_filed": "2017-03-15",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/nationstar-mortgage-llc/",
+        "description": "The Consumer Financial Protection Bureau (CFPB) took action against Nationstar Mortgage for flawed mortgage loan reporting.",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/asset-recovery-associates-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/asset-recovery-associates-inc/",
+      "fields": {
+        "title": "Asset Recovery Associates, Inc.",
+        "date_filed": "2019-08-28",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/asset-recovery-associates-inc/",
+        "description": "On August 28, 2019, the CFPB settled with Asset Recovery Associates, Inc., a debt-collection company headquartered in Illinois.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/sovereign-lending-group-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/sovereign-lending-group-inc/",
+      "fields": {
+        "title": "Sovereign Lending Group, Inc.",
+        "date_filed": "2020-07-24",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/sovereign-lending-group-inc/",
+        "description": "On July 24, 2020, the Consumer Financial Protection Bureau issued a consent order against Sovereign Lending Group, Inc. (Sovereign), a California corporation that is licensed as a mortgage broker or lender in about 44 states and the District of Columbia. The Bureau found that Sovereign violated the CFPA’s prohibition against deceptive acts and practices, the MAP Rule, and Regulation Z.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/american-advisors-group-2",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/american-advisors-group-2/",
+      "fields": {
+        "title": "American Advisors Group",
+        "date_filed": "2021-10-08",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/american-advisors-group-2/",
+        "description": "On October 8, 2021, the Bureau filed a lawsuit and proposed stipulated final judgment and order in the United States District Court for the Central District of California against American Advisors Group (AAG).",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/active-network-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/active-network-llc/",
+      "fields": {
+        "title": "ACTIVE Network, LLC",
+        "date_filed": "2022-10-18",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/active-network-llc/",
+        "description": "On October 18, 2022, the Bureau filed a lawsuit in the United States District Court for the Eastern District of Texas against ACTIVE Network, LLC, a payment processor owned by Global Payments, Inc., with its headquarters in Plano, Texas.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/freedom-mortgage-corporation-hmda-2023",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/freedom-mortgage-corporation-hmda-2023/",
+      "fields": {
+        "title": "Freedom Mortgage Corporation",
+        "date_filed": "2023-10-10",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/freedom-mortgage-corporation-hmda-2023/",
+        "description": "On October 10, 2023, the Bureau filed a lawsuit against Freedom Mortgage Corporation (Freedom), a residential mortgage loan originator and servicer headquartered in Boca Raton, Florida.",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/climb-credit-inc-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/climb-credit-inc-et-al/",
+      "fields": {
+        "title": "Climb Credit, Inc.; Climb Investco, LLC; Climb GS Loan Fund 2018-1, LLC; 1/0 Holdco LLC; and 1/0 Capital LLC",
+        "date_filed": "2024-10-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/climb-credit-inc-et-al/",
+        "description": "On October 17, 2024, the Bureau filed a lawsuit against Climb Credit, Inc.; its wholly owned subsidiary Climb Investco, LLC; its wholly owned sub-subsidiary Climb GS Loan Fund 2018-1, LLC; and the originators, initial owners, and initial operators of these entities, 1/0 Holdco LLC and 1/0 Capital LLC.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/washington-federal",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/washington-federal/",
+      "fields": {
+        "title": "Washington Federal",
+        "date_filed": "2013-10-09",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/washington-federal/",
+        "description": "On October 9, 2013, the Bureau issued an order against Washington Federal, a bank headquartered in Seattle, Washington.",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/amerisave-mortgage-novo-appraisal-patrick-markert",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/amerisave-mortgage-novo-appraisal-patrick-markert/",
+      "fields": {
+        "title": "Amerisave Mortgage Corp., Novo Appraisal Management Co., and Patrick Markert",
+        "date_filed": "2014-08-12",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/amerisave-mortgage-novo-appraisal-patrick-markert/",
+        "description": "CFPB took action against Amerisave Mortgage Corporation, its affiliate, Novo Appraisal Management Company, and the owner of both companies, Patrick Markert...",
+        "index_page": 14
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/genuine-title-2",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/genuine-title-2/",
+      "fields": {
+        "title": "Genuine Title, LLC; Brandon Glickstein; Gary Klopp; Adam Mandelberg; William J. Peterson, III; Angela Pobletts; Jay Zukerberg; All County Settlements, LLC; BTS Management and Consulting, LLC; Carroll Abstracts, Inc.; MARC, LLC; Mortgage Services, LLC; and",
+        "date_filed": "2015-04-29",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/genuine-title-2/",
+        "description": "On April 29, 2015, the Bureau and the State of Maryland filed a lawsuit against Genuine Title, LLC, a title company, its principals, and several loan...",
+        "index_page": 13
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/united-states-america-and-consumer-financial-protection-bureau-v-bancorpsouth-bank",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/united-states-america-and-consumer-financial-protection-bureau-v-bancorpsouth-bank/",
+      "fields": {
+        "title": "United States of America and Consumer Financial Protection Bureau v. BancorpSouth Bank",
+        "date_filed": "2016-06-29",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/united-states-america-and-consumer-financial-protection-bureau-v-bancorpsouth-bank/",
+        "description": "The CFPB and the Department of Justice (DOJ) announced a joint action against BancorpSouth Bank for discriminatory mortgage lending practices that harmed...",
+        "index_page": 10
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/experian-holdings-inc-experian-information-solutions-inc-and-consumerinfocom-inc-dba-experian-consumer-services",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/experian-holdings-inc-experian-information-solutions-inc-and-consumerinfocom-inc-dba-experian-consumer-services/",
+      "fields": {
+        "title": "Experian Holdings, Inc., Experian Information Solutions, Inc., and ConsumerInfo.com, Inc., dba Experian Consumer Services",
+        "date_filed": "2017-03-23",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/experian-holdings-inc-experian-information-solutions-inc-and-consumerinfocom-inc-dba-experian-consumer-services/",
+        "description": "The CFPB today took action against Experian and its subsidiaries for deceiving consumers about the use of credit scores it sold to consumers.",
+        "index_page": 9
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/certified-forensic-loan-auditors-llc-andrew-lehman-michael-carrigan",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/certified-forensic-loan-auditors-llc-andrew-lehman-michael-carrigan/",
+      "fields": {
+        "title": "Certified Forensic Loan Auditors, LLC, Andrew Lehman, and Michael Carrigan",
+        "date_filed": "2019-09-06",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/certified-forensic-loan-auditors-llc-andrew-lehman-michael-carrigan/",
+        "description": "On September 6, 2019, the Consumer Financial Protection Bureau filed a complaint in federal court in the Central District of California against Certified Forensic Loan Auditors, LLC, Andrew Lehman, and Michael Carrigan, along with a proposed stipulated final judgment against Michael Carrigan.",
+        "index_page": 7
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/go-direct-lenders-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/go-direct-lenders-inc/",
+      "fields": {
+        "title": "Go Direct Lenders, Inc.",
+        "date_filed": "2020-08-21",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/go-direct-lenders-inc/",
+        "description": "On August 21, 2020, the Consumer Financial Protection Bureau (Bureau) issued a consent order against Go Direct Lenders, Inc. (Go Direct), a California corporation that is licensed as a mortgage broker or lender in about 11 states.",
+        "index_page": 6
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/jpay-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/jpay-llc/",
+      "fields": {
+        "title": "JPay, LLC",
+        "date_filed": "2021-10-19",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/jpay-llc/",
+        "description": "On October 19, 2021, the Bureau issued a consent order against JPay, LLC (JPay). JPay, headquartered in Miramar, Florida, contracts with Departments of Corrections around the country to provide financial products and services to incarcerated and formerly incarcerated individuals.",
+        "index_page": 4
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/carrington-mortgage-services-llc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/carrington-mortgage-services-llc/",
+      "fields": {
+        "title": "Carrington Mortgage Services, LLC",
+        "date_filed": "2022-11-17",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/carrington-mortgage-services-llc/",
+        "description": "On November 17, 2022, the Bureau issued an order against Carrington Mortgage Services, LLC, a California-based mortgage servicer operating in all fifty states.",
+        "index_page": 3
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/transunion-trans-union-llc-and-transunion-interactive-inc",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/transunion-trans-union-llc-and-transunion-interactive-inc/",
+      "fields": {
+        "title": "TransUnion, Trans Union LLC, and TransUnion Interactive, Inc.",
+        "date_filed": "2023-10-12",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/transunion-trans-union-llc-and-transunion-interactive-inc/",
+        "description": "On October 12, 2023, the Bureau issued an order against TransUnion, parent company of one of the three nationwide consumer reporting agencies, and two of its subsidiaries, Trans Union LLC, and TransUnion Interactive, Inc., which are headquartered in Chicago, Illinois.",
+        "index_page": 2
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/global-tel-link-corp-et-al",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/global-tel-link-corp-et-al/",
+      "fields": {
+        "title": "Global Tel Link Corporation d/b/a ViaPath Technologies; Telmate, LLC d/b/a ViaPath Technologies; and TouchPay Holdings, LLC d/b/a GTL Financial Services",
+        "date_filed": "2024-11-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/global-tel-link-corp-et-al/",
+        "description": "On November 14, 2024, the Bureau issued an order against Global Tel Link Corporation, d/b/a ViaPath Technologies, and its subsidiaries Telmate, LLC, d/b/a ViaPath Technologies, and TouchPay Holdings, LLC, d/b/a GTL Financial Services.",
+        "index_page": 1
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/borders-and-borders-plc-harry-borders-john-borders-jr-j-david-borders",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/borders-and-borders-plc-harry-borders-john-borders-jr-j-david-borders/",
+      "fields": {
+        "title": "Borders & Borders, PLC; Harry Borders; John Borders, Jr.; and J. David Borders",
+        "date_filed": "2013-10-24",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/borders-and-borders-plc-harry-borders-john-borders-jr-j-david-borders/",
+        "description": "The Bureau today filed a lawsuit in federal district court against a Kentucky law firm, Borders & Borders, PLC, and its principals, for illegally paying...",
+        "index_page": 15
+      }
+    },
+    {
+      "record_key": "https://www.consumerfinance.gov/enforcement/actions/usa-discounters-ltd",
+      "record_url": "https://www.consumerfinance.gov/enforcement/actions/usa-discounters-ltd/",
+      "fields": {
+        "title": "USA Discounters, Ltd.",
+        "date_filed": "2014-08-14",
+        "url": "https://www.consumerfinance.gov/enforcement/actions/usa-discounters-ltd/",
+        "description": "CFPB took action against a servicemember fee scam run by USA Discounters, Ltd., a company that operates a chain of retail stores near military bases and...",
+        "index_page": 14
+      }
+    }
+  ]
+}

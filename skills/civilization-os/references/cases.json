@@ -1,0 +1,798 @@
+[
+  {
+    "id": "C001",
+    "title": "Mars Climate Orbiter：接口单位失配与验证缺口",
+    "event_time": "1999-09-23",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "NASA 报告认定地面软件输出使用 lbf-s，而接口要求 N-s，导航处理因此低估推力影响。",
+      "探测器于 1999 年 9 月 23 日失联；报告同时列出通信、人员和验证流程等促成因素。"
+    ],
+    "decision_context": "跨团队交付的数据进入不可逆航天操作，接口约定和实际输出需要一致。",
+    "observed_actions": [
+      "地面文件进入导航模型，既有流程未及时发现单位错误。"
+    ],
+    "outcomes": [
+      "任务丢失；事故调查提出单位一致性核验和接口审计建议。"
+    ],
+    "model_ids": [
+      "P011",
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "本 Skill 将其映射为物理量约束、组织接口和系统风险分析；不推断当事人有意使用这些模型卡。",
+    "claims": [
+      {
+        "claim": "地面 SM_FORCES 数据为 lbf-s，而接口要求 N-s，导航影响低估约 4.45 倍。",
+        "source_ids": [
+          "C-01"
+        ],
+        "locator": "Phase I Report，印刷第 16 页，第 4 节 MCO Root Cause；PDF 第 16 页。",
+        "evidence_strength": "reported",
+        "causal_limit": "事故委员会的工程重建结论；根因与多项促成因素并存。",
+        "claim_id": "C001.01"
+      },
+      {
+        "claim": "探测器于 1999 年 9 月 23 日失联，调查列出验证和通信等促成因素。",
+        "source_ids": [
+          "C-01"
+        ],
+        "locator": "Executive Summary，印刷第 6–7 页；PDF 第 6–7 页。",
+        "evidence_strength": "reported",
+        "causal_limit": "不能量化某一流程改进单独避免事故的概率。",
+        "claim_id": "C001.02"
+      }
+    ],
+    "source_ids": [
+      "C-01"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "high",
+      "limitations": "已查 NASA 一期报告；失联后实体命运仍有不确定性，不写成已证实烧毁。流程迁移收益未经独立实验。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "多方交换数值数据时，把单位和维度写进接口，并用已知输入做端到端校验。",
+      "重大操作前，用独立计算或测量核对模型残差。"
+    ],
+    "non_transfer_conditions": [
+      "来源不支持把事故归为单个人粗心。",
+      "不能把任一数据异常视为必然导致灾难，也不能照搬航天审计成本到低风险任务。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "nasa:mars-climate-orbiter-1999",
+    "keywords": [
+      "technology",
+      "Mars Climate Orbiter：接口单位失配与验证缺口"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "跨团队交付的数据进入不可逆航天操作，接口约定和实际输出需要一致。",
+      "proposed_check": "用已知输入在隔离环境核对接口单位与端到端结果。",
+      "metric": "单位不匹配数、误差是否超出已定义容忍范围。",
+      "stop_condition": "单位、参考系或误差边界无法确认时停止进入重大操作。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C002",
+    "title": "Challenger：物理失效与信息升级失败",
+    "event_time": "1986-01-28",
+    "domain": "organization",
+    "result_type": "failure",
+    "facts": [
+      "Rogers Commission 认定右侧固体火箭后部连接处压力密封失效，设计对温度等因素过度敏感。",
+      "委员会认定发射决策有缺陷，部分关键决策者未获知工程师反对意见。"
+    ],
+    "decision_context": "工程不确定性、层级信息传递与发射决策共同作用。",
+    "observed_actions": [
+      "Thiokol 管理层改变不发射立场；工程师异议未充分进入关键决策层。"
+    ],
+    "outcomes": [
+      "Challenger 在 STS 51-L 任务中损失；调查同时指出物理设计和决策过程问题。"
+    ],
+    "model_ids": [
+      "P079",
+      "P080",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "组织设计、组织文化和系统风险是本 Skill 的分析视角，不把事故证明为某种心理偏差，也不推断参与者有意使用模型。",
+    "claims": [
+      {
+        "claim": "右侧固体火箭后部连接处的密封失效是委员会认定的事故原因。",
+        "source_ids": [
+          "C-02"
+        ],
+        "locator": "Volume I，Chapter IV，Conclusion，印刷第 72 页。",
+        "evidence_strength": "reported",
+        "causal_limit": "委员会同时列出温度、材料、尺寸和动态载荷等设计敏感因素，不能缩成单一低温原因。",
+        "claim_id": "C002.01"
+      },
+      {
+        "claim": "委员会认定发射决策有缺陷，关键管理者不了解承包商最初建议与工程师持续异议。",
+        "source_ids": [
+          "C-03"
+        ],
+        "locator": "Volume I，Chapter V，第 82 页开头与 Findings 第 111 页。",
+        "evidence_strength": "reported",
+        "causal_limit": "事后组织调查，不能单独证明激励、人格或群体极化的因果份额。",
+        "claim_id": "C002.02"
+      }
+    ],
+    "source_ids": [
+      "C-02",
+      "C-03"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "high",
+      "limitations": "两章来自同一委员会报告，算一个来源群。物理故障结论与组织调查结论应分别使用。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "涉及不可逆重大损失时，明确工程异议的升级路径、决策接收人和暂停权限。",
+      "要求风险接受者看到原始不确定性，并记录异议如何被处理。"
+    ],
+    "non_transfer_conditions": [
+      "历史成功次数不能替代新环境下的安全证据。",
+      "不得据此给任何特定现实团队成员贴心理偏差标签。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "nasa:challenger-1986",
+    "keywords": [
+      "organization",
+      "Challenger：物理失效与信息升级失败"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "工程不确定性、层级信息传递与发射决策共同作用。",
+      "proposed_check": "用桌面演练核对工程异议如何进入最后决策及暂停流程。",
+      "metric": "未送达的关键异议数、没有明确责任人的升级节点数。",
+      "stop_condition": "关键工程异议尚未处理或风险接受人未看到原始证据时暂停决策。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C003",
+    "title": "Knight Capital：不一致部署放大自动交易损失",
+    "event_time": "2012-08-01",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "SEC 行政令记载，新代码部署遗漏八台服务器中的一台，该节点触发遗留 Power Peg 代码。",
+      "错误执行在约 45 分钟内造成大量非预期交易，最终损失超过 4.6 亿美元。"
+    ],
+    "decision_context": "高速自动化系统上线，错误可在人工处理前迅速扩大。",
+    "observed_actions": [
+      "新功能复用既有标记；未对部署实施第二人复核。"
+    ],
+    "outcomes": [
+      "非预期头寸产生重大损失；SEC 后续认定相关风控违规。"
+    ],
+    "model_ids": [
+      "P026",
+      "P079",
+      "P094"
+    ],
+    "model_mapping_note": "本 Skill 以反馈、部署职责和风险约束复盘，不声称当事人有意使用或违背某张模型卡。",
+    "claims": [
+      {
+        "claim": "八台 SMARS 服务器中一台未复制新代码，仍保留 Power Peg，且没有第二人复核部署。",
+        "source_ids": [
+          "C-04"
+        ],
+        "locator": "SEC Release 34-70694，第 15–16 段，印刷第 6 页。",
+        "evidence_strength": "reported",
+        "causal_limit": "属于监管行政令的调查认定，需连同旗标复用与风控缺陷阅读。",
+        "claim_id": "C003.01"
+      },
+      {
+        "claim": "SEC 记载约 45 分钟的错误执行导致最终超过 4.6 亿美元损失。",
+        "source_ids": [
+          "C-04"
+        ],
+        "locator": "第 1 段与第 17 段，印刷第 2、6 页。",
+        "evidence_strength": "reported",
+        "causal_limit": "不是对所有自动化部署风险的统计估计。",
+        "claim_id": "C003.02"
+      }
+    ],
+    "source_ids": [
+      "C-04"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "high",
+      "limitations": "监管和解行政令；公司除管辖权外未承认或否认认定。技术因果来自事件调查，未独立重跑系统。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "多节点部署需可检查的一致性证据，上线前验证遗留功能和标记语义。",
+      "高损失速率系统应在业务约束层设置限额、异常停机和可演练恢复。"
+    ],
+    "non_transfer_conditions": [
+      "双人复核本身不能保证不存在系统性错误。",
+      "可逆小工具无需照搬证券交易的全部控制措施。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "sec:knight-2012",
+    "keywords": [
+      "technology",
+      "Knight Capital：不一致部署放大自动交易损失"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "高速自动化系统上线，错误可在人工处理前迅速扩大。",
+      "proposed_check": "在隔离环境核验所有部署节点版本与遗留功能触发条件。",
+      "metric": "节点版本差异数、异常交易是否在损失上限前被停止。",
+      "stop_condition": "任何节点版本不一致或损失限额无法触发时停止上线。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C004",
+    "title": "Amazon 1997 股东信：长期选择与可衡量纪律",
+    "event_time": "1997",
+    "domain": "business",
+    "result_type": "reported_success",
+    "facts": [
+      "股东信披露 1997 年销售额为 1.478 亿美元，较 1996 年增长 838%。",
+      "信中明确优先长期市场地位，并要求衡量投资、放弃回报不合格项目。"
+    ],
+    "decision_context": "快速增长期需要向投资者说明增长、利润和资金之间的选择。",
+    "observed_actions": [
+      "扩展客户基础与基础设施，并公开资本配置原则。"
+    ],
+    "outcomes": [
+      "该期增长与明确战略立场被记录；信件不能证明长期导向单独带来增长。"
+    ],
+    "model_ids": [
+      "P065",
+      "P067",
+      "P095"
+    ],
+    "model_mapping_note": "长期导向、单位经济和战略取舍是本 Skill 的整理视角；该信并未给出这些模型卡的普遍有效性证明。",
+    "claims": [
+      {
+        "claim": "1997 年销售额 1.478 亿美元，年增长 838%。",
+        "source_ids": [
+          "C-05"
+        ],
+        "locator": "1997 letter，Obsess Over Customers 节的年度指标清单。",
+        "evidence_strength": "reported",
+        "causal_limit": "公司自行披露的单期结果，未单独核查审计报表。",
+        "claim_id": "C004.01"
+      },
+      {
+        "claim": "信中同时强调长期市场地位、投资衡量和淘汰回报不合格项目。",
+        "source_ids": [
+          "C-05"
+        ],
+        "locator": "It’s All About the Long Term 节的管理原则列表。",
+        "evidence_strength": "direct",
+        "causal_limit": "文本直接证明声明过这些原则，不证明后续每次决策都遵守或必然成功。",
+        "claim_id": "C004.02"
+      }
+    ],
+    "source_ids": [
+      "C-05"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "公司重刊原始股东信。存在自述和幸存者偏差；无反事实，不能归因于单一战略。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "长期投入须有现金承受期、阶段指标和放弃无效项目的规则。",
+      "与资金提供者事先对齐评价期限和取舍。"
+    ],
+    "non_transfer_conditions": [
+      "现金不足或单位经济无改善路径时，长期口号不能替代资金纪律。",
+      "不能将当期高速增长当作今天投资某公司或行业的证据。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "amazon:shareholder-letter-1997",
+    "keywords": [
+      "business",
+      "Amazon 1997 股东信：长期选择与可衡量纪律"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "快速增长期需要向投资者说明增长、利润和资金之间的选择。",
+      "proposed_check": "先定义长期投入的阶段证据与现金承受期，再复盘一项小投入。",
+      "metric": "实际投入、可验证客户信号、距现金边界的剩余空间。",
+      "stop_condition": "支出触及承受上限或关键需求证据持续缺失时暂停扩张。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C005",
+    "title": "Toyota TPS：停线反馈与准时生产的组合",
+    "event_time": "长期制度实践；截至核验页面所述",
+    "domain": "organization",
+    "result_type": "reported_practice",
+    "facts": [
+      "Toyota 官方将 TPS 两支柱定义为 jidoka 和 Just-in-Time。",
+      "jidoka 包括异常停机或工人停线；Just-in-Time 同时使用最低必要库存和补货循环。"
+    ],
+    "decision_context": "多工序制造需要兼顾缺陷发现、交付节奏与在制品。",
+    "observed_actions": [
+      "建立异常发现与停线响应；按下游需要补充生产。"
+    ],
+    "outcomes": [
+      "官方描述了降低浪费与缩短交期的机制；未提供可独立识别的净绩效估计。"
+    ],
+    "model_ids": [
+      "P026",
+      "P064",
+      "P079",
+      "P082"
+    ],
+    "model_mapping_note": "本 Skill 以反馈、价值链和组织设计解释流程，不将公司成功归为某张模型卡，也不声称其有意使用本目录。",
+    "claims": [
+      {
+        "claim": "TPS 两支柱是 jidoka 和 Just-in-Time，工人可在异常时拉停线绳。",
+        "source_ids": [
+          "C-06"
+        ],
+        "locator": "The Two Pillars of TPS 与 Jidoka 节。",
+        "evidence_strength": "direct",
+        "causal_limit": "直接核验公司所述流程；不是独立工厂观察或随机试验。",
+        "claim_id": "C005.01"
+      },
+      {
+        "claim": "官方 Just-in-Time 说明包括提前保有最低必要零件、下游取用和上游补货。",
+        "source_ids": [
+          "C-06"
+        ],
+        "locator": "Just-in-Time 节，minimum number of parts 与 immediately replenish 段。",
+        "evidence_strength": "direct",
+        "causal_limit": "不能把其误读成所有库存归零或一味压缩缓冲。",
+        "claim_id": "C005.02"
+      }
+    ],
+    "source_ids": [
+      "C-06"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "公司自述足以支持流程定义，不能证明净收益、其他行业适用性或所有工厂实际执行一致。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "工序可见、异常可定义且停线后有人处理时，可采用短反馈循环。",
+      "拉动补货前先测量需求波动、补货时间和必要缓冲。"
+    ],
+    "non_transfer_conditions": [
+      "供应中断风险高或需求难预测时，不能机械取消安全库存。",
+      "没有员工暂停权限和响应能力，照搬停线形式不能复制效果。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "toyota:production-system-overview",
+    "keywords": [
+      "organization",
+      "Toyota TPS：停线反馈与准时生产的组合"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "多工序制造需要兼顾缺陷发现、交付节奏与在制品。",
+      "proposed_check": "在一个可见工序中记录异常发现、处理与恢复的完整路径。",
+      "metric": "异常等待时长、重复缺陷数、恢复后是否重新出现。",
+      "stop_condition": "异常无人负责、停线无法安全恢复或缓冲不足时暂停扩大试点。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C006",
+    "title": "印度 Balsakhi 随机试验：针对薄弱环节且跟踪衰减",
+    "event_time": "2001–2004 研究实施；2007 发表",
+    "domain": "economic_research",
+    "result_type": "causal_study_success_with_limits",
+    "facts": [
+      "Banerjee 等比较印度城市学校的补习与计算机辅助学习干预，采用随机分配。",
+      "论文报告补习总体分数效果第一年约 0.14、第二年约 0.28 个标准差；部分效果在结束后衰减。"
+    ],
+    "decision_context": "教育资源投入不等于学习改善，需要识别具体薄弱技能和可测量结果。",
+    "observed_actions": [
+      "为基础读写和计算落后的儿童提供针对性辅导，以同期比较组估计效果。"
+    ],
+    "outcomes": [
+      "短期学习改善；效果持久性和不同对象的收益须另测。"
+    ],
+    "model_ids": [
+      "P007",
+      "P050",
+      "P098"
+    ],
+    "model_mapping_note": "本 Skill 用约束优化、因果推断和科学方法整理研究；模型映射不替代原文实验设计。",
+    "claims": [
+      {
+        "claim": "学校年级层面的分配用于随机评估补习干预。",
+        "source_ids": [
+          "C-07"
+        ],
+        "locator": "III. Evaluation Design，A. Sample: Vadodara 与 B. Sample: Mumbai，稿件第 6–8 页。",
+        "evidence_strength": "causal_study",
+        "causal_limit": "需要考虑实施未完全到位、流失和校内资源重分配等问题；原文分别处理。",
+        "claim_id": "C006.01"
+      },
+      {
+        "claim": "补习分数效果首年约 0.14、次年约 0.28 个标准差；退出后部分增益约 0.1。",
+        "source_ids": [
+          "C-07"
+        ],
+        "locator": "I. Introduction 第 3 页；IV. Short Term Effects 第 11 页；摘要。",
+        "evidence_strength": "causal_study",
+        "causal_limit": "这些是特定样本、时间和测验的估计，不能视为所有学生的固定收益。",
+        "claim_id": "C006.02"
+      }
+    ],
+    "source_ids": [
+      "C-07"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "high",
+      "limitations": "打开原论文稿件全文，未重新执行原始数据分析。内部因果证据较强，跨地区与长期外推仍受限。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "先诊断目标群体的基础技能缺口，并明确测试量尺、分配方式和观察期限。",
+      "同时测平均效果、目标子群和干预结束后的保持。"
+    ],
+    "non_transfer_conditions": [
+      "没有可靠比较组时，不能将前后分数增长全归于干预。",
+      "不能据此保证成年人培训或现代 AI 教学获得相同标准差收益。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "study:balsakhi-2007",
+    "keywords": [
+      "economic_research",
+      "印度 Balsakhi 随机试验：针对薄弱环节且跟踪衰减"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "教育资源投入不等于学习改善，需要识别具体薄弱技能和可测量结果。",
+      "proposed_check": "先审查基础技能诊断、测试量尺与长期保持评价的设计。",
+      "metric": "基础技能缺口、量尺一致性、延迟测量的缺失比例。",
+      "stop_condition": "没有可比量尺或缺乏目标群体适用性证据时停止效果外推。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C007",
+    "title": "新泽西最低工资研究：比较设计对照理论预测",
+    "event_time": "1992 调查；1994 发表",
+    "domain": "economic_research",
+    "result_type": "causal_study_with_limits",
+    "facts": [
+      "新泽西最低工资于 1992 年 4 月 1 日从 4.25 美元升至 5.05 美元。",
+      "Card 与 Krueger 调查两州 410 家快餐店，论文未发现此次上调减少该样本就业的证据。"
+    ],
+    "decision_context": "需要评估具体政策变化，不能只从静态供需图推断实际净效果。",
+    "observed_actions": [
+      "比较新泽西与宾夕法尼亚东部的前后就业变化，并检查不同规格。"
+    ],
+    "outcomes": [
+      "研究挑战该场景下的简单竞争市场预测；结论不覆盖任意幅度和所有行业。"
+    ],
+    "model_ids": [
+      "P050",
+      "P056",
+      "P099"
+    ],
+    "model_mapping_note": "本 Skill 用因果推断、供需条件和可检验预测理解研究；不宣称单篇论文否定整个供需关系。",
+    "claims": [
+      {
+        "claim": "新泽西于 1992 年 4 月 1 日将最低工资由 4.25 美元提高到 5.05 美元。",
+        "source_ids": [
+          "C-08"
+        ],
+        "locator": "论文第一页摘要与 I. The New Jersey Law。",
+        "evidence_strength": "direct",
+        "causal_limit": "这是政策事件事实，不是就业因果结论。",
+        "claim_id": "C007.01"
+      },
+      {
+        "claim": "作者调查 410 家快餐店并报告未发现该次上调减少就业的证据。",
+        "source_ids": [
+          "C-08"
+        ],
+        "locator": "第一页摘要；IX. Conclusions，期刊第 792 页。",
+        "evidence_strength": "causal_study",
+        "causal_limit": "自然比较依赖两地反事实趋势可比、测量可靠及没有同期差异冲击；并非随机政策试验。",
+        "claim_id": "C007.02"
+      }
+    ],
+    "source_ids": [
+      "C-08"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "limitations": "已读原论文及结论，未重做估计或核查后续争议文献。只能报告该研究与场景的结果。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "评估政策或价格调整时，先提出可检验预测，选合理对照并检查同期变化。",
+      "报告行业、地区、调整幅度和时间窗口，区分估计与普遍规律。"
+    ],
+    "non_transfer_conditions": [
+      "不同国家、行业或巨大工资调整不能直接使用该估计。",
+      "未观察到负效应不等于证明任何负效应都不存在。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "study:card-krueger-1994",
+    "keywords": [
+      "economic_research",
+      "新泽西最低工资研究：比较设计对照理论预测"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "需要评估具体政策变化，不能只从静态供需图推断实际净效果。",
+      "proposed_check": "列出价格或政策变化的预期方向、比较组和同期变化。",
+      "metric": "比较组可比性、趋势差异、估计对窗口选择的敏感程度。",
+      "stop_condition": "比较组或数据口径无法解释时停止归因。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C008",
+    "title": "1981 年框架实验：同一结果的不同表述",
+    "event_time": "1981 发表",
+    "domain": "behavior_research",
+    "result_type": "experimental_demonstration",
+    "facts": [
+      "Tversky 与 Kahneman 在疾病情境题中以获救人数或死亡人数表述等价选项。",
+      "获救框架下 72% 选确定方案；死亡框架下 22% 选等价确定方案。"
+    ],
+    "decision_context": "评价风险方案时，表述方式可能与结果结构共同影响偏好。",
+    "observed_actions": [
+      "给不同受试组等价、不同表述的题目，比较选择比例。"
+    ],
+    "outcomes": [
+      "原研究观察到偏好反转；不能把比例当作现实客户或个人的固定参数。"
+    ],
+    "model_ids": [
+      "P036",
+      "P039",
+      "P049"
+    ],
+    "model_mapping_note": "本 Skill 将实验映射为认知偏差、前景理论和选择表述分析，不据单次选择诊断任何人的心理机制。",
+    "claims": [
+      {
+        "claim": "疾病题 Problems 1 与 2 使用等价方案，却分别以获救和死亡人数表述。",
+        "source_ids": [
+          "C-09"
+        ],
+        "locator": "Science 211，期刊第 453 页，Problems 1–2；PDF 第 2 页。",
+        "evidence_strength": "direct",
+        "causal_limit": "研究中的题目是规定情境，不能视为真实公共卫生行为。",
+        "claim_id": "C008.01"
+      },
+      {
+        "claim": "确定方案在两种表述下的选择率分别为 72% 与 22%。",
+        "source_ids": [
+          "C-09"
+        ],
+        "locator": "第 453 页，Program A 与 Program C 方括号比例。",
+        "evidence_strength": "causal_study",
+        "causal_limit": "课堂问卷与特定受试群；该比例不保证在其他样本重现，也不能拆出所有心理机制。",
+        "claim_id": "C008.02"
+      }
+    ],
+    "source_ids": [
+      "C-09"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "limitations": "已打开原论文大学存档；未复验数据、随机分配细节或现代重复研究。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "重大选择同时呈现收益、损失、绝对数量和概率，检查重述后偏好是否稳定。",
+      "面向客户的表述改动应做真实场景验证并保持信息对称。"
+    ],
+    "non_transfer_conditions": [
+      "不得用历史百分比预测某位客户的购买或风险偏好。",
+      "不能用框架效应合理化隐瞒成本或操控他人。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "study:framing-1981",
+    "keywords": [
+      "behavior_research",
+      "1981 年框架实验：同一结果的不同表述"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "评价风险方案时，表述方式可能与结果结构共同影响偏好。",
+      "proposed_check": "对同一选择并列呈现收益和损失的等价表述。",
+      "metric": "重述前后偏好是否改变、数量及概率是否等价。",
+      "stop_condition": "表述改变了实际收益或风险时停止把它当作纯框架实验。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C009",
+    "title": "GPS：工程精度使相对论修正成为必要条件",
+    "event_time": "1999 NIST 报告；2003 技术综述",
+    "domain": "technology",
+    "result_type": "technical_application",
+    "facts": [
+      "NIST 报告说明 GPS 已纳入相对论效应，卫星钟与接收机仍需处理相应修正。",
+      "报告区分运动导致的时间膨胀与引力频移，统一到 GPS 的时间基准。"
+    ],
+    "decision_context": "定位依赖精密计时，须检查普通近似遗漏的项是否超过误差预算。",
+    "observed_actions": [
+      "卫星钟采用速率补偿，接收机处理轨道偏心等相关修正。"
+    ],
+    "outcomes": [
+      "资料给出修正的物理依据和实现分工；不将系统可靠性全部归为这一项。"
+    ],
+    "model_ids": [
+      "P011",
+      "P012",
+      "P081"
+    ],
+    "model_mapping_note": "P012 对应资料直接讨论的物理机制；将精度预算与假设核对联系到 P081 是本 Skill 的分析，不把相对论跨域类比成商业定律。",
+    "claims": [
+      {
+        "claim": "GPS 系统已纳入若干相对论效应，接收机须考虑轨道偏心等修正。",
+        "source_ids": [
+          "C-10"
+        ],
+        "locator": "NIST Technical Note 1385，2.3 Relevant Relativity，印刷第 3–4 页；PDF 第 7–8 页。",
+        "evidence_strength": "direct",
+        "causal_limit": "技术报告提供物理模型和实现说明，不是本次运行设备的性能测试。",
+        "claim_id": "C009.01"
+      },
+      {
+        "claim": "运动时间膨胀与引力频移需要联合计入卫星钟修正。",
+        "source_ids": [
+          "C-10",
+          "C-11"
+        ],
+        "locator": "NIST 2.3 Relevant Relativity；Ashby 2003，Section 5 Relativistic Effects on Satellite Clocks。",
+        "evidence_strength": "direct",
+        "causal_limit": "适用于指定坐标、轨道与近似条件；不能按故事类比推导非物理系统的因果。",
+        "claim_id": "C009.02"
+      }
+    ],
+    "source_ids": [
+      "C-10",
+      "C-11"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "high",
+      "limitations": "两个来源均有 Neil Ashby，按同一作者来源群处理；未实测卫星或接收机。当前设备实现须查对应接口规范。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "明确误差容忍值、参考系和单位，再判断简化模型的忽略项是否足够小。",
+      "跨团队实现时区分模型正确、接口规范和设备实测。"
+    ],
+    "non_transfer_conditions": [
+      "相对论修正不能作为任何社会、商业或心理结论的证明。",
+      "该历史技术报告不能替代当前导航设备规范或实测。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "gps:ashby-relativity-application",
+    "keywords": [
+      "technology",
+      "GPS：工程精度使相对论修正成为必要条件"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "定位依赖精密计时，须检查普通近似遗漏的项是否超过误差预算。",
+      "proposed_check": "明确精度要求后比较简化模型与完整修正的误差预算。",
+      "metric": "被忽略修正项的量级、总误差距允许上限的空间。",
+      "stop_condition": "参考系、单位或误差预算无法确认时停止使用简化结果。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C010",
+    "title": "2006 年提取练习实验：短期表现与延迟保持分开评估",
+    "event_time": "2006 发表",
+    "domain": "learning_research",
+    "result_type": "causal_study_success_with_limits",
+    "facts": [
+      "Roediger 与 Karpicke 研究比较文章重复学习与不反馈的自由回忆测试。",
+      "摘要报告 5 分钟后重复学习较好，延迟测试时先前提取练习的保持更好。"
+    ],
+    "decision_context": "学习目标可能是当下答对，也可能是一周后仍能提取，评价时间影响方案。",
+    "observed_actions": [
+      "学习后安排学习或自由回忆，再于 5 分钟、2 天或 1 周测试。"
+    ],
+    "outcomes": [
+      "延迟保持优势与短时表现不同；不能把学习时的熟悉感当作长期掌握。"
+    ],
+    "model_ids": [
+      "P030",
+      "P036",
+      "P087"
+    ],
+    "model_mapping_note": "本 Skill 用提取练习、认知判断和校准视角整理研究；不将单项记忆测试推广为所有技能的万能训练。",
+    "claims": [
+      {
+        "claim": "两项实验比较文章学习、自由回忆测试与重复学习，最终测试含多个延迟。",
+        "source_ids": [
+          "C-12"
+        ],
+        "locator": "PubMed PMID 16507066，Abstract。",
+        "evidence_strength": "causal_study",
+        "causal_limit": "只核验原论文摘要，不在摘要外声称分配方式、具体样本量或效应量。",
+        "claim_id": "C010.01"
+      },
+      {
+        "claim": "摘要报告短时测试中重复学习较优，而延迟测试中先前提取练习保持较优。",
+        "source_ids": [
+          "C-12"
+        ],
+        "locator": "Abstract 的结果句，Psychological Science 17(3):249–255。",
+        "evidence_strength": "causal_study",
+        "causal_limit": "文章记忆任务，尚不能由此保证复杂实务迁移或所有学习人群收益。",
+        "claim_id": "C010.02"
+      }
+    ],
+    "source_ids": [
+      "C-12"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "medium",
+      "limitations": "实际打开并查阅原论文 PubMed 摘要，未读取可用全文或重做数据。所有事实限定在摘要支持范围。",
+      "independent_source_groups": 1
+    },
+    "transfer_conditions": [
+      "先定义保持期限，学习后用闭卷提取，并在目标延迟检查表现。",
+      "把熟悉感、即时分数和延迟表现分别记录。"
+    ],
+    "non_transfer_conditions": [
+      "临近几分钟的即时测试不应机械套用延迟保持结论。",
+      "技能操作、创造性任务或临床培训需要自身任务验证，不能照搬文章记忆结果。"
+    ],
+    "record_type": "deep_case",
+    "event_key": "study:retrieval-practice-2006",
+    "keywords": [
+      "learning_research",
+      "2006 年提取练习实验：短期表现与延迟保持分开评估"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "学习目标可能是当下答对，也可能是一周后仍能提取，评价时间影响方案。",
+      "proposed_check": "对同一学习内容记录即时测验和目标延迟后的闭卷提取。",
+      "metric": "即时表现、延迟表现、提示依赖程度。",
+      "stop_condition": "延迟表现未改善且投入超出约定上限时调整练习方案。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  }
+]

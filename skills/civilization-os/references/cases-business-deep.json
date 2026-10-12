@@ -1,0 +1,2523 @@
+[
+  {
+    "id": "C061",
+    "title": "Wise：汇款费率披露与后续命令修订",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/wise-us-inc/",
+    "event_time": "2025-01-30",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2025 年 1 月 30 日就 Wise US 的 ATM 费用披露、汇款纠错和合规流程发布同意令。",
+      "2025 年 5 月 15 日修订令替代原令，要求约 45 万美元消费者救济和 44,955 美元民事罚金。"
+    ],
+    "decision_context": "国际汇款与多币种产品同时涉及营销价格、实际扣款、通知和纠错；低费率宣传需要与账单口径一致。",
+    "observed_actions": [
+      "监管页面记载 Wise 的 ATM 费用营销披露及纠错、记录留存存在问题。",
+      "Wise 与 CFPB 同意修订命令；修订要求持续合规措施、救济和罚金。"
+    ],
+    "outcomes": [
+      "2025 年修订后的金额和要求取代原令；来源未在该页证实全部款项已支付。"
+    ],
+    "model_ids": [
+      "P077",
+      "P026",
+      "P079"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Wise",
+      "汇款",
+      "ATM",
+      "披露",
+      "费用",
+      "修订令"
+    ],
+    "claims": [
+      {
+        "claim_id": "C061.01",
+        "claim": "2025 年 1 月 30 日发布原令，2025 年 5 月 15 日修订令替代原令。",
+        "source_ids": [
+          "D-BUS001"
+        ],
+        "locator": "正文第 1 段、以 On May 15, 2025 开头的第 2 段。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C061.02",
+        "claim": "修订令要求约 45 万美元救济和 44,955 美元罚金。",
+        "source_ids": [
+          "D-BUS001"
+        ],
+        "locator": "正文第 2 段末句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS001"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "已读完整官方案件正文；记录监管程序和修订要求，未独立审计付款、交易损害或纠错有效性。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "把广告费率、适用条件和实际扣费放入同一测试样例；核对变更通知及异常退款流程。",
+      "引用监管事件时重新核查修订令，保留原令与生效修订的区别。"
+    ],
+    "non_transfer_conditions": [
+      "不能把费用较低或发生和解等同于产品总体可靠；金额变化不证明原事实全部推翻。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "国际汇款与多币种产品同时涉及营销价格、实际扣款、通知和纠错；低费率宣传需要与账单口径一致。",
+      "proposed_check": "以同一金额和路径对照广告条件、结算总费用及变更通知。",
+      "metric": "未披露费用项数、报价与实际扣费差额。",
+      "stop_condition": "发现无法解释的额外费用或适用条件缺失时停止使用该报价。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C062",
+    "title": "Cash App：客服、反欺诈与争议处理责任",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/block-inc/",
+    "event_time": "2025-01-16",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2025 年 1 月 16 日对运营 Cash App 的 Block 发布命令。",
+      "监管机构认定其真人电话客服、欺诈处理和未经授权交易纠错不足，且不能用卡组织拒付程序代替法定纠错职责。"
+    ],
+    "decision_context": "支付平台规模扩大时，风控、客服和交易争议处理需同时承接消费者的求助；外部卡组织流程与自身义务并不自动重合。",
+    "observed_actions": [
+      "CFPB 对客服、反欺诈及争议调查作出监管认定，并要求改变相关做法。",
+      "命令要求向消费者提供至少 7,500 万美元、最高 1.2 亿美元救济，以及 5,500 万美元民事罚金。"
+    ],
+    "outcomes": [
+      "命令确立整改和付款要求；该案件页未确认全部救济完成或欺诈损失下降。"
+    ],
+    "model_ids": [
+      "P079",
+      "P026",
+      "P082"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Cash App",
+      "Block",
+      "支付",
+      "客服",
+      "欺诈",
+      "拒付",
+      "争议处理"
+    ],
+    "claims": [
+      {
+        "claim_id": "C062.01",
+        "claim": "CFPB 于 2025 年 1 月 16 日发布命令，并认定客服、欺诈处理、交易调查存在不足。",
+        "source_ids": [
+          "D-BUS002"
+        ],
+        "locator": "正文首段中 The Bureau found / also found / further found 各句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C062.02",
+        "claim": "命令要求 7,500 万至 1.2 亿美元救济及 5,500 万美元罚金。",
+        "source_ids": [
+          "D-BUS002"
+        ],
+        "locator": "正文首段最后两句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS002"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "监管机构认定可定位；未读消费者逐笔交易或独立效果评估，不声称法院刑事定罪或救济已付清。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "为每类交易争议明确接收、调查、退款与升级负责人，验证端到端完成而非只验证转交。",
+      "把客服可达性和纠错完成时长作为规模扩张的验收条件。"
+    ],
+    "non_transfer_conditions": [
+      "不能由一次监管事件推断所有交易都是欺诈，也不能把新的客服渠道视为已证明降低损失。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "支付平台规模扩大时，风控、客服和交易争议处理需同时承接消费者的求助；外部卡组织流程与自身义务并不自动重合。",
+      "proposed_check": "使用合成交易争议追踪接收、调查、纠正和升级全过程。",
+      "metric": "转交断点数、完成时长、用户是否收到可验证答复。",
+      "stop_condition": "争议无人负责或超出约定时限时暂停扩量并处理阻塞。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C063",
+    "title": "Equifax：测试代码进入生产与数据纠错闭环",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/equifax-inc-and-equifax-information-services-llc/",
+    "event_time": "2025-01-17",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2025 年 1 月 17 日对 Equifax 发布命令。",
+      "监管正文记载其将测试代码放入评分模型生产服务器后出售不准确的信用分数及属性，并存在争议复查和已删除信息重新出现的问题。"
+    ],
+    "decision_context": "信用数据会影响贷款、就业和住房决策；生产发布与消费者纠错是两个需要共同控制的数据质量入口。",
+    "observed_actions": [
+      "监管机构对不充分复查、过度依赖信息提供方以及生产测试代码问题作出认定。",
+      "命令要求合规整改和 1,500 万美元民事罚金。"
+    ],
+    "outcomes": [
+      "案件形成明确整改要求；页面未证明整改后模型准确率提升幅度或受影响者全部获补偿。"
+    ],
+    "model_ids": [
+      "P026",
+      "P079",
+      "P082"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Equifax",
+      "征信",
+      "测试代码",
+      "生产环境",
+      "数据质量",
+      "争议复查"
+    ],
+    "claims": [
+      {
+        "claim_id": "C063.01",
+        "claim": "2025 年 1 月 17 日发布命令，正文记载测试代码进入生产评分环境后出售不准确信用数据。",
+        "source_ids": [
+          "D-BUS003"
+        ],
+        "locator": "正文首句及 using ineffective systems / test code 所在句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C063.02",
+        "claim": "命令要求合规整改并缴纳 1,500 万美元罚金。",
+        "source_ids": [
+          "D-BUS003"
+        ],
+        "locator": "正文末句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS003"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整正文是监管认定摘要；未独立复算信用分数，也不以错误数量估算因果损害。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "对模型发布设置生产与测试代码隔离，并用可追溯样本核对发布前后输出。",
+      "错误更正同时覆盖源数据、下游报告和防止已删除记录重新写入的机制。"
+    ],
+    "non_transfer_conditions": [
+      "不能由某次错误认定整套征信系统无价值；审计通过也不能代替消费者个案纠错。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "信用数据会影响贷款、就业和住房决策；生产发布与消费者纠错是两个需要共同控制的数据质量入口。",
+      "proposed_check": "用固定样本比较测试与生产输出，再演练更正到下游的回传。",
+      "metric": "输出差异数、已更正记录重新出现数。",
+      "stop_condition": "存在未解释输出差异或更正无法传到下游时停止发布。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C064",
+    "title": "Navy Federal：授权与结算时点不同引出的透支收费",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/navy-federal-credit-union-overdraft-2024/",
+    "event_time": "2024-11-07",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "2024 年 11 月 7 日 CFPB 对 Navy Federal 发布命令，NCUA 同日公告说明争议涉及授权时余额为正、结算时为负的透支收费。",
+      "CFPB 于 2025 年 7 月 1 日终止该令并豁免被指未遵守该令的事项。"
+    ],
+    "decision_context": "支付授权和最终入账是两个时间点；消费者能看到的余额与后台结算规则之间的差异可能改变实际费用。",
+    "observed_actions": [
+      "2024 年监管命令要求超过 8,000 万美元成员救济和 1,500 万美元罚金。",
+      "2025 年 CFPB 根据其法定权限终止命令；官方案件页更新了该后续程序。"
+    ],
+    "outcomes": [
+      "命令已在 2025 年终止；所查页面未证实全部救济已付，也不能据终止推断原收费事实被独立否定。"
+    ],
+    "model_ids": [
+      "P077",
+      "P049",
+      "P082"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Navy Federal",
+      "透支",
+      "APSN",
+      "授权",
+      "结算",
+      "命令终止"
+    ],
+    "claims": [
+      {
+        "claim_id": "C064.01",
+        "claim": "NCUA 的 2024 年 11 月 7 日公告记载 APSN 费用争议及超过 8,000 万美元救济、1,500 万美元罚金要求。",
+        "source_ids": [
+          "D-BUS031"
+        ],
+        "locator": "公告正文首段和 The CFPB ordered 所在末段。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C064.02",
+        "claim": "CFPB 于 2025 年 7 月 1 日终止 2024 年命令并豁免被指不合规事项。",
+        "source_ids": [
+          "D-BUS004"
+        ],
+        "locator": "案件正文第 1 段第 2 句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS004",
+      "D-BUS031"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整读过 CFPB 案件页和 NCUA 公告；NCUA 评论依赖同一执法事件，独立信息组仍按 1 计。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "把授权余额、可用余额、入账顺序和收费触发条件放入消费者可复核的样例。",
+      "回顾监管决策同时检查命令终止、修订或到期，避免把历史要求写成当前规则。"
+    ],
+    "non_transfer_conditions": [
+      "NCUA 公告转述同一 CFPB 事件，不能作为第二个独立损害评估；终止不等于证明收费机制普遍无害。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "支付授权和最终入账是两个时间点；消费者能看到的余额与后台结算规则之间的差异可能改变实际费用。",
+      "proposed_check": "对授权余额为正、最终结算为负等边界运行费用计算样例。",
+      "metric": "未解释收费差额、用户可见余额与收费逻辑的冲突数。",
+      "stop_condition": "缺乏可复核解释或命令当前状态未确认时停止据此定案。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C065",
+    "title": "VyStar：银行平台迁移的治理与恢复验证",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/vystar-credit-union/",
+    "event_time": "2024-10-31",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "VyStar 于 2022 年 5 月尝试切换线上及移动银行供应商；CFPB 在 2024 年 10 月 31 日命令中认定转换规划和实施存在问题。",
+      "2025 年 7 月 21 日终止令时，CFPB 正文确认 VyStar 已付 150 万美元罚金，并采取审核成员退款的措施。"
+    ],
+    "decision_context": "消费者直接依赖银行入口访问资金；供应商迁移需要将可用性、退款和跨团队责任纳入同一次交付治理。",
+    "observed_actions": [
+      "2024 年命令要求建立消费者银行系统项目治理委员会、确认应救济消费者获付款和合规整改。",
+      "2025 年监管机构终止该令，并记载已付罚金及退款审计步骤。"
+    ],
+    "outcomes": [
+      "官方明确证实 150 万美元罚金已支付；审核步骤不等于独立证实每名成员损失全部修复。"
+    ],
+    "model_ids": [
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "VyStar",
+      "平台迁移",
+      "银行",
+      "供应商",
+      "项目治理",
+      "退款审计"
+    ],
+    "claims": [
+      {
+        "claim_id": "C065.01",
+        "claim": "2022 年 5 月平台转换后，CFPB 于 2024 年 10 月 31 日要求治理委员会和退款合规措施。",
+        "source_ids": [
+          "D-BUS005"
+        ],
+        "locator": "正文第 1 段 In May 2022 及 The order required 两句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C065.02",
+        "claim": "2025 年 7 月 21 日终止令，官方确认 150 万美元罚金已付并采取退款审计措施。",
+        "source_ids": [
+          "D-BUS005"
+        ],
+        "locator": "正文第 2 段。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS005"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "正文可证实监管要求及明确列出的已付罚金；未独立检查技术架构、所有退款或事故完整因果链。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "核心服务切换前明确恢复条件、责任人和回退触发点，演练消费者完成关键操作的路径。",
+      "事故恢复分开核验服务可用、费用纠正和损失救济，避免只宣布系统上线成功。"
+    ],
+    "non_transfer_conditions": [
+      "原文未给可归因于某种迁移架构的效果对照；不能从终止令推导平台从此无风险。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "消费者直接依赖银行入口访问资金；供应商迁移需要将可用性、退款和跨团队责任纳入同一次交付治理。",
+      "proposed_check": "在隔离环境演练核心用户操作、恢复与回退，而后再审迁移条件。",
+      "metric": "关键路径完成率、恢复时间、未处理费用纠正项数。",
+      "stop_condition": "任一关键路径失败或恢复超出既定时间上限时停止切换。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C066",
+    "title": "Apple Card：产品界面与金融合作方的责任交接",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/apple-inc/",
+    "event_time": "2024-10-23",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "Apple 负责 Apple Card 的消费者界面及广告，Goldman 负责授信和争议调查。",
+      "CFPB 于 2024 年 10 月 23 日认定 Apple 未转送部分交易争议，并对月付产品入选方式提出监管问题。"
+    ],
+    "decision_context": "同一产品体验由科技公司和银行共同交付；用户在前端提交争议后，信息必须实际进入承担调查职责的机构。",
+    "observed_actions": [
+      "命令要求 Apple 合规整改并缴纳 2,500 万美元罚金。",
+      "2025 年 9 月 22 日 CFPB 终止 Apple 命令；案件页确认 Apple 已付该罚金。"
+    ],
+    "outcomes": [
+      "罚金支付由官网明确确认；终止令不能证明所有消费者争议已正确解决。"
+    ],
+    "model_ids": [
+      "P079",
+      "P026",
+      "P049"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Apple Card",
+      "Apple",
+      "Goldman",
+      "争议交接",
+      "分期付款",
+      "产品界面"
+    ],
+    "claims": [
+      {
+        "claim_id": "C066.01",
+        "claim": "Apple 负责界面，Goldman 负责授信与争议调查；2024 年命令认定 Apple 存在争议未转送等问题。",
+        "source_ids": [
+          "D-BUS006"
+        ],
+        "locator": "正文第 1 段，分工说明及 The Bureau found 所在句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C066.02",
+        "claim": "2025 年 9 月 22 日终止令，Apple 已付 2,500 万美元罚金。",
+        "source_ids": [
+          "D-BUS006"
+        ],
+        "locator": "正文第 2 段。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS006"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整官方正文记录产品分工、监管认定及 Apple 已付罚金；不把营销或交接问题自动归因为单一团队恶意。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "联合产品用端到端样本核验前端提交、后端接收、调查答复的责任链。",
+      "分期优惠需要清楚显示入选条件，验证消费者选择与实际计息结果一致。"
+    ],
+    "non_transfer_conditions": [
+      "本例与 Goldman 同一 Apple Card 事件，不能把双方命令当作两个独立机制实验。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "同一产品体验由科技公司和银行共同交付；用户在前端提交争议后，信息必须实际进入承担调查职责的机构。",
+      "proposed_check": "用合成分期与争议样例核对前端选择、后端接收、答复和计息。",
+      "metric": "责任交接断点、错误计息样例数。",
+      "stop_condition": "任一关键请求没有接收凭证或责任人时停止推广新路径。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C067",
+    "title": "Discover：电话销售话术与整改履约审计",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/discover-bank/",
+    "event_time": "2012-09-24",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "2012 年 9 月 24 日 FDIC 与 CFPB 联合对 Discover 信用卡附加产品电话销售发布同意令。",
+      "官方公告记载价格、是否购买和资格限制披露误导，以及部分消费者未同意即被加入服务。"
+    ],
+    "decision_context": "电话销售由销售人员控制节奏，消费者无法像书面合同一样随时回看；话术、授权和实际收费需要共同核验。",
+    "observed_actions": [
+      "2012 年命令要求修改营销、提交合规计划、自动退款及接受独立履约审计。",
+      "2015 年终止令记载 Discover 已提供至少 2 亿美元救济并缴纳 1,400 万美元罚金。"
+    ],
+    "outcomes": [
+      "完成救济和罚金由终止令明确记载；支付完成不等于证明所有话术风险永久消失。"
+    ],
+    "model_ids": [
+      "P049",
+      "P077",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Discover",
+      "电话销售",
+      "附加产品",
+      "授权",
+      "话术",
+      "独立审计"
+    ],
+    "claims": [
+      {
+        "claim_id": "C067.01",
+        "claim": "2012 年同意令针对附加产品电话营销，要求退款、营销整改与独立审计。",
+        "source_ids": [
+          "D-BUS032"
+        ],
+        "locator": "公告开头、误导销售四项清单、Enforcement Action 清单。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C067.02",
+        "claim": "2015 年终止令确认至少 2 亿美元救济及 1,400 万美元罚金已完成。",
+        "source_ids": [
+          "D-BUS033"
+        ],
+        "locator": "PDF 第 1 页 To this date 段落；第 2 页终止条款。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS007",
+      "D-BUS032",
+      "D-BUS033"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "已完整读官方公告、案件页及 2 页终止令；监管履约认定可定位，未独立评估改革相对无改革的效果。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "抽查录音时同时核对讲解价格、消费者肯定授权和后台实际开通记录。",
+      "整改计划加入外部或独立履约核验，区分要求支付与实际完成支付。"
+    ],
+    "non_transfer_conditions": [
+      "FDIC 与 CFPB 联合公告来自同一调查，不能把机构数量当作独立因果证据数量。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "电话销售由销售人员控制节奏，消费者无法像书面合同一样随时回看；话术、授权和实际收费需要共同核验。",
+      "proposed_check": "对照销售话术、肯定授权和实际开通收费记录进行抽样审阅。",
+      "metric": "缺授权样例数、话术与收费不一致数、履约证据缺项数。",
+      "stop_condition": "发现缺乏授权或收费与承诺不一致时停止相关销售路径。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C068",
+    "title": "TD Bank：已知征信错误与调查资源分配",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/td-bank-na-furnishing-2024/",
+    "event_time": "2024-09-11",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2024 年 9 月 11 日认定 TD Bank 长期向消费者报告机构提供有系统性错误的数据，部分已知错误一年以上才修正。",
+      "监管正文还记载消费者争议调查不充分、迟延或缺失，以及把资源从调查工作移走。"
+    ],
+    "decision_context": "大量标准化上报可以扩大服务效率，也会放大已知错误；调查容量与产品规模之间需要形成约束。",
+    "observed_actions": [
+      "监管命令要求防止继续违规并提供 776 万美元救济和 2,000 万美元罚金。",
+      "监管认定分别覆盖信用卡上报、存款账户信息和消费者争议流程。"
+    ],
+    "outcomes": [
+      "来源确定的是整改及付款要求；未在该页确认全部退款或数据修复完成。"
+    ],
+    "model_ids": [
+      "P026",
+      "P079",
+      "P058"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "TD Bank",
+      "征信上报",
+      "系统性错误",
+      "资源分配",
+      "争议调查"
+    ],
+    "claims": [
+      {
+        "claim_id": "C068.01",
+        "claim": "监管正文记载已知上报错误长期未修正及争议调查缺失、资源分流。",
+        "source_ids": [
+          "D-BUS008"
+        ],
+        "locator": "正文 knew of many / decision to divert resources 所在句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C068.02",
+        "claim": "2024 年 9 月 11 日命令要求 776 万美元救济和 2,000 万美元罚金。",
+        "source_ids": [
+          "D-BUS008"
+        ],
+        "locator": "正文首句、末句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS008"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "监管认定摘要可定位；资源分配到错误后果的因果效应未经独立识别。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "错误队列同时记录首次知道错误的日期、受影响输出及更正完成证据。",
+      "削减调查资源时明确延迟成本与消费者风险，设定可验的容量阈值。"
+    ],
+    "non_transfer_conditions": [
+      "没有调查量、难度与资源对照数据时，不能计算增加某个人手能减少多少错误。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "大量标准化上报可以扩大服务效率，也会放大已知错误；调查容量与产品规模之间需要形成约束。",
+      "proposed_check": "为一批合成纠错请求记录首次发现时间、下游影响和更正证据。",
+      "metric": "逾期请求数、更正未回传数、队列等待时长。",
+      "stop_condition": "关键错误持续传播或调查能力低于事先定义容量时暂停扩量。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C069",
+    "title": "Chime：关户退款的运营尾部风险",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/chime-financial-inc/",
+    "event_time": "2024-05-07",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "Chime 为两家合作银行设计和服务消费者账户，并承担主要客服。",
+      "CFPB 于 2024 年 5 月 7 日认定大量关户退款未在 14 天内完成，且有大量超过 90 天的实例。"
+    ],
+    "decision_context": "关户发生在客户退出流程，容易被增长指标忽略，但剩余资金仍关系客户支付生活费用的能力。",
+    "observed_actions": [
+      "CFPB 对退款迟延作出监管认定并要求合规。",
+      "命令要求至少 130 万美元消费者救济和 325 万美元罚金。"
+    ],
+    "outcomes": [
+      "官方证明退款时限失守和命令要求；未证明所要求的救济全部已付或退款流程已达标。"
+    ],
+    "model_ids": [
+      "P079",
+      "P026",
+      "P094"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Chime",
+      "关户",
+      "退款",
+      "合作银行",
+      "客服",
+      "尾部流程"
+    ],
+    "claims": [
+      {
+        "claim_id": "C069.01",
+        "claim": "Chime 承担账户主要客服；监管认定大量退款超过 14 天和 90 天。",
+        "source_ids": [
+          "D-BUS009"
+        ],
+        "locator": "正文开头分工说明及 failed to refund 所在句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C069.02",
+        "claim": "2024 年命令要求至少 130 万美元救济和 325 万美元罚金。",
+        "source_ids": [
+          "D-BUS009"
+        ],
+        "locator": "正文首句、末句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS009"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整正文；不据退款迟延推算统一损害金额，也不把合作银行与 Chime 的责任自动互换。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "把关户、撤销、退款和异常余额作为正式产品流程，并设置完成时限和逾期升级。",
+      "合作模式约定由谁发起退款、由谁确认到账，核验用户最终拿到资金。"
+    ],
+    "non_transfer_conditions": [
+      "官方推测可能依赖昂贵替代资金，不能当作每名消费者确已借款的证明。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "关户发生在客户退出流程，容易被增长指标忽略，但剩余资金仍关系客户支付生活费用的能力。",
+      "proposed_check": "桌面演练关户、异常余额与退款到账的跨方责任交接。",
+      "metric": "逾期退款项数、没有到账确认的记录数。",
+      "stop_condition": "退款责任或到账确认方式不明时停止宣称已完成退款。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C070",
+    "title": "BloomTech：收入分成融资与就业承诺",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/bloomtech-inc-and-austen-allred/",
+    "event_time": "2024-04-17",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "BloomTech 以收入分成协议为训练营学费融资，毕业后达到约定收入门槛时收取付款。",
+      "CFPB 于 2024 年 4 月 17 日认定其关于融资性质、费用、利益一致和就业成果的多项宣传具有误导性。"
+    ],
+    "decision_context": "学生同时购买课程和接受融资；学校宣称利益一致并不能替代披露融资成本和可复核的就业统计口径。",
+    "observed_actions": [
+      "命令永久禁止 BloomTech 从事消费者借贷，禁止创始人 Allred 从事学生借贷 10 年。",
+      "命令按毕业、就业及收入等条件要求取消或修改部分协议，并规定民事罚金。"
+    ],
+    "outcomes": [
+      "来源明确的是禁令和条件化协议改革；未提供课程效果对照或全部协议改革完成的审计结果。"
+    ],
+    "model_ids": [
+      "P077",
+      "P078",
+      "P065"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "BloomTech",
+      "Lambda School",
+      "收入分成",
+      "训练营",
+      "就业承诺",
+      "学生融资"
+    ],
+    "claims": [
+      {
+        "claim_id": "C070.01",
+        "claim": "2024 年 4 月 17 日命令认定收入分成融资及就业、课程宣传存在误导。",
+        "source_ids": [
+          "D-BUS010"
+        ],
+        "locator": "正文首句及 The Bureau found BloomTech and Allred 两组句子。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C070.02",
+        "claim": "命令永久禁学校消费者借贷、禁 Allred 学生借贷 10 年，并有条件修改或取消协议。",
+        "source_ids": [
+          "D-BUS010"
+        ],
+        "locator": "正文 The Bureau’s order permanently bans 及随后协议救济句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS010"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "官方监管认定摘要；融资和宣传问题不等同于独立识别教学质量对就业的因果影响。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "将课程效果、就业统计、收费模式和融资成本分开核验，披露样本及时间范围。",
+      "检查收入分成的付款、资产出售和服务激励，而非仅接受利益一致的口号。"
+    ],
+    "non_transfer_conditions": [
+      "本例不能证明所有收入分成融资都无效，也不能据监管认定评价每个学生的课程收益。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "学生同时购买课程和接受融资；学校宣称利益一致并不能替代披露融资成本和可复核的就业统计口径。",
+      "proposed_check": "逐项核对就业宣传、统计样本、合同付款及总融资成本。",
+      "metric": "无法重放的就业统计项数、未披露成本项数。",
+      "stop_condition": "数据口径或合同成本缺失时停止以就业承诺支持投资决定。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C071",
+    "title": "U.S. Bank ReliaCard：反欺诈冻结与身份恢复通道",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/us-bank-national-association-prepaid-cards-2023/",
+    "event_time": "2023-12-19",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "2020 年 U.S. Bank 为失业保险预付卡引入新的冻结条件；CFPB 于 2023 年 12 月 19 日认定其身份核验和恢复访问方式不足。",
+      "监管认定还涉及未及时调查未经授权电子转账的错误通知。"
+    ],
+    "decision_context": "政府福利款通过预付卡发放时，风控冻结会直接影响消费者使用生活资金，识别欺诈与恢复合法访问必须共同设计。",
+    "observed_actions": [
+      "2023 年命令要求 570 万美元救济、1,500 万美元罚金及合规措施。",
+      "2025 年 9 月 22 日终止令时，官网记载已付 CFPB 罚金、进行了救济付款并采取防止违规措施。"
+    ],
+    "outcomes": [
+      "官方确认部分义务已履行并终止命令；该叙述不能替代对所有申诉和退款逐笔完成的审计。"
+    ],
+    "model_ids": [
+      "P079",
+      "P026",
+      "P094"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "U.S. Bank",
+      "ReliaCard",
+      "预付卡",
+      "失业保险",
+      "冻结",
+      "身份恢复"
+    ],
+    "claims": [
+      {
+        "claim_id": "C071.01",
+        "claim": "2023 年命令针对新冻结标准下合法持卡者难以核验身份和恢复福利访问，以及错误调查迟延。",
+        "source_ids": [
+          "D-BUS011"
+        ],
+        "locator": "正文第 1 段 In the summer of 2020 及 The Bureau found 两句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C071.02",
+        "claim": "2025 年 9 月 22 日终止令，官网记载已付 1,500 万美元罚金及进行了救济付款。",
+        "source_ids": [
+          "D-BUS011"
+        ],
+        "locator": "正文第 2 段。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS011"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "只写该案及官网明确记载的 2025 年后续；不将反欺诈本身视为错误，也不量化最佳冻结阈值。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "对高影响冻结设计可靠的身份核验、申诉和恢复访问路径，并测试被误冻结者能否完成。",
+      "风控验收同时评估漏报损失与合法用户受阻成本，不能只优化冻结数量。"
+    ],
+    "non_transfer_conditions": [
+      "OCC 的同期罚单与 CFPB 记录同一监管事件，不能据罚款叠加推导实际消费者损害。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "政府福利款通过预付卡发放时，风控冻结会直接影响消费者使用生活资金，识别欺诈与恢复合法访问必须共同设计。",
+      "proposed_check": "用合成合法用户被误冻结的样例演练身份核验与申诉恢复。",
+      "metric": "身份核验完成率、恢复时长、申诉断点数。",
+      "stop_condition": "合法用户无法完成恢复流程时暂停扩大冻结规则。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C072",
+    "title": "Atlantic Union：先取得口头选择、后提供书面说明",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/atlantic-union-bank/",
+    "event_time": "2023-12-07",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2023 年 12 月 7 日对 Atlantic Union 透支服务入选流程发布命令。",
+      "监管认定分行员工在充分书面说明前索取新客户口头入选决定，电话流程也有覆盖范围和条款误导。"
+    ],
+    "decision_context": "收费服务的选择需要在消费者了解覆盖交易和条款后形成；签名或口头同意记录不能单独证明知情选择。",
+    "observed_actions": [
+      "监管命令要求停止相关行为、提供至少 500 万美元消费者救济和 120 万美元罚金。",
+      "监管分析分别涉及线下开户和电话入选路径，而非只检查一份标准文件。"
+    ],
+    "outcomes": [
+      "命令规定了整改和付款，页面未确认全部已付或新的入选流程完成验证。"
+    ],
+    "model_ids": [
+      "P049",
+      "P077",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Atlantic Union",
+      "透支服务",
+      "知情同意",
+      "口头入选",
+      "书面披露"
+    ],
+    "claims": [
+      {
+        "claim_id": "C072.01",
+        "claim": "监管认定分行先索取口头入选、后提供充分书面说明，电话流程也有误导。",
+        "source_ids": [
+          "D-BUS012"
+        ],
+        "locator": "正文 its employees requested 及 The Bureau also found 两句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C072.02",
+        "claim": "2023 年 12 月 7 日命令要求至少 500 万美元救济和 120 万美元罚金。",
+        "source_ids": [
+          "D-BUS012"
+        ],
+        "locator": "正文首句、末句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS012"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "历史监管认定及要求；未独立观察消费者理解，也不把 2023 年法律表述当作当前所有地域规则。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "核对披露、理解确认、主动选择和收费开始的真实顺序，而非只检查最后是否签字。",
+      "跨渠道抽样录音和操作记录，确保电话、分行及在线表述一致。"
+    ],
+    "non_transfer_conditions": [
+      "不能仅由监管规定推定任何口头服务选择无效；本例不提供用户理解程度的实验测量。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "收费服务的选择需要在消费者了解覆盖交易和条款后形成；签名或口头同意记录不能单独证明知情选择。",
+      "proposed_check": "核对各渠道样例中披露、理解、选择与收费的时间顺序。",
+      "metric": "披露晚于选择的样例数、渠道差异数。",
+      "stop_condition": "重要收费信息未提前提供时停止该选择流程。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C073",
+    "title": "Toyota Motor Credit：附加产品退出与退款逻辑",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/toyota-motor-credit-corporation-2023/",
+    "event_time": "2023-11-20",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2023 年 11 月 20 日认定 Toyota Motor Credit 对汽车融资附加产品的取消、未赚取保费退款及退款系统逻辑存在问题。",
+      "监管正文另记载车辆已退还却仍报告逾期等征信问题。"
+    ],
+    "decision_context": "附加服务可能在贷款提前结束后失去价值；取消障碍、计算逻辑和员工绩效需要作为同一服务闭环核验。",
+    "observed_actions": [
+      "原令要求 4,800 万美元救济、1,200 万美元罚金，并禁止与附加产品相关的激励式员工薪酬或绩效衡量。",
+      "CFPB 于 2025 年 5 月 12 日终止该令并豁免被指不合规事项。"
+    ],
+    "outcomes": [
+      "有明确终止记录，不能继续把原令所有要求描述为持续有效；页面未证实全部救济已支付。"
+    ],
+    "model_ids": [
+      "P040",
+      "P049",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Toyota Motor Credit",
+      "GAP",
+      "附加产品",
+      "取消",
+      "退款逻辑",
+      "绩效激励"
+    ],
+    "claims": [
+      {
+        "claim_id": "C073.01",
+        "claim": "监管认定涉及取消障碍、提前结清后保费退款缺失及错误退款逻辑。",
+        "source_ids": [
+          "D-BUS013"
+        ],
+        "locator": "正文列举 (1) 至 (3) 的消费者保护认定。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C073.02",
+        "claim": "原令要求 4,800 万美元救济、1,200 万美元罚金并限制激励；2025 年 5 月 12 日该令终止。",
+        "source_ids": [
+          "D-BUS013"
+        ],
+        "locator": "正文第 1 段末尾要求及第 2 段。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS013"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "记录历史命令和 2025 年终止，未独立验证每笔退款或激励对行为的净效果。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "用提前结清、服务取消和车辆退还样例测试退款金额及征信同步。",
+      "检查挽留服务的绩效指标是否让员工阻碍客户合法退出。"
+    ],
+    "non_transfer_conditions": [
+      "监管禁用某类绩效指标不能证明任何销售激励都无效；终止令也不是所有退款已经完成的证据。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "附加服务可能在贷款提前结束后失去价值；取消障碍、计算逻辑和员工绩效需要作为同一服务闭环核验。",
+      "proposed_check": "用提前结清和服务取消样例核对退款、退出与征信同步。",
+      "metric": "退款计算差异数、退出阻塞数、更正未同步数。",
+      "stop_condition": "退款或退出条件无法解释时停止扩展附加产品流程。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C074",
+    "title": "Sendwave：跨境汇款速度与费用承诺",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/chime-inc-dba-sendwave/",
+    "event_time": "2023-10-17",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2023 年 10 月 17 日对 Chime, Inc. d/b/a Sendwave 发布命令，该机构提供跨境移动汇款。",
+      "监管认定涉及转账速度和费用表述、要求客户放弃权利、汇率与到账日期披露，以及纠错处理。"
+    ],
+    "decision_context": "跨境汇款把营销承诺与汇率、当地到账路径和错误处理相连；消费者通常无法自行观察每个中间环节。",
+    "observed_actions": [
+      "命令要求约 150 万美元救济、150 万美元罚金并采取合规措施。",
+      "监管分别核对宣传和交易披露、消费者权利及错误处理流程。"
+    ],
+    "outcomes": [
+      "案件页确定的是付款和整改义务，未确认全部履行或到账速度改善。"
+    ],
+    "model_ids": [
+      "P077",
+      "P049",
+      "P079"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Sendwave",
+      "Chime Inc",
+      "国际汇款",
+      "到账速度",
+      "汇率",
+      "纠错"
+    ],
+    "claims": [
+      {
+        "claim_id": "C074.01",
+        "claim": "监管认定 Sendwave 对汇款速度和费用存在误导，并有权利、披露及纠错问题。",
+        "source_ids": [
+          "D-BUS014"
+        ],
+        "locator": "正文 The Bureau found 及 EFTA 四项列举。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C074.02",
+        "claim": "2023 年 10 月 17 日命令要求约 150 万美元救济和 150 万美元罚金。",
+        "source_ids": [
+          "D-BUS014"
+        ],
+        "locator": "正文首句及 The order requires 句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS014"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整案件正文；宣传违反与具体转账损害由监管报告，未独立测量汇款速度分布。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "用真实转账路径核对广告中速度、总费用和汇率，显式展示例外条件。",
+      "记录到账失败、取消与纠错的跨机构交接，不让用户自行重复提交证据。"
+    ],
+    "non_transfer_conditions": [
+      "该法律主体是汇款运营商 Chime, Inc. d/b/a Sendwave，不能与 C069 的 Chime Financial 银行账户服务混同。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "跨境汇款把营销承诺与汇率、当地到账路径和错误处理相连；消费者通常无法自行观察每个中间环节。",
+      "proposed_check": "用无真实资金的路径样例核对到账时效、汇率、费用及纠错交接。",
+      "metric": "承诺与路径条件不一致数、异常交接断点。",
+      "stop_condition": "总成本或例外时效无法说明时停止使用该承诺。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C075",
+    "title": "TransUnion 租赁筛查：供应商记录来源与纠错",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/transunion-rental-screening-solutions-inc-and-trans-union-llc/",
+    "event_time": "2023-10-12",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 与 FTC 于 2023 年 10 月 12 日就 TransUnion 租客及就业筛查提交联合起诉和拟议命令。",
+      "起诉指称驱逐记录准确性和第三方来源披露不足；法院于 2023 年 10 月 18 日录入和解判决及命令。"
+    ],
+    "decision_context": "筛查机构采购第三方记录后向房东及雇主出售报告，来源可追溯性影响消费者识别和纠正错误的能力。",
+    "observed_actions": [
+      "机构以起诉提出指控；法院录入的命令要求报告准确性和完整消费者披露措施。",
+      "命令要求 1,100 万美元救济和向 CFPB 缴纳 400 万美元罚金。"
+    ],
+    "outcomes": [
+      "有已录入和解命令的程序结果；起诉中列出的具体伤害不能当作每名消费者已经被法院逐项认定的事实。"
+    ],
+    "model_ids": [
+      "P077",
+      "P026",
+      "P079"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "TransUnion",
+      "租客筛查",
+      "背景调查",
+      "驱逐记录",
+      "第三方来源",
+      "和解判决"
+    ],
+    "claims": [
+      {
+        "claim_id": "C075.01",
+        "claim": "2023 年 10 月 12 日联合起诉指称筛查准确性及来源披露不足；10 月 18 日法院录入命令。",
+        "source_ids": [
+          "D-BUS015"
+        ],
+        "locator": "正文首句、The complaint alleged 两项和 The stipulated order 句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C075.02",
+        "claim": "录入的命令要求 1,100 万美元救济及 400 万美元罚金。",
+        "source_ids": [
+          "D-BUS015"
+        ],
+        "locator": "正文末句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS015"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "全文将 allegations 与已录入命令分开；未逐件检查驱逐案卷、住房拒绝或损害金额。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "保留从原始法院记录、供应商到终端报告的来源链和更正回传路径。",
+      "对决定住房或就业机会的报告进行匹配、时效和消费者异议样例检查。"
+    ],
+    "non_transfer_conditions": [
+      "和解命令不等于所有起诉指控经过完整审判证实；机构数量也不代表独立因果评估。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "筛查机构采购第三方记录后向房东及雇主出售报告，来源可追溯性影响消费者识别和纠正错误的能力。",
+      "proposed_check": "从原始记录到供应商报告追踪匹配、时效和异议更正。",
+      "metric": "来源无法定位项数、误匹配数、更正回传缺项数。",
+      "stop_condition": "来源或匹配依据缺失时停止据报告作出高影响拒绝。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C076",
+    "title": "Tempoe：初始租期后的自动扣款与所有权误解",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/tempoe-llc/",
+    "event_time": "2023-09-11",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "Tempoe 在零售消费者传统融资被拒后提供租赁；初始 5 个月后未主动选择购买或退回会继续自动扣款。",
+      "CFPB 于 2023 年 9 月 11 日认定租赁条款可获取性、部分退货限制及延长期披露存在问题。"
+    ],
+    "decision_context": "分期金额看似购买付款，但租赁终点、所有权和自动续期会改变交易总成本，需要在消费者承诺前明示。",
+    "observed_actions": [
+      "命令永久禁止 Tempoe 消费者租赁业务，要求解除现有租约并允许消费者保留物品且无后续财务义务。",
+      "原文涉及约 19,300 份、合计约 3,300 万美元租约；另规定 200 万美元罚金及与州付款相关抵减条款。"
+    ],
+    "outcomes": [
+      "来源明确要求释放租约和停止业务，未证实每份合同都已解除；不能把租约合计价值等同于实际退款现金。"
+    ],
+    "model_ids": [
+      "P049",
+      "P077",
+      "P065"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Tempoe",
+      "租赁",
+      "自动扣款",
+      "所有权",
+      "续期",
+      "总成本"
+    ],
+    "claims": [
+      {
+        "claim_id": "C076.01",
+        "claim": "初始 5 个月后未主动选择即继续扣款；监管认定披露和退货限制问题。",
+        "source_ids": [
+          "D-BUS016"
+        ],
+        "locator": "正文 Typically / Under the terms 三句和 The Bureau found 两句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C076.02",
+        "claim": "命令禁止租赁业务并要求解除约 19,300 份、约 3,300 万美元合同，允许保留产品。",
+        "source_ids": [
+          "D-BUS016"
+        ],
+        "locator": "正文 The order permanently bans 及 this includes 句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS016"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "监管摘要可定位；未核验每份租约履行，罚金存在抵减安排，不能重复累计州与联邦金额。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "在签约页面区分租赁、融资购买与最终所有权，显示总付款和不操作的后果。",
+      "测试默认续期和退出路径，核对交易条款在消费者需要时确实可访问。"
+    ],
+    "non_transfer_conditions": [
+      "不能把租约账面价值、消费者救济价值和现金支付相加；本案不证明所有租赁模式不合理。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "分期金额看似购买付款，但租赁终点、所有权和自动续期会改变交易总成本，需要在消费者承诺前明示。",
+      "proposed_check": "在合同样例中计算总付款，并演练默认续期与主动退出。",
+      "metric": "所有权表述冲突数、退出未完成数、总成本缺项数。",
+      "stop_condition": "总付款、所有权或不操作后果不清楚时停止签约建议。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C077",
+    "title": "Bank of America：同一付款被反复呈递与重复收费",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/bank-of-america-n-a-fees/",
+    "event_time": "2023-07-11",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "对退回的支票或 ACH 付款，收款方可能再次呈递；Bank of America 在已收过 35 美元资金不足费后可能再次收费。",
+      "CFPB 于 2023 年 7 月 11 日认定重复资金不足费做法不公平。"
+    ],
+    "decision_context": "消费者的一次付款指令可能触发商家多次提交；系统以每次处理动作收费，会偏离消费者对一次交易的理解。",
+    "observed_actions": [
+      "命令要求退还自 2018 年 9 月起未退还的重复费用，约 8,040 万美元，并缴纳 6,000 万美元 CFPB 罚金。",
+      "OCC 同期另发命令和 6,000 万美元罚金；两者属于相关协调监管行动。"
+    ],
+    "outcomes": [
+      "来源列出救济计算和罚金要求；未确认所有返还完成，罚金不是消费者实际损失的度量。"
+    ],
+    "model_ids": [
+      "P082",
+      "P049",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Bank of America",
+      "ACH",
+      "重复呈递",
+      "资金不足费",
+      "35美元",
+      "收费幂等"
+    ],
+    "claims": [
+      {
+        "claim_id": "C077.01",
+        "claim": "同一退回支票或 ACH 再呈递后可能重复收取 35 美元费用，监管认定该重复收费不公平。",
+        "source_ids": [
+          "D-BUS017"
+        ],
+        "locator": "正文 re-present / repeat non-sufficient fund fees 段落。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C077.02",
+        "claim": "2023 年命令要求约 8,040 万美元救济和 6,000 万美元 CFPB 罚金。",
+        "source_ids": [
+          "D-BUS017"
+        ],
+        "locator": "正文末三句；首次日期见首句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS017"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "机制与金额来自监管正文；不直接比较协调行动的多个罚金，也未独立运行银行收费系统。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "给客户交易定义稳定标识，检查重试、重发或重复提交是否造成重复收费。",
+      "对账同时核验操作次数和消费者实际授权的经济交易次数。"
+    ],
+    "non_transfer_conditions": [
+      "收费幂等是本 Skill 的工程迁移建议，不是原文证明该银行采用过的解决方案。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "消费者的一次付款指令可能触发商家多次提交；系统以每次处理动作收费，会偏离消费者对一次交易的理解。",
+      "proposed_check": "用同一经济交易的重试样例核对稳定标识及收费结果。",
+      "metric": "同一授权产生的重复收费数。",
+      "stop_condition": "发现重试产生额外收费且不能纠正时停止该处理路径。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C078",
+    "title": "Bank of America：跨渠道奖励承诺与未授权账户",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/bank-of-america-n-a-sales-practices-credit-card-rewards/",
+    "event_time": "2023-07-11",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2023 年 7 月 11 日对 Bank of America 未授权信用卡开设及奖励宣传发布独立命令。",
+      "监管认定部分网站奖励宣传看似适用于所有申请人，实际对电话或线下申请拒付；另有员工错误使承诺奖励未发放。"
+    ],
+    "decision_context": "营销、销售渠道和履约系统分别维护资格规则，会使消费者看到的承诺与实际到账奖励不同。",
+    "observed_actions": [
+      "命令要求合规整改、消费者救济及核验此前救济，并缴纳 3,000 万美元罚金。",
+      "监管也认定未经同意开立信用卡及无允许目的获取信用报告等问题。"
+    ],
+    "outcomes": [
+      "明确记录的是命令和救济核验要求；页面未确认奖励全部补发或所有账户纠正完成。"
+    ],
+    "model_ids": [
+      "P077",
+      "P079",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Bank of America",
+      "奖励承诺",
+      "跨渠道",
+      "信用卡",
+      "未授权账户"
+    ],
+    "claims": [
+      {
+        "claim_id": "C078.01",
+        "claim": "监管正文记载网站奖励与电话、线下申请资格不同，以及员工错误导致奖励未支付。",
+        "source_ids": [
+          "D-BUS018"
+        ],
+        "locator": "正文 The Bureau further found 中 (a)、(b) 两项。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C078.02",
+        "claim": "独立命令要求救济及核验此前救济，并缴纳 3,000 万美元罚金。",
+        "source_ids": [
+          "D-BUS018"
+        ],
+        "locator": "正文末句；首句为 2023 年 7 月 11 日。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS018"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整官方正文；不根据未授权账户判断每名员工动机，也不把广告资格差异推广到全部客户。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "用同一组客户样例跨网站、电话、门店核对奖励资格，追踪承诺到入账。",
+      "把开户授权记录与销售目标分开核验，遇到缺失授权时自动停止处理。"
+    ],
+    "non_transfer_conditions": [
+      "本案与同日重复收费命令是不同法定程序和行为，不能把两项罚金当作两次独立实验验证同一机制。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "营销、销售渠道和履约系统分别维护资格规则，会使消费者看到的承诺与实际到账奖励不同。",
+      "proposed_check": "跨渠道核对同一奖励资格与肯定开户授权的样例。",
+      "metric": "奖励承诺差异数、缺开户授权项数。",
+      "stop_condition": "发现授权缺失或无法兑现的奖励承诺时停止相关开户路径。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C079",
+    "title": "Wells Fargo：多产品服务错误与客户损失边界",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/wells-fargo-bank-na-2022/",
+    "event_time": "2022-12-20",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2022 年 12 月 20 日对 Wells Fargo 汽车贷款、房贷和存款服务发布命令。",
+      "监管认定涉及付款分配和收费错误、错误收车、房贷修改拒绝、存款冻结及透支费用等多类问题。"
+    ],
+    "decision_context": "大型机构多个产品共享风险和客服流程时，单个产品指标可能掩盖跨产品损害，错误处置还可能具有不可逆后果。",
+    "observed_actions": [
+      "原令要求合规整改、超过 20 亿美元消费者救济及 17 亿美元罚金。",
+      "监管分别列出产品线的行为认定，而非以一个总额代替具体根因分析。"
+    ],
+    "outcomes": [
+      "命令金额和行为认定可核验；所查正文未给全部支付完成或每项技术整改的效果。"
+    ],
+    "model_ids": [
+      "P082",
+      "P079",
+      "P094"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Wells Fargo",
+      "服务错误",
+      "付款分配",
+      "收车",
+      "房贷",
+      "存款冻结"
+    ],
+    "claims": [
+      {
+        "claim_id": "C079.01",
+        "claim": "2022 年命令列出多产品付款、收费、收车、贷款修改和账户冻结等认定。",
+        "source_ids": [
+          "D-BUS019"
+        ],
+        "locator": "正文 Specifically 后汽车、房贷和存款三组句子。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C079.02",
+        "claim": "原令要求超过 20 亿美元救济及 17 亿美元罚金。",
+        "source_ids": [
+          "D-BUS019"
+        ],
+        "locator": "正文首句、末句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS019"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "只记录 2022 年历史命令；未读取每名消费者或所有后续履约资料，当前状态标签不作历史推断。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "按产品和错误类型建立损害清单，优先阻止收车、失去住房等不可逆步骤。",
+      "复盘总损失后继续定位付款、权限和异常升级的具体流程，而非止于宏观文化标签。"
+    ],
+    "non_transfer_conditions": [
+      "多项违规汇总不能确定一个共同原因；当前网页状态标签没有日期，不能据此确定 2025 年何时终止。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "大型机构多个产品共享风险和客服流程时，单个产品指标可能掩盖跨产品损害，错误处置还可能具有不可逆后果。",
+      "proposed_check": "按产品建立错误与损失清单，先审核涉及不可逆损害的步骤。",
+      "metric": "高影响未解决错误数、无责任人的补救项数。",
+      "stop_condition": "关键错误可能触发不可逆损害而未被拦截时暂停相关流程。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C080",
+    "title": "U.S. Bank：消费者授权与金融账户开立",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/us-bank-national-association/",
+    "event_time": "2022-07-28",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2022 年 7 月 28 日认定 U.S. Bank 为部分消费者开立存款账户或授信产品时缺少其知情同意、所需申请及披露。",
+      "2025 年 8 月 21 日终止令时，官网确认 3,750 万美元罚金已付，并记载救济付款及防止违规措施。"
+    ],
+    "decision_context": "开立账户和信用产品会改变消费者资产、债务及征信关系；销量或已有客户数据不等于新增授权。",
+    "observed_actions": [
+      "原同意令要求合规、制定受损消费者救济计划并缴纳罚金。",
+      "监管机构在记载部分义务履行后终止原令并豁免被指不合规事项。"
+    ],
+    "outcomes": [
+      "罚金已付由官方明确确认；救济付款记载不等于本 Skill 独立核对所有账户已更正。"
+    ],
+    "model_ids": [
+      "P078",
+      "P079",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "U.S. Bank",
+      "未授权开户",
+      "消费者数据",
+      "授信",
+      "同意",
+      "救济计划"
+    ],
+    "claims": [
+      {
+        "claim_id": "C080.01",
+        "claim": "2022 年命令认定开立部分账户或授信产品缺乏知情同意及所需材料。",
+        "source_ids": [
+          "D-BUS020"
+        ],
+        "locator": "正文第 1 段 The Bureau found / further found 两句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C080.02",
+        "claim": "2025 年 8 月 21 日终止令，官网确认罚金 3,750 万美元已付及进行了救济付款。",
+        "source_ids": [
+          "D-BUS020"
+        ],
+        "locator": "正文第 2 段。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS020"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整官方监管摘要及 2025 年后续；不对所有员工或客户推断行为，模型映射为分析建议。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "新增账户或授信需核验可追溯的客户授权，不能仅以系统申请存在为充分依据。",
+      "对销售与复核岗位设置可检查的责任分工，并核验异常账户撤销和征信纠正。"
+    ],
+    "non_transfer_conditions": [
+      "原文摘要没有销售激励净效应评估，不能凭本例推断所有销售目标必然导致未授权开户。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "开立账户和信用产品会改变消费者资产、债务及征信关系；销量或已有客户数据不等于新增授权。",
+      "proposed_check": "核对合成开户样例中的客户授权、审批与撤销及更正记录。",
+      "metric": "缺授权项数、撤销后残留账户或征信记录数。",
+      "stop_condition": "授权或纠正闭环缺失时停止继续开户处理。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C081",
+    "title": "Bank of America：自动欺诈筛选代替个案调查",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/bank-of-america-na-2/",
+    "event_time": "2022-07-14",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "Bank of America 在疫情期间为美国多州发放失业保险等福利预付卡。",
+      "CFPB 于 2022 年 7 月 14 日认定银行单独依赖有缺陷的自动欺诈筛选拒绝错误通知并冻结账户，还曾追溯否定已调查和已付款的申请。"
+    ],
+    "decision_context": "需求激增时，自动化筛选能处理更多案件，但涉及生活资金和争议调查时，筛选结果不应自动覆盖已有证据和申诉权。",
+    "observed_actions": [
+      "命令要求消费者救济、个体化补救审查、项目改革及 1 亿美元 CFPB 罚金。",
+      "OCC 同期另对同一相关行为罚款 1.25 亿美元；这不是另一个独立自动化实验。"
+    ],
+    "outcomes": [
+      "官方证明监管认定和补救要求；未给筛选模型性能、最佳人工复核比例或救济全部完成的证据。"
+    ],
+    "model_ids": [
+      "P026",
+      "P079",
+      "P087"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Bank of America",
+      "自动欺诈筛选",
+      "福利预付卡",
+      "冻结",
+      "人工审查",
+      "追溯拒绝"
+    ],
+    "claims": [
+      {
+        "claim_id": "C081.01",
+        "claim": "监管认定银行仅凭有缺陷的自动筛选拒绝错误通知、冻结账户，并追溯推翻已处理申请。",
+        "source_ids": [
+          "D-BUS021"
+        ],
+        "locator": "正文 In the fall of 2020 及 unfair / abusive acts 两组句子。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C081.02",
+        "claim": "2022 年 7 月 14 日命令要求个体化补救、项目改革及 1 亿美元 CFPB 罚金。",
+        "source_ids": [
+          "D-BUS021"
+        ],
+        "locator": "正文首句及 The Bureau’s order requires 后的救济、罚金句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS021"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整监管摘要；不把自动化的存在视为单独原因，未独立检查筛选代码或每案实际损害。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "对高影响自动化决策保留个案证据、人工复核与可完成的申诉路径。",
+      "变更规则前测试追溯应用是否会推翻已确认合法的历史案件。"
+    ],
+    "non_transfer_conditions": [
+      "监管认定不提供模型的准确率和阈值，不能据此断言自动化普遍劣于人工。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "需求激增时，自动化筛选能处理更多案件，但涉及生活资金和争议调查时，筛选结果不应自动覆盖已有证据和申诉权。",
+      "proposed_check": "对高影响风控规则演练证据追溯、人工复核及申诉。",
+      "metric": "已知合法样例被拒数、无可完成申诉路径项数。",
+      "stop_condition": "无法解释追溯拒绝或恢复路径失败时停止部署该规则。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C082",
+    "title": "Discover 学生贷款：整改后的再次违规与付款授权",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/discover-bank-the-student-loan-corporation-and-discover-products-inc/",
+    "event_time": "2020-12-22",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2020 年 12 月 22 日对 Discover 学生贷款服务发布同意令，涉及其未遵守 2015 年命令要求。",
+      "监管认定包括最低还款额及利息等信息误报、此前救济未全部完成，以及缺少有效授权的扣款或未通知的取消扣款。"
+    ],
+    "decision_context": "初次整改文件完成不等于问题消失；账单、税务信息、自动扣款和历史救济需要可重复复核的履约证据。",
+    "observed_actions": [
+      "2020 年命令要求至少 1,000 万美元救济、2,500 万美元罚金及防止再次违规的措施。",
+      "监管在新案中核对旧命令的具体要求及实际未完成事项。"
+    ],
+    "outcomes": [
+      "这是被监管记录的整改履约问题；页面未证明新令已全部执行或何种监督设计能避免复发。"
+    ],
+    "model_ids": [
+      "P026",
+      "P079",
+      "P098"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Discover",
+      "学生贷款",
+      "2015命令",
+      "整改复发",
+      "自动扣款",
+      "授权"
+    ],
+    "claims": [
+      {
+        "claim_id": "C082.01",
+        "claim": "2020 年监管认定 Discover 未遵守 2015 年命令，包括账单误报和救济未全部完成。",
+        "source_ids": [
+          "D-BUS022"
+        ],
+        "locator": "正文 The Bureau previously issued 至 did not provide all consumer redress 句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C082.02",
+        "claim": "2020 年 12 月 22 日同意令要求至少 1,000 万美元救济和 2,500 万美元罚金。",
+        "source_ids": [
+          "D-BUS022"
+        ],
+        "locator": "正文首句、末句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS022"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整官方正文可证实监管履约认定；未独立检查 2015 年全部记录或 2020 年后续付款。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "整改验收既审文档又抽查真实账单、自动扣款授权和消费者实际到账记录。",
+      "把旧问题的失败样例长期保留为回归样本，验证后续版本不会重新出现。"
+    ],
+    "non_transfer_conditions": [
+      "再次被监管不能量化原整改的全部效果，也不能把同一集团不同年份产品事件当作随机对照。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "初次整改文件完成不等于问题消失；账单、税务信息、自动扣款和历史救济需要可重复复核的履约证据。",
+      "proposed_check": "将旧失败账单和扣款授权样例保留为整改后的回归样本。",
+      "metric": "再次出现的旧错误数、授权与实际扣款差异数。",
+      "stop_condition": "旧错误重新出现或付款证据缺失时停止宣布整改验收通过。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C083",
+    "title": "TD Bank：透支服务入选中的主动同意与理解",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/td-bank-na/",
+    "event_time": "2020-08-20",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2020 年 8 月 20 日对 TD Bank 的 Debit Card Advance 透支服务销售发布同意令。",
+      "监管认定包括未取得主动同意就收取部分透支费、跨线下电话及邮件的误导表述，以及干扰消费者理解服务条款。"
+    ],
+    "decision_context": "服务卖点和入选动作可能在多个渠道发生；消费者主动选择需要与费用和覆盖交易类型同时匹配。",
+    "observed_actions": [
+      "原令要求合规、估计 9,700 万美元消费者返还和 2,500 万美元罚金。",
+      "监管认定分别涉及入选、营销、消费者理解和征信环节。"
+    ],
+    "outcomes": [
+      "记录的是 2020 年要求，不能把估计返还金额描述为已付；当前状态标签的变更时间未由本例核实。"
+    ],
+    "model_ids": [
+      "P049",
+      "P077",
+      "P079"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "TD Bank",
+      "Debit Card Advance",
+      "透支入选",
+      "主动同意",
+      "跨渠道营销"
+    ],
+    "claims": [
+      {
+        "claim_id": "C083.01",
+        "claim": "2020 年命令认定未取得主动同意的收费、误导销售和干扰条款理解。",
+        "source_ids": [
+          "D-BUS023"
+        ],
+        "locator": "正文 The Bureau found 四组句子。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C083.02",
+        "claim": "原令要求估计 9,700 万美元返还和 2,500 万美元罚金。",
+        "source_ids": [
+          "D-BUS023"
+        ],
+        "locator": "正文末句及首句日期。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS023"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "只写 2020 年历史认定和原令；未读取终止文书，未判断当前产品或法律状态。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "对每个销售渠道核对同意证据与收费记录，测试未主动入选的人不被收费。",
+      "把是否理解服务覆盖范围和费用作为设计审查问题，不能仅以转化率验收。"
+    ],
+    "non_transfer_conditions": [
+      "所查网页于 2026 年更新，当前终止状态不用于推定 2025 年时的法律效力。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "服务卖点和入选动作可能在多个渠道发生；消费者主动选择需要与费用和覆盖交易类型同时匹配。",
+      "proposed_check": "逐渠道核对主动选择证据与透支收费的对应关系。",
+      "metric": "无主动入选却收费的样例数、理解检查缺项数。",
+      "stop_condition": "缺乏肯定同意或收费无法对应时停止该收费路径。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C084",
+    "title": "Wells Fargo：强制车险和房贷锁息延期的收费责任",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/wells-fargo-bank-na-2018/",
+    "event_time": "2018-04-20",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 与 OCC 于 2018 年 4 月 20 日协调对 Wells Fargo 采取行动，涉及汽车贷款强制保险管理及房贷锁息延期收费。",
+      "官方案件页记载该令于 2022 年 12 月 20 日被修改。"
+    ],
+    "decision_context": "贷款附带的保险和延期服务会把操作错误转变为消费者费用；统一风控需核验费用发生原因和客户责任归属。",
+    "observed_actions": [
+      "原令要求受损消费者救济及风险、合规管理活动。",
+      "原令规定 10 亿美元罚金，其中 5 亿美元以向 OCC 罚款抵减的方式处理，不能再把两份原罚金全额相加。"
+    ],
+    "outcomes": [
+      "原令及修改历史可定位；未在此核实修改后全部条款、实际退款或当前效力。"
+    ],
+    "model_ids": [
+      "P079",
+      "P082",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Wells Fargo",
+      "强制车险",
+      "锁息延期",
+      "贷款收费",
+      "罚金抵减"
+    ],
+    "claims": [
+      {
+        "claim_id": "C084.01",
+        "claim": "2018 年协调行动涉及车险管理和房贷锁息延期收费，原令后来于 2022 年修改。",
+        "source_ids": [
+          "D-BUS024"
+        ],
+        "locator": "正文首段前两项认定及末句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C084.02",
+        "claim": "原令规定 10 亿美元罚金，其中 5 亿美元向 OCC 罚款抵减。",
+        "source_ids": [
+          "D-BUS024"
+        ],
+        "locator": "正文 The order also imposes 句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS024"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整案件摘要；未核实 2022 年修改文书具体条款，不声称该原令仍持续有效。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "对贷款附带收费区分客户引起与服务机构引起的延迟或错误，抽查实际计算。",
+      "多个监管机构行动时核对共享、抵减及补救条款，防止汇总金额重复计算。"
+    ],
+    "non_transfer_conditions": [
+      "监管罚金不是消费者损害总额；修改过的历史命令不能当作当前全部产品规则。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "贷款附带的保险和延期服务会把操作错误转变为消费者费用；统一风控需核验费用发生原因和客户责任归属。",
+      "proposed_check": "对客户和服务机构引起的延误分别核算附加费用及抵减条款。",
+      "metric": "错误归责费用项数、重复汇总金额项数。",
+      "stop_condition": "收费原因或抵减规则不清楚时停止汇总损害结论。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C085",
+    "title": "American Express：地区与语言偏好下的产品待遇审查",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/american-express-centurion-bank-and-american-express-bank-fsb/",
+    "event_time": "2017-08-23",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "2017 年 8 月 23 日 CFPB 对 American Express 两家银行采取行动，历史记录涉及美国属地及部分西班牙语偏好消费者的较差信用卡条款。",
+      "案件页记载审查期间约 9,500 万美元救济已支付，原令另要求至少 100 万美元。"
+    ],
+    "decision_context": "跨地区产品不能只比较品牌和名义利率；准入门槛、减免和服务条件可能对不同客户组产生不同待遇。",
+    "observed_actions": [
+      "2017 年原令要求补救及合规计划。",
+      "2019 年终止令明确认定已履行计划、所要求的救济付款及征信更新义务。"
+    ],
+    "outcomes": [
+      "整改及支付完成由 2019 年原始文书证实；历史法律认定不能直接转用为当前歧视责任标准。"
+    ],
+    "model_ids": [
+      "P079",
+      "P077",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "American Express",
+      "属地",
+      "语言偏好",
+      "产品待遇",
+      "条款比较",
+      "救济"
+    ],
+    "claims": [
+      {
+        "claim_id": "C085.01",
+        "claim": "2017 年案涉属地与西班牙语偏好消费者；官方记载约 9,500 万美元已付及原令至少 100 万美元追加要求。",
+        "source_ids": [
+          "D-BUS025"
+        ],
+        "locator": "正文历史 American Express 段落；首次日期见 Action Details。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C085.02",
+        "claim": "2019 年终止令明确已履行计划、救济付款和征信更新要求。",
+        "source_ids": [
+          "D-BUS035"
+        ],
+        "locator": "PDF 第 1 页 To this date 段落及终止段；页脚 Filed 05/10/2019。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS025",
+      "D-BUS035"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "只使用 2017 年历史事实和 2019 年终止文书；未独立统计差异原因或判断当前法规。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "按地区及服务语言审查真实准入、利率、减免和申诉条件，并寻找可解释的业务依据。",
+      "补救验收同时核对钱款、客户记录和下游征信更新。"
+    ],
+    "non_transfer_conditions": [
+      "网页含 2026 年法规变化，不纳入历史事件结果，也不从本例推断当前法律责任或所有地区差异均不合理。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "跨地区产品不能只比较品牌和名义利率；准入门槛、减免和服务条件可能对不同客户组产生不同待遇。",
+      "proposed_check": "分地区和服务语言核对准入、价格、申诉与补救样例。",
+      "metric": "无法解释的待遇差异项数、补救及下游更新缺项数。",
+      "stop_condition": "差异依据或适用当前规则未确认时停止推断法律责任。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C086",
+    "title": "JPMorgan Chase：支票账户筛查的数据提供方责任",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/jpmorgan-chase-bank-na/",
+    "event_time": "2017-08-02",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2017 年 8 月 2 日对 JPMorgan Chase 支票账户筛查报告信息流程采取行动。",
+      "官方摘要记载其准确上报流程不足，以及未充分告知消费者争议结果和开户拒绝的重要信息。"
+    ],
+    "decision_context": "银行既是报告使用者也是数据提供者；消费者被拒绝开户时，需要识别决定所依赖的数据及更正入口。",
+    "observed_actions": [
+      "原监管行动要求 460 万美元罚金和上报、争议相关政策调整。",
+      "官方将数据提供方流程与消费者通知分别列为问题。"
+    ],
+    "outcomes": [
+      "来源确定历史行动和要求，不提供全部支付完成或后续账户筛查准确性指标。"
+    ],
+    "model_ids": [
+      "P077",
+      "P079",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "JPMorgan Chase",
+      "支票账户",
+      "开户筛查",
+      "报告数据",
+      "拒绝通知",
+      "更正"
+    ],
+    "claims": [
+      {
+        "claim_id": "C086.01",
+        "claim": "官方案件摘要记载支票账户筛查的信息上报流程和消费者通知不足。",
+        "source_ids": [
+          "D-BUS026"
+        ],
+        "locator": "正文 Banks screen potential customers 后的流程及通知句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C086.02",
+        "claim": "2017 年行动要求 460 万美元罚金和政策调整；首次日期为 8 月 2 日。",
+        "source_ids": [
+          "D-BUS026"
+        ],
+        "locator": "正文末句和 Action Details / Initial filing date。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS026"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整官方历史摘要；对现有状态标签不作未经日期定位的历史推断，未独立读取客户个案。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "当本机构数据会驱动其他机构拒绝服务时，明确质量、通知和更正回传责任。",
+      "使用能被消费者追溯的拒绝原因和争议结果，测试更正信息确实传到决策系统。"
+    ],
+    "non_transfer_conditions": [
+      "来源没有银行筛查模型的完整对照数据，不能评估某种算法或通知格式的净效果。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "银行既是报告使用者也是数据提供者；消费者被拒绝开户时，需要识别决定所依赖的数据及更正入口。",
+      "proposed_check": "用合成拒绝样例追踪数据提供、通知、争议和更正到决策端。",
+      "metric": "不可追溯拒绝原因数、更正未到达项数。",
+      "stop_condition": "更正无法进入决策系统时停止依赖错误记录拒绝服务。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C087",
+    "title": "Navient：还款方案建议与长期服务激励",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/navient-corporation-navient-solutions-inc-and-pioneer-credit-recovery-inc/",
+    "event_time": "2017-01-18",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2017 年 1 月 18 日起诉 Navient 及相关主体，指称其把长期困难借款人引向短期延期、再认证通知不足和付款处理等问题。",
+      "法院于 2024 年 9 月 12 日录入和解判决及命令。"
+    ],
+    "decision_context": "贷款服务方给出的建议影响借款人长期成本；延长偿还、收入驱动计划和再认证要求需要与借款人的实际情况匹配。",
+    "observed_actions": [
+      "起诉提出多项指控，法院后录入和解命令。",
+      "命令要求 1 亿美元救济、2,000 万美元罚金，并永久限制 Direct Loans 服务以及 FFELP 客户服务和新增收购。"
+    ],
+    "outcomes": [
+      "有已录入的和解及业务限制；具体原指控不能当作所有借款个案已经过完整审判。"
+    ],
+    "model_ids": [
+      "P078",
+      "P077",
+      "P088"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Navient",
+      "学生贷款",
+      "延期",
+      "收入驱动还款",
+      "再认证",
+      "服务激励"
+    ],
+    "claims": [
+      {
+        "claim_id": "C087.01",
+        "claim": "2017 年起诉指称长期困难借款人被引向延期，并有再认证和付款处理问题。",
+        "source_ids": [
+          "D-BUS027"
+        ],
+        "locator": "正文首句及针对 Navient 的 (1) 至 (6) 指控清单。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C087.02",
+        "claim": "2024 年 9 月 12 日法院录入命令，要求 1 亿美元救济、2,000 万美元罚金和业务限制。",
+        "source_ids": [
+          "D-BUS027"
+        ],
+        "locator": "正文最后两句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS027"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "正文明确区分 allegations 与和解结果；未重建借款人反事实成本，不声称所有指控已审判证明。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "比较还款方案时说明长期利息、资格、再认证成本及可撤回性，记录推荐依据。",
+      "审查服务商激励和借款人长期目标是否一致，核验关键提醒确实送达。"
+    ],
+    "non_transfer_conditions": [
+      "无法据和解量化每个借款人的最优方案；本例不替代当前贷款资格或法律咨询。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "贷款服务方给出的建议影响借款人长期成本；延长偿还、收入驱动计划和再认证要求需要与借款人的实际情况匹配。",
+      "proposed_check": "对借款人目标样例比较方案资格、长期利息与再认证要求。",
+      "metric": "缺关键条件项数、推荐理由与长期目标冲突项数。",
+      "stop_condition": "资格或成本信息缺失时停止提出确定的还款方案。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C088",
+    "title": "Navy Federal：催收威胁与账户访问限制",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/navy-federal-credit-union/",
+    "event_time": "2016-10-11",
+    "domain": "business",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2016 年 10 月 11 日对 Navy Federal 催收做法采取行动。",
+      "官方摘要记载其对成员作出虚假催收威胁，并在贷款逾期时不公平限制消费者账户访问。"
+    ],
+    "decision_context": "金融机构同时管理借款和存款时，催收手段可能影响消费者本来可访问的资金；实际权限和沟通内容需匹配。",
+    "observed_actions": [
+      "历史行动要求纠正催收方式、约 2,300 万美元救济和 550 万美元罚金。",
+      "监管将威胁内容和账户访问限制作为两类行为描述。"
+    ],
+    "outcomes": [
+      "页面是历史要求与监管摘要，未在该页证明全部款项已付或催收行为永久改善。"
+    ],
+    "model_ids": [
+      "P077",
+      "P078",
+      "P079"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Navy Federal",
+      "催收",
+      "虚假威胁",
+      "账户访问",
+      "逾期贷款",
+      "军人家庭"
+    ],
+    "claims": [
+      {
+        "claim_id": "C088.01",
+        "claim": "监管摘要记载虚假催收威胁和贷款逾期时的账户访问限制。",
+        "source_ids": [
+          "D-BUS028"
+        ],
+        "locator": "正文第 1、2 句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C088.02",
+        "claim": "历史要求为约 2,300 万美元救济和 550 万美元罚金；首次日期 2016 年 10 月 11 日。",
+        "source_ids": [
+          "D-BUS028"
+        ],
+        "locator": "正文末句及 Action Details / Initial filing date。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS028"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整官方历史摘要；不能把监管叙述升级为刑事定罪，未核实每名成员的损害或后续付款。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "催收话术逐项核对实际法律权限和机构政策，不以无法实施的威胁驱动付款。",
+      "限制资金访问前核验权限、范围和救济通道，独立审查跨产品连带措施。"
+    ],
+    "non_transfer_conditions": [
+      "合理催收及有依据的访问限制不因本例一概失效；不得凭历史摘要判断当前具体合同。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "金融机构同时管理借款和存款时，催收手段可能影响消费者本来可访问的资金；实际权限和沟通内容需匹配。",
+      "proposed_check": "逐句核对催收话术的权限依据，并演练访问限制的救济通道。",
+      "metric": "无权限依据的威胁项数、救济路径断点数。",
+      "stop_condition": "权限或限制范围不能确认时停止执行该话术或限制。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C089",
+    "title": "Wells Fargo：销售指标与可能未授权开户",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/wells-fargo-bank-2016/",
+    "event_time": "2016-09-08",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "CFPB 于 2016 年 9 月 8 日公开对 Wells Fargo 未授权存款及信用卡账户做法采取行动。",
+      "官网把销售目标和报酬激励作为促成因素叙述，并引述银行分析：超过 200 万个账户可能未获消费者授权。"
+    ],
+    "decision_context": "以账户数量衡量销售时，客户知情授权和真实需求需作为独立约束；目标达成不能单独证明有效获客。",
+    "observed_actions": [
+      "监管叙述员工未经消费者知情同意开立账户及转移资金来充资。",
+      "行动要求消费者完整返还及 1 亿美元 CFPB 罚金，另列 OCC 和洛杉矶相关罚金。"
+    ],
+    "outcomes": [
+      "监管行动及可能未授权账户估计可定位；超过 200 万是银行分析的可能范围，不能写成每个账户均已证实欺诈。"
+    ],
+    "model_ids": [
+      "P040",
+      "P078",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Wells Fargo",
+      "销售目标",
+      "报酬激励",
+      "未授权开户",
+      "指标失真",
+      "200万可能账户"
+    ],
+    "claims": [
+      {
+        "claim_id": "C089.01",
+        "claim": "官方将销售指标与激励列为促成因素，并引述超过 200 万可能未授权账户的银行分析。",
+        "source_ids": [
+          "D-BUS029"
+        ],
+        "locator": "正文 Spurred by sales targets 及 According to the bank’s own analysis 两句。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C089.02",
+        "claim": "2016 年行动要求消费者返还和 1 亿美元 CFPB 罚金。",
+        "source_ids": [
+          "D-BUS029"
+        ],
+        "locator": "正文 Wells Fargo will pay 句及 Action Details 首次日期。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS029"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整官方叙述，保留 may not have been authorized 限定；不对所有账户、员工或具体动机作统一判断。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "把客户授权、活跃使用和客户收益加入销售指标校验，并用独立样本检查数量异常。",
+      "核验开户、资金充资和撤销流程的原始证据，避免用增长结果反向证明手段正当。"
+    ],
+    "non_transfer_conditions": [
+      "监管关于激励的解释不等于随机识别的激励因果效应，不能断言任何提成必然导致未授权行为。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "以账户数量衡量销售时，客户知情授权和真实需求需作为独立约束；目标达成不能单独证明有效获客。",
+      "proposed_check": "对销售增长样例同时核对肯定授权、活跃使用与异常资金转移。",
+      "metric": "缺授权账户数、数量异常未调查项数。",
+      "stop_condition": "发现授权缺失或异常未经核对时停止将增长认定为成功。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  },
+  {
+    "id": "C090",
+    "title": "Capital One：外包信用卡销售与整改支付确认",
+    "record_type": "deep_case",
+    "event_key": "cfpb:https://www.consumerfinance.gov/enforcement/actions/capital-one-bank/",
+    "event_time": "2012-07-18",
+    "domain": "organization",
+    "result_type": "regulatory_action",
+    "facts": [
+      "2012 年 7 月 18 日公开执法事件涉及 Capital One 信用卡激活时外包供应商推销附加产品的误导行为。",
+      "2016 年终止令明确记载至少 1.4 亿美元救济已提供给约 200 万消费者，并已付 2,500 万美元罚金。"
+    ],
+    "decision_context": "品牌方把销售外包并不自动移走消费者体验和合规责任；营销话术与后台收费授权需要一起验收。",
+    "observed_actions": [
+      "CFPB 检查识别供应商向消费者施压或误导购买支付保护、信用监控等附加产品。",
+      "2016 年文书记载已履行救济与罚金义务，2012 年起停止营销并取消既有附加产品计划，随后终止令。"
+    ],
+    "outcomes": [
+      "救济及罚金完成有原始终止文书支持；该结果不证明任何一种外包治理设计的相对效果。"
+    ],
+    "model_ids": [
+      "P078",
+      "P079",
+      "P026"
+    ],
+    "model_mapping_note": "模型映射和迁移建议由本 Skill 作者用于分析，不能推断当事人使用这些模型；监管认定、起诉指控、和解、义务、实际支付与命令终止分别表达。",
+    "keywords": [
+      "Capital One",
+      "外包供应商",
+      "信用卡激活",
+      "附加产品",
+      "消费者授权",
+      "救济确认"
+    ],
+    "claims": [
+      {
+        "claim_id": "C090.01",
+        "claim": "公开案件涉及外包供应商在信用卡激活时施压或误导购买附加产品；首次记录日期为 2012 年 7 月 18 日。",
+        "source_ids": [
+          "D-BUS030"
+        ],
+        "locator": "案件正文及 Action Details / Initial filing date。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      },
+      {
+        "claim_id": "C090.02",
+        "claim": "2016 年终止令确认至少 1.4 亿美元救济、约 200 万消费者及 2,500 万美元已付罚金。",
+        "source_ids": [
+          "D-BUS034"
+        ],
+        "locator": "PDF 第 1 页 To this date 两句及停止营销、终止段落。",
+        "evidence_strength": "reported",
+        "causal_limit": "监管认定、程序或履约记载只能支持其明确叙述；未提供整改措施相对于未整改的独立因果识别。"
+      }
+    ],
+    "source_ids": [
+      "D-BUS030",
+      "D-BUS034"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "high",
+      "causal_confidence": "low",
+      "limitations": "完整案件页及 1 页原始终止文书；事件时间采用官网首次公开记录，不把终止令签署与提交混同。",
+      "independent_source_groups": 1,
+      "historical_cutoff": "2025-12-31"
+    },
+    "transfer_conditions": [
+      "外包销售合同明确披露、授权和抽样核查责任，核对话术与真实收费记录。",
+      "以消费者到账、产品退出和更正记录验收整改，避免仅凭供应商自报完成。"
+    ],
+    "non_transfer_conditions": [
+      "原同意令签署日、公开事件日与终止文书提交日不同，不能把这些日期混成一次动作；外包并非必然导致违规。"
+    ],
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "品牌方把销售外包并不自动移走消费者体验和合规责任；营销话术与后台收费授权需要一起验收。",
+      "proposed_check": "对照外包话术、授权与收费，再核对退款和退出完成的证据。",
+      "metric": "授权缺项数、收费冲突数、退款及更正证据缺项数。",
+      "stop_condition": "只有供应商自报而无可复核履约证据时停止宣布整改完成。",
+      "application_boundary": "这是当前条件下的分析建议；未声称历史当事人实施该检验或其效果已被证实。"
+    }
+  }
+]

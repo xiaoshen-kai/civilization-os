@@ -1,0 +1,4 @@
+interface:
+  display_name: "Civilization OS · 文明决策助手"
+  short_description: "用 100 个跨学科模型、可追溯证据与历史案例辅助学习、商业和个人决策"
+  default_prompt: "使用 $civilization-os 分析我的问题，先给有条件的结论，再给证据、可行选项和下一步。"

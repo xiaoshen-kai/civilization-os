@@ -1,0 +1,4861 @@
+[
+  {
+    "id": "C011",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:58",
+    "title": "VAB 高处夹具坠落近失",
+    "event_time": "VAB 高处检修时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "near_miss",
+    "facts": [
+      "员工身上的梁夹碰到钢梁后从第 16 层落到转运通道，落点靠近人员；条目指出夹具未正确系留。"
+    ],
+    "decision_context": "在高处携带工具并跨越钢梁检查防护网，地面仍有人员通行。",
+    "observed_actions": [],
+    "observed_actions_status": "not_reported",
+    "outcomes": [
+      "发生工具坠落近失，条目未记载人员受伤。"
+    ],
+    "model_ids": [
+      "P011",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C011.01",
+        "claim": "员工身上的梁夹碰到钢梁后从第 16 层落到转运通道，落点靠近人员；条目指出夹具未正确系留。",
+        "source_ids": [
+          "D-NASA001"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 1 行，Lesson ID=58，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能据此断言一次培训就足以消除坠物风险；条目未提供整改后的事故率。"
+      },
+      {
+        "claim_id": "C011.02",
+        "claim": "NASA 教训条目指出：高处维修人员携带的设备需要系留，防止坠落损坏或伤人。",
+        "source_ids": [
+          "D-NASA001"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 1 行，Lesson ID=58，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能据此断言一次培训就足以消除坠物风险；条目未提供整改后的事故率。"
+      },
+      {
+        "claim_id": "C011.03",
+        "claim": "NASA 条目建议：在工作授权文件中明确要求固定高处使用的设备。",
+        "source_ids": [
+          "D-NASA001"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 1 行，Lesson ID=58，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能据此断言一次培训就足以消除坠物风险；条目未提供整改后的事故率。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA001"
+    ],
+    "keywords": [
+      "58",
+      "VAB 高处夹具坠落近失",
+      "VAB",
+      "高处夹具坠落近失"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能据此断言一次培训就足以消除坠物风险；条目未提供整改后的事故率。 来源没有描述具体历史处置动作，observed_actions 保持为空；没有把推荐措施填成历史执行。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 58
+    },
+    "transfer_conditions": [
+      "工具坠落有人员暴露时，把系留检查列为开工条件，并区分工具防坠与个人防坠。"
+    ],
+    "non_transfer_conditions": [
+      "不能据此断言一次培训就足以消除坠物风险；条目未提供整改后的事故率。"
+    ],
+    "recommendations_reported": [
+      "在工作授权文件中明确要求固定高处使用的设备。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "在高处携带工具并跨越钢梁检查防护网，地面仍有人员通行。",
+      "proposed_check": "对拟用工具清单、系留点和人员通道做桌面审核，不进行真实坠落试验。",
+      "metric": "未确认系留状态的工具数、地面人员暴露路径数。",
+      "stop_condition": "任一关键工具未固定或地面隔离责任不明确时停止该项高处作业准备。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C012",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:53",
+    "title": "Magellan 电池连接器错配与电弧损坏",
+    "event_time": "Magellan 地面集成时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "线束 P2 连接器的至少两个引脚误接电池 1 的 J3 接口，短路和电弧损坏了电池、连接器及热毯。"
+    ],
+    "decision_context": "受限视野下对含储能电池的线束接口执行连接。",
+    "observed_actions": [],
+    "observed_actions_status": "not_reported",
+    "outcomes": [
+      "地面连接错误产生硬件损坏；条目没有报告此后的任务影响。"
+    ],
+    "model_ids": [
+      "P016",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C012.01",
+        "claim": "线束 P2 连接器的至少两个引脚误接电池 1 的 J3 接口，短路和电弧损坏了电池、连接器及热毯。",
+        "source_ids": [
+          "D-NASA002"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 4 行，Lesson ID=53，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不把一条历史材料建议推广为今天所有产品的通用禁用清单；须核对现行工程规范。"
+      },
+      {
+        "claim_id": "C012.02",
+        "claim": "NASA 教训条目指出：接口键位不同仍可能在错位插接时误连接，受限视野与绝缘材料特性会影响风险。",
+        "source_ids": [
+          "D-NASA002"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 4 行，Lesson ID=53，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不把一条历史材料建议推广为今天所有产品的通用禁用清单；须核对现行工程规范。"
+      },
+      {
+        "claim_id": "C012.03",
+        "claim": "NASA 条目建议：改进连接作业视野或重新设计接口，发布错配警示，并评估线束材料。",
+        "source_ids": [
+          "D-NASA002"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 4 行，Lesson ID=53，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不把一条历史材料建议推广为今天所有产品的通用禁用清单；须核对现行工程规范。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA002"
+    ],
+    "keywords": [
+      "53",
+      "Magellan 电池连接器错配与电弧损坏",
+      "Magellan",
+      "电池连接器错配",
+      "电弧损坏"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不把一条历史材料建议推广为今天所有产品的通用禁用清单；须核对现行工程规范。 来源没有描述具体历史处置动作，observed_actions 保持为空；没有把推荐措施填成历史执行。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 53
+    },
+    "transfer_conditions": [
+      "只有在接口可能错接且后果严重时，把机械防错、清晰可视和断能检查联合评审。"
+    ],
+    "non_transfer_conditions": [
+      "不把一条历史材料建议推广为今天所有产品的通用禁用清单；须核对现行工程规范。"
+    ],
+    "recommendations_reported": [
+      "改进连接作业视野或重新设计接口，发布错配警示，并评估线束材料。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "受限视野下对含储能电池的线束接口执行连接。",
+      "proposed_check": "用无储能接口样件或接线模型核对错位是否仍能误接。",
+      "metric": "可发生的错配组合、关键接口防错与断能核验覆盖率。",
+      "stop_condition": "发现未经分析的误接组合或带能连接边界不清时停止集成准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C013",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1377",
+    "title": "NASA 805 Learjet 复训着陆事故",
+    "event_time": "2001-06-07",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "NASA 805 Learjet 在一次触地复飞训练中严重损坏；飞行员、副驾驶和观察员均未受伤。"
+    ],
+    "decision_context": "长期低频使用的研究飞机恢复飞行，机组需要完成复训并满足岗位搭配要求。",
+    "observed_actions": [
+      "条目记载这是飞机从较长可飞行存放状态恢复后的复训飞行。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "飞机损坏，调查指出机组资质维持、搭配要求和监督指导存在缺口。"
+    ],
+    "model_ids": [
+      "P047",
+      "P079",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C013.01",
+        "claim": "NASA 805 Learjet 在一次触地复飞训练中严重损坏；飞行员、副驾驶和观察员均未受伤。",
+        "source_ids": [
+          "D-NASA003"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 122 行，Lesson ID=1377，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能凭持有历史资格就推断当前熟练度；卡片也不能充当飞行训练或准飞标准。"
+      },
+      {
+        "claim_id": "C013.02",
+        "claim": "NASA 教训条目指出：飞行运行监督需要持续核对资质、近期飞行熟练度及人员指派，并定期审视运行指导。",
+        "source_ids": [
+          "D-NASA003"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 122 行，Lesson ID=1377，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能凭持有历史资格就推断当前熟练度；卡片也不能充当飞行训练或准飞标准。"
+      },
+      {
+        "claim_id": "C013.03",
+        "claim": "NASA 条目建议：修订当地机组运行手册，明确资质、人员搭配、复训与监督批准要求。",
+        "source_ids": [
+          "D-NASA003"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 122 行，Lesson ID=1377，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能凭持有历史资格就推断当前熟练度；卡片也不能充当飞行训练或准飞标准。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA003"
+    ],
+    "keywords": [
+      "1377",
+      "NASA 805 Learjet 复训着陆事故",
+      "NASA",
+      "805",
+      "Learjet",
+      "复训着陆事故"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能凭持有历史资格就推断当前熟练度；卡片也不能充当飞行训练或准飞标准。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1377
+    },
+    "transfer_conditions": [
+      "岗位具有技能衰退风险时，把近期能力、任务难度与搭档经验作为派工前核对项。"
+    ],
+    "non_transfer_conditions": [
+      "不能凭持有历史资格就推断当前熟练度；卡片也不能充当飞行训练或准飞标准。"
+    ],
+    "recommendations_reported": [
+      "修订当地机组运行手册，明确资质、人员搭配、复训与监督批准要求。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "长期低频使用的研究飞机恢复飞行，机组需要完成复训并满足岗位搭配要求。",
+      "proposed_check": "对拟指派人员的资质、近期经验和任务难度做记录审核及合格模拟评估。",
+      "metric": "资质有效性、复训完成证据、人员搭配与批准要求的符合项。",
+      "stop_condition": "当前能力或监督批准无法确认时停止任务派工，按适用要求补评估。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C014",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:4456",
+    "title": "冰检测相机原型的过压失效",
+    "event_time": "2010 年；条目记载 2010-02-26，具体日期未独立交叉核对",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "冰检测相机的氮气吹扫系统发生过压失效；条目指出单级调压器漂移至 50 psi，而名义设定为 10 psi。"
+    ],
+    "decision_context": "原型气路设备进入发射设施作业，需要核对设计、调压、防过压和操作准备。",
+    "observed_actions": [
+      "操作人员在首次压力异常后切断电源、关闭气瓶，并准备换用备用氮气瓶。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "设备失效；条目还列出阀门功能、封闭状态、功能检查和操作规程等问题。"
+    ],
+    "model_ids": [
+      "P026",
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C014.01",
+        "claim": "冰检测相机的氮气吹扫系统发生过压失效；条目指出单级调压器漂移至 50 psi，而名义设定为 10 psi。",
+        "source_ids": [
+          "D-NASA004"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 6 行，Lesson ID=4456，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不把单一调压器漂移写成完整根因；条目日期和后续整改效果均未交叉验证。"
+      },
+      {
+        "claim_id": "C014.02",
+        "claim": "NASA 教训条目指出：测量性能验证不代替吹扫气路的功能验证，原型同样需要设计和运行符合性检查。",
+        "source_ids": [
+          "D-NASA004"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 6 行，Lesson ID=4456，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不把单一调压器漂移写成完整根因；条目日期和后续整改效果均未交叉验证。"
+      },
+      {
+        "claim_id": "C014.03",
+        "claim": "NASA 条目建议：指定专人验证原型符合要求，完善批准程序和培训，并核验吹扫和功能运行。",
+        "source_ids": [
+          "D-NASA004"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 6 行，Lesson ID=4456，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不把单一调压器漂移写成完整根因；条目日期和后续整改效果均未交叉验证。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA004"
+    ],
+    "keywords": [
+      "4456",
+      "冰检测相机原型的过压失效",
+      "冰检测相机原型",
+      "过压失效"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不把单一调压器漂移写成完整根因；条目日期和后续整改效果均未交叉验证。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 4456
+    },
+    "transfer_conditions": [
+      "原型开始接触关键设施前，把功能性能、危险防护和实际操作流程分开验收。"
+    ],
+    "non_transfer_conditions": [
+      "不把单一调压器漂移写成完整根因；条目日期和后续整改效果均未交叉验证。"
+    ],
+    "recommendations_reported": [
+      "指定专人验证原型符合要求，完善批准程序和培训，并核验吹扫和功能运行。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "原型气路设备进入发射设施作业，需要核对设计、调压、防过压和操作准备。",
+      "proposed_check": "先审查原型气路、调压与防护需求，再由合格人员批准无危险能量的功能核验方案。",
+      "metric": "要求到设计、程序与验证记录的追溯覆盖；未关闭的过压失效路径。",
+      "stop_condition": "防过压功能、认证责任或真实操作状态未验证时停止投入关键场地。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C015",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:10",
+    "title": "航天飞机 GPC 焊点先修后查的证据损失",
+    "event_time": "航天飞机 GPC 检修时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "reported_practice",
+    "facts": [
+      "GPC 在 IOP 2 接口失效，更换计算机后同接口仍异常；发现焊点断裂后，单元未经根因调查即被修复。"
+    ],
+    "decision_context": "故障单元可快速更换，但修理会改变用于根因分析的状态。",
+    "observed_actions": [
+      "团队通过交换计算机定位接口问题；随后修改返修程序，要求修理前调查失效原因。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "设备被修复，但条目指出先修理可能破坏调查所需证据。"
+    ],
+    "model_ids": [
+      "P098",
+      "P099",
+      "P082"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C015.01",
+        "claim": "GPC 在 IOP 2 接口失效，更换计算机后同接口仍异常；发现焊点断裂后，单元未经根因调查即被修复。",
+        "source_ids": [
+          "D-NASA005"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 8 行，Lesson ID=10，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能为保留证据无限延误紧急处置；此案例也未证明修改程序后复发率下降。"
+      },
+      {
+        "claim_id": "C015.02",
+        "claim": "NASA 教训条目指出：在查明原因前修理失效部件，可能降低发现有效防复发控制的机会。",
+        "source_ids": [
+          "D-NASA005"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 8 行，Lesson ID=10，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能为保留证据无限延误紧急处置；此案例也未证明修改程序后复发率下降。"
+      },
+      {
+        "claim_id": "C015.03",
+        "claim": "NASA 条目建议：返修前先检查失效件，保留根因调查入口。",
+        "source_ids": [
+          "D-NASA005"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 8 行，Lesson ID=10，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能为保留证据无限延误紧急处置；此案例也未证明修改程序后复发率下降。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA005"
+    ],
+    "keywords": [
+      "10",
+      "航天飞机 GPC 焊点先修后查的证据损失",
+      "航天飞机",
+      "GPC",
+      "焊点先修后查",
+      "证据损失"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能为保留证据无限延误紧急处置；此案例也未证明修改程序后复发率下降。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 10
+    },
+    "transfer_conditions": [
+      "可重现故障的状态即将被改变时，先保存日志、样本和配置；再根据恢复紧迫性安排修理。"
+    ],
+    "non_transfer_conditions": [
+      "不能为保留证据无限延误紧急处置；此案例也未证明修改程序后复发率下降。"
+    ],
+    "recommendations_reported": [
+      "返修前先检查失效件，保留根因调查入口。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "故障单元可快速更换，但修理会改变用于根因分析的状态。",
+      "proposed_check": "演练故障报告到修复批准的流程，检查修复前是否保存足够故障状态。",
+      "metric": "修复前日志、样本、配置和检查记录的完整性；未知原因的闭环状态。",
+      "stop_condition": "将改变关键证据且没有保存方案时暂停非紧急修复；紧急恢复另按授权预案。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C016",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1229",
+    "title": "新装接触器接头松动与过热",
+    "event_time": "电子控制组件装配检查时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "电气检查发现电流异常，拆开接触器后看到接头过热、熔损和焊结；条目把原因归于装配中漏做螺母紧固检查。"
+    ],
+    "decision_context": "高电流设备的目视检查难以确认盖板内部连接的真实紧固状态。",
+    "observed_actions": [
+      "团队更换接触器并重新安装电缆接线端子。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "硬件需要返修；外部目视检查未暴露盖板下的松动连接。"
+    ],
+    "model_ids": [
+      "P016",
+      "P079",
+      "P082"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C016.01",
+        "claim": "电气检查发现电流异常，拆开接触器后看到接头过热、熔损和焊结；条目把原因归于装配中漏做螺母紧固检查。",
+        "source_ids": [
+          "D-NASA006"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 9 行，Lesson ID=1229，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。扭矩标记本身不证明扭矩正确，也不能替代具体产品的电气安全规范。"
+      },
+      {
+        "claim_id": "C016.02",
+        "claim": "NASA 教训条目指出：计划外拆接后需要特别核对连接恢复，不能把既有厂商经验当作检查证据。",
+        "source_ids": [
+          "D-NASA006"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 9 行，Lesson ID=1229，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。扭矩标记本身不证明扭矩正确，也不能替代具体产品的电气安全规范。"
+      },
+      {
+        "claim_id": "C016.03",
+        "claim": "NASA 条目建议：关键接头完成扭矩操作后可使用跨接面标记，并在首次通电前核查高功率连接。",
+        "source_ids": [
+          "D-NASA006"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 9 行，Lesson ID=1229，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。扭矩标记本身不证明扭矩正确，也不能替代具体产品的电气安全规范。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA006"
+    ],
+    "keywords": [
+      "1229",
+      "新装接触器接头松动与过热",
+      "新装接触器接头松动",
+      "过热"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。扭矩标记本身不证明扭矩正确，也不能替代具体产品的电气安全规范。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1229
+    },
+    "transfer_conditions": [
+      "对高后果连接建立可追踪的紧固和复核记录，物理检查与可视标记各司其职。"
+    ],
+    "non_transfer_conditions": [
+      "扭矩标记本身不证明扭矩正确，也不能替代具体产品的电气安全规范。"
+    ],
+    "recommendations_reported": [
+      "关键接头完成扭矩操作后可使用跨接面标记，并在首次通电前核查高功率连接。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "高电流设备的目视检查难以确认盖板内部连接的真实紧固状态。",
+      "proposed_check": "审查关键接头的实际装配记录与复核证据，不以标记存在代替扭矩核验。",
+      "metric": "关键接头可追溯率、漏检项、重新接线后的复核项。",
+      "stop_condition": "关键连接紧固证据缺失或异常热迹未解释时停止通电准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C017",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:395",
+    "title": "MVM ’73 高增益天线异常的地面复现与热调节",
+    "event_time": "MVM ’73 首次水星交会前；事件日未注明",
+    "domain": "technology",
+    "result_type": "reported_practice",
+    "facts": [
+      "天线增益下降 3 dB，极化发生变化；地面对相似天线的短路试验再现了相关异常。"
+    ],
+    "decision_context": "飞行中的天线性能异常无法直接拆检，需要地面模型与有限遥测共同定位。",
+    "observed_actions": [
+      "开发团队参与诊断，并借助太阳照射引起温度变化，使天线恢复可用。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "条目记载纠错后得以继续计划任务，但颗粒短路或公差与热变形原因仍为团队假说。"
+    ],
+    "model_ids": [
+      "P098",
+      "P099",
+      "P082",
+      "P026"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C017.01",
+        "claim": "天线增益下降 3 dB，极化发生变化；地面对相似天线的短路试验再现了相关异常。",
+        "source_ids": [
+          "D-NASA007"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 10 行，Lesson ID=395，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。再现症状与成功处置不等于确认唯一微观根因；热调节方式不能照搬到其他硬件。"
+      },
+      {
+        "claim_id": "C017.02",
+        "claim": "NASA 教训条目指出：公差敏感设备需要最不利工况分析，原开发人员可提供在轨诊断所需知识。",
+        "source_ids": [
+          "D-NASA007"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 10 行，Lesson ID=395，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。再现症状与成功处置不等于确认唯一微观根因；热调节方式不能照搬到其他硬件。"
+      },
+      {
+        "claim_id": "C017.03",
+        "claim": "NASA 条目建议：评估公差累积风险，并预先安排开发工程师参与异常恢复团队。",
+        "source_ids": [
+          "D-NASA007"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 10 行，Lesson ID=395，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。再现症状与成功处置不等于确认唯一微观根因；热调节方式不能照搬到其他硬件。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA007"
+    ],
+    "keywords": [
+      "395",
+      "MVM ’73 高增益天线异常的地面复现与热调节",
+      "MVM",
+      "’73",
+      "高增益天线异常",
+      "地面复现",
+      "热调节"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。再现症状与成功处置不等于确认唯一微观根因；热调节方式不能照搬到其他硬件。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 395
+    },
+    "transfer_conditions": [
+      "不能直接拆检时，用可控的相似系统试验核对多个遥测特征，并记录未排除的原因。"
+    ],
+    "non_transfer_conditions": [
+      "再现症状与成功处置不等于确认唯一微观根因；热调节方式不能照搬到其他硬件。"
+    ],
+    "recommendations_reported": [
+      "评估公差累积风险，并预先安排开发工程师参与异常恢复团队。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "飞行中的天线性能异常无法直接拆检，需要地面模型与有限遥测共同定位。",
+      "proposed_check": "用安全模型和已有遥测比较候选原因的预测，不把纠错有效当作根因确定。",
+      "metric": "每项假说解释的独立观测特征、未解释残差和测试不确定性。",
+      "stop_condition": "拟操作超出安全包络或多个原因仍可造成相反效果时停止未经批准的恢复动作。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C018",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1336",
+    "title": "Genesis 线束图纸与最新接口失配",
+    "event_time": "Genesis 地面集成时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "reported_practice",
+    "facts": [
+      "多条按图纸制造的飞行及地面线缆仍与飞船电气系统不兼容，测试多次暂停以分析可能的过应力。"
+    ],
+    "decision_context": "线束制造与黑盒设备设计并行，接口版本变化需要及时传递。",
+    "observed_actions": [
+      "团队停止测试，逐引脚对照最新单元和系统原理图，识别错误并返工线束。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "条目记载问题得到解决，但线束图纸准确性曾持续造成集成困难。"
+    ],
+    "model_ids": [
+      "P008",
+      "P079",
+      "P082"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C018.01",
+        "claim": "多条按图纸制造的飞行及地面线缆仍与飞船电气系统不兼容，测试多次暂停以分析可能的过应力。",
+        "source_ids": [
+          "D-NASA008"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 14 行，Lesson ID=1336，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把“符合某版图纸”当作系统兼容的证明，也不能据此宣称所有并行工程都会失败。"
+      },
+      {
+        "claim_id": "C018.02",
+        "claim": "NASA 教训条目指出：系统设计演变时，原理图更新可能领先于接口与线束文件，按旧图制造仍可能不兼容。",
+        "source_ids": [
+          "D-NASA008"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 14 行，Lesson ID=1336，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把“符合某版图纸”当作系统兼容的证明，也不能据此宣称所有并行工程都会失败。"
+      },
+      {
+        "claim_id": "C018.03",
+        "claim": "NASA 条目建议：定期同步线束图纸，首次联合使用前核对当前配置，必要时做连续性检查。",
+        "source_ids": [
+          "D-NASA008"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 14 行，Lesson ID=1336，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把“符合某版图纸”当作系统兼容的证明，也不能据此宣称所有并行工程都会失败。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA008"
+    ],
+    "keywords": [
+      "1336",
+      "Genesis 线束图纸与最新接口失配",
+      "Genesis",
+      "线束图纸",
+      "最新接口失配"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能把“符合某版图纸”当作系统兼容的证明，也不能据此宣称所有并行工程都会失败。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1336
+    },
+    "transfer_conditions": [
+      "并行开发存在接口变动时，把最新配置、制造依据和实际成品的一致性列为集成准入项。"
+    ],
+    "non_transfer_conditions": [
+      "不能把“符合某版图纸”当作系统兼容的证明，也不能据此宣称所有并行工程都会失败。"
+    ],
+    "recommendations_reported": [
+      "定期同步线束图纸，首次联合使用前核对当前配置，必要时做连续性检查。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "线束制造与黑盒设备设计并行，接口版本变化需要及时传递。",
+      "proposed_check": "对照当前接口基线、图纸与无能量连续性测试结果逐项核验。",
+      "metric": "关键引脚一致率、未知版本线束数、变更到制造的延迟项。",
+      "stop_condition": "任一关键线束无法追溯到当前接口基线时停止联合上电准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C019",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1069",
+    "title": "KC-135 加压实验腔盖弹出近失",
+    "event_time": "KC-135 飞行实验时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "near_miss",
+    "facts": [
+      "人员跳过泄压确认步骤，腔体仍加压时释放 V 型卡箍，腔盖飞过机舱，险些击中操作员并损坏照明装置。"
+    ],
+    "decision_context": "为方便换样而采用快拆结构，同时系统可能保有压力。",
+    "observed_actions": [
+      "腔体与盖结构增加机械限位，操作程序也调整为更醒目的泄压步骤。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "发生人员近失和舱内设备损坏；卡片未报告改造后的长期事故表现。"
+    ],
+    "model_ids": [
+      "P016",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C019.01",
+        "claim": "人员跳过泄压确认步骤，腔体仍加压时释放 V 型卡箍，腔盖飞过机舱，险些击中操作员并损坏照明装置。",
+        "source_ids": [
+          "D-NASA009"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 16 行，Lesson ID=1069，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。此卡不是加压容器设计指南；机械改造必须依据实际压力、认证和专业设计验证。"
+      },
+      {
+        "claim_id": "C019.02",
+        "claim": "NASA 教训条目指出：加压快拆容器需要附加盖体约束或压力联锁，不能只依赖操作顺序。",
+        "source_ids": [
+          "D-NASA009"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 16 行，Lesson ID=1069，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。此卡不是加压容器设计指南；机械改造必须依据实际压力、认证和专业设计验证。"
+      },
+      {
+        "claim_id": "C019.03",
+        "claim": "NASA 条目建议：改造后的机械阻挡允许破封泄压但限制盖体运动，并突出泄压步骤。",
+        "source_ids": [
+          "D-NASA009"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 16 行，Lesson ID=1069，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。此卡不是加压容器设计指南；机械改造必须依据实际压力、认证和专业设计验证。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA009"
+    ],
+    "keywords": [
+      "1069",
+      "KC-135 加压实验腔盖弹出近失",
+      "KC-135",
+      "加压实验腔盖弹出近失"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。此卡不是加压容器设计指南；机械改造必须依据实际压力、认证和专业设计验证。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1069
+    },
+    "transfer_conditions": [
+      "当一次漏步可释放储能时，优先审查独立物理保护与联锁，而非只增加警告文字。"
+    ],
+    "non_transfer_conditions": [
+      "此卡不是加压容器设计指南；机械改造必须依据实际压力、认证和专业设计验证。"
+    ],
+    "recommendations_reported": [
+      "改造后的机械阻挡允许破封泄压但限制盖体运动，并突出泄压步骤。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "为方便换样而采用快拆结构，同时系统可能保有压力。",
+      "proposed_check": "在数字模型或无压样件上审核快拆状态与独立约束，不复刻带压开盖。",
+      "metric": "单个漏步是否仍可释放储能、独立保护覆盖的危险状态数。",
+      "stop_condition": "存在单一操作遗漏即可产生不受控释放的路径时停止未经设计评审的使用。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C020",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:634",
+    "title": "WIRE 上电瞬态触发火工装置导致任务丢失",
+    "event_time": "WIRE 发射后数日；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "WIRE 望远镜孔径盖在姿态稳定前意外释放，冷却所需固态氢快速升华排出，任务被宣布丢失。"
+    ],
+    "decision_context": "不可逆火工动作与逻辑器件上电过程相耦合，需要核验暂态而非只核对稳态真值。",
+    "observed_actions": [
+      "调查后的电路分析和试验发现，上电瞬态足以使控制逻辑进入能够触发释放火工装置的状态。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "NASA 评审把任务丢失归于未充分考虑振荡器和 FPGA 启动特性的设计。"
+    ],
+    "model_ids": [
+      "P026",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C020.01",
+        "claim": "WIRE 望远镜孔径盖在姿态稳定前意外释放，冷却所需固态氢快速升华排出，任务被宣布丢失。",
+        "source_ids": [
+          "D-NASA010"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 123 行，Lesson ID=634，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把所有 FPGA 或同步复位设计都归为不安全；具体设计与试验配置决定风险。"
+      },
+      {
+        "claim_id": "C020.02",
+        "claim": "NASA 教训条目指出：火工电子设备必须考虑上电暂态，并用独立审查及足够保真的测试检查不可逆事件。",
+        "source_ids": [
+          "D-NASA010"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 123 行，Lesson ID=634，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把所有 FPGA 或同步复位设计都归为不安全；具体设计与试验配置决定风险。"
+      },
+      {
+        "claim_id": "C020.03",
+        "claim": "NASA 条目建议：对关键火工动作考虑独立的解锁与触发操作，实施上电异常特性测试和技术同行审查。",
+        "source_ids": [
+          "D-NASA010"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 123 行，Lesson ID=634，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把所有 FPGA 或同步复位设计都归为不安全；具体设计与试验配置决定风险。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA010"
+    ],
+    "keywords": [
+      "634",
+      "WIRE 上电瞬态触发火工装置导致任务丢失",
+      "WIRE",
+      "上电瞬态触发火工装置导致任务丢失"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能把所有 FPGA 或同步复位设计都归为不安全；具体设计与试验配置决定风险。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 634
+    },
+    "transfer_conditions": [
+      "控制关键不可逆动作时，验证启动、掉电和异常状态中的安全默认值及真实时序。"
+    ],
+    "non_transfer_conditions": [
+      "不能把所有 FPGA 或同步复位设计都归为不安全；具体设计与试验配置决定风险。"
+    ],
+    "recommendations_reported": [
+      "对关键火工动作考虑独立的解锁与触发操作，实施上电异常特性测试和技术同行审查。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "不可逆火工动作与逻辑器件上电过程相耦合，需要核验暂态而非只核对稳态真值。",
+      "proposed_check": "对启动、复位与掉电时序做安全仿真和既有测试记录复核。",
+      "metric": "未定义逻辑状态、启动瞬态覆盖、不可逆动作的独立防护路径。",
+      "stop_condition": "暂态行为未知或保护链不能独立验证时停止关键动作使能准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C021",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:282",
+    "title": "Voyager 功率放大器断电后继电器挂起",
+    "event_time": "Voyager 系统试验时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "一台 20 W 固态放大器在系统试验中无法启动，分析发现上次断电后继电器挂起，涉及电容储能和低电压工作。"
+    ],
+    "decision_context": "同一部件多次成功上电后，仍需验证掉电能量衰减和再次启动的相互作用。",
+    "observed_actions": [
+      "团队进行试验后分析，识别原先分析未覆盖的储能衰减过程。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "异常在地面试验发现；条目只说明在飞行中出现会造成不可用，并未记载该异常在轨发生。"
+    ],
+    "model_ids": [
+      "P016",
+      "P026",
+      "P098"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C021.01",
+        "claim": "一台 20 W 固态放大器在系统试验中无法启动，分析发现上次断电后继电器挂起，涉及电容储能和低电压工作。",
+        "source_ids": [
+          "D-NASA011"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 18 行，Lesson ID=282，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能将地面发现的潜在失效写成实际在轨任务丢失。"
+      },
+      {
+        "claim_id": "C021.02",
+        "claim": "NASA 教训条目指出：撤去电源后的储能衰减可能使电路表现异常。",
+        "source_ids": [
+          "D-NASA011"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 18 行，Lesson ID=282，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能将地面发现的潜在失效写成实际在轨任务丢失。"
+      },
+      {
+        "claim_id": "C021.03",
+        "claim": "NASA 条目建议：电路设计要覆盖全部工作模式，并检查继电器接点间挂起时的动作能力。",
+        "source_ids": [
+          "D-NASA011"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 18 行，Lesson ID=282，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能将地面发现的潜在失效写成实际在轨任务丢失。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA011"
+    ],
+    "keywords": [
+      "282",
+      "Voyager 功率放大器断电后继电器挂起",
+      "Voyager",
+      "功率放大器断电后继电器挂起"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能将地面发现的潜在失效写成实际在轨任务丢失。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 282
+    },
+    "transfer_conditions": [
+      "对启停设备补测完整电源周期和残余能量状态，不仅验证额定电压稳定运行。"
+    ],
+    "non_transfer_conditions": [
+      "不能将地面发现的潜在失效写成实际在轨任务丢失。"
+    ],
+    "recommendations_reported": [
+      "电路设计要覆盖全部工作模式，并检查继电器接点间挂起时的动作能力。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "同一部件多次成功上电后，仍需验证掉电能量衰减和再次启动的相互作用。",
+      "proposed_check": "回放或模拟完整启停周期，包含电压下降及残余能量状态。",
+      "metric": "各工作模式覆盖、重启失败次数、异常残余状态的解释程度。",
+      "stop_condition": "额定工况成功但停电或重启状态仍未覆盖时停止可靠性结论发布。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C022",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1254",
+    "title": "STARS 飞行终止控制交接误触发销毁",
+    "event_time": "STARS 飞行约 T+55 秒；具体日期未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "正常飞行中的 STARS 在控制权交接时意外执行销毁，飞行器和预期任务数据丢失。"
+    ],
+    "decision_context": "两个发射源交接安全命令控制，需要避免信号叠加产生合法但非预期命令序列。",
+    "observed_actions": [
+      "调查组分析地面与空中发射源的命令信号、交接流程和接收器响应。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "报告归因于多命令音调重叠及尾焰衰减效应，使接收器识别为销毁序列。"
+    ],
+    "model_ids": [
+      "P026",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C022.01",
+        "claim": "正常飞行中的 STARS 在控制权交接时意外执行销毁，飞行器和预期任务数据丢失。",
+        "source_ids": [
+          "D-NASA012"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 20 行，Lesson ID=1254，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。条目中的技术建议不代表已完成改造或证明有效，也不构成武器控制实现指南。"
+      },
+      {
+        "claim_id": "C022.02",
+        "claim": "NASA 教训条目指出：交接过程中两个发射源的信号组合能够形成不易从单源分析发现的危险命令。",
+        "source_ids": [
+          "D-NASA012"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 20 行，Lesson ID=1254，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。条目中的技术建议不代表已完成改造或证明有效，也不构成武器控制实现指南。"
+      },
+      {
+        "claim_id": "C022.03",
+        "claim": "NASA 条目建议：修改交接程序和硬件，考虑自动顺序器、遥测监控及数字安全命令。",
+        "source_ids": [
+          "D-NASA012"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 20 行，Lesson ID=1254，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。条目中的技术建议不代表已完成改造或证明有效，也不构成武器控制实现指南。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA012"
+    ],
+    "keywords": [
+      "1254",
+      "STARS 飞行终止控制交接误触发销毁",
+      "STARS",
+      "飞行终止控制交接误触发销毁"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。条目中的技术建议不代表已完成改造或证明有效，也不构成武器控制实现指南。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1254
+    },
+    "transfer_conditions": [
+      "分布式控制交接有高后果动作时，核验多源并发、认证边界和实际信号序列。"
+    ],
+    "non_transfer_conditions": [
+      "条目中的技术建议不代表已完成改造或证明有效，也不构成武器控制实现指南。"
+    ],
+    "recommendations_reported": [
+      "修改交接程序和硬件，考虑自动顺序器、遥测监控及数字安全命令。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "两个发射源交接安全命令控制，需要避免信号叠加产生合法但非预期命令序列。",
+      "proposed_check": "评审已有控制权交接记录、权限与危险命令隔离边界，不实现或测试销毁系统。",
+      "metric": "授权状态是否全链可见、交接并发状态是否已评审、不可逆命令是否被隔离。",
+      "stop_condition": "权限不清或发现未经审核的控制源重叠时停止交接批准。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C023",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:451",
+    "title": "快断接头密封圈材料认证与实物不符",
+    "event_time": "推进剂材料兼容检查时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "密封圈在与联氨的兼容试验中解体；检验发现材料不是要求的 EPR，经销商无法提供一批中 40 个密封圈的制造商追溯。"
+    ],
+    "decision_context": "采购文件宣称材料符合要求，但材料身份与批次追溯仍需实际核对。",
+    "observed_actions": [
+      "团队追查经销商证书与制造商批次证书，确认只有另 460 个能够提供追溯。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "发现材料认证与实物不符；条目没有报告此批密封件进入飞行任务。"
+    ],
+    "model_ids": [
+      "P077",
+      "P079",
+      "P098"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C023.01",
+        "claim": "密封圈在与联氨的兼容试验中解体；检验发现材料不是要求的 EPR，经销商无法提供一批中 40 个密封圈的制造商追溯。",
+        "source_ids": [
+          "D-NASA013"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 22 行，Lesson ID=451，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能由某批认证错误推断所有供应商造假，也不能把文档完整当作化学兼容性证明。"
+      },
+      {
+        "claim_id": "C023.02",
+        "claim": "NASA 教训条目指出：经销商材料符合性认证错误可使不兼容材料进入装配。",
+        "source_ids": [
+          "D-NASA013"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 22 行，Lesson ID=451，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能由某批认证错误推断所有供应商造假，也不能把文档完整当作化学兼容性证明。"
+      },
+      {
+        "claim_id": "C023.03",
+        "claim": "NASA 条目建议：采购时同时索取制造商材料批次证书和经销商符合性证书。",
+        "source_ids": [
+          "D-NASA013"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 22 行，Lesson ID=451，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能由某批认证错误推断所有供应商造假，也不能把文档完整当作化学兼容性证明。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA013"
+    ],
+    "keywords": [
+      "451",
+      "快断接头密封圈材料认证与实物不符",
+      "快断接头密封圈材料认证",
+      "实物不符"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能由某批认证错误推断所有供应商造假，也不能把文档完整当作化学兼容性证明。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 451
+    },
+    "transfer_conditions": [
+      "材料身份决定失效边界时，将文档链、批次链与兼容检测联合核验。"
+    ],
+    "non_transfer_conditions": [
+      "不能由某批认证错误推断所有供应商造假，也不能把文档完整当作化学兼容性证明。"
+    ],
+    "recommendations_reported": [
+      "采购时同时索取制造商材料批次证书和经销商符合性证书。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "采购文件宣称材料符合要求，但材料身份与批次追溯仍需实际核对。",
+      "proposed_check": "核对采购批次、制造商材料证书、经销商证书和安全条件下的既有检验结果。",
+      "metric": "材料批次追溯率、证书与实物身份不一致项、未确认兼容项。",
+      "stop_condition": "关键材料身份或兼容性不明时停止装配准入，按适用专业检验处理。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C024",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:77",
+    "title": "推进剂加压控制逻辑未复位造成过压",
+    "event_time": "航天飞机 OMS／RCS 地面加压时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "未重设的控制逻辑显示错误阀门状态，操作后压力升至约 400 psig，爆破片破裂。"
+    ],
+    "decision_context": "程序状态会跨运行保留，人员依赖画面中的阀门状态判断操作安全。",
+    "observed_actions": [
+      "操作人员依据软件显示继续执行阀门操作；条目未报告后续维修情况。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "系统发生过压；报告指出运行前未调整或重置逻辑限值。"
+    ],
+    "model_ids": [
+      "P026",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C024.01",
+        "claim": "未重设的控制逻辑显示错误阀门状态，操作后压力升至约 400 psig，爆破片破裂。",
+        "source_ids": [
+          "D-NASA014"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 24 行，Lesson ID=77，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能仅靠新增操作步骤推断风险已消除；压力设备仍需独立保护与专业验证。"
+      },
+      {
+        "claim_id": "C024.02",
+        "claim": "NASA 教训条目指出：控制程序每次激活并不自动复位，旧状态可能使新的加压操作发生风险。",
+        "source_ids": [
+          "D-NASA014"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 24 行，Lesson ID=77，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能仅靠新增操作步骤推断风险已消除；压力设备仍需独立保护与专业验证。"
+      },
+      {
+        "claim_id": "C024.03",
+        "claim": "NASA 条目建议：在由该逻辑监测的操作规程中加入压力变化前核验和调整逻辑限值的步骤。",
+        "source_ids": [
+          "D-NASA014"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 24 行，Lesson ID=77，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能仅靠新增操作步骤推断风险已消除；压力设备仍需独立保护与专业验证。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA014"
+    ],
+    "keywords": [
+      "77",
+      "推进剂加压控制逻辑未复位造成过压"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能仅靠新增操作步骤推断风险已消除；压力设备仍需独立保护与专业验证。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 77
+    },
+    "transfer_conditions": [
+      "有状态控制系统改变工况时，先验证初始化、显示与真实设备状态一致。"
+    ],
+    "non_transfer_conditions": [
+      "不能仅靠新增操作步骤推断风险已消除；压力设备仍需独立保护与专业验证。"
+    ],
+    "recommendations_reported": [
+      "在由该逻辑监测的操作规程中加入压力变化前核验和调整逻辑限值的步骤。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "程序状态会跨运行保留，人员依赖画面中的阀门状态判断操作安全。",
+      "proposed_check": "通过无能量仿真回放不同起始状态，核对初始化和实际状态回读。",
+      "metric": "旧状态残留组合、画面与设备状态不一致数、初始化覆盖。",
+      "stop_condition": "真实状态与显示无法一致确认时停止加压或其他高后果操作准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C025",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:105",
+    "title": "航天飞机发动机喷口盖吊装坠落",
+    "event_time": "VAB 航天飞机垂直吊装时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "near_miss",
+    "facts": [
+      "右侧 OMS 发动机喷口盖坠落约 15 英尺并损坏；检查发现保持夹具可能安装时已有缺陷，另一侧夹具也有松动。"
+    ],
+    "decision_context": "吊装过程改变载荷方向，附件保持装置必须适应实际工况。",
+    "observed_actions": [
+      "检查并紧固左侧夹具，安全人员批准在没有右侧喷口盖的情况下继续吊装。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "发生坠物近失与喷口盖损坏；条目未提供长期整改结果。"
+    ],
+    "model_ids": [
+      "P011",
+      "P079",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C025.01",
+        "claim": "右侧 OMS 发动机喷口盖坠落约 15 英尺并损坏；检查发现保持夹具可能安装时已有缺陷，另一侧夹具也有松动。",
+        "source_ids": [
+          "D-NASA015"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 26 行，Lesson ID=105，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。安装缺陷在原文中为可能原因，不能把它写成独立证实的唯一原因。"
+      },
+      {
+        "claim_id": "C025.02",
+        "claim": "NASA 教训条目指出：保持夹具失效与缺少预防维护有关，附件也应进入维护范围。",
+        "source_ids": [
+          "D-NASA015"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 26 行，Lesson ID=105，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。安装缺陷在原文中为可能原因，不能把它写成独立证实的唯一原因。"
+      },
+      {
+        "claim_id": "C025.03",
+        "claim": "NASA 条目建议：评估夹具是否需要重新设计或实施预防维护。",
+        "source_ids": [
+          "D-NASA015"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 26 行，Lesson ID=105，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。安装缺陷在原文中为可能原因，不能把它写成独立证实的唯一原因。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA015"
+    ],
+    "keywords": [
+      "105",
+      "航天飞机发动机喷口盖吊装坠落"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。安装缺陷在原文中为可能原因，不能把它写成独立证实的唯一原因。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 105
+    },
+    "transfer_conditions": [
+      "关键附件经历翻转、振动或搬运时，检查保持装置而非只检查主设备。"
+    ],
+    "non_transfer_conditions": [
+      "安装缺陷在原文中为可能原因，不能把它写成独立证实的唯一原因。"
+    ],
+    "recommendations_reported": [
+      "评估夹具是否需要重新设计或实施预防维护。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "吊装过程改变载荷方向，附件保持装置必须适应实际工况。",
+      "proposed_check": "审查翻转吊装状态下附件保持要求及适当的检验记录。",
+      "metric": "松动或缺陷夹具数、附件保持检查覆盖、缺失的维护项。",
+      "stop_condition": "附件保持或安全隔离状态不明时停止吊装准备。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C026",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:556",
+    "title": "1997 年 SOHO 太阳事件传播中的预测失真",
+    "event_time": "1997-04-07 至后续媒体报道时期",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "SOHO 观察到太阳耀斑与日冕物质抛射，媒体把新颖观测扩展成到达时间和严重技术损害的预警；NASA 条目指出这些报道夸大了预期影响。"
+    ],
+    "decision_context": "新观测能力带来的科学新鲜感需要与对地影响预测分开沟通。",
+    "observed_actions": [
+      "科学人员接受媒体采访并尝试保留观测的限定条件；条目指出媒体没有保留这些限定。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "媒体报道引发系统运营者担忧；条目区分真实观测、到达可能性与缺乏支持的严重损害叙述。"
+    ],
+    "model_ids": [
+      "P006",
+      "P044",
+      "P087"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C026.01",
+        "claim": "SOHO 观察到太阳耀斑与日冕物质抛射，媒体把新颖观测扩展成到达时间和严重技术损害的预警；NASA 条目指出这些报道夸大了预期影响。",
+        "source_ids": [
+          "D-NASA016"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 27 行，Lesson ID=556，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。本案例不提供太阳风暴实时预警，也不证明此后协调程序已提高预测准确率。"
+      },
+      {
+        "claim_id": "C026.02",
+        "claim": "NASA 教训条目指出：媒体弱化采访中的限定词，把第一次有设备看见的现象解释成从未出现过的大事件。",
+        "source_ids": [
+          "D-NASA016"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 27 行，Lesson ID=556，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。本案例不提供太阳风暴实时预警，也不证明此后协调程序已提高预测准确率。"
+      },
+      {
+        "claim_id": "C026.03",
+        "claim": "NASA 条目建议：观测研究机构与运行预报机构协调信息，并把公共事务人员尽早纳入传播流程。",
+        "source_ids": [
+          "D-NASA016"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 27 行，Lesson ID=556，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。本案例不提供太阳风暴实时预警，也不证明此后协调程序已提高预测准确率。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA016"
+    ],
+    "keywords": [
+      "556",
+      "1997 年 SOHO 太阳事件传播中的预测失真",
+      "1997",
+      "SOHO",
+      "太阳事件传播中",
+      "预测失真"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。本案例不提供太阳风暴实时预警，也不证明此后协调程序已提高预测准确率。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 556
+    },
+    "transfer_conditions": [
+      "对外表达新发现时，分别说明观察结果、预测区间、影响条件和谁负责预报。"
+    ],
+    "non_transfer_conditions": [
+      "本案例不提供太阳风暴实时预警，也不证明此后协调程序已提高预测准确率。"
+    ],
+    "recommendations_reported": [
+      "观测研究机构与运行预报机构协调信息，并把公共事务人员尽早纳入传播流程。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "新观测能力带来的科学新鲜感需要与对地影响预测分开沟通。",
+      "proposed_check": "用同一观测材料编写并审阅对外说明，分别标出观测、预测、影响与不确定性。",
+      "metric": "缺少来源或限定条件的影响断言数、预测责任单位与更新时间完整性。",
+      "stop_condition": "把新颖观测直接写成高概率重大损害而无支持时停止发布该断言。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C027",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1275",
+    "title": "STS-83 机架不可达区域遗留金属碎屑",
+    "event_time": "STS-83 任务后检查；事件日未注明",
+    "domain": "technology",
+    "result_type": "reported_practice",
+    "facts": [
+      "任务后在 Spacelab 地板下发现来自 Express Rack 实验机架的金属颗粒；颗粒被困在下层，未暴露成自由漂浮的乘员风险。"
+    ],
+    "decision_context": "装配完成会把污染物封入不可达空间，末端目视清洁检查存在盲区。",
+    "observed_actions": [
+      "条目列出改进封闭及清洁入口、设置污染控制责任人、作业隔离和内窥检查等措施。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "发现先前清洁未完全去除不可达区域碎屑；源头工艺此前已采取纠正，因此未再影响工厂操作。"
+    ],
+    "model_ids": [
+      "P008",
+      "P079",
+      "P082"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C027.01",
+        "claim": "任务后在 Spacelab 地板下发现来自 Express Rack 实验机架的金属颗粒；颗粒被困在下层，未暴露成自由漂浮的乘员风险。",
+        "source_ids": [
+          "D-NASA017"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 28 行，Lesson ID=1275，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把未出现乘员暴露写成没有任何污染风险，也不把单次措施清单当成清洁工艺认证。"
+      },
+      {
+        "claim_id": "C027.02",
+        "claim": "NASA 教训条目指出：污染物进入飞行硬件后，可能很难仅靠末端清洁去除。",
+        "source_ids": [
+          "D-NASA017"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 28 行，Lesson ID=1275，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把未出现乘员暴露写成没有任何污染风险，也不把单次措施清单当成清洁工艺认证。"
+      },
+      {
+        "claim_id": "C027.03",
+        "claim": "NASA 条目建议：在会产生碎屑的操作前设计隔离和可清洁入口，对不可达区域实施适当检查。",
+        "source_ids": [
+          "D-NASA017"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 28 行，Lesson ID=1275，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把未出现乘员暴露写成没有任何污染风险，也不把单次措施清单当成清洁工艺认证。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA017"
+    ],
+    "keywords": [
+      "1275",
+      "STS-83 机架不可达区域遗留金属碎屑",
+      "STS-83",
+      "机架不可达区域遗留金属碎屑"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能把未出现乘员暴露写成没有任何污染风险，也不把单次措施清单当成清洁工艺认证。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1275
+    },
+    "transfer_conditions": [
+      "系统装配会降低可检性时，把污染预防前移到生成工序，并保留后续检查入口。"
+    ],
+    "non_transfer_conditions": [
+      "不能把未出现乘员暴露写成没有任何污染风险，也不把单次措施清单当成清洁工艺认证。"
+    ],
+    "recommendations_reported": [
+      "在会产生碎屑的操作前设计隔离和可清洁入口，对不可达区域实施适当检查。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "装配完成会把污染物封入不可达空间，末端目视清洁检查存在盲区。",
+      "proposed_check": "审查产生碎屑的工序及封闭前后检查入口，必要时查看无害样件的可检性。",
+      "metric": "不可达污染路径、封闭前检查覆盖、发现碎屑后的追踪关闭率。",
+      "stop_condition": "关键区域无法清洁或确认状态时停止封闭与交付准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C028",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:531",
+    "title": "未报告近失后的带钉木板伤人",
+    "event_time": "地面场区作业时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "员工撞上货车后部伸出的带钉木板，面部轻微擦伤；此前另一人曾差点撞上，却没有报告。"
+    ],
+    "decision_context": "现场危险已被先前人员观察到，但信息没有进入可采取行动的渠道。",
+    "observed_actions": [
+      "首次危险报告最终提出后，现场移除了危险物。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "出现轻伤；条目提出若先前近失及时报告，后一次事件可能被避免。"
+    ],
+    "model_ids": [
+      "P026",
+      "P079",
+      "P086"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C028.01",
+        "claim": "员工撞上货车后部伸出的带钉木板，面部轻微擦伤；此前另一人曾差点撞上，却没有报告。",
+        "source_ids": [
+          "D-NASA018"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 33 行，Lesson ID=531，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。“本可避免”是反事实判断，不能据此估算报告制度减少伤害的具体比例。"
+      },
+      {
+        "claim_id": "C028.02",
+        "claim": "NASA 教训条目指出：近失报告和及时纠正是发现、关闭现场危险的一种反馈入口。",
+        "source_ids": [
+          "D-NASA018"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 33 行，Lesson ID=531，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。“本可避免”是反事实判断，不能据此估算报告制度减少伤害的具体比例。"
+      },
+      {
+        "claim_id": "C028.03",
+        "claim": "NASA 条目建议：强调近失报告的重要性，并让报告渠道易于使用。",
+        "source_ids": [
+          "D-NASA018"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 33 行，Lesson ID=531，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。“本可避免”是反事实判断，不能据此估算报告制度减少伤害的具体比例。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA018"
+    ],
+    "keywords": [
+      "531",
+      "未报告近失后的带钉木板伤人",
+      "未报告近失后",
+      "带钉木板伤人"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。“本可避免”是反事实判断，不能据此估算报告制度减少伤害的具体比例。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 531
+    },
+    "transfer_conditions": [
+      "低成本可消除的已知危险出现时，安排明确的报告接收与处理责任，并记录是否完成关闭。"
+    ],
+    "non_transfer_conditions": [
+      "“本可避免”是反事实判断，不能据此估算报告制度减少伤害的具体比例。"
+    ],
+    "recommendations_reported": [
+      "强调近失报告的重要性，并让报告渠道易于使用。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "现场危险已被先前人员观察到，但信息没有进入可采取行动的渠道。",
+      "proposed_check": "用历史或无害演练工单检查近失报告能否被接收、分派与关闭。",
+      "metric": "未处置危险数、报告到责任人确认时间、复核关闭证据。",
+      "stop_condition": "已有可消除的高后果危险仍无人负责时停止相应人员暴露活动。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C029",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:50",
+    "title": "运载器线束短路导致发动机提前停机",
+    "event_time": "运载器飞行时期；条目未注明任务名称或事件日",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "主发动机和游动发动机提前停机，调查认为电源总线对地短路最可能由振动损伤线缆绝缘引发。"
+    ],
+    "decision_context": "关键电源线束承受实际飞行振动与结构接触，应按失效后果安排验证。",
+    "observed_actions": [
+      "事故委员会调查电气故障并提出后续线束质量检查要求。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "飞行期间发动机提前停机；条目没有交代载荷最终状态。"
+    ],
+    "model_ids": [
+      "P011",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C029.01",
+        "claim": "主发动机和游动发动机提前停机，调查认为电源总线对地短路最可能由振动损伤线缆绝缘引发。",
+        "source_ids": [
+          "D-NASA019"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 34 行，Lesson ID=50，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原因在条目中标作最可能，不能写成已复现；不能额外补写任务名称或载荷命运。"
+      },
+      {
+        "claim_id": "C029.02",
+        "claim": "NASA 教训条目指出：关键线束需要能承受振动应力，并避免与磨蚀表面或尖锐结构接触。",
+        "source_ids": [
+          "D-NASA019"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 34 行，Lesson ID=50，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原因在条目中标作最可能，不能写成已复现；不能额外补写任务名称或载荷命运。"
+      },
+      {
+        "claim_id": "C029.03",
+        "claim": "NASA 条目建议：按关键性加强接头质量评审、检查和试验，并在后续发射前核验关键线束。",
+        "source_ids": [
+          "D-NASA019"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 34 行，Lesson ID=50，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原因在条目中标作最可能，不能写成已复现；不能额外补写任务名称或载荷命运。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA019"
+    ],
+    "keywords": [
+      "50",
+      "运载器线束短路导致发动机提前停机"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。原因在条目中标作最可能，不能写成已复现；不能额外补写任务名称或载荷命运。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 50
+    },
+    "transfer_conditions": [
+      "电源路径失效影响系统生存时，用实际振动和安装环境验证绝缘与机械保护。"
+    ],
+    "non_transfer_conditions": [
+      "原因在条目中标作最可能，不能写成已复现；不能额外补写任务名称或载荷命运。"
+    ],
+    "recommendations_reported": [
+      "按关键性加强接头质量评审、检查和试验，并在后续发射前核验关键线束。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "关键电源线束承受实际飞行振动与结构接触，应按失效后果安排验证。",
+      "proposed_check": "审核关键线束的安装状态、振动边界与专业检验记录。",
+      "metric": "磨蚀或尖边暴露路径、关键电源保护与检验覆盖、未解释短路风险。",
+      "stop_condition": "关键线束机械保护或检验结论缺失时停止关键运行准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C030",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:203",
+    "title": "RCS 外部胶带与泄漏氧化剂的材料不兼容",
+    "event_time": "航天飞机 RCS 快断接口维护时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "RCS 氦气快断接头附近的管路发生外腐蚀泄漏；条目指出附近释放的氧化剂与氯丁胶带反应产生腐蚀性产物。"
+    ],
+    "decision_context": "材料评估若只看内部流体，会漏掉正常接口操作中的外部暴露。",
+    "observed_actions": [
+      "条目记载随后开展针对预计外部流体暴露的整体材料兼容评估。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "发生管路腐蚀和泄漏，案例没有提供整改后的长期寿命数据。"
+    ],
+    "model_ids": [
+      "P081",
+      "P082",
+      "P098"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C030.01",
+        "claim": "RCS 氦气快断接头附近的管路发生外腐蚀泄漏；条目指出附近释放的氧化剂与氯丁胶带反应产生腐蚀性产物。",
+        "source_ids": [
+          "D-NASA020"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 38 行，Lesson ID=203，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。卡片不提供推进剂处理方法；材料结论只在具体暴露与产品条件下有效。"
+      },
+      {
+        "claim_id": "C030.02",
+        "claim": "NASA 教训条目指出：外部覆盖材料也需要纳入预期流体释放的兼容性评估。",
+        "source_ids": [
+          "D-NASA020"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 38 行，Lesson ID=203，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。卡片不提供推进剂处理方法；材料结论只在具体暴露与产品条件下有效。"
+      },
+      {
+        "claim_id": "C030.03",
+        "claim": "NASA 条目建议：对会接触预期流体释放的外加材料开展整体兼容核对。",
+        "source_ids": [
+          "D-NASA020"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 38 行，Lesson ID=203，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。卡片不提供推进剂处理方法；材料结论只在具体暴露与产品条件下有效。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA020"
+    ],
+    "keywords": [
+      "203",
+      "RCS 外部胶带与泄漏氧化剂的材料不兼容",
+      "RCS",
+      "外部胶带",
+      "泄漏氧化剂",
+      "材料不兼容"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。卡片不提供推进剂处理方法；材料结论只在具体暴露与产品条件下有效。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 203
+    },
+    "transfer_conditions": [
+      "存在正常泄漏、挥发或拆接释放时，把实际外部环境纳入材料边界。"
+    ],
+    "non_transfer_conditions": [
+      "卡片不提供推进剂处理方法；材料结论只在具体暴露与产品条件下有效。"
+    ],
+    "recommendations_reported": [
+      "对会接触预期流体释放的外加材料开展整体兼容核对。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "材料评估若只看内部流体，会漏掉正常接口操作中的外部暴露。",
+      "proposed_check": "按实际拆接释放与覆盖材料建立兼容性矩阵，交给合格人员审查。",
+      "metric": "未评估的外部暴露组合、材料兼容证据缺口、实际腐蚀异常。",
+      "stop_condition": "高后果外部材料暴露没有兼容证据时停止使用该组合。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C031",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:914",
+    "title": "Genesis 吊具重新装配后紧固失效近失",
+    "event_time": "2000-05-03",
+    "domain": "technology",
+    "result_type": "near_miss",
+    "facts": [
+      "Genesis 样品容器吊装时一个吊环连接脱开，容器一角落回小车约 5 厘米；其余连接检查也发现只达到手拧紧状态。"
+    ],
+    "decision_context": "吊具曾完成载荷试验，之后的拆装可能使先前试验结论不再覆盖当前状态。",
+    "observed_actions": [
+      "附近人员缓冲了下落，事后检查发现螺纹连接退出；吊具在既有验证后曾被供应商重新装配。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "条目记载容器和设备没有损坏，也无严重人员伤害，属于吊装近失。"
+    ],
+    "model_ids": [
+      "P011",
+      "P079",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C031.01",
+        "claim": "Genesis 样品容器吊装时一个吊环连接脱开，容器一角落回小车约 5 厘米；其余连接检查也发现只达到手拧紧状态。",
+        "source_ids": [
+          "D-NASA021"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 150 行，Lesson ID=914，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。既有载荷试验不是重新装配状态的永久证明；卡片不充当吊装作业规程。"
+      },
+      {
+        "claim_id": "C031.02",
+        "claim": "NASA 教训条目指出：目视检查单独不足以保证机械地面支持设备的人员和飞行硬件安全。",
+        "source_ids": [
+          "D-NASA021"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 150 行，Lesson ID=914，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。既有载荷试验不是重新装配状态的永久证明；卡片不充当吊装作业规程。"
+      },
+      {
+        "claim_id": "C031.03",
+        "claim": "NASA 条目建议：交付与每次使用前核验螺纹啮合和规定扭矩，适用时采用正向锁定并记录检查。",
+        "source_ids": [
+          "D-NASA021"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 150 行，Lesson ID=914，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。既有载荷试验不是重新装配状态的永久证明；卡片不充当吊装作业规程。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA021"
+    ],
+    "keywords": [
+      "914",
+      "Genesis 吊具重新装配后紧固失效近失",
+      "Genesis",
+      "吊具重新装配后紧固失效近失"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。既有载荷试验不是重新装配状态的永久证明；卡片不充当吊装作业规程。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 914
+    },
+    "transfer_conditions": [
+      "安全资格依赖装配状态时，对试验之后的拆装、维修或运输重新确认关键连接。"
+    ],
+    "non_transfer_conditions": [
+      "既有载荷试验不是重新装配状态的永久证明；卡片不充当吊装作业规程。"
+    ],
+    "recommendations_reported": [
+      "交付与每次使用前核验螺纹啮合和规定扭矩，适用时采用正向锁定并记录检查。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "吊具曾完成载荷试验，之后的拆装可能使先前试验结论不再覆盖当前状态。",
+      "proposed_check": "审查最近拆装变更后的吊具紧固和锁定记录，采用适用专业检验。",
+      "metric": "关键连接扭矩与啮合证据、试验后未复核的拆装项。",
+      "stop_condition": "当前状态仅有旧试验记录而没有拆装后核验时停止吊装准备。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C032",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1",
+    "title": "STS-36 逆变器返修未继承防复发工艺",
+    "event_time": "STS-36 发射前检查时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "OV-104 逆变器供电总线电压短时波动；拆检发现内部安装螺钉松动，此类问题先前已推动制造工艺规定扭矩。"
+    ],
+    "decision_context": "新制造流程已修正缺陷，但存量产品返修流程仍采用旧要求。",
+    "observed_actions": [
+      "团队更换逆变器，供应商检查发现该飞行件返修时未纳入已经生效的工艺修改。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "先前已识别的制造缺陷在返修件中重现。"
+    ],
+    "model_ids": [
+      "P008",
+      "P079",
+      "P082"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C032.01",
+        "claim": "OV-104 逆变器供电总线电压短时波动；拆检发现内部安装螺钉松动，此类问题先前已推动制造工艺规定扭矩。",
+        "source_ids": [
+          "D-NASA022"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 204 行，Lesson ID=1，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能只凭新流程文件生效声称所有在役件已修复，也不能据此追溯具体供应商责任。"
+      },
+      {
+        "claim_id": "C032.02",
+        "claim": "NASA 教训条目指出：防复发控制需要覆盖已部署、返修和再处理产品，不能只覆盖新增制造件。",
+        "source_ids": [
+          "D-NASA022"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 204 行，Lesson ID=1，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能只凭新流程文件生效声称所有在役件已修复，也不能据此追溯具体供应商责任。"
+      },
+      {
+        "claim_id": "C032.03",
+        "claim": "NASA 条目建议：评估每次流程改动对先前分发或在役单元的适用性。",
+        "source_ids": [
+          "D-NASA022"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 204 行，Lesson ID=1，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能只凭新流程文件生效声称所有在役件已修复，也不能据此追溯具体供应商责任。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA022"
+    ],
+    "keywords": [
+      "1",
+      "STS-36 逆变器返修未继承防复发工艺",
+      "STS-36",
+      "逆变器返修未继承防复发工艺"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能只凭新流程文件生效声称所有在役件已修复，也不能据此追溯具体供应商责任。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1
+    },
+    "transfer_conditions": [
+      "改动解决实际缺陷时，同步列出新增、存量、返修和外包路径的覆盖范围。"
+    ],
+    "non_transfer_conditions": [
+      "不能只凭新流程文件生效声称所有在役件已修复，也不能据此追溯具体供应商责任。"
+    ],
+    "recommendations_reported": [
+      "评估每次流程改动对先前分发或在役单元的适用性。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "新制造流程已修正缺陷，但存量产品返修流程仍采用旧要求。",
+      "proposed_check": "从一次工艺变更追溯新品、返修件、已部署件和外包路径。",
+      "metric": "应覆盖单元数、已复核覆盖率、未处理在役或返修路径。",
+      "stop_condition": "已知重大缺陷的存量单元没有处置决定时停止宣布防复发完成。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C033",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1593",
+    "title": "姿态确定软件多种接口约定导致集成延误",
+    "event_time": "姿态确定系统开发时期；具体任务和事件日未注明",
+    "domain": "technology",
+    "result_type": "reported_practice",
+    "facts": [
+      "非标准坐标系、不同处理算法和数据架构引起集成困难，姿态确定软件开发时间超过预期。"
+    ],
+    "decision_context": "跨传感器与处理系统的坐标、时序、算法和数据结构需要一致。",
+    "observed_actions": [
+      "团队最终解决时序接口和端到端数据流问题。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "相关接口问题得到解决，但发生开发延误；条目没有给出延误天数。"
+    ],
+    "model_ids": [
+      "P006",
+      "P008",
+      "P082"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C033.01",
+        "claim": "非标准坐标系、不同处理算法和数据架构引起集成困难，姿态确定软件开发时间超过预期。",
+        "source_ids": [
+          "D-NASA023"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 210 行，Lesson ID=1593，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。来源仅为简短回顾，不能量化哪一个接口差异造成多少延误，也不证明越灵活越好。"
+      },
+      {
+        "claim_id": "C033.02",
+        "claim": "NASA 教训条目指出：选择姿态传感器时应细看命令与数据接口。",
+        "source_ids": [
+          "D-NASA023"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 210 行，Lesson ID=1593，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。来源仅为简短回顾，不能量化哪一个接口差异造成多少延误，也不证明越灵活越好。"
+      },
+      {
+        "claim_id": "C033.03",
+        "claim": "NASA 条目建议：在适用条件下保留接口灵活性。",
+        "source_ids": [
+          "D-NASA023"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 210 行，Lesson ID=1593，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。来源仅为简短回顾，不能量化哪一个接口差异造成多少延误，也不证明越灵活越好。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA023"
+    ],
+    "keywords": [
+      "1593",
+      "姿态确定软件多种接口约定导致集成延误"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。来源仅为简短回顾，不能量化哪一个接口差异造成多少延误，也不证明越灵活越好。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1593
+    },
+    "transfer_conditions": [
+      "接入多个传感器或服务前，核验坐标、时间和数据定义，并用端到端样例验证。"
+    ],
+    "non_transfer_conditions": [
+      "来源仅为简短回顾，不能量化哪一个接口差异造成多少延误，也不证明越灵活越好。"
+    ],
+    "recommendations_reported": [
+      "在适用条件下保留接口灵活性。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "跨传感器与处理系统的坐标、时序、算法和数据结构需要一致。",
+      "proposed_check": "用代表性数据样例做坐标、时序和端到端接口契约核验。",
+      "metric": "接口定义缺口、转换不一致项、端到端数据到达与处理正确率。",
+      "stop_condition": "关键坐标或时间定义仍有歧义时停止将模块成功等同于系统可集成。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C034",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:287",
+    "title": "Magellan PCU 无充分程序与 QA 的测试损伤",
+    "event_time": "Magellan 返修后地面测试时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "工程师在下班后缺少充分程序与 QA 支持的连续性测试中，使测试仪表向 PCU 电路施加反向极性电压，烧断三个保险丝。"
+    ],
+    "decision_context": "测试工具会向硬件施加能量，测试本身也可能引入失效。",
+    "observed_actions": [
+      "团队分析、修理并测试 PCU，随后重新装回飞船。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "条目记载此次修复没有延误发射操作；其他器件潜在受损仍需分析。"
+    ],
+    "model_ids": [
+      "P016",
+      "P079",
+      "P098"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C034.01",
+        "claim": "工程师在下班后缺少充分程序与 QA 支持的连续性测试中，使测试仪表向 PCU 电路施加反向极性电压，烧断三个保险丝。",
+        "source_ids": [
+          "D-NASA024"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 211 行，Lesson ID=287，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。本事件与 Magellan 电池连接器错配是不同事故；不能把无发射延误写成测试完全无风险。"
+      },
+      {
+        "claim_id": "C034.02",
+        "claim": "NASA 教训条目指出：飞行关键硬件测试需要合适人员、批准程序和对仪器配置的核验。",
+        "source_ids": [
+          "D-NASA024"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 211 行，Lesson ID=287，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。本事件与 Magellan 电池连接器错配是不同事故；不能把无发射延误写成测试完全无风险。"
+      },
+      {
+        "claim_id": "C034.03",
+        "claim": "NASA 条目建议：测试或复测前验证仪器设置及防护，安排 QA 监督和充分人员。",
+        "source_ids": [
+          "D-NASA024"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 211 行，Lesson ID=287，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。本事件与 Magellan 电池连接器错配是不同事故；不能把无发射延误写成测试完全无风险。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA024"
+    ],
+    "keywords": [
+      "287",
+      "Magellan PCU 无充分程序与 QA 的测试损伤",
+      "Magellan",
+      "PCU",
+      "无充分程序",
+      "QA",
+      "测试损伤"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。本事件与 Magellan 电池连接器错配是不同事故；不能把无发射延误写成测试完全无风险。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 287
+    },
+    "transfer_conditions": [
+      "测量会改变被测系统时，把仪器输出、极性和故障传播纳入测试准备。"
+    ],
+    "non_transfer_conditions": [
+      "本事件与 Magellan 电池连接器错配是不同事故；不能把无发射延误写成测试完全无风险。"
+    ],
+    "recommendations_reported": [
+      "测试或复测前验证仪器设置及防护，安排 QA 监督和充分人员。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "测试工具会向硬件施加能量，测试本身也可能引入失效。",
+      "proposed_check": "对测试计划和仪器配置做桌面审查或无危险输出验证。",
+      "metric": "批准程序与 QA 覆盖、仪器可能施加的能量路径、极性核验项。",
+      "stop_condition": "测试配置可能损伤目标且未完成评审时停止接入关键硬件。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C035",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1849",
+    "title": "Phoenix 仪器备件运输中的冲击失控",
+    "event_time": "Phoenix 项目运输时期；任务于 2007 年发射，运输日未注明",
+    "domain": "technology",
+    "result_type": "near_miss",
+    "facts": [
+      "Phoenix 气象仪器桅杆资格模型送到加拿大后，20G、30G、50G 冲击指示器均触发，至少一个指示器还从安装处脱落。"
+    ],
+    "decision_context": "跨境交付关键硬件时，离开发送方现场后的搬运链需要可监测。",
+    "observed_actions": [
+      "收件人员检查运输包裹和指示器，发现运输中的冲击及指示器零件散落。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "运输监控暴露了高冲击风险；来源节选没有提供硬件功能损坏的确定结论。"
+    ],
+    "model_ids": [
+      "P077",
+      "P079",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C035.01",
+        "claim": "Phoenix 气象仪器桅杆资格模型送到加拿大后，20G、30G、50G 冲击指示器均触发，至少一个指示器还从安装处脱落。",
+        "source_ids": [
+          "D-NASA025"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 215 行，Lesson ID=1849，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。触发阈值的冲击指示不等于测得完整加速度波形，也不自动证明仪器已功能失效。"
+      },
+      {
+        "claim_id": "C035.02",
+        "claim": "NASA 教训条目指出：第三方搬运关键硬件需要逐次评估控制范围与包装监督风险。",
+        "source_ids": [
+          "D-NASA025"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 215 行，Lesson ID=1849，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。触发阈值的冲击指示不等于测得完整加速度波形，也不自动证明仪器已功能失效。"
+      },
+      {
+        "claim_id": "C035.03",
+        "claim": "NASA 条目建议：在可行时使用受控运输，第三方运输不可避免时审批包装并记录发运与到货检查。",
+        "source_ids": [
+          "D-NASA025"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 215 行，Lesson ID=1849，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。触发阈值的冲击指示不等于测得完整加速度波形，也不自动证明仪器已功能失效。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA025"
+    ],
+    "keywords": [
+      "1849",
+      "Phoenix 仪器备件运输中的冲击失控",
+      "Phoenix",
+      "仪器备件运输中",
+      "冲击失控"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。触发阈值的冲击指示不等于测得完整加速度波形，也不自动证明仪器已功能失效。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1849
+    },
+    "transfer_conditions": [
+      "产品不能容忍粗放搬运时，预设包装标准、监测、交接记录和到货验收。"
+    ],
+    "non_transfer_conditions": [
+      "触发阈值的冲击指示不等于测得完整加速度波形，也不自动证明仪器已功能失效。"
+    ],
+    "recommendations_reported": [
+      "在可行时使用受控运输，第三方运输不可避免时审批包装并记录发运与到货检查。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "跨境交付关键硬件时，离开发送方现场后的搬运链需要可监测。",
+      "proposed_check": "审查运输链交接、包装验证与到货检测计划，不人为制造冲击。",
+      "metric": "未受控搬运节点、包装批准覆盖、异常运输监测的处理状态。",
+      "stop_condition": "运输异常未完成合格复核时停止把备件作为可用件接收。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C036",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:305",
+    "title": "Galileo 延期与延长寿命触发推进材料再评估",
+    "event_time": "Galileo 从 1986 年延期至 1989 年的设计再评估阶段；具体评估日未注明",
+    "domain": "technology",
+    "result_type": "reported_practice",
+    "facts": [
+      "团队评估发现，氮氧化物推进剂与不锈钢相互作用产生的污染物可能堵塞小流道，长任务存在推进能力丧失风险。"
+    ],
+    "decision_context": "任务延期将推进系统预期使用时间从四年延至八年，原先材料边界需要重算。",
+    "observed_actions": [
+      "大部分不锈钢氧化剂供给系统改为钛材料。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "条目称替换缓解了担忧，未将它写成实际在轨堵塞或独立寿命试验证明。"
+    ],
+    "model_ids": [
+      "P007",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C036.01",
+        "claim": "团队评估发现，氮氧化物推进剂与不锈钢相互作用产生的污染物可能堵塞小流道，长任务存在推进能力丧失风险。",
+        "source_ids": [
+          "D-NASA026"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 216 行，Lesson ID=305，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。设计评估的风险不是已发生损失；“缓解担忧”不等于某项改造单独保证了任务成功。"
+      },
+      {
+        "claim_id": "C036.02",
+        "claim": "NASA 教训条目指出：长时间材料相互作用可积累污染物并影响小通道的流量。",
+        "source_ids": [
+          "D-NASA026"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 216 行，Lesson ID=305，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。设计评估的风险不是已发生损失；“缓解担忧”不等于某项改造单独保证了任务成功。"
+      },
+      {
+        "claim_id": "C036.03",
+        "claim": "NASA 条目建议：长寿命任务评估污染引起的流量衰减；不能避免相关材料组合时建立风险预测机制。",
+        "source_ids": [
+          "D-NASA026"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 216 行，Lesson ID=305，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。设计评估的风险不是已发生损失；“缓解担忧”不等于某项改造单独保证了任务成功。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA026"
+    ],
+    "keywords": [
+      "305",
+      "Galileo 延期与延长寿命触发推进材料再评估",
+      "Galileo",
+      "延期",
+      "延长寿命触发推进材料再评估"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。设计评估的风险不是已发生损失；“缓解担忧”不等于某项改造单独保证了任务成功。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 305
+    },
+    "transfer_conditions": [
+      "工期、寿命或环境边界改变时，重新审查原有设计假设，不能只重新排进度。"
+    ],
+    "non_transfer_conditions": [
+      "设计评估的风险不是已发生损失；“缓解担忧”不等于某项改造单独保证了任务成功。"
+    ],
+    "recommendations_reported": [
+      "长寿命任务评估污染引起的流量衰减；不能避免相关材料组合时建立风险预测机制。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "任务延期将推进系统预期使用时间从四年延至八年，原先材料边界需要重算。",
+      "proposed_check": "把新寿命和环境边界与旧设计假设逐项对比，重新评估累积退化。",
+      "metric": "变更影响未评估项、寿命余量依据、退化模型与验证证据。",
+      "stop_condition": "任务期限改变但关键寿命假设未复核时停止沿用旧设计结论。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C037",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1780",
+    "title": "Stardust 固定资源约束下的剩余成本管理",
+    "event_time": "Stardust 样品返回任务及其项目管理时期；具体决策日未注明",
+    "domain": "technology",
+    "result_type": "reported_success",
+    "facts": [
+      "Stardust 完成彗星物质样品返回；NASA 经验条目将部分成果归于面向剩余完工成本的资源管理。"
+    ],
+    "decision_context": "预算受限项目必须同时维持目标、进度、剩余成本与风险缓冲。",
+    "observed_actions": [
+      "项目采取针对剩余完工成本而非仅对已花费用与计划偏差的管理方式。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "任务目标完成；管理方法与成果同时出现，但来源不是受控对照研究。"
+    ],
+    "model_ids": [
+      "P007",
+      "P058",
+      "P079",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C037.01",
+        "claim": "Stardust 完成彗星物质样品返回；NASA 经验条目将部分成果归于面向剩余完工成本的资源管理。",
+        "source_ids": [
+          "D-NASA027"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 217 行，Lesson ID=1780，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能用这一成功项目证明某种预算文化总有效，也不能忽略同类任务失败形成的选择偏差。"
+      },
+      {
+        "claim_id": "C037.02",
+        "claim": "NASA 教训条目指出：项目经理应主动管理性能、预算、进度和项目储备。",
+        "source_ids": [
+          "D-NASA027"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 217 行，Lesson ID=1780，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能用这一成功项目证明某种预算文化总有效，也不能忽略同类任务失败形成的选择偏差。"
+      },
+      {
+        "claim_id": "C037.03",
+        "claim": "NASA 条目建议：规划并及时执行适合固定资源任务的储备管理流程。",
+        "source_ids": [
+          "D-NASA027"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 217 行，Lesson ID=1780，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能用这一成功项目证明某种预算文化总有效，也不能忽略同类任务失败形成的选择偏差。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA027"
+    ],
+    "keywords": [
+      "1780",
+      "Stardust 固定资源约束下的剩余成本管理",
+      "Stardust",
+      "固定资源约束下",
+      "剩余成本管理"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能用这一成功项目证明某种预算文化总有效，也不能忽略同类任务失败形成的选择偏差。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1780
+    },
+    "transfer_conditions": [
+      "已花费用不能代表完成难度时，滚动估计剩余工作与资金需求，并把储备与风险对应。"
+    ],
+    "non_transfer_conditions": [
+      "不能用这一成功项目证明某种预算文化总有效，也不能忽略同类任务失败形成的选择偏差。"
+    ],
+    "recommendations_reported": [
+      "规划并及时执行适合固定资源任务的储备管理流程。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "预算受限项目必须同时维持目标、进度、剩余成本与风险缓冲。",
+      "proposed_check": "建立当前项目的滚动剩余完工成本与风险储备台账，使用实际工作拆解数据。",
+      "metric": "预计剩余成本、未覆盖风险、可用储备及预测偏差。",
+      "stop_condition": "资源缺口威胁硬约束且无可行降范围方案时停止新增承诺并重新决策。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C038",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1200",
+    "title": "载荷舱门连接状态未隔离引起桥架误动",
+    "event_time": "1990-06-04",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "OPF 桥架在零重力模拟缆索仍连接时被移动，导致缆索受力、滑轮受损，舱门被异常抬起。"
+    ],
+    "decision_context": "不同班次在同一区域执行相互依赖操作，桥架移动必须知道舱门支撑连接状态。",
+    "observed_actions": [
+      "调查审查作业程序、钥匙控制与交接信息，发现多处控制缺口。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "发生机械异常和设备受损；条目区分直接桥架移动与多个促成管理因素。"
+    ],
+    "model_ids": [
+      "P008",
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C038.01",
+        "claim": "OPF 桥架在零重力模拟缆索仍连接时被移动，导致缆索受力、滑轮受损，舱门被异常抬起。",
+        "source_ids": [
+          "D-NASA028"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 220 行，Lesson ID=1200，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把事故只归为操作员粗心；程序间遗漏和控制缺陷需与个人动作一起分析。"
+      },
+      {
+        "claim_id": "C038.02",
+        "claim": "NASA 教训条目指出：未执行连接状态核验、未配置观察者以及控制和交接缺陷共同形成风险。",
+        "source_ids": [
+          "D-NASA028"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 220 行，Lesson ID=1200，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把事故只归为操作员粗心；程序间遗漏和控制缺陷需与个人动作一起分析。"
+      },
+      {
+        "claim_id": "C038.03",
+        "claim": "NASA 条目建议：要求使用完整作业程序核验，并完善钥匙控制、操作隔离和监督交接。",
+        "source_ids": [
+          "D-NASA028"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 220 行，Lesson ID=1200，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把事故只归为操作员粗心；程序间遗漏和控制缺陷需与个人动作一起分析。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA028"
+    ],
+    "keywords": [
+      "1200",
+      "载荷舱门连接状态未隔离引起桥架误动"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能把事故只归为操作员粗心；程序间遗漏和控制缺陷需与个人动作一起分析。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1200
+    },
+    "transfer_conditions": [
+      "并行作业共享设备时，用实际状态和互锁控制准入，而非依赖人员猜测上一班进度。"
+    ],
+    "non_transfer_conditions": [
+      "不能把事故只归为操作员粗心；程序间遗漏和控制缺陷需与个人动作一起分析。"
+    ],
+    "recommendations_reported": [
+      "要求使用完整作业程序核验，并完善钥匙控制、操作隔离和监督交接。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "不同班次在同一区域执行相互依赖操作，桥架移动必须知道舱门支撑连接状态。",
+      "proposed_check": "用无能量流程演练核对共享设备的连接状态、交班和操作隔离。",
+      "metric": "并行作业冲突数、状态确认覆盖、钥匙及授权责任缺口。",
+      "stop_condition": "设备是否连接与谁拥有操作权限不明时停止共享设备移动准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C039",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:360",
+    "title": "X-31 单路空速源结冰导致失控",
+    "event_time": "X-31 试飞时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "唯一且未加热的皮托静压空气数据源意外结冰，X-31 偏离受控飞行并坠毁。"
+    ],
+    "decision_context": "本身不稳定的实验飞机依赖实时空速数据维持动态稳定。",
+    "observed_actions": [],
+    "observed_actions_status": "not_reported",
+    "outcomes": [
+      "实验飞机损失；该条目没有描述乘员伤亡或其他后果。"
+    ],
+    "model_ids": [
+      "P026",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C039.01",
+        "claim": "唯一且未加热的皮托静压空气数据源意外结冰，X-31 偏离受控飞行并坠毁。",
+        "source_ids": [
+          "D-NASA029"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 221 行，Lesson ID=360，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。冗余数量不直接代表独立性；不能由条目补写飞行员遭遇或设计认证结论。"
+      },
+      {
+        "claim_id": "C039.02",
+        "claim": "NASA 教训条目指出：单路空气数据源的失效会危及依赖该信号稳定的飞行器。",
+        "source_ids": [
+          "D-NASA029"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 221 行，Lesson ID=360，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。冗余数量不直接代表独立性；不能由条目补写飞行员遭遇或设计认证结论。"
+      },
+      {
+        "claim_id": "C039.03",
+        "claim": "NASA 条目建议：考虑采用不同设计的冗余空气数据源，减少共同原因失效。",
+        "source_ids": [
+          "D-NASA029"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 221 行，Lesson ID=360，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。冗余数量不直接代表独立性；不能由条目补写飞行员遭遇或设计认证结论。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA029"
+    ],
+    "keywords": [
+      "360",
+      "X-31 单路空速源结冰导致失控",
+      "X-31",
+      "单路空速源结冰导致失控"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。冗余数量不直接代表独立性；不能由条目补写飞行员遭遇或设计认证结论。 来源没有描述具体历史处置动作，observed_actions 保持为空；没有把推荐措施填成历史执行。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 360
+    },
+    "transfer_conditions": [
+      "单个测量源能决定系统生存时，先识别共因风险，再评估异构冗余和安全降级。"
+    ],
+    "non_transfer_conditions": [
+      "冗余数量不直接代表独立性；不能由条目补写飞行员遭遇或设计认证结论。"
+    ],
+    "recommendations_reported": [
+      "考虑采用不同设计的冗余空气数据源，减少共同原因失效。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "本身不稳定的实验飞机依赖实时空速数据维持动态稳定。",
+      "proposed_check": "审查关键测量丧失和共因故障情境，只使用获批仿真或现有记录。",
+      "metric": "单源依赖、异构保护独立性、数据丧失后的安全降级覆盖。",
+      "stop_condition": "单源失效可危及系统且没有经过验证的保护时停止运行批准。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C040",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:524",
+    "title": "风洞模型襟翼脱离与重复螺纹锁固假说",
+    "event_time": "1991-01-15",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "跨声速风洞试验中模型襟翼脱开，造成严重损坏；调查假说认为反复使用且未清理的锁固螺钉未获得适当预紧力。"
+    ],
+    "decision_context": "反复装拆并涂锁固剂的紧固件，其扭矩与预紧力关系可能改变。",
+    "observed_actions": [
+      "调查记录梳理了重复涂覆、安装顺序及未清理螺钉的历史，并形成预紧力异常的原因假说。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "试验装置损坏；预紧力异常被描述为假说，来源未提供独立复现数据。"
+    ],
+    "model_ids": [
+      "P011",
+      "P098",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C040.01",
+        "claim": "跨声速风洞试验中模型襟翼脱开，造成严重损坏；调查假说认为反复使用且未清理的锁固螺钉未获得适当预紧力。",
+        "source_ids": [
+          "D-NASA030"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 223 行，Lesson ID=524，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原文建议适用于相应锁固材料与工况，不能作为所有胶剂或螺钉的通用禁令。"
+      },
+      {
+        "claim_id": "C040.02",
+        "claim": "NASA 教训条目指出：重复涂覆锁固剂后，不能直接沿用既有扭矩与预紧力假设。",
+        "source_ids": [
+          "D-NASA030"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 223 行，Lesson ID=524，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原文建议适用于相应锁固材料与工况，不能作为所有胶剂或螺钉的通用禁令。"
+      },
+      {
+        "claim_id": "C040.03",
+        "claim": "NASA 条目建议：按相关供应方与工程要求处理锁固件重复使用及螺纹清理问题。",
+        "source_ids": [
+          "D-NASA030"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 223 行，Lesson ID=524，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原文建议适用于相应锁固材料与工况，不能作为所有胶剂或螺钉的通用禁令。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA030"
+    ],
+    "keywords": [
+      "524",
+      "风洞模型襟翼脱离与重复螺纹锁固假说",
+      "风洞模型襟翼脱离",
+      "重复螺纹锁固假说"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。原文建议适用于相应锁固材料与工况，不能作为所有胶剂或螺钉的通用禁令。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 524
+    },
+    "transfer_conditions": [
+      "工艺会改变摩擦或连接状态时，用与实际材料、装配历史一致的条件核验预紧力。"
+    ],
+    "non_transfer_conditions": [
+      "原文建议适用于相应锁固材料与工况，不能作为所有胶剂或螺钉的通用禁令。"
+    ],
+    "recommendations_reported": [
+      "按相关供应方与工程要求处理锁固件重复使用及螺纹清理问题。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "反复装拆并涂锁固剂的紧固件，其扭矩与预紧力关系可能改变。",
+      "proposed_check": "审查实际紧固工艺历史与预紧力证据，按具体材料规定确定是否需重新验证。",
+      "metric": "重复使用与涂覆历史缺口、扭矩到预紧力依据、装配不一致项。",
+      "stop_condition": "现有工艺改变了摩擦条件却沿用未验证关系时停止结构试验准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C041",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1391",
+    "title": "高空模拟蒸汽管路腐蚀减薄后破裂",
+    "event_time": "2003-09-11",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "LASS 蒸汽系统切换满蒸汽后约 16 秒，24 英寸膨胀环管路破裂；调查指出管壁腐蚀局部减薄。"
+    ],
+    "decision_context": "老化压力设施的风险评估依赖可信的壁厚、腐蚀与巡检结果。",
+    "observed_actions": [
+      "调查发现排水处锈垢和保温材料积水等腐蚀指示，审查既有检查流程。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "蒸汽管路与多段管件发生严重损坏；条目未报告人员伤亡。"
+    ],
+    "model_ids": [
+      "P026",
+      "P098",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C041.01",
+        "claim": "LASS 蒸汽系统切换满蒸汽后约 16 秒，24 英寸膨胀环管路破裂；调查指出管壁腐蚀局部减薄。",
+        "source_ids": [
+          "D-NASA031"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 224 行，Lesson ID=1391，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。看见外部锈迹不直接证明内部剩余强度，实际检验与停用决策需专业依据。"
+      },
+      {
+        "claim_id": "C041.02",
+        "claim": "NASA 教训条目指出：关键参数的评估方法需要足够可靠，才能用于风险判断。",
+        "source_ids": [
+          "D-NASA031"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 224 行，Lesson ID=1391，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。看见外部锈迹不直接证明内部剩余强度，实际检验与停用决策需专业依据。"
+      },
+      {
+        "claim_id": "C041.03",
+        "claim": "NASA 条目建议：建立带位置、趋势和明确通过标准的腐蚀检查计划，并追踪压力系统不符合项。",
+        "source_ids": [
+          "D-NASA031"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 224 行，Lesson ID=1391，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。看见外部锈迹不直接证明内部剩余强度，实际检验与停用决策需专业依据。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA031"
+    ],
+    "keywords": [
+      "1391",
+      "高空模拟蒸汽管路腐蚀减薄后破裂"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。看见外部锈迹不直接证明内部剩余强度，实际检验与停用决策需专业依据。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1391
+    },
+    "transfer_conditions": [
+      "设施寿命取决于退化状态时，保存可比较的历次测量和最小接受边界。"
+    ],
+    "non_transfer_conditions": [
+      "看见外部锈迹不直接证明内部剩余强度，实际检验与停用决策需专业依据。"
+    ],
+    "recommendations_reported": [
+      "建立带位置、趋势和明确通过标准的腐蚀检查计划，并追踪压力系统不符合项。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "老化压力设施的风险评估依赖可信的壁厚、腐蚀与巡检结果。",
+      "proposed_check": "比较有位置标识的历次专业巡检与腐蚀测量，复核接受标准。",
+      "metric": "关键点测量覆盖、退化趋势、低于适用接受标准或没有追踪的异常数。",
+      "stop_condition": "关键部位状态不明或越过适用边界时停止运行批准并提交专业处置。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C042",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:371",
+    "title": "SEASAT 滑环短路与既有设计盲信",
+    "event_time": "SEASAT 在轨运行时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "SEASAT 因太阳能阵列与电源之间滑环组件的严重短路失效；条目认为相邻异极性电刷间起弧最可能触发故障。"
+    ],
+    "decision_context": "具有飞行履历的母线部件仍需在新任务和合同监督边界下验证失效模式。",
+    "observed_actions": [
+      "失效审查还发现其他项目的滑环短路信息未传递到项目办公室，合同安排限制了总线监督。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "航天器在轨失效；可能原因和信息沟通、监督条件分别被列为工程与组织因素。"
+    ],
+    "model_ids": [
+      "P077",
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C042.01",
+        "claim": "SEASAT 因太阳能阵列与电源之间滑环组件的严重短路失效；条目认为相邻异极性电刷间起弧最可能触发故障。",
+        "source_ids": [
+          "D-NASA032"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 228 行，Lesson ID=371，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能由通信限制推断故意隐瞒，也不能把最可能的起弧原因写成实体复现结果。"
+      },
+      {
+        "claim_id": "C042.02",
+        "claim": "NASA 教训条目指出：飞行履历不保证设计没有错误，电源失效分析必须考虑短路。",
+        "source_ids": [
+          "D-NASA032"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 228 行，Lesson ID=371，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能由通信限制推断故意隐瞒，也不能把最可能的起弧原因写成实体复现结果。"
+      },
+      {
+        "claim_id": "C042.03",
+        "claim": "NASA 条目建议：早期定义对既有设备的评估范围，必要时以合同明确监督，并在失效分析中包含短路。",
+        "source_ids": [
+          "D-NASA032"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 228 行，Lesson ID=371，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能由通信限制推断故意隐瞒，也不能把最可能的起弧原因写成实体复现结果。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA032"
+    ],
+    "keywords": [
+      "371",
+      "SEASAT 滑环短路与既有设计盲信",
+      "SEASAT",
+      "滑环短路",
+      "既有设计盲信"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能由通信限制推断故意隐瞒，也不能把最可能的起弧原因写成实体复现结果。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 371
+    },
+    "transfer_conditions": [
+      "采用已有硬件时核对同类故障记录、真实改动和监督可见性，而非只查看成功履历。"
+    ],
+    "non_transfer_conditions": [
+      "不能由通信限制推断故意隐瞒，也不能把最可能的起弧原因写成实体复现结果。"
+    ],
+    "recommendations_reported": [
+      "早期定义对既有设备的评估范围，必要时以合同明确监督，并在失效分析中包含短路。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "具有飞行履历的母线部件仍需在新任务和合同监督边界下验证失效模式。",
+      "proposed_check": "审查既有设备变更、失败履历、合同监督范围与失效分析。",
+      "metric": "被成功履历遮蔽的未评估模式、风险信息缺口、监督责任完整性。",
+      "stop_condition": "关键历史故障无法取得或监督责任不清时停止以履历作为唯一接受依据。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C043",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:581",
+    "title": "燃料电池电子负载在长导线下振荡",
+    "event_time": "燃料电池地面测试时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "reported_practice",
+    "facts": [
+      "小型电子动态负载在燃料电池试验中振荡；5 英尺连接未见问题，而 20 和 40 英尺配置不稳定。"
+    ],
+    "decision_context": "测试设备与连接线共同构成系统，实验台上的短线成功不覆盖长线配置。",
+    "observed_actions": [
+      "团队向制造商咨询并比较连接长度，报告者改用电阻负载。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "条目记载换用电阻负载后未再观察到该现象，但没有给出精确临界长度。"
+    ],
+    "model_ids": [
+      "P026",
+      "P098",
+      "P082"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C043.01",
+        "claim": "小型电子动态负载在燃料电池试验中振荡；5 英尺连接未见问题，而 20 和 40 英尺配置不稳定。",
+        "source_ids": [
+          "D-NASA033"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 229 行，Lesson ID=581，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。三个长度点不支持推算精确阈值或所有型号规律；未再观察到不等于无限期保证稳定。"
+      },
+      {
+        "claim_id": "C043.02",
+        "claim": "NASA 教训条目指出：负载设备应在不短于最终使用配置的连接条件下验证。",
+        "source_ids": [
+          "D-NASA033"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 229 行，Lesson ID=581，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。三个长度点不支持推算精确阈值或所有型号规律；未再观察到不等于无限期保证稳定。"
+      },
+      {
+        "claim_id": "C043.03",
+        "claim": "NASA 条目建议：确定不稳定开始出现的连接长度，并在真实连接配置下测试后再承担关键负载。",
+        "source_ids": [
+          "D-NASA033"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 229 行，Lesson ID=581，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。三个长度点不支持推算精确阈值或所有型号规律；未再观察到不等于无限期保证稳定。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA033"
+    ],
+    "keywords": [
+      "581",
+      "燃料电池电子负载在长导线下振荡"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。三个长度点不支持推算精确阈值或所有型号规律；未再观察到不等于无限期保证稳定。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 581
+    },
+    "transfer_conditions": [
+      "外部连接会影响反馈系统时，把线缆、负载、测量和供电作为整体复测。"
+    ],
+    "non_transfer_conditions": [
+      "三个长度点不支持推算精确阈值或所有型号规律；未再观察到不等于无限期保证稳定。"
+    ],
+    "recommendations_reported": [
+      "确定不稳定开始出现的连接长度，并在真实连接配置下测试后再承担关键负载。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "测试设备与连接线共同构成系统，实验台上的短线成功不覆盖长线配置。",
+      "proposed_check": "在专业安全条件下以实际连接配置核对既有测试记录或无危险模型。",
+      "metric": "配置一致性、振荡指标、未测试的长度与负载组合。",
+      "stop_condition": "最终配置超出已验证范围时停止把短线试验结果用于可靠性批准。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C044",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1090",
+    "title": "Pegasus／SCD-1 终止指令撤回中的权限混乱",
+    "event_time": "1993-02-09",
+    "domain": "technology",
+    "result_type": "near_miss",
+    "facts": [
+      "靶场安全人员发出中止后，承包方人员在缺少联机授权和靶场知情的情况下撤回，Pegasus 仍被释放发射。"
+    ],
+    "decision_context": "倒计时末段安全指令需要明确的授权链和实时共享状态。",
+    "observed_actions": [
+      "评审委员会复核双通信网、任务规则、人员角色及 B-52 指令传递。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "实际发射与部分关键地面人员的预期不同；条目未将它写成飞行器事故。"
+    ],
+    "model_ids": [
+      "P008",
+      "P079",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C044.01",
+        "claim": "靶场安全人员发出中止后，承包方人员在缺少联机授权和靶场知情的情况下撤回，Pegasus 仍被释放发射。",
+        "source_ids": [
+          "D-NASA034"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 231 行，Lesson ID=1090，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能以结果继续飞行为由推断撤回合理，也不把通信优化建议当成已证实的安全收益。"
+      },
+      {
+        "claim_id": "C044.02",
+        "claim": "NASA 教训条目指出：委员会认为撤回指令的权限缺失、离线沟通和双网络混乱促成该事件。",
+        "source_ids": [
+          "D-NASA034"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 231 行，Lesson ID=1090，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能以结果继续飞行为由推断撤回合理，也不把通信优化建议当成已证实的安全收益。"
+      },
+      {
+        "claim_id": "C044.03",
+        "claim": "NASA 条目建议：明确决策者角色、统一任务规则和术语，提供从靶场安全人员到机组的直接沟通链。",
+        "source_ids": [
+          "D-NASA034"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 231 行，Lesson ID=1090，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能以结果继续飞行为由推断撤回合理，也不把通信优化建议当成已证实的安全收益。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA034"
+    ],
+    "keywords": [
+      "1090",
+      "Pegasus／SCD-1 终止指令撤回中的权限混乱",
+      "Pegasus",
+      "SCD-1",
+      "终止指令撤回中",
+      "权限混乱"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能以结果继续飞行为由推断撤回合理，也不把通信优化建议当成已证实的安全收益。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1090
+    },
+    "transfer_conditions": [
+      "高后果终止命令的撤回需要与发出同等清晰的权限与可见性，并记录全链状态。"
+    ],
+    "non_transfer_conditions": [
+      "不能以结果继续飞行为由推断撤回合理，也不把通信优化建议当成已证实的安全收益。"
+    ],
+    "recommendations_reported": [
+      "明确决策者角色、统一任务规则和术语，提供从靶场安全人员到机组的直接沟通链。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "倒计时末段安全指令需要明确的授权链和实时共享状态。",
+      "proposed_check": "以桌面演练核对终止指令的发出、传递、撤回和授权可见性。",
+      "metric": "关键角色确认率、撤回权限缺口、两条网络状态不一致项。",
+      "stop_condition": "终止或撤回状态存在歧义时停止继续操作，按获批运行规则处理。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C045",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:435",
+    "title": "SEASAT-A 测试扫描器把高压引入低压电路",
+    "event_time": "SEASAT-A SAR 地面热真空测试时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "扫描器簧片继电器故障使要求 5 V 的 SAR 发射器电路在扫描中暴露到最高 31 V，造成严重损坏。"
+    ],
+    "decision_context": "商业测量工具的内部故障可能跨多个电源输入传播到飞行硬件。",
+    "observed_actions": [
+      "团队分析测试配置及扫描器故障路径，修理发射器并重新安排测试。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "条目记载整体进度约延迟两周，与此前同配置成功测试形成对照。"
+    ],
+    "model_ids": [
+      "P016",
+      "P098",
+      "P082"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C045.01",
+        "claim": "扫描器簧片继电器故障使要求 5 V 的 SAR 发射器电路在扫描中暴露到最高 31 V，造成严重损坏。",
+        "source_ids": [
+          "D-NASA035"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 234 行，Lesson ID=435，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。具体隔离元件与数值必须按电路验证；此事件与 SEASAT 在轨滑环事故是不同阶段和机制。"
+      },
+      {
+        "claim_id": "C045.02",
+        "claim": "NASA 教训条目指出：商业设备内部故障也需纳入飞行硬件保护分析；既往测试成功不排除潜在路径。",
+        "source_ids": [
+          "D-NASA035"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 234 行，Lesson ID=435，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。具体隔离元件与数值必须按电路验证；此事件与 SEASAT 在轨滑环事故是不同阶段和机制。"
+      },
+      {
+        "claim_id": "C045.03",
+        "claim": "NASA 条目建议：设计适当隔离并审视测试配置与飞行配置差异，防止支持设备故障传播。",
+        "source_ids": [
+          "D-NASA035"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 234 行，Lesson ID=435，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。具体隔离元件与数值必须按电路验证；此事件与 SEASAT 在轨滑环事故是不同阶段和机制。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA035"
+    ],
+    "keywords": [
+      "435",
+      "SEASAT-A 测试扫描器把高压引入低压电路",
+      "SEASAT-A",
+      "测试扫描器把高压引入低压电路"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。具体隔离元件与数值必须按电路验证；此事件与 SEASAT 在轨滑环事故是不同阶段和机制。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 435
+    },
+    "transfer_conditions": [
+      "测试工具跨接多个能量路径时，用故障模式核对隔离能力，而非依赖品牌或先前成功。"
+    ],
+    "non_transfer_conditions": [
+      "具体隔离元件与数值必须按电路验证；此事件与 SEASAT 在轨滑环事故是不同阶段和机制。"
+    ],
+    "recommendations_reported": [
+      "设计适当隔离并审视测试配置与飞行配置差异，防止支持设备故障传播。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "商业测量工具的内部故障可能跨多个电源输入传播到飞行硬件。",
+      "proposed_check": "复核测试工具内部故障会否跨能量路径传播，采用获批安全分析。",
+      "metric": "未隔离故障路径、测试与实际配置差异、关键目标受保护的证据。",
+      "stop_condition": "测试支持设备的单一失效可损伤关键目标且未验证隔离时停止连接准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C046",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1721",
+    "title": "配电盘电弧烧伤后的快速报警与响应",
+    "event_time": "地面配电作业时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "电工遭遇三相 480 V 配电盘接地故障引发的电弧并烧伤，报告认为可能是面板紧固件破坏导体绝缘。"
+    ],
+    "decision_context": "已有设备缺陷可能越过日常检查，人员还需要事前知道报警与救援入口。",
+    "observed_actions": [
+      "受伤人员在约 10 秒内手动触发报警；应急队约 3 分钟抵达现场。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "发生人员烧伤；快速报警在自动探测器报警前启动了应急响应。"
+    ],
+    "model_ids": [
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C046.01",
+        "claim": "电工遭遇三相 480 V 配电盘接地故障引发的电弧并烧伤，报告认为可能是面板紧固件破坏导体绝缘。",
+        "source_ids": [
+          "D-NASA036"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 236 行，Lesson ID=1721，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。紧固件原因在条目中是推测；单次快速响应不证明固定响应时间或所有应急准备都充分。"
+      },
+      {
+        "claim_id": "C046.02",
+        "claim": "NASA 教训条目指出：条目把开工前危险分析、确认报警位置与联系方式视为应急准备的重要因素。",
+        "source_ids": [
+          "D-NASA036"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 236 行，Lesson ID=1721，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。紧固件原因在条目中是推测；单次快速响应不证明固定响应时间或所有应急准备都充分。"
+      },
+      {
+        "claim_id": "C046.03",
+        "claim": "NASA 条目建议：评估中心应急资源分布与作业前危险分析做法，按当地条件改进应急准备。",
+        "source_ids": [
+          "D-NASA036"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 236 行，Lesson ID=1721，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。紧固件原因在条目中是推测；单次快速响应不证明固定响应时间或所有应急准备都充分。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA036"
+    ],
+    "keywords": [
+      "1721",
+      "配电盘电弧烧伤后的快速报警与响应",
+      "配电盘电弧烧伤后",
+      "快速报警",
+      "响应"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。紧固件原因在条目中是推测；单次快速响应不证明固定响应时间或所有应急准备都充分。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1721
+    },
+    "transfer_conditions": [
+      "高风险作业前同时核对预防措施与失败后的报警、撤离和救援条件。"
+    ],
+    "non_transfer_conditions": [
+      "紧固件原因在条目中是推测；单次快速响应不证明固定响应时间或所有应急准备都充分。"
+    ],
+    "recommendations_reported": [
+      "评估中心应急资源分布与作业前危险分析做法，按当地条件改进应急准备。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "已有设备缺陷可能越过日常检查，人员还需要事前知道报警与救援入口。",
+      "proposed_check": "对作业前危险分析和应急资源可达性进行不带能演练。",
+      "metric": "报警入口确认、授权联系人覆盖、演练中的响应链缺口。",
+      "stop_condition": "危险作业没有确认的报警和撤离条件时停止开工准备。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C047",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:430",
+    "title": "TIROS-N 连接器清洗液侵入破坏内部材料",
+    "event_time": "TIROS-N 仪器制造时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "清洗机箱连接器的液体渗入 TIROS-N 微波探测单元，导致涂层膨胀、电子元件断裂、线绝缘溶解及标识脱落。"
+    ],
+    "decision_context": "外部清洁过程可能把液体带入封装内部并改变聚合物性能。",
+    "observed_actions": [],
+    "observed_actions_status": "not_reported",
+    "outcomes": [
+      "制造中的电子组件受到清洗过程损伤；条目未给出后续修复结果。"
+    ],
+    "model_ids": [
+      "P081",
+      "P082",
+      "P098"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C047.01",
+        "claim": "清洗机箱连接器的液体渗入 TIROS-N 微波探测单元，导致涂层膨胀、电子元件断裂、线绝缘溶解及标识脱落。",
+        "source_ids": [
+          "D-NASA037"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 239 行，Lesson ID=430，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能由一类清洗液历史事故推出所有溶剂禁用；具体材料与封装条件需实测。"
+      },
+      {
+        "claim_id": "C047.02",
+        "claim": "NASA 教训条目指出：部分聚合物和弹性体会受流体渗透影响而膨胀或发生应力开裂。",
+        "source_ids": [
+          "D-NASA037"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 239 行，Lesson ID=430，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能由一类清洗液历史事故推出所有溶剂禁用；具体材料与封装条件需实测。"
+      },
+      {
+        "claim_id": "C047.03",
+        "claim": "NASA 条目建议：选择清洗液时核对与附近聚合物、弹性体材料的兼容性。",
+        "source_ids": [
+          "D-NASA037"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 239 行，Lesson ID=430，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能由一类清洗液历史事故推出所有溶剂禁用；具体材料与封装条件需实测。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA037"
+    ],
+    "keywords": [
+      "430",
+      "TIROS-N 连接器清洗液侵入破坏内部材料",
+      "TIROS-N",
+      "连接器清洗液侵入破坏内部材料"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能由一类清洗液历史事故推出所有溶剂禁用；具体材料与封装条件需实测。 来源没有描述具体历史处置动作，observed_actions 保持为空；没有把推荐措施填成历史执行。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 430
+    },
+    "transfer_conditions": [
+      "清洁或灭菌等维护过程改变材料环境时，核对路径、残留与内部材料兼容性。"
+    ],
+    "non_transfer_conditions": [
+      "不能由一类清洗液历史事故推出所有溶剂禁用；具体材料与封装条件需实测。"
+    ],
+    "recommendations_reported": [
+      "选择清洗液时核对与附近聚合物、弹性体材料的兼容性。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "外部清洁过程可能把液体带入封装内部并改变聚合物性能。",
+      "proposed_check": "核对实际清洗材料、流体路径、封装和已有兼容性资料。",
+      "metric": "内部材料兼容缺口、液体侵入路径、清洗后状态检验覆盖。",
+      "stop_condition": "清洗可能接触关键内部材料而无兼容依据时停止采用该工艺。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C048",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:2419",
+    "title": "Aquarius 声学试验超限损伤",
+    "event_time": "2007-05-23",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Aquarius 反射面在声学试验中损伤；计划分级测试的第一个 -12 dB 阶段已因声压超限被系统中止。"
+    ],
+    "decision_context": "控制器版本、参数和测试权限需要与真实硬件风险共同评审。",
+    "observed_actions": [
+      "后续评审检查控制器软件版本、用户设定参数、监控及第二工程师复核。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "反射面受到试验损伤；推荐部分指出 2004 至 2006 年厂商更新未安装。"
+    ],
+    "model_ids": [
+      "P026",
+      "P079",
+      "P098",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C048.01",
+        "claim": "Aquarius 反射面在声学试验中损伤；计划分级测试的第一个 -12 dB 阶段已因声压超限被系统中止。",
+        "source_ids": [
+          "D-NASA038"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 240 行，Lesson ID=2419，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能简单断言安装某个补丁便会完全避免事故；事故与多个配置和流程因素相关。"
+      },
+      {
+        "claim_id": "C048.02",
+        "claim": "NASA 教训条目指出：该条目的教训通过建议部分展开，强调测试控制软件与设置核验。",
+        "source_ids": [
+          "D-NASA038"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 240 行，Lesson ID=2419，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能简单断言安装某个补丁便会完全避免事故；事故与多个配置和流程因素相关。"
+      },
+      {
+        "claim_id": "C048.03",
+        "claim": "NASA 条目建议：核对厂商软件更新和关键参数，安排第二工程师独立验证设置并保留记录。",
+        "source_ids": [
+          "D-NASA038"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 240 行，Lesson ID=2419，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能简单断言安装某个补丁便会完全避免事故；事故与多个配置和流程因素相关。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA038"
+    ],
+    "keywords": [
+      "2419",
+      "Aquarius 声学试验超限损伤",
+      "Aquarius",
+      "声学试验超限损伤"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能简单断言安装某个补丁便会完全避免事故；事故与多个配置和流程因素相关。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 2419
+    },
+    "transfer_conditions": [
+      "试验有损伤可能时，把控制系统本身和保护阈值也作为被验证对象。"
+    ],
+    "non_transfer_conditions": [
+      "不能简单断言安装某个补丁便会完全避免事故；事故与多个配置和流程因素相关。"
+    ],
+    "recommendations_reported": [
+      "核对厂商软件更新和关键参数，安排第二工程师独立验证设置并保留记录。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "控制器版本、参数和测试权限需要与真实硬件风险共同评审。",
+      "proposed_check": "复核测试控制器版本、参数、保护阈值与第二人核验记录，不进行过限试验。",
+      "metric": "关键设置独立复核覆盖、未分析软件差异、保护阈值一致性。",
+      "stop_condition": "控制器行为或保护设置未经验证时停止带关键试件的环境试验。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C049",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1204",
+    "title": "STS-88 机架销安装警告放在操作步骤之后",
+    "event_time": "STS-88／Flight 2A 在轨安装时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "机架 pivot pin 配件被推到机架后方而丢失；防脱止动螺钉因装配顺序被取消，相关手持警告却排在松开动作之后的下一页。"
+    ],
+    "decision_context": "实际操作人员按页顺序执行文档，警告位置会影响它能否在动作前被看到。",
+    "observed_actions": [
+      "后续飞行程序评审加强警告位置检查，并引用问题报告作为防复发控制。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "在 ISS 舱段内部丢失硬件；原文将程序编排错误与既有防脱结构删除联系起来。"
+    ],
+    "model_ids": [
+      "P049",
+      "P079",
+      "P082"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C049.01",
+        "claim": "机架 pivot pin 配件被推到机架后方而丢失；防脱止动螺钉因装配顺序被取消，相关手持警告却排在松开动作之后的下一页。",
+        "source_ids": [
+          "D-NASA039"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 242 行，Lesson ID=1204，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。文案位置正确不能替代硬件防脱；条目认为这是罕见遗漏但没有提供发生率统计。"
+      },
+      {
+        "claim_id": "C049.02",
+        "claim": "NASA 教训条目指出：任何动作相关警告都应在操作步骤之前呈现。",
+        "source_ids": [
+          "D-NASA039"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 242 行，Lesson ID=1204，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。文案位置正确不能替代硬件防脱；条目认为这是罕见遗漏但没有提供发生率统计。"
+      },
+      {
+        "claim_id": "C049.03",
+        "claim": "NASA 条目建议：在飞行运行文件评审中同时检查警告内容和相对于相关动作的位置。",
+        "source_ids": [
+          "D-NASA039"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 242 行，Lesson ID=1204，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。文案位置正确不能替代硬件防脱；条目认为这是罕见遗漏但没有提供发生率统计。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA039"
+    ],
+    "keywords": [
+      "1204",
+      "STS-88 机架销安装警告放在操作步骤之后",
+      "STS-88",
+      "机架销安装警告放在操作步骤之后"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。文案位置正确不能替代硬件防脱；条目认为这是罕见遗漏但没有提供发生率统计。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1204
+    },
+    "transfer_conditions": [
+      "操作不可逆或有物件失控风险时，把警告、确认和物理约束放在风险动作之前。"
+    ],
+    "non_transfer_conditions": [
+      "文案位置正确不能替代硬件防脱；条目认为这是罕见遗漏但没有提供发生率统计。"
+    ],
+    "recommendations_reported": [
+      "在飞行运行文件评审中同时检查警告内容和相对于相关动作的位置。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "实际操作人员按页顺序执行文档，警告位置会影响它能否在动作前被看到。",
+      "proposed_check": "让未参与编写者按真实分页进行无害操作走查，核对警告是否先于风险动作。",
+      "metric": "警告后置数、脱落风险约束缺口、参与者理解与确认记录。",
+      "stop_condition": "风险动作先于对应警告或硬件防脱状态不明时停止发布操作程序。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C050",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:3762",
+    "title": "长期闲置备用 CADS 的 UPS 电池失效",
+    "event_time": "航天飞机发动机验证时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "发动机验证期间备用 CADS 的 UPS 无法工作；备用计算机约两年未用，检查发现其电池需要周期充放电而现场没有对应程序。"
+    ],
+    "decision_context": "备用设备也会随时间退化，不能仅按使用频率安排维护。",
+    "observed_actions": [
+      "团队查阅设备技术要求，并计划修正 CADS 及其他支持设备的维护程序。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "备用 UPS 不可用，条目没有报告同时发生市电中断或飞行器损失。"
+    ],
+    "model_ids": [
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C050.01",
+        "claim": "发动机验证期间备用 CADS 的 UPS 无法工作；备用计算机约两年未用，检查发现其电池需要周期充放电而现场没有对应程序。",
+        "source_ids": [
+          "D-NASA040"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 243 行，Lesson ID=3762，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原条目中的六个月周期只适用于被描述设备，不能照搬到所有 UPS 化学体系和型号。"
+      },
+      {
+        "claim_id": "C050.02",
+        "claim": "NASA 教训条目指出：UPS 的周期维护要求需要进入设备手册和运行程序。",
+        "source_ids": [
+          "D-NASA040"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 243 行，Lesson ID=3762，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原条目中的六个月周期只适用于被描述设备，不能照搬到所有 UPS 化学体系和型号。"
+      },
+      {
+        "claim_id": "C050.03",
+        "claim": "NASA 条目建议：对新增或继承的地面支持系统做部件级维护需求核对。",
+        "source_ids": [
+          "D-NASA040"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 243 行，Lesson ID=3762，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原条目中的六个月周期只适用于被描述设备，不能照搬到所有 UPS 化学体系和型号。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA040"
+    ],
+    "keywords": [
+      "3762",
+      "长期闲置备用 CADS 的 UPS 电池失效",
+      "长期闲置备用",
+      "CADS",
+      "UPS",
+      "电池失效"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。原条目中的六个月周期只适用于被描述设备，不能照搬到所有 UPS 化学体系和型号。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 3762
+    },
+    "transfer_conditions": [
+      "业务连续性依赖备用设备时，验证它能否真正接管，并根据具体部件要求安排维护。"
+    ],
+    "non_transfer_conditions": [
+      "原条目中的六个月周期只适用于被描述设备，不能照搬到所有 UPS 化学体系和型号。"
+    ],
+    "recommendations_reported": [
+      "对新增或继承的地面支持系统做部件级维护需求核对。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "备用设备也会随时间退化，不能仅按使用频率安排维护。",
+      "proposed_check": "审查备用系统的具体部件维护要求与接管验证记录。",
+      "metric": "维护到期未完成项、真实接管覆盖、闲置时间与状态不一致项。",
+      "stop_condition": "备用系统无法证明可接管时停止把它计入连续性保护能力。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C051",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:945",
+    "title": "密封王水废液瓶夜间爆裂",
+    "event_time": "实验室废液储存时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "装有稀王水废液的密封瓶因持续析气增压爆裂，内容物喷到地面；事件发生在实验室无人时。"
+    ],
+    "decision_context": "化学反应在试验结束后仍可继续，废液储存状态也需要危险评估。",
+    "observed_actions": [
+      "事后回顾材料特性、实验室程序与废液管理要求。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "发生瓶体爆裂与化学废液外溢，条目未报告人员受伤。"
+    ],
+    "model_ids": [
+      "P016",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C051.01",
+        "claim": "装有稀王水废液的密封瓶因持续析气增压爆裂，内容物喷到地面；事件发生在实验室无人时。",
+        "source_ids": [
+          "D-NASA041"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 151 行，Lesson ID=945，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。卡片不提供配制、稀释或处置王水的操作步骤；旧条目中的化学名称不据此传播为已核验知识。"
+      },
+      {
+        "claim_id": "C051.02",
+        "claim": "NASA 教训条目指出：使用前后都需要理解混合物的物理化学特性，不能把反应结束等同于危险消失。",
+        "source_ids": [
+          "D-NASA041"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 151 行，Lesson ID=945，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。卡片不提供配制、稀释或处置王水的操作步骤；旧条目中的化学名称不据此传播为已核验知识。"
+      },
+      {
+        "claim_id": "C051.03",
+        "claim": "NASA 条目建议：评审化学卫生计划、作业危险分析、适当标识与废物处置安排。",
+        "source_ids": [
+          "D-NASA041"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 151 行，Lesson ID=945，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。卡片不提供配制、稀释或处置王水的操作步骤；旧条目中的化学名称不据此传播为已核验知识。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA041"
+    ],
+    "keywords": [
+      "945",
+      "密封王水废液瓶夜间爆裂"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。卡片不提供配制、稀释或处置王水的操作步骤；旧条目中的化学名称不据此传播为已核验知识。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 945
+    },
+    "transfer_conditions": [
+      "过程会产生延迟反应或析气时，把后处理和储存纳入风险边界，并由合格人员选择处置方法。"
+    ],
+    "non_transfer_conditions": [
+      "卡片不提供配制、稀释或处置王水的操作步骤；旧条目中的化学名称不据此传播为已核验知识。"
+    ],
+    "recommendations_reported": [
+      "评审化学卫生计划、作业危险分析、适当标识与废物处置安排。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "化学反应在试验结束后仍可继续，废液储存状态也需要危险评估。",
+      "proposed_check": "由合格人员评审反应后的储存、析气和废液管理状态，不复刻反应或爆裂。",
+      "metric": "未评估的延迟反应、标识与移交缺口、适用安全计划覆盖。",
+      "stop_condition": "混合废物性质或批准处置条件不明时停止未经审查的储存与处置。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C052",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1230",
+    "title": "弯管焊接设计忽略椭圆变形余量",
+    "event_time": "316L 管路焊接检查时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "尺寸检验中八个弯管焊接接头全部不合格，源于弯曲导致椭圆形与图纸预留直线段不足。"
+    ],
+    "decision_context": "设计满足夹持长度并不必然满足弯曲变形恢复与接头匹配要求。",
+    "observed_actions": [
+      "团队检查弯管变形、接头错位和图纸所给空间。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "八个接头因错位不通过检验，条目没有报告在役泄漏。"
+    ],
+    "model_ids": [
+      "P011",
+      "P008",
+      "P098"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C052.01",
+        "claim": "尺寸检验中八个弯管焊接接头全部不合格，源于弯曲导致椭圆形与图纸预留直线段不足。",
+        "source_ids": [
+          "D-NASA042"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 250 行，Lesson ID=1230，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原文的具体长度与容差只适用于相应工艺；不能把八件样本直接推广为所有管材良率。"
+      },
+      {
+        "claim_id": "C052.02",
+        "claim": "NASA 教训条目指出：弯管设计需把椭圆变形对随后焊接匹配的影响计入。",
+        "source_ids": [
+          "D-NASA042"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 250 行，Lesson ID=1230，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原文的具体长度与容差只适用于相应工艺；不能把八件样本直接推广为所有管材良率。"
+      },
+      {
+        "claim_id": "C052.03",
+        "claim": "NASA 条目建议：需要紧邻弯曲时评估非焊接结构；预留符合实际变形恢复要求的直线段。",
+        "source_ids": [
+          "D-NASA042"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 250 行，Lesson ID=1230，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。原文的具体长度与容差只适用于相应工艺；不能把八件样本直接推广为所有管材良率。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA042"
+    ],
+    "keywords": [
+      "1230",
+      "弯管焊接设计忽略椭圆变形余量"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。原文的具体长度与容差只适用于相应工艺；不能把八件样本直接推广为所有管材良率。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1230
+    },
+    "transfer_conditions": [
+      "串联制造工序会相互改变材料几何时，用后续工序可接受的状态反向核对设计余量。"
+    ],
+    "non_transfer_conditions": [
+      "原文的具体长度与容差只适用于相应工艺；不能把八件样本直接推广为所有管材良率。"
+    ],
+    "recommendations_reported": [
+      "需要紧邻弯曲时评估非焊接结构；预留符合实际变形恢复要求的直线段。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "设计满足夹持长度并不必然满足弯曲变形恢复与接头匹配要求。",
+      "proposed_check": "对工序几何变形与后续匹配要求做图纸和检验数据核验。",
+      "metric": "接头匹配不合格率、变形恢复余量、设计与制造假设一致性。",
+      "stop_condition": "实际变形不满足接头要求时停止继续加工该设计批次并重新评审。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C053",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:6757",
+    "title": "LDCM 非飞行连接保护件短路损坏关键硬件",
+    "event_time": "LDCM 飞行电池安装后的地面集成时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "安装飞行电池后遥测全部无效，调查发现连接保护件绝缘缺失导致电池对机箱短路，在单点地被断开的状态下损坏电源及地面设备。"
+    ],
+    "decision_context": "非飞行支持件直接连接储能电池，标签类别不能代表后果严重度。",
+    "observed_actions": [
+      "团队展开调查，确认随电池交付的非飞行连接件未进入到货强制检查点，后续检查也没发现绝缘缺失。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "关键电源和地面支持组件受到损坏，非飞行配件成为事故传播入口。"
+    ],
+    "model_ids": [
+      "P016",
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C053.01",
+        "claim": "安装飞行电池后遥测全部无效，调查发现连接保护件绝缘缺失导致电池对机箱短路，在单点地被断开的状态下损坏电源及地面设备。",
+        "source_ids": [
+          "D-NASA043"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 83 行，Lesson ID=6757，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不由“非飞行”推断低风险，也不将该案例改写成发射后的 LDCM 在轨故障。"
+      },
+      {
+        "claim_id": "C053.02",
+        "claim": "NASA 教训条目指出：与飞行硬件相接的关键地面支持设备同样需要按设计意图检查。",
+        "source_ids": [
+          "D-NASA043"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 83 行，Lesson ID=6757，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不由“非飞行”推断低风险，也不将该案例改写成发射后的 LDCM 在轨故障。"
+      },
+      {
+        "claim_id": "C053.03",
+        "claim": "NASA 条目建议：在关键支持设备到货时设置符合要求的检查，并核对与飞行硬件接口的全部配件。",
+        "source_ids": [
+          "D-NASA043"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 83 行，Lesson ID=6757，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不由“非飞行”推断低风险，也不将该案例改写成发射后的 LDCM 在轨故障。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA043"
+    ],
+    "keywords": [
+      "6757",
+      "LDCM 非飞行连接保护件短路损坏关键硬件",
+      "LDCM",
+      "非飞行连接保护件短路损坏关键硬件"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不由“非飞行”推断低风险，也不将该案例改写成发射后的 LDCM 在轨故障。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 6757
+    },
+    "transfer_conditions": [
+      "数据或能量从低分类组件进入高后果系统时，按接口风险而非仅按组件标签决定验证。"
+    ],
+    "non_transfer_conditions": [
+      "不由“非飞行”推断低风险，也不将该案例改写成发射后的 LDCM 在轨故障。"
+    ],
+    "recommendations_reported": [
+      "在关键支持设备到货时设置符合要求的检查，并核对与飞行硬件接口的全部配件。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "非飞行支持件直接连接储能电池，标签类别不能代表后果严重度。",
+      "proposed_check": "列出所有与关键硬件接触的配件，核对接收检查与接口符合性。",
+      "metric": "关键接口配件检查覆盖、绝缘或配置不一致项、按标签漏检项。",
+      "stop_condition": "支持件能引入危险能量而检验状态不明时停止联合连接准入。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C054",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1192",
+    "title": "Goddard 周末管道泄漏损坏照片档案",
+    "event_time": "2001-04-21",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Goddard 8 号楼地下室供水管道失效，洪水损害 NASA 照片档案；隔离系统耗时约两小时，积水还带来触电危险。"
+    ],
+    "decision_context": "重要资产位于供水设施下方，非工作时间的隔离与现场指挥能力需要预案。",
+    "observed_actions": [
+      "现场人员开展恢复，但应急控制台缺少对应洪水准备，清理团队无人获授权清场。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "档案受损且人员暴露于危险；条目未提供档案损失比例或经济数值。"
+    ],
+    "model_ids": [
+      "P008",
+      "P079",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C054.01",
+        "claim": "Goddard 8 号楼地下室供水管道失效，洪水损害 NASA 照片档案；隔离系统耗时约两小时，积水还带来触电危险。",
+        "source_ids": [
+          "D-NASA044"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 86 行，Lesson ID=1192，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能因应急计划写有洪水就推断现场已有可执行响应能力，也不能补写档案全部毁坏。"
+      },
+      {
+        "claim_id": "C054.02",
+        "claim": "NASA 教训条目指出：设施标识、非工作时间指挥和已知威胁的预案需要提前准备。",
+        "source_ids": [
+          "D-NASA044"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 86 行，Lesson ID=1192，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能因应急计划写有洪水就推断现场已有可执行响应能力，也不能补写档案全部毁坏。"
+      },
+      {
+        "claim_id": "C054.03",
+        "claim": "NASA 条目建议：标识关键阀门及管路，建立全天可运行的事件指挥结构，并预先形成重大危险响应计划。",
+        "source_ids": [
+          "D-NASA044"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 86 行，Lesson ID=1192，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能因应急计划写有洪水就推断现场已有可执行响应能力，也不能补写档案全部毁坏。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA044"
+    ],
+    "keywords": [
+      "1192",
+      "Goddard 周末管道泄漏损坏照片档案",
+      "Goddard",
+      "周末管道泄漏损坏照片档案"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能因应急计划写有洪水就推断现场已有可执行响应能力，也不能补写档案全部毁坏。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1192
+    },
+    "transfer_conditions": [
+      "关键资产位置有可预见外部威胁时，提前安排隔离、授权、值守和安全进入边界。"
+    ],
+    "non_transfer_conditions": [
+      "不能因应急计划写有洪水就推断现场已有可执行响应能力，也不能补写档案全部毁坏。"
+    ],
+    "recommendations_reported": [
+      "标识关键阀门及管路，建立全天可运行的事件指挥结构，并预先形成重大危险响应计划。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "重要资产位于供水设施下方，非工作时间的隔离与现场指挥能力需要预案。",
+      "proposed_check": "进行无害桌面应急演练，核对关键隔离点、非工作时间指挥和资产暴露。",
+      "metric": "隔离点可定位性、全天授权覆盖、未知安全进入条件与资产受水威胁路径。",
+      "stop_condition": "突发事件现场安全和指挥权不明时停止未经授权的进入与恢复。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C055",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:626",
+    "title": "Deep Space 2 探针装配期意外上电",
+    "event_time": "Deep Space 2 最终装配时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "near_miss",
+    "facts": [
+      "两枚 DS2 飞行探针在最终装配期间都曾意外上电；设计要求较早移除安全插头，使后续装配存在未充分理解的电气脆弱性。"
+    ],
+    "decision_context": "安全设计既要覆盖最终任务配置，也要覆盖未装完时的中间状态。",
+    "observed_actions": [
+      "事后评审系统级失效分析、机械包装决定与电子安全开关的相互作用。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "出现装配期意外上电；本条目没有证明它导致后来的任务结果。"
+    ],
+    "model_ids": [
+      "P008",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C055.01",
+        "claim": "两枚 DS2 飞行探针在最终装配期间都曾意外上电；设计要求较早移除安全插头，使后续装配存在未充分理解的电气脆弱性。",
+        "source_ids": [
+          "D-NASA045"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 89 行，Lesson ID=626，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把该地面事件归为 DS2 火星任务失效的已证实根因。"
+      },
+      {
+        "claim_id": "C055.02",
+        "claim": "NASA 教训条目指出：系统级分析需同时覆盖机械与电气联系，以及装配、试验和飞行各状态。",
+        "source_ids": [
+          "D-NASA045"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 89 行，Lesson ID=626，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把该地面事件归为 DS2 火星任务失效的已证实根因。"
+      },
+      {
+        "claim_id": "C055.03",
+        "claim": "NASA 条目建议：需要安全装置时，设计与程序应允许其贯穿装配和测试全过程，并协调不同失效分析。",
+        "source_ids": [
+          "D-NASA045"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 89 行，Lesson ID=626，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把该地面事件归为 DS2 火星任务失效的已证实根因。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA045"
+    ],
+    "keywords": [
+      "626",
+      "Deep Space 2 探针装配期意外上电",
+      "Deep",
+      "Space",
+      "探针装配期意外上电"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能把该地面事件归为 DS2 火星任务失效的已证实根因。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 626
+    },
+    "transfer_conditions": [
+      "最终成品有保护不等于生产过程受保护，关键安全约束需覆盖实际中间配置。"
+    ],
+    "non_transfer_conditions": [
+      "不能把该地面事件归为 DS2 火星任务失效的已证实根因。"
+    ],
+    "recommendations_reported": [
+      "需要安全装置时，设计与程序应允许其贯穿装配和测试全过程，并协调不同失效分析。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "安全设计既要覆盖最终任务配置，也要覆盖未装完时的中间状态。",
+      "proposed_check": "对装配中间状态建立保护与供能状态表，核对安全装置全程可用性。",
+      "metric": "未覆盖的装配状态、提前移除保护的环节、机械与电气分析接口缺口。",
+      "stop_condition": "存在未批准的意外供能路径时停止进入对应装配步骤。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C056",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:4417",
+    "title": "STS-80 舱外活动因舱门小螺钉卡滞取消",
+    "event_time": "STS-80 任务期间；条目记载发射日 1996-10-31，故障日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "宇航员无法打开外气闸舱门，任务管理者取消两次计划中的舱外活动；返回后发现小螺钉退出并卡在齿轮间。"
+    ],
+    "decision_context": "多级传动结构的微小连接件可影响关键任务入口，地面重复成功不等于长期可靠。",
+    "observed_actions": [
+      "管理者避免继续尝试以防损坏舱门和密封；返回后更换执行机构并进行台架调查。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "舱外活动目标未完成，换装执行机构后舱门恢复正常开关。"
+    ],
+    "model_ids": [
+      "P007",
+      "P084",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C056.01",
+        "claim": "宇航员无法打开外气闸舱门，任务管理者取消两次计划中的舱外活动；返回后发现小螺钉退出并卡在齿轮间。",
+        "source_ids": [
+          "D-NASA046"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 92 行，Lesson ID=4417，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。减少零件不自动提高所有系统的可靠性，原文也未证明某种简化设计能避免全部故障。"
+      },
+      {
+        "claim_id": "C056.02",
+        "claim": "NASA 教训条目指出：低复杂度、易维护与可在轨处理的设计应进入可靠性权衡，小件安装细节也有任务级影响。",
+        "source_ids": [
+          "D-NASA046"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 92 行，Lesson ID=4417，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。减少零件不自动提高所有系统的可靠性，原文也未证明某种简化设计能避免全部故障。"
+      },
+      {
+        "claim_id": "C056.03",
+        "claim": "NASA 条目建议：统一紧固件安装要求，关注运行扭矩与锁定，并在设计中评估复杂度和可维修性。",
+        "source_ids": [
+          "D-NASA046"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 92 行，Lesson ID=4417，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。减少零件不自动提高所有系统的可靠性，原文也未证明某种简化设计能避免全部故障。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA046"
+    ],
+    "keywords": [
+      "4417",
+      "STS-80 舱外活动因舱门小螺钉卡滞取消",
+      "STS-80",
+      "舱外活动因舱门小螺钉卡滞取消"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。减少零件不自动提高所有系统的可靠性，原文也未证明某种简化设计能避免全部故障。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 4417
+    },
+    "transfer_conditions": [
+      "关键动作依赖隐藏小部件时，把防松、可检测性和故障后处置能力一起审查。"
+    ],
+    "non_transfer_conditions": [
+      "减少零件不自动提高所有系统的可靠性，原文也未证明某种简化设计能避免全部故障。"
+    ],
+    "recommendations_reported": [
+      "统一紧固件安装要求，关注运行扭矩与锁定，并在设计中评估复杂度和可维修性。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "多级传动结构的微小连接件可影响关键任务入口，地面重复成功不等于长期可靠。",
+      "proposed_check": "核验隐藏关键紧固件、保持结构与故障后维修或替代方案的证据。",
+      "metric": "关键小件防松覆盖、可检测性、不可维修失效对任务目标的影响。",
+      "stop_condition": "关键动作依赖未验证且无法处理的单点结构时停止任务可用性批准。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C057",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:550",
+    "title": "液氮转运中的缺氧昏迷",
+    "event_time": "地面液氮转运时期；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "两名技术员因氮气排放形成浓雾而准备暂停转运，在停机过程中缺氧昏迷；槽车司机救助后两人恢复，条目称无后遗症。"
+    ],
+    "decision_context": "防冻伤的个人防护不一定覆盖惰性气体排空气造成的缺氧危险。",
+    "observed_actions": [
+      "操作人员尝试暂停操作，随后由现场槽车司机实施救助。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "发生缺氧昏迷；已有防护装备未包含氧浓度探测或呼吸空气供给。"
+    ],
+    "model_ids": [
+      "P081",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C057.01",
+        "claim": "两名技术员因氮气排放形成浓雾而准备暂停转运，在停机过程中缺氧昏迷；槽车司机救助后两人恢复，条目称无后遗症。",
+        "source_ids": [
+          "D-NASA047"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 99 行，Lesson ID=550，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。卡片不提供进入受限空间或现场救援步骤，也不传播原条目未经核对的死亡比例统计。"
+      },
+      {
+        "claim_id": "C057.02",
+        "claim": "NASA 教训条目指出：低温流体排放可能置换空气形成缺氧环境。",
+        "source_ids": [
+          "D-NASA047"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 99 行，Lesson ID=550，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。卡片不提供进入受限空间或现场救援步骤，也不传播原条目未经核对的死亡比例统计。"
+      },
+      {
+        "claim_id": "C057.03",
+        "claim": "NASA 条目建议：遵守本地低温和受限空间要求，使用合格人员与适当监测，救援需具备保护条件。",
+        "source_ids": [
+          "D-NASA047"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 99 行，Lesson ID=550，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。卡片不提供进入受限空间或现场救援步骤，也不传播原条目未经核对的死亡比例统计。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA047"
+    ],
+    "keywords": [
+      "550",
+      "液氮转运中的缺氧昏迷",
+      "液氮转运中",
+      "缺氧昏迷"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。卡片不提供进入受限空间或现场救援步骤，也不传播原条目未经核对的死亡比例统计。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 550
+    },
+    "transfer_conditions": [
+      "识别实际危险机制后核对防护覆盖范围，并把作业和救援双方暴露一起评估。"
+    ],
+    "non_transfer_conditions": [
+      "卡片不提供进入受限空间或现场救援步骤，也不传播原条目未经核对的死亡比例统计。"
+    ],
+    "recommendations_reported": [
+      "遵守本地低温和受限空间要求，使用合格人员与适当监测，救援需具备保护条件。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "防冻伤的个人防护不一定覆盖惰性气体排空气造成的缺氧危险。",
+      "proposed_check": "通过作业计划审核核对缺氧机制、防护与救援准备，不进行真实缺氧试验。",
+      "metric": "气体累积暴露情境、适用监测覆盖、获批救援条件缺口。",
+      "stop_condition": "现场危险状态或救援保护条件未确认时停止进入相关区域。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C058",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:1319",
+    "title": "ISS SUBSA 温控命令被本地上限拒绝",
+    "event_time": "2002-07-23",
+    "domain": "technology",
+    "result_type": "reported_practice",
+    "facts": [
+      "ISS SUBSA 控制器拒绝超过 825 °C 的设定，查询发现本地 Mod Bus 上限；实验目标需要升到 845 °C。"
+    ],
+    "decision_context": "地面测试温度满足目标，但在轨试样需要更高设定，软件和实际控制器边界必须吻合。",
+    "observed_actions": [
+      "团队上传查询文件，并重配置控制软件的命令地址，随后正确设定目标温度。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "条目记载此后至本次在轨实验处理完成未再出现同类问题。"
+    ],
+    "model_ids": [
+      "P026",
+      "P008",
+      "P098"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C058.01",
+        "claim": "ISS SUBSA 控制器拒绝超过 825 °C 的设定，查询发现本地 Mod Bus 上限；实验目标需要升到 845 °C。",
+        "source_ids": [
+          "D-NASA048"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 101 行，Lesson ID=1319，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把本次绕过局部限制推广成一般安全建议；所有限值变更都需核对真实设备和安全边界。"
+      },
+      {
+        "claim_id": "C058.02",
+        "claim": "NASA 教训条目指出：地面足够的加热工况不保证在轨足够； 飞行软件与飞行硬件联测不足会保留接口缺口。",
+        "source_ids": [
+          "D-NASA048"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 101 行，Lesson ID=1319，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把本次绕过局部限制推广成一般安全建议；所有限值变更都需核对真实设备和安全边界。"
+      },
+      {
+        "claim_id": "C058.03",
+        "claim": "NASA 条目建议：不能因预算和工期约束削弱适当的风险评估与测试。",
+        "source_ids": [
+          "D-NASA048"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 101 行，Lesson ID=1319，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把本次绕过局部限制推广成一般安全建议；所有限值变更都需核对真实设备和安全边界。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA048"
+    ],
+    "keywords": [
+      "1319",
+      "ISS SUBSA 温控命令被本地上限拒绝",
+      "ISS",
+      "SUBSA",
+      "温控命令被本地上限拒绝"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能把本次绕过局部限制推广成一般安全建议；所有限值变更都需核对真实设备和安全边界。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 1319
+    },
+    "transfer_conditions": [
+      "实际使用条件不同于验收条件时，测试约束、限值与接口地址，保留查询真实控制状态的方法。"
+    ],
+    "non_transfer_conditions": [
+      "不能把本次绕过局部限制推广成一般安全建议；所有限值变更都需核对真实设备和安全边界。"
+    ],
+    "recommendations_reported": [
+      "不能因预算和工期约束削弱适当的风险评估与测试。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "地面测试温度满足目标，但在轨试样需要更高设定，软件和实际控制器边界必须吻合。",
+      "proposed_check": "比对控制器真实参数、接口命令和批准安全包络，在无危险模型或既有日志中验证。",
+      "metric": "命令与回读一致性、限值来源、地面和实际工况差异覆盖。",
+      "stop_condition": "目标设定超出批准边界或限值用途不明时停止变更，先完成专业评审。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C059",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:595",
+    "title": "Lewis 飞船沿用设计的未测试稳定性问题",
+    "event_time": "Lewis 在轨安全保持阶段；事件日未注明",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "Lewis 的姿态控制设计和仿真错误沿用了先前任务方案，在安全保持状态遭遇未测试的不稳定性，导致飞船失效。"
+    ],
+    "decision_context": "新任务复用过去成功的设计时，必须验证新的动态条件与仿真适用性。",
+    "observed_actions": [],
+    "observed_actions_status": "not_reported",
+    "outcomes": [
+      "航天器失效；该条目强调设计迁移和验证不足，未提供具体动态模型。"
+    ],
+    "model_ids": [
+      "P082",
+      "P098",
+      "P099"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C059.01",
+        "claim": "Lewis 的姿态控制设计和仿真错误沿用了先前任务方案，在安全保持状态遭遇未测试的不稳定性，导致飞船失效。",
+        "source_ids": [
+          "D-NASA049"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 109 行，Lesson ID=595，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。此条目不能支持“复用总是危险”的结论，也不能据其简短回顾重建完整事故概率。"
+      },
+      {
+        "claim_id": "C059.02",
+        "claim": "NASA 教训条目指出：过去成功的设计不解除新应用的独立技术审查和全面验证要求。",
+        "source_ids": [
+          "D-NASA049"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 109 行，Lesson ID=595，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。此条目不能支持“复用总是危险”的结论，也不能据其简短回顾重建完整事故概率。"
+      },
+      {
+        "claim_id": "C059.03",
+        "claim": "NASA 条目建议：对所有系统按统一原则评审，不因设计履历免除独立同行审查。",
+        "source_ids": [
+          "D-NASA049"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 109 行，Lesson ID=595，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。此条目不能支持“复用总是危险”的结论，也不能据其简短回顾重建完整事故概率。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA049"
+    ],
+    "keywords": [
+      "595",
+      "Lewis 飞船沿用设计的未测试稳定性问题",
+      "Lewis",
+      "飞船沿用设计",
+      "未测试稳定性问题"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。此条目不能支持“复用总是危险”的结论，也不能据其简短回顾重建完整事故概率。 来源没有描述具体历史处置动作，observed_actions 保持为空；没有把推荐措施填成历史执行。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 595
+    },
+    "transfer_conditions": [
+      "复用设计前明确原成功条件与新边界，测试未覆盖的模式，核对仿真假设。"
+    ],
+    "non_transfer_conditions": [
+      "此条目不能支持“复用总是危险”的结论，也不能据其简短回顾重建完整事故概率。"
+    ],
+    "recommendations_reported": [
+      "对所有系统按统一原则评审，不因设计履历免除独立同行审查。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "新任务复用过去成功的设计时，必须验证新的动态条件与仿真适用性。",
+      "proposed_check": "核对旧方案成功条件与新任务模式，检查仿真和独立审查覆盖。",
+      "metric": "未测试运行模式、模型假设差异、没有适用证据的继承设计项。",
+      "stop_condition": "关键模式超出继承方案验证范围时停止凭旧履历批准使用。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  },
+  {
+    "id": "C060",
+    "record_type": "deep_case",
+    "event_key": "nasa-llis:664",
+    "title": "SOHO 地面操作错误与保护禁用后失联",
+    "event_time": "1998-06-25",
+    "domain": "technology",
+    "result_type": "failure",
+    "facts": [
+      "SOHO 在计划校准与重配置期间失联；联合调查认为地面操作错误、状态监视不足及禁用部分自动故障检测导致姿态丢失。"
+    ],
+    "decision_context": "成熟任务的日常维护也会改变控制状态，紧急恢复需要先理解遥测与自动保护。",
+    "observed_actions": [
+      "ESA 与 NASA 设立联合调查委员会，工程团队开始恢复工作并审查程序修改链。"
+    ],
+    "observed_actions_status": "reported",
+    "outcomes": [
+      "条目记载恢复取得部分进展，未在这份快照中断言后来的全面恢复结果。"
+    ],
+    "model_ids": [
+      "P026",
+      "P079",
+      "P082",
+      "P094"
+    ],
+    "model_mapping_note": "模型由本 Skill 作为分析入口映射；来源未声称当事人使用这些模型，也不据案例证实模型的普遍迁移效果。",
+    "claims": [
+      {
+        "claim_id": "C060.01",
+        "claim": "SOHO 在计划校准与重配置期间失联；联合调查认为地面操作错误、状态监视不足及禁用部分自动故障检测导致姿态丢失。",
+        "source_ids": [
+          "D-NASA050"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Driving_Event_Doccano.json 第 142 行，Lesson ID=664，字段 Driving Event。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把调查快照中的失联写成永久丢失，也不能用当时的部分进展证明所有恢复措施有效。"
+      },
+      {
+        "claim_id": "C060.02",
+        "claim": "NASA 教训条目指出：异常发生后未充分评估状态就采取恢复动作，会进一步增加操作风险。",
+        "source_ids": [
+          "D-NASA050"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Lesson(s)_Learned_Doccano.json 第 142 行，Lesson ID=664，字段 Lesson(s) Learned。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把调查快照中的失联写成永久丢失，也不能用当时的部分进展证明所有恢复措施有效。"
+      },
+      {
+        "claim_id": "C060.03",
+        "claim": "NASA 条目建议：全面审查地面程序、变更验证、管理过程和地面系统，正常操作恢复前启动改进。",
+        "source_ids": [
+          "D-NASA050"
+        ],
+        "locator": "NASA MIKA 固定提交 ecbc1f12aca5317b6ea622bf49d956660bd0f19a；LLIS_Recommendation(s)_Doccano.json 第 142 行，Lesson ID=664，字段 Recommendation(s)。",
+        "evidence_strength": "reported",
+        "causal_limit": "该主张是 NASA 历史经验条目的报告或建议，未独立复现；建议的提出不证明已实施，也不证明其后效果。不能把调查快照中的失联写成永久丢失，也不能用当时的部分进展证明所有恢复措施有效。"
+      }
+    ],
+    "source_ids": [
+      "D-NASA050"
+    ],
+    "keywords": [
+      "664",
+      "SOHO 地面操作错误与保护禁用后失联",
+      "SOHO",
+      "地面操作错误",
+      "保护禁用后失联"
+    ],
+    "verification": {
+      "status": "checked",
+      "checked_on": "2026-10-12",
+      "fact_confidence": "medium",
+      "causal_confidence": "low",
+      "limitations": "已核对 NASA 官方 GitHub 历史快照中同一 Lesson ID 的事件、教训与建议字段及所写主张；没有重新查阅全部原条目附件或独立来源。快照文件在 2022 年已存在，事故日未知时明确保留未知；当时的解释和建议不等于跨场景因果证明。不能把调查快照中的失联写成永久丢失，也不能用当时的部分进展证明所有恢复措施有效。",
+      "independent_source_groups": 1,
+      "scope": "claim_level_snapshot_check",
+      "method": "人工事实改述＋固定快照字段定位；未将多份镜像计为独立证据",
+      "lesson_id": 664
+    },
+    "transfer_conditions": [
+      "受控系统在异常时先核对当前状态、保护状态和变更历史，再选择有证据的恢复动作。"
+    ],
+    "non_transfer_conditions": [
+      "不能把调查快照中的失联写成永久丢失，也不能用当时的部分进展证明所有恢复措施有效。"
+    ],
+    "recommendations_reported": [
+      "全面审查地面程序、变更验证、管理过程和地面系统，正常操作恢复前启动改进。"
+    ],
+    "recommendations_implementation_status": "未统一核验后续实施与效果；只在 observed_actions 有明确记录时陈述已发生动作",
+    "snapshot_event_cutoff_basis": "对应事件描述已存在于 2022-08-16 的官方数据文件；这不是事故日期",
+    "decision_review": {
+      "status": "analyst_proposal_not_historical_action",
+      "decision_point": "成熟任务的日常维护也会改变控制状态，紧急恢复需要先理解遥测与自动保护。",
+      "proposed_check": "用历史日志或仿真走查异常状态评估、保护状态及程序变更链。",
+      "metric": "未经验证变更、遥测解释缺口、保护禁用授权与恢复步骤覆盖。",
+      "stop_condition": "当前状态未充分解释或保护禁用缺乏批准依据时停止猜测式恢复动作。",
+      "application_boundary": "这是当前场景的可检验迁移建议，不是源事件当年的措施或已经证明有效的方法。涉及工程危险的核验由合格人员按适用标准批准，不复刻事故。"
+    }
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "D-TECH001",
+    "title": "GitLab 2017：主库误删与失效备份：原始事故复盘",
+    "url": "https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/",
+    "publisher": "GitLab",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2017-02-10",
+    "origin_group": "GitLab",
+    "supports": "支持 2017-01-31 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "运营方自述可支持事故流程及其诊断；未独立重演，也不证明所有后续改进效果。"
+  },
+  {
+    "id": "D-TECH002",
+    "title": "Cloudflare 2019：WAF 正则规则导致全球 CPU 耗尽：原始事故复盘",
+    "url": "https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/",
+    "publisher": "Cloudflare",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2019-07-12",
+    "origin_group": "Cloudflare",
+    "supports": "支持 2019-07-02 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "诊断来自厂商事后报告，不能把软件失控称为物理熵增或数学混沌。"
+  },
+  {
+    "id": "D-TECH003",
+    "title": "Cloudflare 2020：路由配置将骨干流量集中到 Atlanta：原始事故复盘",
+    "url": "https://blog.cloudflare.com/cloudflare-outage-on-july-17-2020/",
+    "publisher": "Cloudflare",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2020-07-17",
+    "origin_group": "Cloudflare",
+    "supports": "支持 2020-07-17 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "厂商报告支持本次配置链路；不证明所有网络必然在同一阈值失效。"
+  },
+  {
+    "id": "D-TECH004",
+    "title": "Facebook 2021：骨干中断使 DNS 与恢复工具同时失效：原始事故复盘",
+    "url": "https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/",
+    "publisher": "Meta Engineering",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2021-10-05",
+    "origin_group": "Meta Engineering",
+    "supports": "支持 2021-10-04 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "自述根因和取舍不能证明特定安全设计在其他系统中最优。"
+  },
+  {
+    "id": "D-TECH005",
+    "title": "Atlassian 2022：应用 ID 与站点 ID 混用导致删除事故：原始事故复盘",
+    "url": "https://www.atlassian.com/blog/how-we-build/post-incident-review-april-2022-outage",
+    "publisher": "Atlassian",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2022-04-29",
+    "origin_group": "Atlassian",
+    "supports": "支持 2022-04-05 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "按公司最终复盘使用 775 客户与 883 站点，不能混用早期约 400 客户估算。"
+  },
+  {
+    "id": "D-TECH006",
+    "title": "Slack 2021：网络降级、自动扩缩容与监控依赖相互放大：原始事故复盘",
+    "url": "https://slack.engineering/slacks-outage-on-january-4th-2021/",
+    "publisher": "Slack Engineering",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2021-02-01",
+    "origin_group": "Slack Engineering",
+    "supports": "支持 2021-01-04 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "厂商事后叙述包含多项同时变化，不能用它估计单项改进的因果效应。"
+  },
+  {
+    "id": "D-TECH007",
+    "title": "Fastly 2021：合法配置触发潜伏的软件缺陷：原始事故复盘",
+    "url": "https://www.fastly.com/blog/summary-of-june-8-outage",
+    "publisher": "Fastly",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2021-06-08",
+    "origin_group": "Fastly",
+    "supports": "支持 2021-06-08 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "事故主体的初期报告，数据是其自述；并未提供完整测试集或独立因果研究。"
+  },
+  {
+    "id": "D-TECH008",
+    "title": "Roblox 2021：高负载下的流式功能与持久化争用：原始事故复盘",
+    "url": "https://about.roblox.com/newsroom/2022/01/roblox-return-to-service-10-28-10-31-2021",
+    "publisher": "Roblox",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2022-01-20",
+    "origin_group": "Roblox",
+    "supports": "支持 2021-10-28 至 2021-10-31 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "厂商联合排障报告，不能据此假定所有更高核心数机器都更差，或所有流式设计都不适用。"
+  },
+  {
+    "id": "D-TECH009",
+    "title": "Google Cloud 2019：跨地点维护自动化同时停掉控制平面：原始事故复盘",
+    "url": "https://status.cloud.google.com/incidents/Nm7HSYZu9RqCY2HXRQQf",
+    "publisher": "Google Cloud",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2019-06-06",
+    "origin_group": "Google Cloud",
+    "supports": "支持 2019-06-02 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "服务方正式事故报告，可支持其诊断；不能把多地区不同影响压缩为全体相同损失。"
+  },
+  {
+    "id": "D-TECH010",
+    "title": "GitHub 2018：短暂网络分区导致跨区域数据库拓扑不兼容：原始事故复盘",
+    "url": "https://github.blog/news-insights/company-news/oct21-post-incident-analysis/",
+    "publisher": "GitHub",
+    "source_type": "primary",
+    "checked_on": "2026-10-12",
+    "publication_date": "2018-10-30",
+    "origin_group": "GitHub",
+    "supports": "支持 2018-10-21 至 2018-10-22 事故的运营方公开记录、诊断与已述恢复动作；不认证全部长期效果。",
+    "limitations": "运维主体报告，数据完整性声明保留其手工对账边界；不是任意系统都应接受一天中断的证明。"
+  }
+]

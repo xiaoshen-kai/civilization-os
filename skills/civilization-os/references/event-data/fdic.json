@@ -1,0 +1,5121 @@
+{
+  "dataset": "fdic",
+  "source_id": "R-FDIC",
+  "retrievals": [
+    {
+      "source_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "retrieved_utc": "2026-10-12T06:36:15.064226+00:00",
+      "http_status": 200,
+      "sha256": "c306d2d85bf4711a6be7158f593b359f30ae0c582be835e90f3910bd3e188c15"
+    }
+  ],
+  "selection_rule": "FAILURE only, FAILYR <= 2025. Sort by FAILDATE and ID, round-robin over available years until 300. A coverage sample, not a representative sample.",
+  "field_notes": {
+    "QBFASSET": "Last reported assets before effective failure date, in thousands of US dollars.",
+    "QBFDEP": "Last reported deposits before effective failure date, in thousands of US dollars.",
+    "FAILDATE": "Effective failure date as recorded by FDIC; may be receivership date.",
+    "ID": "Dataset row key; not CERT or FIN."
+  },
+  "records": [
+    {
+      "record_key": "2",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2",
+        "NAME": "BANK OF AMERICA TRUST CO.",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "4/19/1934",
+        "FAILYR": "1934",
+        "CITY": "PITTSBURGH",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1435,
+        "QBFDEP": 1064
+      }
+    },
+    {
+      "record_key": "10",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "10",
+        "NAME": "CLIFFSIDE PARK TITLE GUARANTEE & TRUST CO.",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/3/1935",
+        "FAILYR": "1935",
+        "CITY": "GRANTWOOD",
+        "PSTALP": "NJ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2305,
+        "QBFDEP": 590
+      }
+    },
+    {
+      "record_key": "36",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "36",
+        "NAME": "CITIZENS BANK OF ERWIN",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/10/1936",
+        "FAILYR": "1936",
+        "CITY": "ERWIN",
+        "PSTALP": "TN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 159,
+        "QBFDEP": 95
+      }
+    },
+    {
+      "record_key": "104",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "104",
+        "NAME": "BANK OF HOUGHTON",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/12/1937",
+        "FAILYR": "1937",
+        "CITY": "HOUGHTON",
+        "PSTALP": "SD",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 82,
+        "QBFDEP": 50
+      }
+    },
+    {
+      "record_key": "180",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "180",
+        "NAME": "WORTHVILLE DEPOSIT BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/11/1938",
+        "FAILYR": "1938",
+        "CITY": "WORTHVILLE",
+        "PSTALP": "KY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 141,
+        "QBFDEP": 116
+      }
+    },
+    {
+      "record_key": "253",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "253",
+        "NAME": "OCONTO COUNTY STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/4/1939",
+        "FAILYR": "1939",
+        "CITY": "OCONTO FALLS",
+        "PSTALP": "WI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 386,
+        "QBFDEP": 346
+      }
+    },
+    {
+      "record_key": "313",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "313",
+        "NAME": "GUARANTY BOND STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/4/1940",
+        "FAILYR": "1940",
+        "CITY": "NORTH ZULCH",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 169,
+        "QBFDEP": 119
+      }
+    },
+    {
+      "record_key": "356",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "356",
+        "NAME": "BANK OF JAMESTOWN",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/11/1941",
+        "FAILYR": "1941",
+        "CITY": "JAMESTOWN",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 186,
+        "QBFDEP": 156
+      }
+    },
+    {
+      "record_key": "371",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "371",
+        "NAME": "PROVIDENCE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/17/1942",
+        "FAILYR": "1942",
+        "CITY": "SCRANTON",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": null,
+        "QBFDEP": 754
+      }
+    },
+    {
+      "record_key": "391",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "391",
+        "NAME": "THE POULTNEY NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "3/17/1943",
+        "FAILYR": "1943",
+        "CITY": "POULTNEY",
+        "PSTALP": "VT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 919,
+        "QBFDEP": 862
+      }
+    },
+    {
+      "record_key": "396",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "396",
+        "NAME": "THE BROWNVILLE STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/12/1944",
+        "FAILYR": "1944",
+        "CITY": "BROWNSVILLE",
+        "PSTALP": "IN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 447,
+        "QBFDEP": 405
+      }
+    },
+    {
+      "record_key": "398",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "398",
+        "NAME": "THE FARMERS & MERCHANTS STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/13/1945",
+        "FAILYR": "1945",
+        "CITY": "FREDERICKSBURG",
+        "PSTALP": "VA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 6392,
+        "QBFDEP": 5695
+      }
+    },
+    {
+      "record_key": "399",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "399",
+        "NAME": "AUGUSTA COUNTY BANK, INC.",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "9/14/1946",
+        "FAILYR": "1946",
+        "CITY": "CHURCHVILLE",
+        "PSTALP": "VA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 351,
+        "QBFDEP": 316
+      }
+    },
+    {
+      "record_key": "400",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "400",
+        "NAME": "THE FIRST NATIONAL BANK OF EVANSTON",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/11/1947",
+        "FAILYR": "1947",
+        "CITY": "EVANSTON",
+        "PSTALP": "WY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1803,
+        "QBFDEP": 1991
+      }
+    },
+    {
+      "record_key": "405",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "405",
+        "NAME": "COLUMBUS TRUST COMPANY",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/24/1948",
+        "FAILYR": "1948",
+        "CITY": "NEWARK",
+        "PSTALP": "NJ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7892,
+        "QBFDEP": 7921
+      }
+    },
+    {
+      "record_key": "408",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "408",
+        "NAME": "THE FIRST NATIONAL BANK OF DYER",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/19/1949",
+        "FAILYR": "1949",
+        "CITY": "DYER",
+        "PSTALP": "IN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3157,
+        "QBFDEP": 3090
+      }
+    },
+    {
+      "record_key": "412",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "412",
+        "NAME": "THE WESTPHALIA STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "4/3/1950",
+        "FAILYR": "1950",
+        "CITY": "WESTPHALIA",
+        "PSTALP": "MI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 744,
+        "QBFDEP": 1126
+      }
+    },
+    {
+      "record_key": "416",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "416",
+        "NAME": "BRAZEAU BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/22/1951",
+        "FAILYR": "1951",
+        "CITY": "BRAZEAU",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 144,
+        "QBFDEP": 148
+      }
+    },
+    {
+      "record_key": "418",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "418",
+        "NAME": "THOMASVILLE BANK AND TRUST CO.",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/21/1952",
+        "FAILYR": "1952",
+        "CITY": "THOMASVILLE",
+        "PSTALP": "AL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1031,
+        "QBFDEP": 1757
+      }
+    },
+    {
+      "record_key": "421",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "421",
+        "NAME": "MAYFIELD STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/13/1953",
+        "FAILYR": "1953",
+        "CITY": "MAYFIELD",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1355,
+        "QBFDEP": 1305
+      }
+    },
+    {
+      "record_key": "423",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "423",
+        "NAME": "BANK OF ILA",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "8/9/1954",
+        "FAILYR": "1954",
+        "CITY": "ILA",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 98,
+        "QBFDEP": 60
+      }
+    },
+    {
+      "record_key": "425",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "425",
+        "NAME": "FIRST NATIONAL BANK OF LEWISVILLE",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/27/1955",
+        "FAILYR": "1955",
+        "CITY": "LEWISVILLE",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 721,
+        "QBFDEP": 892
+      }
+    },
+    {
+      "record_key": "430",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "430",
+        "NAME": "RIVER OAKS STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "10/15/1956",
+        "FAILYR": "1956",
+        "CITY": "FORTH WORTH",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 5202,
+        "QBFDEP": 4703
+      }
+    },
+    {
+      "record_key": "432",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "432",
+        "NAME": "FIRST STATE BANK OF YORKTOWN",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "4/10/1957",
+        "FAILYR": "1957",
+        "CITY": "YORKTOWN",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1253,
+        "QBFDEP": 1163
+      }
+    },
+    {
+      "record_key": "433",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "433",
+        "NAME": "THE FIRST NATIONAL BANK OF HALFWAY",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "3/17/1958",
+        "FAILYR": "1958",
+        "CITY": "HALFWAY",
+        "PSTALP": "OR",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1446,
+        "QBFDEP": 1368
+      }
+    },
+    {
+      "record_key": "437",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "437",
+        "NAME": "THE BARTLETT STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/13/1959",
+        "FAILYR": "1959",
+        "CITY": "BARTLETT",
+        "PSTALP": "NE",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 570,
+        "QBFDEP": 504
+      }
+    },
+    {
+      "record_key": "440",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "440",
+        "NAME": "THE CAPITOL HILL STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/29/1960",
+        "FAILYR": "1960",
+        "CITY": "OKLAHOMA CITY",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7506,
+        "QBFDEP": 6955
+      }
+    },
+    {
+      "record_key": "441",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "441",
+        "NAME": "THE SHELDON NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/16/1961",
+        "FAILYR": "1961",
+        "CITY": "SHELDON",
+        "PSTALP": "IA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 4365,
+        "QBFDEP": 3884
+      }
+    },
+    {
+      "record_key": "446",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "446",
+        "NAME": "THE FIRST NATIONAL BANK OF EXETER",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/19/1962",
+        "FAILYR": "1962",
+        "CITY": "EXETER",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": null,
+        "QBFDEP": 3011
+      }
+    },
+    {
+      "record_key": "447",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "447",
+        "NAME": "THE FIRST BANK OF WESTMONT",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/24/1963",
+        "FAILYR": "1963",
+        "CITY": "WESTMONT",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7055,
+        "QBFDEP": 6659
+      }
+    },
+    {
+      "record_key": "449",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "449",
+        "NAME": "THE FIRST NATIONAL BANK OF MARLIN",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "3/10/1964",
+        "FAILYR": "1964",
+        "CITY": "MARLIN",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3741,
+        "QBFDEP": 3459
+      }
+    },
+    {
+      "record_key": "456",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "456",
+        "NAME": "THE BRIGHTON NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/22/1965",
+        "FAILYR": "1965",
+        "CITY": "BRIGHTON",
+        "PSTALP": "CO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3015,
+        "QBFDEP": 2254
+      }
+    },
+    {
+      "record_key": "461",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "461",
+        "NAME": "FIVE POINTS NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/12/1966",
+        "FAILYR": "1966",
+        "CITY": "MIAMI",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2703,
+        "QBFDEP": 2967
+      }
+    },
+    {
+      "record_key": "468",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "468",
+        "NAME": "BANK OF PINE APPLE",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/31/1967",
+        "FAILYR": "1967",
+        "CITY": "PINE APPLE",
+        "PSTALP": "AL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 4289,
+        "QBFDEP": 3885
+      }
+    },
+    {
+      "record_key": "472",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "472",
+        "NAME": "LORENZO STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/13/1968",
+        "FAILYR": "1968",
+        "CITY": "LORENZO",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 6159,
+        "QBFDEP": 5612
+      }
+    },
+    {
+      "record_key": "475",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "475",
+        "NAME": "THE ROCKY MOUNTAIN BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/6/1969",
+        "FAILYR": "1969",
+        "CITY": "LAKEWOOD",
+        "PSTALP": "CO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 8617,
+        "QBFDEP": 8065
+      }
+    },
+    {
+      "record_key": "487",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "487",
+        "NAME": "STATE BANK OF PRAIRIE CITY",
+        "CERT": 14571,
+        "FIN": "0",
+        "FAILDATE": "2/22/1970",
+        "FAILYR": "1970",
+        "CITY": "PRAIRIE CITY",
+        "PSTALP": "IA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 4130,
+        "QBFDEP": 3897
+      }
+    },
+    {
+      "record_key": "496",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "496",
+        "NAME": "SHARPSTOWN STATE BANK",
+        "CERT": 18254,
+        "FIN": "0",
+        "FAILDATE": "1/25/1971",
+        "FAILYR": "1971",
+        "CITY": "HOUSTON",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 78903,
+        "QBFDEP": 66763
+      }
+    },
+    {
+      "record_key": "499",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "499",
+        "NAME": "SURETY BANK AND TRUST COMPANY",
+        "CERT": 18365,
+        "FIN": "0",
+        "FAILDATE": "5/27/1972",
+        "FAILYR": "1972",
+        "CITY": "WAKEFIELD",
+        "PSTALP": "MA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 22054,
+        "QBFDEP": 20385
+      }
+    },
+    {
+      "record_key": "504",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "504",
+        "NAME": "DELTA SECURITY BANK AND TRUST COMPANY",
+        "CERT": 18535,
+        "FIN": "0",
+        "FAILDATE": "1/19/1973",
+        "FAILYR": "1973",
+        "CITY": "FERRIDAY",
+        "PSTALP": "LA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 9780,
+        "QBFDEP": 8079
+      }
+    },
+    {
+      "record_key": "507",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "507",
+        "NAME": "AMERICAN BANK & TRUST",
+        "CERT": 11543,
+        "FIN": "0",
+        "FAILDATE": "9/20/1974",
+        "FAILYR": "1974",
+        "CITY": "ORANGEBURG",
+        "PSTALP": "SC",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 147137,
+        "QBFDEP": 112703
+      }
+    },
+    {
+      "record_key": "519",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "519",
+        "NAME": "SWOPE PARKWAY NATIONAL BANK",
+        "CERT": 19834,
+        "FIN": "0",
+        "FAILDATE": "1/3/1975",
+        "FAILYR": "1975",
+        "CITY": "KANSAS CITY",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7576,
+        "QBFDEP": 7422
+      }
+    },
+    {
+      "record_key": "533",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "533",
+        "NAME": "THE BANK OF BLOOMFIELD",
+        "CERT": 18798,
+        "FIN": "0",
+        "FAILDATE": "1/10/1976",
+        "FAILYR": "1976",
+        "CITY": "BLOOMFIELD",
+        "PSTALP": "NJ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 31652,
+        "QBFDEP": 25969
+      }
+    },
+    {
+      "record_key": "540",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "540",
+        "NAME": "FIRST STATE BANK",
+        "CERT": 415,
+        "FIN": "0",
+        "FAILDATE": "3/10/1977",
+        "FAILYR": "1977",
+        "CITY": "FOSS",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2044,
+        "QBFDEP": 1763
+      }
+    },
+    {
+      "record_key": "549",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "549",
+        "NAME": "THE DROVERS' NATIONAL BANK OF CHICAGO",
+        "CERT": 3623,
+        "FIN": "0",
+        "FAILDATE": "1/19/1978",
+        "FAILYR": "1978",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 226826,
+        "QBFDEP": 197166
+      }
+    },
+    {
+      "record_key": "555",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "555",
+        "NAME": "TONEY BROTHERS BANK",
+        "CERT": 16294,
+        "FIN": "0",
+        "FAILDATE": "1/5/1979",
+        "FAILYR": "1979",
+        "CITY": "DOERUN",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 5869,
+        "QBFDEP": 5791
+      }
+    },
+    {
+      "record_key": "563",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "563",
+        "NAME": "BANK OF LAKE HELEN",
+        "CERT": 21291,
+        "FIN": "6359",
+        "FAILDATE": "1/11/1980",
+        "FAILYR": "1980",
+        "CITY": "LAKE HELEN",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3027,
+        "QBFDEP": 4334
+      }
+    },
+    {
+      "record_key": "588",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "588",
+        "NAME": "THE DES PLAINES BANK",
+        "CERT": 18373,
+        "FIN": "6370",
+        "FAILDATE": "3/14/1981",
+        "FAILYR": "1981",
+        "CITY": "DES PLAINES",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 46503,
+        "QBFDEP": 42927
+      }
+    },
+    {
+      "record_key": "639",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "639",
+        "NAME": "THE FIRST NATIONAL BANK AND TRUST COMPANY",
+        "CERT": 3751,
+        "FIN": "2297",
+        "FAILDATE": "2/6/1982",
+        "FAILYR": "1982",
+        "CITY": "TUSCOLA",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 22138,
+        "QBFDEP": 17067
+      }
+    },
+    {
+      "record_key": "745",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "745",
+        "NAME": "VALLEY FIRST FS&LA",
+        "CERT": 31620,
+        "FIN": "7502",
+        "FAILDATE": "1/14/1983",
+        "FAILYR": "1983",
+        "CITY": "EL CENTRO",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 37109.71,
+        "QBFDEP": 33697.72
+      }
+    },
+    {
+      "record_key": "843",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "843",
+        "NAME": "FARMERS BK & TR CO.",
+        "CERT": 4971,
+        "FIN": "2369",
+        "FAILDATE": "1/6/1984",
+        "FAILYR": "1984",
+        "CITY": "WINCHESTER",
+        "PSTALP": "TN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 48606,
+        "QBFDEP": 48269
+      }
+    },
+    {
+      "record_key": "951",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "951",
+        "NAME": "CITIZENS STATE BANK",
+        "CERT": 22433,
+        "FIN": "6531",
+        "FAILDATE": "1/4/1985",
+        "FAILYR": "1985",
+        "CITY": "EDGERTON",
+        "PSTALP": "WY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2907,
+        "QBFDEP": 2563
+      }
+    },
+    {
+      "record_key": "1130",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1130",
+        "NAME": "THE FIRST NATIONAL BANK OF WHITE CITY",
+        "CERT": 4798,
+        "FIN": "2527",
+        "FAILDATE": "1/9/1986",
+        "FAILYR": "1986",
+        "CITY": "WHITE CITY",
+        "PSTALP": "KS",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 9607,
+        "QBFDEP": 9239
+      }
+    },
+    {
+      "record_key": "1333",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1333",
+        "NAME": "THE SECURITY NAT BK & TR CO. OF NORMAN",
+        "CERT": 4159,
+        "FIN": "2631",
+        "FAILDATE": "1/8/1987",
+        "FAILYR": "1987",
+        "CITY": "NORMAN",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 198716,
+        "QBFDEP": 171175
+      }
+    },
+    {
+      "record_key": "1596",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1596",
+        "NAME": "COMMERCE BANK OF PLANO",
+        "CERT": 26540,
+        "FIN": "5920",
+        "FAILDATE": "1/7/1988",
+        "FAILYR": "1988",
+        "CITY": "PLANO",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 35306,
+        "QBFDEP": 32674
+      }
+    },
+    {
+      "record_key": "2065",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2065",
+        "NAME": "BANK OF BENTON",
+        "CERT": 8139,
+        "FIN": "2949",
+        "FAILDATE": "1/5/1989",
+        "FAILYR": "1989",
+        "CITY": "BENTON",
+        "PSTALP": "LA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 12202,
+        "QBFDEP": 12132
+      }
+    },
+    {
+      "record_key": "2599",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2599",
+        "NAME": "THE FIRST NATIONAL BANK OF SAN MARCOS",
+        "CERT": 5517,
+        "FIN": "4140",
+        "FAILDATE": "1/4/1990",
+        "FAILYR": "1990",
+        "CITY": "SAN MARCOS",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 77567,
+        "QBFDEP": 79985
+      }
+    },
+    {
+      "record_key": "2981",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2981",
+        "NAME": "ROYAL OAK FS & LA",
+        "CERT": 28634,
+        "FIN": "7266",
+        "FAILDATE": "1/4/1991",
+        "FAILYR": "1991",
+        "CITY": "RANDALLSTOWN",
+        "PSTALP": "MD",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 27310,
+        "QBFDEP": 29154
+      }
+    },
+    {
+      "record_key": "3252",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3252",
+        "NAME": "ASSURED THRIFT AND LOAN ASSOCIATION",
+        "CERT": 26493,
+        "FIN": "4436",
+        "FAILDATE": "1/3/1992",
+        "FAILYR": "1992",
+        "CITY": "STOCKTON",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 48226,
+        "QBFDEP": 46635
+      }
+    },
+    {
+      "record_key": "3433",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3433",
+        "NAME": "COLUMBIA NATIONAL BANK",
+        "CERT": 24320,
+        "FIN": "4561",
+        "FAILDATE": "1/22/1993",
+        "FAILYR": "1993",
+        "CITY": "SANTA MONICA",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 47618,
+        "QBFDEP": 47627
+      }
+    },
+    {
+      "record_key": "3483",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3483",
+        "NAME": "MECHANICS NATIONAL BANK",
+        "CERT": 19367,
+        "FIN": "4606",
+        "FAILDATE": "4/1/1994",
+        "FAILYR": "1994",
+        "CITY": "PARAMOUNT",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 148713,
+        "QBFDEP": 148881
+      }
+    },
+    {
+      "record_key": "3498",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3498",
+        "NAME": "GUARDIAN BANK",
+        "CERT": 24754,
+        "FIN": "4619",
+        "FAILDATE": "1/20/1995",
+        "FAILYR": "1995",
+        "CITY": "LOS ANGELES",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 316944,
+        "QBFDEP": 297948
+      }
+    },
+    {
+      "record_key": "3506",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3506",
+        "NAME": "METROBANK OF PHILADELPHIA",
+        "CERT": 27525,
+        "FIN": "4625",
+        "FAILDATE": "3/8/1996",
+        "FAILYR": "1996",
+        "CITY": "PHILADELPHIA",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 40379,
+        "QBFDEP": 39177
+      }
+    },
+    {
+      "record_key": "3512",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3512",
+        "NAME": "SOUTHWEST BANK",
+        "CERT": 18338,
+        "FIN": "4630",
+        "FAILDATE": "11/21/1997",
+        "FAILYR": "1997",
+        "CITY": "JENNINGS",
+        "PSTALP": "LA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 27923,
+        "QBFDEP": 27511
+      }
+    },
+    {
+      "record_key": "3513",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3513",
+        "NAME": "OMNIBANK",
+        "CERT": 14758,
+        "FIN": "4631",
+        "FAILDATE": "4/9/1998",
+        "FAILYR": "1998",
+        "CITY": "RIVER ROUGE",
+        "PSTALP": "MI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 42038,
+        "QBFDEP": 40462
+      }
+    },
+    {
+      "record_key": "3516",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3516",
+        "NAME": "VICTORY STATE BANK",
+        "CERT": 17200,
+        "FIN": "4634",
+        "FAILDATE": "3/26/1999",
+        "FAILYR": "1999",
+        "CITY": "COLUMBIA",
+        "PSTALP": "SC",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 13205,
+        "QBFDEP": 12887
+      }
+    },
+    {
+      "record_key": "3524",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3524",
+        "NAME": "HARTFORD-CARLISLE SB",
+        "CERT": 14228,
+        "FIN": "4641",
+        "FAILDATE": "1/14/2000",
+        "FAILYR": "2000",
+        "CITY": "CARLISLE",
+        "PSTALP": "IA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 105044,
+        "QBFDEP": 68549
+      }
+    },
+    {
+      "record_key": "3531",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3531",
+        "NAME": "FIRST ALLIANCE BANK AND TRUST CO",
+        "CERT": 34264,
+        "FIN": "4647",
+        "FAILDATE": "2/2/2001",
+        "FAILYR": "2001",
+        "CITY": "MANCHESTER",
+        "PSTALP": "NH",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 17438,
+        "QBFDEP": 16931
+      }
+    },
+    {
+      "record_key": "3535",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3535",
+        "NAME": "HAMILTON BANK, NATIONAL ASSOCIATION",
+        "CERT": 24382,
+        "FIN": "4650",
+        "FAILDATE": "1/11/2002",
+        "FAILYR": "2002",
+        "CITY": "MIAMI",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1409496,
+        "QBFDEP": 1298731
+      }
+    },
+    {
+      "record_key": "3546",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3546",
+        "NAME": "SOUTHERN PACIFIC BANK",
+        "CERT": 27094,
+        "FIN": "4660",
+        "FAILDATE": "2/7/2003",
+        "FAILYR": "2003",
+        "CITY": "TORRANCE",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 904294,
+        "QBFDEP": 864160
+      }
+    },
+    {
+      "record_key": "3549",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3549",
+        "NAME": "DOLLAR SAVINGS BANK",
+        "CERT": 31330,
+        "FIN": "6006",
+        "FAILDATE": "2/14/2004",
+        "FAILYR": "2004",
+        "CITY": "NEWARK",
+        "PSTALP": "NJ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 13408,
+        "QBFDEP": 10909
+      }
+    },
+    {
+      "record_key": "3553",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3553",
+        "NAME": "METROPOLITAN SAVINGS BANK",
+        "CERT": 35353,
+        "FIN": "10000",
+        "FAILDATE": "2/2/2007",
+        "FAILYR": "2007",
+        "CITY": "PITTSBURGH",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 15760,
+        "QBFDEP": 14540
+      }
+    },
+    {
+      "record_key": "3556",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3556",
+        "NAME": "DOUGLASS NATIONAL BANK",
+        "CERT": 24660,
+        "FIN": "10003",
+        "FAILDATE": "1/25/2008",
+        "FAILYR": "2008",
+        "CITY": "KANSAS CITY",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 52824,
+        "QBFDEP": 50250
+      }
+    },
+    {
+      "record_key": "3587",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3587",
+        "NAME": "NATIONAL BANK OF COMMERCE",
+        "CERT": 19733,
+        "FIN": "10028",
+        "FAILDATE": "1/16/2009",
+        "FAILYR": "2009",
+        "CITY": "BERKELEY",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 419741,
+        "QBFDEP": 395868
+      }
+    },
+    {
+      "record_key": "3734",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3734",
+        "NAME": "HORIZON BANK",
+        "CERT": 22977,
+        "FIN": "10168",
+        "FAILDATE": "1/8/2010",
+        "FAILYR": "2010",
+        "CITY": "BELLINGHAM",
+        "PSTALP": "WA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1188956,
+        "QBFDEP": 1049063
+      }
+    },
+    {
+      "record_key": "3891",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3891",
+        "NAME": "FIRST COMMERCIAL BANK OF FLORIDA",
+        "CERT": 34965,
+        "FIN": "10325",
+        "FAILDATE": "1/7/2011",
+        "FAILYR": "2011",
+        "CITY": "ORLANDO",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 578638,
+        "QBFDEP": 537223
+      }
+    },
+    {
+      "record_key": "3983",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3983",
+        "NAME": "THE FIRST STATE BANK",
+        "CERT": 19252,
+        "FIN": "10419",
+        "FAILDATE": "1/20/2012",
+        "FAILYR": "2012",
+        "CITY": "STOCKBRIDGE",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 516760,
+        "QBFDEP": 509065
+      }
+    },
+    {
+      "record_key": "4034",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4034",
+        "NAME": "WESTSIDE COMMUNITY BANK",
+        "CERT": 33997,
+        "FIN": "10468",
+        "FAILDATE": "1/11/2013",
+        "FAILYR": "2013",
+        "CITY": "UNIVERSITY PLACE",
+        "PSTALP": "WA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 91935,
+        "QBFDEP": 91879
+      }
+    },
+    {
+      "record_key": "4058",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4058",
+        "NAME": "DUPAGE NATIONAL BANK",
+        "CERT": 5732,
+        "FIN": "10492",
+        "FAILDATE": "1/17/2014",
+        "FAILYR": "2014",
+        "CITY": "WEST CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 53524,
+        "QBFDEP": 51878
+      }
+    },
+    {
+      "record_key": "4076",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4076",
+        "NAME": "FIRST NATIONAL BANK OF CRESTVIEW",
+        "CERT": 17557,
+        "FIN": "10510",
+        "FAILDATE": "1/16/2015",
+        "FAILYR": "2015",
+        "CITY": "CRESTVIEW",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 73804,
+        "QBFDEP": 73199
+      }
+    },
+    {
+      "record_key": "4084",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4084",
+        "NAME": "NORTH MILWAUKEE STATE BANK",
+        "CERT": 20364,
+        "FIN": "10518",
+        "FAILDATE": "3/11/2016",
+        "FAILYR": "2016",
+        "CITY": "MILWAUKEE",
+        "PSTALP": "WI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 67115,
+        "QBFDEP": 61493
+      }
+    },
+    {
+      "record_key": "4089",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4089",
+        "NAME": "HARVEST COMMUNITY BANK",
+        "CERT": 34951,
+        "FIN": "10523",
+        "FAILDATE": "1/13/2017",
+        "FAILYR": "2017",
+        "CITY": "PENNSVILLE",
+        "PSTALP": "NJ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 124223,
+        "QBFDEP": 122177
+      }
+    },
+    {
+      "record_key": "4097",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4097",
+        "NAME": "ENLOE STATE BANK",
+        "CERT": 10716,
+        "FIN": "10531",
+        "FAILDATE": "5/31/2019",
+        "FAILYR": "2019",
+        "CITY": "COOPER",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 36738,
+        "QBFDEP": 31254
+      }
+    },
+    {
+      "record_key": "4101",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4101",
+        "NAME": "ERICSON STATE BANK",
+        "CERT": 18265,
+        "FIN": "10535",
+        "FAILDATE": "2/14/2020",
+        "FAILYR": "2020",
+        "CITY": "ERICSON",
+        "PSTALP": "NE",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 100879,
+        "QBFDEP": 95159
+      }
+    },
+    {
+      "record_key": "4105",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4105",
+        "NAME": "SILICON VALLEY BANK",
+        "CERT": 24735,
+        "FIN": "10539",
+        "FAILDATE": "3/10/2023",
+        "FAILYR": "2023",
+        "CITY": "SANTA CLARA",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 209026000,
+        "QBFDEP": 175378000
+      }
+    },
+    {
+      "record_key": "4110",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4110",
+        "NAME": "REPUBLIC BANK",
+        "CERT": 27332,
+        "FIN": "10546",
+        "FAILDATE": "4/26/2024",
+        "FAILYR": "2024",
+        "CITY": "PHILADELPHIA",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 5866190,
+        "QBFDEP": 4373927
+      }
+    },
+    {
+      "record_key": "4112",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4112",
+        "NAME": "PULASKI SAVINGS BANK",
+        "CERT": 28611,
+        "FIN": "10548",
+        "FAILDATE": "1/17/2025",
+        "FAILYR": "2025",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 49466,
+        "QBFDEP": 42741
+      }
+    },
+    {
+      "record_key": "1",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1",
+        "NAME": "FON DU LAC STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/28/1934",
+        "FAILYR": "1934",
+        "CITY": "EAST PEORIA",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 374,
+        "QBFDEP": 238
+      }
+    },
+    {
+      "record_key": "11",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "11",
+        "NAME": "THE NATIONAL BANK OF HERNDON",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/9/1935",
+        "FAILYR": "1935",
+        "CITY": "HERNDON",
+        "PSTALP": "VA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 387,
+        "QBFDEP": 384
+      }
+    },
+    {
+      "record_key": "37",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "37",
+        "NAME": "THE FIRST NATIONAL BANK OF CLINTON",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/1/1936",
+        "FAILYR": "1936",
+        "CITY": "CLINTON",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": null,
+        "QBFDEP": 437
+      }
+    },
+    {
+      "record_key": "105",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "105",
+        "NAME": "SARGENT COUNTY BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/14/1937",
+        "FAILYR": "1937",
+        "CITY": "FORMAN",
+        "PSTALP": "ND",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": null,
+        "QBFDEP": 154
+      }
+    },
+    {
+      "record_key": "181",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "181",
+        "NAME": "BANK OF DECATUR",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/19/1938",
+        "FAILYR": "1938",
+        "CITY": "DECATUR",
+        "PSTALP": "AR",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 97,
+        "QBFDEP": 84
+      }
+    },
+    {
+      "record_key": "254",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "254",
+        "NAME": "THE FIRST NATIONAL BANK OF PRESTON",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/5/1939",
+        "FAILYR": "1939",
+        "CITY": "PRESTON",
+        "PSTALP": "MN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 304,
+        "QBFDEP": 285
+      }
+    },
+    {
+      "record_key": "314",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "314",
+        "NAME": "THE CITIZENS STATE BANK OF NIANGUA",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/12/1940",
+        "FAILYR": "1940",
+        "CITY": "NIANGUA",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 143,
+        "QBFDEP": 119
+      }
+    },
+    {
+      "record_key": "357",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "357",
+        "NAME": "THE FIRST NATIONAL BANK OF ANADARKO",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/17/1941",
+        "FAILYR": "1941",
+        "CITY": "ANADARKO",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 822,
+        "QBFDEP": 725
+      }
+    },
+    {
+      "record_key": "372",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "372",
+        "NAME": "PALISADE STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/21/1942",
+        "FAILYR": "1942",
+        "CITY": "PALISADE",
+        "PSTALP": "MN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 91,
+        "QBFDEP": 88
+      }
+    },
+    {
+      "record_key": "392",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "392",
+        "NAME": "BANK OF BLACK MOUNTAIN",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "3/18/1943",
+        "FAILYR": "1943",
+        "CITY": "BLACK MOUTAIN",
+        "PSTALP": "NC",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 855,
+        "QBFDEP": 767
+      }
+    },
+    {
+      "record_key": "397",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "397",
+        "NAME": "THE FIRST NATIONAL BANK OF SUSQUEHANNA",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/27/1944",
+        "FAILYR": "1944",
+        "CITY": "SUSQUEHANNA",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1651,
+        "QBFDEP": 1459
+      }
+    },
+    {
+      "record_key": "401",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "401",
+        "NAME": "THE FIRST NATIONAL BANK OF LEMONT",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/25/1947",
+        "FAILYR": "1947",
+        "CITY": "LEMONT",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1666,
+        "QBFDEP": 1749
+      }
+    },
+    {
+      "record_key": "406",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "406",
+        "NAME": "THE AMERICAN NATIONAL BANK OF PRYOR CREEK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "11/20/1948",
+        "FAILYR": "1948",
+        "CITY": "PRYOR",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1774,
+        "QBFDEP": 1925
+      }
+    },
+    {
+      "record_key": "409",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "409",
+        "NAME": "STOCKMENS BANK OF MARTINSDALE",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "4/30/1949",
+        "FAILYR": "1949",
+        "CITY": "MARTINSDALE",
+        "PSTALP": "MT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 634,
+        "QBFDEP": 709
+      }
+    },
+    {
+      "record_key": "413",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "413",
+        "NAME": "THE BANK OF AURORA",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/24/1950",
+        "FAILYR": "1950",
+        "CITY": "AURORA",
+        "PSTALP": "NC",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1291,
+        "QBFDEP": 991
+      }
+    },
+    {
+      "record_key": "417",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "417",
+        "NAME": "THE PARNASSUS NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "8/25/1951",
+        "FAILYR": "1951",
+        "CITY": "NEW KENSINGTON",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2906,
+        "QBFDEP": 3260
+      }
+    },
+    {
+      "record_key": "419",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "419",
+        "NAME": "CAMDEN STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/5/1952",
+        "FAILYR": "1952",
+        "CITY": "CAMDEN",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 838,
+        "QBFDEP": 817
+      }
+    },
+    {
+      "record_key": "422",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "422",
+        "NAME": "FIRST STATE BANK OF ELMWOOD PARK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/26/1953",
+        "FAILYR": "1953",
+        "CITY": "ELMWOOD PARK",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 17456,
+        "QBFDEP": 16957
+      }
+    },
+    {
+      "record_key": "424",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "424",
+        "NAME": "BANK OF WHITESVILLE",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "10/1/1954",
+        "FAILYR": "1954",
+        "CITY": "WHITESVILLE",
+        "PSTALP": "KY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1040,
+        "QBFDEP": 930
+      }
+    },
+    {
+      "record_key": "426",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "426",
+        "NAME": "RATHDRUM STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "4/30/1955",
+        "FAILYR": "1955",
+        "CITY": "RATHDRUM",
+        "PSTALP": "ID",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1017,
+        "QBFDEP": 909
+      }
+    },
+    {
+      "record_key": "431",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "431",
+        "NAME": "THE HOME NATIONAL OF ELLENVILLE",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "12/4/1956",
+        "FAILYR": "1956",
+        "CITY": "ELLENVILLE",
+        "PSTALP": "NY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7712,
+        "QBFDEP": 6578
+      }
+    },
+    {
+      "record_key": "434",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "434",
+        "NAME": "PEOPLES STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/5/1958",
+        "FAILYR": "1958",
+        "CITY": "RICHLAND SPRINGS",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 618,
+        "QBFDEP": 574
+      }
+    },
+    {
+      "record_key": "438",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "438",
+        "NAME": "LIBERAL STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "6/9/1959",
+        "FAILYR": "1959",
+        "CITY": "LIBERAL",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1012,
+        "QBFDEP": 925
+      }
+    },
+    {
+      "record_key": "442",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "442",
+        "NAME": "BANK OF EARLSBORO",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "8/11/1961",
+        "FAILYR": "1961",
+        "CITY": "EARLSBORO",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 962,
+        "QBFDEP": 902
+      }
+    },
+    {
+      "record_key": "448",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "448",
+        "NAME": "CHATHAM BANK OF CHICAGO",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "8/23/1963",
+        "FAILYR": "1963",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 19124,
+        "QBFDEP": 16782
+      }
+    },
+    {
+      "record_key": "450",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "450",
+        "NAME": "THE STATE SAVINGS BANK OF MINDEN CITY",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "3/17/1964",
+        "FAILYR": "1964",
+        "CITY": "MINDEN CITY",
+        "PSTALP": "MI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1310,
+        "QBFDEP": 1233
+      }
+    },
+    {
+      "record_key": "457",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "457",
+        "NAME": "SAN FRANCISCO NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/22/1965",
+        "FAILYR": "1965",
+        "CITY": "SAN FRANCISCO",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 54061,
+        "QBFDEP": 40176
+      }
+    },
+    {
+      "record_key": "462",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "462",
+        "NAME": "CITIZENS BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/24/1966",
+        "FAILYR": "1966",
+        "CITY": "POTTSVILLE",
+        "PSTALP": "AR",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 832,
+        "QBFDEP": 774
+      }
+    },
+    {
+      "record_key": "469",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "469",
+        "NAME": "SOUTHERN BANK OF ST. PETERSBURG",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/17/1967",
+        "FAILYR": "1967",
+        "CITY": "ST. PETERSBURG",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2884,
+        "QBFDEP": 2451
+      }
+    },
+    {
+      "record_key": "473",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "473",
+        "NAME": "CENTRAL NATIONAL BANK OF JACKSONVILLE",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/27/1968",
+        "FAILYR": "1968",
+        "CITY": "JACKSONVILLE",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 13445,
+        "QBFDEP": 11757
+      }
+    },
+    {
+      "record_key": "476",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "476",
+        "NAME": "CITIZENS STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "4/12/1969",
+        "FAILYR": "1969",
+        "CITY": "ALVARADO",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2556,
+        "QBFDEP": 2320
+      }
+    },
+    {
+      "record_key": "488",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "488",
+        "NAME": "THE PEOPLES STATE SAVINGS BANK",
+        "CERT": 14987,
+        "FIN": "0",
+        "FAILDATE": "4/18/1970",
+        "FAILYR": "1970",
+        "CITY": "AUBURN",
+        "PSTALP": "MI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 10877,
+        "QBFDEP": 9940
+      }
+    },
+    {
+      "record_key": "497",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "497",
+        "NAME": "BIRMINGHAM-BLOOMFIELD BANK",
+        "CERT": 18316,
+        "FIN": "0",
+        "FAILDATE": "2/16/1971",
+        "FAILYR": "1971",
+        "CITY": "BIRMINGHAM",
+        "PSTALP": "MI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 109739,
+        "QBFDEP": 57547
+      }
+    },
+    {
+      "record_key": "505",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "505",
+        "NAME": "SKYLINE NATIONAL BANK",
+        "CERT": 20550,
+        "FIN": "0",
+        "FAILDATE": "3/26/1973",
+        "FAILYR": "1973",
+        "CITY": "DENVER",
+        "PSTALP": "CO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 6527,
+        "QBFDEP": 6006
+      }
+    },
+    {
+      "record_key": "509",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "509",
+        "NAME": "TRI-CITY BANK",
+        "CERT": 17918,
+        "FIN": "0",
+        "FAILDATE": "9/27/1974",
+        "FAILYR": "1974",
+        "CITY": "WARREN",
+        "PSTALP": "MI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 16295,
+        "QBFDEP": 14876
+      }
+    },
+    {
+      "record_key": "521",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "521",
+        "NAME": "NORTHERN OHIO BANK",
+        "CERT": 20478,
+        "FIN": "0",
+        "FAILDATE": "2/19/1975",
+        "FAILYR": "1975",
+        "CITY": "CLEVELAND",
+        "PSTALP": "OH",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 103782,
+        "QBFDEP": 95616
+      }
+    },
+    {
+      "record_key": "538",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "538",
+        "NAME": "BANK OF WOODMOOR",
+        "CERT": 20405,
+        "FIN": "0",
+        "FAILDATE": "1/12/1976",
+        "FAILYR": "1976",
+        "CITY": "WOODMOOR",
+        "PSTALP": "CO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 4033,
+        "QBFDEP": 3549
+      }
+    },
+    {
+      "record_key": "544",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "544",
+        "NAME": "THE MONROE BANK AND TRUST COMPANY",
+        "CERT": 21218,
+        "FIN": "0",
+        "FAILDATE": "3/28/1977",
+        "FAILYR": "1977",
+        "CITY": "MONROE",
+        "PSTALP": "CT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 4315,
+        "QBFDEP": 2791
+      }
+    },
+    {
+      "record_key": "548",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "548",
+        "NAME": "FIRST BANK OF MACON COUNTY",
+        "CERT": 1733,
+        "FIN": "0",
+        "FAILDATE": "1/26/1978",
+        "FAILYR": "1978",
+        "CITY": "NOTASULGA",
+        "PSTALP": "AL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 4538,
+        "QBFDEP": 3825
+      }
+    },
+    {
+      "record_key": "562",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "562",
+        "NAME": "VILLAGE BANK",
+        "CERT": 22110,
+        "FIN": "0",
+        "FAILDATE": "1/26/1979",
+        "FAILYR": "1979",
+        "CITY": "PUEBLO WEST",
+        "PSTALP": "CO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 5059,
+        "QBFDEP": 4862
+      }
+    },
+    {
+      "record_key": "565",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "565",
+        "NAME": "FIRST NATIONAL BK OF CARRINGTON",
+        "CERT": 19177,
+        "FIN": "5360",
+        "FAILDATE": "2/12/1980",
+        "FAILYR": "1980",
+        "CITY": "CARRINGTON",
+        "PSTALP": "ND",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 12444,
+        "QBFDEP": 11184
+      }
+    },
+    {
+      "record_key": "589",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "589",
+        "NAME": "SOUTH SIDE BANK",
+        "CERT": 20688,
+        "FIN": "2287",
+        "FAILDATE": "3/14/1981",
+        "FAILYR": "1981",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 27505,
+        "QBFDEP": 25983
+      }
+    },
+    {
+      "record_key": "640",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "640",
+        "NAME": "METROPOLITAN BK & TR COMPANY",
+        "CERT": 21623,
+        "FIN": "2298",
+        "FAILDATE": "2/12/1982",
+        "FAILYR": "1982",
+        "CITY": "TAMPA",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 267410,
+        "QBFDEP": 210173
+      }
+    },
+    {
+      "record_key": "746",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "746",
+        "NAME": "THE MADISON COUNTY BANK",
+        "CERT": 8593,
+        "FIN": "2333",
+        "FAILDATE": "1/21/1983",
+        "FAILYR": "1983",
+        "CITY": "FREDERICKTOWN",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7000,
+        "QBFDEP": 6758
+      }
+    },
+    {
+      "record_key": "844",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "844",
+        "NAME": "CITY & COUNTY BK OF JEFFERSON CT",
+        "CERT": 9960,
+        "FIN": "2370",
+        "FAILDATE": "1/20/1984",
+        "FAILYR": "1984",
+        "CITY": "WHITE PINE",
+        "PSTALP": "TN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 21712,
+        "QBFDEP": 22775
+      }
+    },
+    {
+      "record_key": "952",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "952",
+        "NAME": "STATE BANK OF DANNEBROG",
+        "CERT": 18751,
+        "FIN": "6532",
+        "FAILDATE": "1/7/1985",
+        "FAILYR": "1985",
+        "CITY": "DANNEBROG",
+        "PSTALP": "NE",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 4870,
+        "QBFDEP": 4350
+      }
+    },
+    {
+      "record_key": "1131",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1131",
+        "NAME": "FIRST STATE BANK",
+        "CERT": 8976,
+        "FIN": "2528",
+        "FAILDATE": "1/9/1986",
+        "FAILYR": "1986",
+        "CITY": "CACHE",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 20725,
+        "QBFDEP": 18897
+      }
+    },
+    {
+      "record_key": "1334",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1334",
+        "NAME": "BOWIE NATIONAL BANK",
+        "CERT": 18756,
+        "FIN": "2630",
+        "FAILDATE": "1/8/1987",
+        "FAILYR": "1987",
+        "CITY": "BOWIE",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 12253,
+        "QBFDEP": 12406
+      }
+    },
+    {
+      "record_key": "1597",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1597",
+        "NAME": "THE NORTH AMERICAN BANK",
+        "CERT": 23931,
+        "FIN": "5921",
+        "FAILDATE": "1/8/1988",
+        "FAILYR": "1988",
+        "CITY": "PHOENIX",
+        "PSTALP": "AZ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 32318,
+        "QBFDEP": 30691
+      }
+    },
+    {
+      "record_key": "2066",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2066",
+        "NAME": "FIRST STATE BANK",
+        "CERT": 13440,
+        "FIN": "2950",
+        "FAILDATE": "1/12/1989",
+        "FAILYR": "1989",
+        "CITY": "HARPER",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 10466,
+        "QBFDEP": 10594
+      }
+    },
+    {
+      "record_key": "2600",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2600",
+        "NAME": "MIDWEST FEDERAL SAVINGS BANK",
+        "CERT": 27920,
+        "FIN": "7184",
+        "FAILDATE": "1/4/1990",
+        "FAILYR": "1990",
+        "CITY": "MINOT",
+        "PSTALP": "ND",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 954990,
+        "QBFDEP": 577794
+      }
+    },
+    {
+      "record_key": "2982",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2982",
+        "NAME": "FULTON FEDERAL SAVINGS BANK",
+        "CERT": 28767,
+        "FIN": "7373",
+        "FAILDATE": "1/4/1991",
+        "FAILYR": "1991",
+        "CITY": "ATLANTA",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2016621,
+        "QBFDEP": 1380514
+      }
+    },
+    {
+      "record_key": "3253",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3253",
+        "NAME": "THE CITIZENS BANK",
+        "CERT": 18720,
+        "FIN": "4437",
+        "FAILDATE": "1/10/1992",
+        "FAILYR": "1992",
+        "CITY": "DALLAS",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 60568,
+        "QBFDEP": 59063
+      }
+    },
+    {
+      "record_key": "3434",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3434",
+        "NAME": "FIRST NATIONAL BANK OF VERMONT",
+        "CERT": 6290,
+        "FIN": "4562",
+        "FAILDATE": "1/29/1993",
+        "FAILYR": "1993",
+        "CITY": "BRADFORD",
+        "PSTALP": "VT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 295784,
+        "QBFDEP": 282378
+      }
+    },
+    {
+      "record_key": "3484",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3484",
+        "NAME": "SUPERIOR NATIONAL BANK",
+        "CERT": 25678,
+        "FIN": "4607",
+        "FAILDATE": "4/14/1994",
+        "FAILYR": "1994",
+        "CITY": "KANSAS CITY",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 19970,
+        "QBFDEP": 19618
+      }
+    },
+    {
+      "record_key": "3499",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3499",
+        "NAME": "FIRST TRUST BANK",
+        "CERT": 3480,
+        "FIN": "4620",
+        "FAILDATE": "3/3/1995",
+        "FAILYR": "1995",
+        "CITY": "ONTARIO",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 227695,
+        "QBFDEP": 223573
+      }
+    },
+    {
+      "record_key": "3507",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3507",
+        "NAME": "PEOPLE'S BANK & TRUST",
+        "CERT": 18662,
+        "FIN": "4626",
+        "FAILDATE": "5/31/1996",
+        "FAILYR": "1996",
+        "CITY": "BORGER",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 22739,
+        "QBFDEP": 22288
+      }
+    },
+    {
+      "record_key": "3514",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3514",
+        "NAME": "BESTBANK",
+        "CERT": 91189,
+        "FIN": "4632",
+        "FAILDATE": "7/23/1998",
+        "FAILYR": "1998",
+        "CITY": "BOULDER",
+        "PSTALP": "CO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 233223,
+        "QBFDEP": 206325
+      }
+    },
+    {
+      "record_key": "3517",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3517",
+        "NAME": "ZIA NEW MEXICO BANK",
+        "CERT": 13300,
+        "FIN": "4635",
+        "FAILDATE": "4/23/1999",
+        "FAILYR": "1999",
+        "CITY": "TUCUMCARI",
+        "PSTALP": "NM",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 17251,
+        "QBFDEP": 16708
+      }
+    },
+    {
+      "record_key": "3525",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3525",
+        "NAME": "MUTUAL FEDERAL SAVINGS BANK OF ATLANTA",
+        "CERT": 27886,
+        "FIN": "6003",
+        "FAILDATE": "3/10/2000",
+        "FAILYR": "2000",
+        "CITY": "ATLANTA",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 31479,
+        "QBFDEP": 32234
+      }
+    },
+    {
+      "record_key": "3532",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3532",
+        "NAME": "MALTA NATIONAL BANK",
+        "CERT": 6629,
+        "FIN": "4648",
+        "FAILDATE": "5/3/2001",
+        "FAILYR": "2001",
+        "CITY": "MALTA",
+        "PSTALP": "OH",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 9075,
+        "QBFDEP": 8728
+      }
+    },
+    {
+      "record_key": "3536",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3536",
+        "NAME": "BANK OF SIERRA BLANCA",
+        "CERT": 22002,
+        "FIN": "4651",
+        "FAILDATE": "1/18/2002",
+        "FAILYR": "2002",
+        "CITY": "SIERRA BLANCA",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 10764,
+        "QBFDEP": 9914
+      }
+    },
+    {
+      "record_key": "3547",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3547",
+        "NAME": "THE FIRST NATIONAL BANK OF BLANCHARDVILLE",
+        "CERT": 11639,
+        "FIN": "4661",
+        "FAILDATE": "5/9/2003",
+        "FAILYR": "2003",
+        "CITY": "BLANCHARDVILLE",
+        "PSTALP": "WI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 34536,
+        "QBFDEP": 28760
+      }
+    },
+    {
+      "record_key": "3550",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3550",
+        "NAME": "GUARANTY NATIONAL BANK",
+        "CERT": 26838,
+        "FIN": "4663",
+        "FAILDATE": "3/12/2004",
+        "FAILYR": "2004",
+        "CITY": "TALLAHASSEE",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 71280,
+        "QBFDEP": 65614
+      }
+    },
+    {
+      "record_key": "3554",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3554",
+        "NAME": "NETBANK",
+        "CERT": 32575,
+        "FIN": "10001",
+        "FAILDATE": "9/28/2007",
+        "FAILYR": "2007",
+        "CITY": "ALPHARETTA",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2473806,
+        "QBFDEP": 2290046
+      }
+    },
+    {
+      "record_key": "3557",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3557",
+        "NAME": "HUME BANK",
+        "CERT": 1971,
+        "FIN": "10004",
+        "FAILDATE": "3/7/2008",
+        "FAILYR": "2008",
+        "CITY": "HUME",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 18682,
+        "QBFDEP": 13566
+      }
+    },
+    {
+      "record_key": "3593",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3593",
+        "NAME": "BANK OF CLARK COUNTY",
+        "CERT": 34959,
+        "FIN": "10029",
+        "FAILDATE": "1/16/2009",
+        "FAILYR": "2009",
+        "CITY": "VANCOUVER",
+        "PSTALP": "WA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 441085,
+        "QBFDEP": 377506
+      }
+    },
+    {
+      "record_key": "3735",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3735",
+        "NAME": "BARNES BANKING COMPANY",
+        "CERT": 1252,
+        "FIN": "10171",
+        "FAILDATE": "1/15/2010",
+        "FAILYR": "2010",
+        "CITY": "KAYSVILLE",
+        "PSTALP": "UT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 709171,
+        "QBFDEP": 697109
+      }
+    },
+    {
+      "record_key": "3892",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3892",
+        "NAME": "LEGACY BANK",
+        "CERT": 57820,
+        "FIN": "10326",
+        "FAILDATE": "1/7/2011",
+        "FAILYR": "2011",
+        "CITY": "SCOTTSDALE",
+        "PSTALP": "AZ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 136446,
+        "QBFDEP": 119685
+      }
+    },
+    {
+      "record_key": "3984",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3984",
+        "NAME": "AMERICAN EAGLE SAVINGS BANK",
+        "CERT": 31581,
+        "FIN": "10417",
+        "FAILDATE": "1/20/2012",
+        "FAILYR": "2012",
+        "CITY": "BOOTHWYN",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 19259,
+        "QBFDEP": 17548
+      }
+    },
+    {
+      "record_key": "4035",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4035",
+        "NAME": "1ST REGENTS BANK",
+        "CERT": 57157,
+        "FIN": "10469",
+        "FAILDATE": "1/18/2013",
+        "FAILYR": "2013",
+        "CITY": "ANDOVER",
+        "PSTALP": "MN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 49626,
+        "QBFDEP": 49147
+      }
+    },
+    {
+      "record_key": "4059",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4059",
+        "NAME": "THE  BANK OF UNION",
+        "CERT": 17967,
+        "FIN": "10493",
+        "FAILDATE": "1/24/2014",
+        "FAILYR": "2014",
+        "CITY": "EL RENO",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 317172,
+        "QBFDEP": 315843
+      }
+    },
+    {
+      "record_key": "4077",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4077",
+        "NAME": "HIGHLAND COMMUNITY BANK",
+        "CERT": 20290,
+        "FIN": "10511",
+        "FAILDATE": "1/23/2015",
+        "FAILYR": "2015",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 54727,
+        "QBFDEP": 53453
+      }
+    },
+    {
+      "record_key": "4085",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4085",
+        "NAME": "TRUST COMPANY BANK",
+        "CERT": 9956,
+        "FIN": "10519",
+        "FAILDATE": "4/29/2016",
+        "FAILYR": "2016",
+        "CITY": "MEMPHIS",
+        "PSTALP": "TN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 18998,
+        "QBFDEP": 20148
+      }
+    },
+    {
+      "record_key": "4090",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4090",
+        "NAME": "SEAWAY BANK AND TRUST COMPANY",
+        "CERT": 19328,
+        "FIN": "10524",
+        "FAILDATE": "1/27/2017",
+        "FAILYR": "2017",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 297809,
+        "QBFDEP": 256505
+      }
+    },
+    {
+      "record_key": "4098",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4098",
+        "NAME": "LOUISA COMMUNITY BANK",
+        "CERT": 58112,
+        "FIN": "10532",
+        "FAILDATE": "10/25/2019",
+        "FAILYR": "2019",
+        "CITY": "LOUISA",
+        "PSTALP": "KY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 28163,
+        "QBFDEP": 25174
+      }
+    },
+    {
+      "record_key": "4102",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4102",
+        "NAME": "THE FIRST STATE BANK",
+        "CERT": 14361,
+        "FIN": "10536",
+        "FAILDATE": "4/3/2020",
+        "FAILYR": "2020",
+        "CITY": "BARBOURSVILLE",
+        "PSTALP": "WV",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 151808,
+        "QBFDEP": 143102
+      }
+    },
+    {
+      "record_key": "4106",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4106",
+        "NAME": "SIGNATURE BANK",
+        "CERT": 57053,
+        "FIN": "10540",
+        "FAILDATE": "3/12/2023",
+        "FAILYR": "2023",
+        "CITY": "NEW YORK",
+        "PSTALP": "NY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 110363650,
+        "QBFDEP": 88612911
+      }
+    },
+    {
+      "record_key": "4111",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4111",
+        "NAME": "FIRST NB OF LINDSAY",
+        "CERT": 4134,
+        "FIN": "10547",
+        "FAILDATE": "10/18/2024",
+        "FAILYR": "2024",
+        "CITY": "LINDSAY",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 107850,
+        "QBFDEP": 97515
+      }
+    },
+    {
+      "record_key": "4113",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4113",
+        "NAME": "SANTA ANNA NATIONAL BANK",
+        "CERT": 5520,
+        "FIN": "10549",
+        "FAILDATE": "6/27/2025",
+        "FAILYR": "2025",
+        "CITY": "SANTA ANNA",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 76938,
+        "QBFDEP": 71376
+      }
+    },
+    {
+      "record_key": "3",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3",
+        "NAME": "FIRST NATIONAL BANK OF LIMA",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/18/1934",
+        "FAILYR": "1934",
+        "CITY": "LIMA",
+        "PSTALP": "MT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 91,
+        "QBFDEP": 42
+      }
+    },
+    {
+      "record_key": "12",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "12",
+        "NAME": "PALMETTO STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "3/9/1935",
+        "FAILYR": "1935",
+        "CITY": "LAKE CITY",
+        "PSTALP": "SC",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 149,
+        "QBFDEP": 136
+      }
+    },
+    {
+      "record_key": "46",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "46",
+        "NAME": "FARMERS & MERCHANTS BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/1/1936",
+        "FAILYR": "1936",
+        "CITY": "ADAMS",
+        "PSTALP": "TN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 14,
+        "QBFDEP": 5
+      }
+    },
+    {
+      "record_key": "106",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "106",
+        "NAME": "FARMERS BANK OF TRENTON",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/10/1937",
+        "FAILYR": "1937",
+        "CITY": "TRENTON",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 335,
+        "QBFDEP": 323
+      }
+    },
+    {
+      "record_key": "182",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "182",
+        "NAME": "FIRST STATE BANK OF WOLSEY",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/21/1938",
+        "FAILYR": "1938",
+        "CITY": "WOLSEY",
+        "PSTALP": "SD",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 123,
+        "QBFDEP": 90
+      }
+    },
+    {
+      "record_key": "255",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "255",
+        "NAME": "FIRST STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/9/1939",
+        "FAILYR": "1939",
+        "CITY": "ELGIN",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 347,
+        "QBFDEP": 287
+      }
+    },
+    {
+      "record_key": "315",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "315",
+        "NAME": "INTEGRITY TRUST COMPANY",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/13/1940",
+        "FAILYR": "1940",
+        "CITY": "PHILADELPHIA",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": null,
+        "QBFDEP": 29362
+      }
+    },
+    {
+      "record_key": "358",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "358",
+        "NAME": "FIRST STATE BANK & TRUST CO. OF INDIANOLA",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/29/1941",
+        "FAILYR": "1941",
+        "CITY": "INDIANOLA",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 195,
+        "QBFDEP": 165
+      }
+    },
+    {
+      "record_key": "373",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "373",
+        "NAME": "THE LOUISA NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/31/1942",
+        "FAILYR": "1942",
+        "CITY": "LOUISA",
+        "PSTALP": "KY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": null,
+        "QBFDEP": 477
+      }
+    },
+    {
+      "record_key": "393",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "393",
+        "NAME": "FARMERS STATE BANK OF CULLOM",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "4/2/1943",
+        "FAILYR": "1943",
+        "CITY": "CULLOM",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 439,
+        "QBFDEP": 474
+      }
+    },
+    {
+      "record_key": "402",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "402",
+        "NAME": "THE CENTRAL CITY NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/12/1947",
+        "FAILYR": "1947",
+        "CITY": "CENTRAL CITY",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1693,
+        "QBFDEP": 1709
+      }
+    },
+    {
+      "record_key": "407",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "407",
+        "NAME": "THE FIRST STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "12/18/1948",
+        "FAILYR": "1948",
+        "CITY": "FRANKLIN",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 694,
+        "QBFDEP": 609
+      }
+    },
+    {
+      "record_key": "410",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "410",
+        "NAME": "THE CITIZENS BANKING COMPANY",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "6/11/1949",
+        "FAILYR": "1949",
+        "CITY": "WESTON",
+        "PSTALP": "OH",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 740,
+        "QBFDEP": 742
+      }
+    },
+    {
+      "record_key": "414",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "414",
+        "NAME": "THE FARMERS FIRST NATIONAL BANK OF MINOOKA",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "8/14/1950",
+        "FAILYR": "1950",
+        "CITY": "MINOOKA",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1332,
+        "QBFDEP": 1403
+      }
+    },
+    {
+      "record_key": "420",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "420",
+        "NAME": "BANK OF DIERKS",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "9/2/1952",
+        "FAILYR": "1952",
+        "CITY": "DIERKS",
+        "PSTALP": "AR",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 520,
+        "QBFDEP": 583
+      }
+    },
+    {
+      "record_key": "427",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "427",
+        "NAME": "BANK OF NORTH IDAHO",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "4/30/1955",
+        "FAILYR": "1955",
+        "CITY": "PRIEST RIVER",
+        "PSTALP": "ID",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1101,
+        "QBFDEP": 983
+      }
+    },
+    {
+      "record_key": "435",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "435",
+        "NAME": "THE RUSHVILLE BANKING COMPANY",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/26/1958",
+        "FAILYR": "1958",
+        "CITY": "RUSHVILLE",
+        "PSTALP": "OH",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 4476,
+        "QBFDEP": 4084
+      }
+    },
+    {
+      "record_key": "439",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "439",
+        "NAME": "FIRST STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "12/3/1959",
+        "FAILYR": "1959",
+        "CITY": "TENAHA",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1277,
+        "QBFDEP": 1110
+      }
+    },
+    {
+      "record_key": "443",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "443",
+        "NAME": "BANK OF OCHLOCHNEE",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "9/7/1961",
+        "FAILYR": "1961",
+        "CITY": "OCHLOCHNEE",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 984,
+        "QBFDEP": 872
+      }
+    },
+    {
+      "record_key": "451",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "451",
+        "NAME": "FIRST STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/4/1964",
+        "FAILYR": "1964",
+        "CITY": "DELL CITY",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1237,
+        "QBFDEP": 1082
+      }
+    },
+    {
+      "record_key": "458",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "458",
+        "NAME": "WINONA STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/5/1965",
+        "FAILYR": "1965",
+        "CITY": "WINONA",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 479,
+        "QBFDEP": 435
+      }
+    },
+    {
+      "record_key": "463",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "463",
+        "NAME": "BLANKET STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/31/1966",
+        "FAILYR": "1966",
+        "CITY": "BLANKET",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1257,
+        "QBFDEP": 1183
+      }
+    },
+    {
+      "record_key": "470",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "470",
+        "NAME": "SACUL STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "6/23/1967",
+        "FAILYR": "1967",
+        "CITY": "SACUL",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 762,
+        "QBFDEP": 724
+      }
+    },
+    {
+      "record_key": "474",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "474",
+        "NAME": "BANK OF COMMERCE",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "9/25/1968",
+        "FAILYR": "1968",
+        "CITY": "TONKAWA",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 5551,
+        "QBFDEP": 5155
+      }
+    },
+    {
+      "record_key": "477",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "477",
+        "NAME": "THE MORRICE STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/6/1969",
+        "FAILYR": "1969",
+        "CITY": "MORRICE",
+        "PSTALP": "MI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2283,
+        "QBFDEP": 2167
+      }
+    },
+    {
+      "record_key": "486",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "486",
+        "NAME": "FARMERS BANK OF PETERSBURG",
+        "CERT": 13164,
+        "FIN": "0",
+        "FAILDATE": "6/25/1970",
+        "FAILYR": "1970",
+        "CITY": "PETERSBURG",
+        "PSTALP": "KY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1074,
+        "QBFDEP": 1259
+      }
+    },
+    {
+      "record_key": "495",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "495",
+        "NAME": "FARMERS STATE BANK OF CARLOCK",
+        "CERT": 10472,
+        "FIN": "0",
+        "FAILDATE": "2/17/1971",
+        "FAILYR": "1971",
+        "CITY": "CARLOCK",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2196,
+        "QBFDEP": 2077
+      }
+    },
+    {
+      "record_key": "503",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "503",
+        "NAME": "ELM CREEK STATE BANK",
+        "CERT": 16214,
+        "FIN": "0",
+        "FAILDATE": "5/7/1973",
+        "FAILYR": "1973",
+        "CITY": "ELM CREEK",
+        "PSTALP": "NE",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3186,
+        "QBFDEP": 2915
+      }
+    },
+    {
+      "record_key": "506",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "506",
+        "NAME": "FRANKLIN NATIONAL BANK",
+        "CERT": 7060,
+        "FIN": "0",
+        "FAILDATE": "10/8/1974",
+        "FAILYR": "1974",
+        "CITY": "NEW YORK",
+        "PSTALP": "NY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3655662,
+        "QBFDEP": 1444982
+      }
+    },
+    {
+      "record_key": "516",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "516",
+        "NAME": "FRANKLIN BANK",
+        "CERT": 19377,
+        "FIN": "0",
+        "FAILDATE": "3/24/1975",
+        "FAILYR": "1975",
+        "CITY": "HOUSTON",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 20690,
+        "QBFDEP": 18247
+      }
+    },
+    {
+      "record_key": "526",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "526",
+        "NAME": "THE HAMILTON NATIONAL BANK OF CHATTANOOGA",
+        "CERT": 4921,
+        "FIN": "0",
+        "FAILDATE": "2/16/1976",
+        "FAILYR": "1976",
+        "CITY": "CHATTANOOGA",
+        "PSTALP": "TN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 412107,
+        "QBFDEP": 336292
+      }
+    },
+    {
+      "record_key": "543",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "543",
+        "NAME": "FIRST AUGUSTA BANK & TRUST COMPANY",
+        "CERT": 19871,
+        "FIN": "0",
+        "FAILDATE": "5/20/1977",
+        "FAILYR": "1977",
+        "CITY": "AUGUSTA",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 24223,
+        "QBFDEP": 20017
+      }
+    },
+    {
+      "record_key": "547",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "547",
+        "NAME": "WILCOX COUNTY BANK",
+        "CERT": 1726,
+        "FIN": "0",
+        "FAILDATE": "3/1/1978",
+        "FAILYR": "1978",
+        "CITY": "CAMDEN",
+        "PSTALP": "AL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 12652,
+        "QBFDEP": 10585
+      }
+    },
+    {
+      "record_key": "561",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "561",
+        "NAME": "SOUTHERN NATIONAL BANK",
+        "CERT": 22102,
+        "FIN": "0",
+        "FAILDATE": "6/14/1979",
+        "FAILYR": "1979",
+        "CITY": "BIRMINGHAM",
+        "PSTALP": "AL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 32586,
+        "QBFDEP": 24032
+      }
+    },
+    {
+      "record_key": "566",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "566",
+        "NAME": "MOHAWK BK & TR CO.",
+        "CERT": 21751,
+        "FIN": "2281",
+        "FAILDATE": "2/16/1980",
+        "FAILYR": "1980",
+        "CITY": "GREENFIELD",
+        "PSTALP": "MA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 5908,
+        "QBFDEP": 5375
+      }
+    },
+    {
+      "record_key": "590",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "590",
+        "NAME": "PEOPLES BANKING COMPANY",
+        "CERT": 16556,
+        "FIN": "2288",
+        "FAILDATE": "3/17/1981",
+        "FAILYR": "1981",
+        "CITY": "BOSTON",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 8391,
+        "QBFDEP": 8103
+      }
+    },
+    {
+      "record_key": "641",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "641",
+        "NAME": "BANK OF YORKVILLE",
+        "CERT": 2376,
+        "FIN": "2300",
+        "FAILDATE": "2/20/1982",
+        "FAILYR": "1982",
+        "CITY": "YORKVILLE",
+        "PSTALP": "TN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7097,
+        "QBFDEP": 6387
+      }
+    },
+    {
+      "record_key": "747",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "747",
+        "NAME": "MANNING S&LA",
+        "CERT": 30092,
+        "FIN": "7503",
+        "FAILDATE": "2/3/1983",
+        "FAILYR": "1983",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 78654.18,
+        "QBFDEP": 60740.021
+      }
+    },
+    {
+      "record_key": "845",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "845",
+        "NAME": "INDIAN SPRINGS STATE BANK",
+        "CERT": 20567,
+        "FIN": "6455",
+        "FAILDATE": "1/27/1984",
+        "FAILYR": "1984",
+        "CITY": "KANSAS CITY",
+        "PSTALP": "KS",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 30896,
+        "QBFDEP": 27345
+      }
+    },
+    {
+      "record_key": "953",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "953",
+        "NAME": "COAST COMMUNITY BANK",
+        "CERT": 22757,
+        "FIN": "2436",
+        "FAILDATE": "1/11/1985",
+        "FAILYR": "1985",
+        "CITY": "HARBOR",
+        "PSTALP": "OR",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 9123,
+        "QBFDEP": 8473
+      }
+    },
+    {
+      "record_key": "1132",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1132",
+        "NAME": "MANHATTAN BEACH S&LA",
+        "CERT": 32205,
+        "FIN": "6933",
+        "FAILDATE": "1/9/1986",
+        "FAILYR": "1986",
+        "CITY": "MANHATTAN BEACH",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 51119,
+        "QBFDEP": 49569
+      }
+    },
+    {
+      "record_key": "1335",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1335",
+        "NAME": "AMERICAN NATIONAL BANK OF GRAND JUNCTION",
+        "CERT": 25053,
+        "FIN": "5788",
+        "FAILDATE": "1/8/1987",
+        "FAILYR": "1987",
+        "CITY": "GRAND JUNCTION",
+        "PSTALP": "CO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7669,
+        "QBFDEP": 7242
+      }
+    },
+    {
+      "record_key": "1599",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1599",
+        "NAME": "THE MORAN NATIONAL BANK",
+        "CERT": 3352,
+        "FIN": "2770",
+        "FAILDATE": "1/14/1988",
+        "FAILYR": "1988",
+        "CITY": "MORAN",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 17204,
+        "QBFDEP": 17475
+      }
+    },
+    {
+      "record_key": "2067",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2067",
+        "NAME": "COMMERCIAL STATE BANK",
+        "CERT": 16837,
+        "FIN": "2953",
+        "FAILDATE": "1/12/1989",
+        "FAILYR": "1989",
+        "CITY": "HOUSTON",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 49186,
+        "QBFDEP": 48602
+      }
+    },
+    {
+      "record_key": "2601",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2601",
+        "NAME": "FIRST CENTRAL FEDERAL SAVINGS BANK",
+        "CERT": 30034,
+        "FIN": "7152",
+        "FAILDATE": "1/4/1990",
+        "FAILYR": "1990",
+        "CITY": "CHARITON",
+        "PSTALP": "IA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 112832,
+        "QBFDEP": 104887
+      }
+    },
+    {
+      "record_key": "2983",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2983",
+        "NAME": "FIRST FS & LA OF PITTSBURG",
+        "CERT": 29161,
+        "FIN": "7267",
+        "FAILDATE": "1/4/1991",
+        "FAILYR": "1991",
+        "CITY": "PITTSBURGH",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3089704,
+        "QBFDEP": 2343171
+      }
+    },
+    {
+      "record_key": "3254",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3254",
+        "NAME": "HANSEN FSA",
+        "CERT": 31024,
+        "FIN": "1265",
+        "FAILDATE": "1/10/1992",
+        "FAILYR": "1992",
+        "CITY": "HAMMONTON",
+        "PSTALP": "NJ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 572398,
+        "QBFDEP": 427259
+      }
+    },
+    {
+      "record_key": "3435",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3435",
+        "NAME": "OLD STONE SB",
+        "CERT": 29892,
+        "FIN": "1290",
+        "FAILDATE": "1/29/1993",
+        "FAILYR": "1993",
+        "CITY": "PROVIDENCE",
+        "PSTALP": "RI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1847236,
+        "QBFDEP": 1704347
+      }
+    },
+    {
+      "record_key": "3485",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3485",
+        "NAME": "COMMERCIAL BANK AND TRUST COMPANY",
+        "CERT": 18332,
+        "FIN": "4608",
+        "FAILDATE": "5/6/1994",
+        "FAILYR": "1994",
+        "CITY": "LOWELL",
+        "PSTALP": "MA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 30274,
+        "QBFDEP": 29762
+      }
+    },
+    {
+      "record_key": "3500",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3500",
+        "NAME": "LOS ANGELES THRIFT AND LOAN COMPANY",
+        "CERT": 33190,
+        "FIN": "4621",
+        "FAILDATE": "3/31/1995",
+        "FAILYR": "1995",
+        "CITY": "LOS ANGELES",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 23388,
+        "QBFDEP": 22280
+      }
+    },
+    {
+      "record_key": "3508",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3508",
+        "NAME": "FIRST NB OF THE PANHANDLE",
+        "CERT": 3382,
+        "FIN": "4627",
+        "FAILDATE": "6/14/1996",
+        "FAILYR": "1996",
+        "CITY": "PANHANDLE",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 68126,
+        "QBFDEP": 67968
+      }
+    },
+    {
+      "record_key": "3515",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3515",
+        "NAME": "Q BANK",
+        "CERT": 2174,
+        "FIN": "4633",
+        "FAILDATE": "8/7/1998",
+        "FAILYR": "1998",
+        "CITY": "FORT BENTON",
+        "PSTALP": "MT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 14977,
+        "QBFDEP": 13888
+      }
+    },
+    {
+      "record_key": "3518",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3518",
+        "NAME": "EAST TEXAS NB OF MARSHALL",
+        "CERT": 25272,
+        "FIN": "4636",
+        "FAILDATE": "7/9/1999",
+        "FAILYR": "1999",
+        "CITY": "MARSHALL",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 121564,
+        "QBFDEP": 113054
+      }
+    },
+    {
+      "record_key": "3526",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3526",
+        "NAME": "MONUMENT NATIONAL BANK",
+        "CERT": 25056,
+        "FIN": "4642",
+        "FAILDATE": "6/2/2000",
+        "FAILYR": "2000",
+        "CITY": "RIDGECREST",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7923,
+        "QBFDEP": 7680
+      }
+    },
+    {
+      "record_key": "3533",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3533",
+        "NAME": "SUPERIOR BANK, FSB",
+        "CERT": 32646,
+        "FIN": "6004",
+        "FAILDATE": "7/27/2001",
+        "FAILYR": "2001",
+        "CITY": "HINSDALE",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1765455,
+        "QBFDEP": 1609501
+      }
+    },
+    {
+      "record_key": "3537",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3537",
+        "NAME": "OAKWOOD DEPOSIT BANK",
+        "CERT": 8966,
+        "FIN": "4652",
+        "FAILDATE": "2/1/2002",
+        "FAILYR": "2002",
+        "CITY": "OAKWOOD",
+        "PSTALP": "OH",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 72267,
+        "QBFDEP": 60168
+      }
+    },
+    {
+      "record_key": "3548",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3548",
+        "NAME": "PULASKI SAVINGS BANK",
+        "CERT": 27203,
+        "FIN": "4662",
+        "FAILDATE": "11/14/2003",
+        "FAILYR": "2003",
+        "CITY": "PHILADELPHIA",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 8487,
+        "QBFDEP": 9058
+      }
+    },
+    {
+      "record_key": "3551",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3551",
+        "NAME": "RELIANCE BANK",
+        "CERT": 26778,
+        "FIN": "4664",
+        "FAILDATE": "3/19/2004",
+        "FAILYR": "2004",
+        "CITY": "WHITE PLAINS",
+        "PSTALP": "NY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 28637,
+        "QBFDEP": 27881
+      }
+    },
+    {
+      "record_key": "3555",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3555",
+        "NAME": "MIAMI VALLEY BANK",
+        "CERT": 16848,
+        "FIN": "10002",
+        "FAILDATE": "10/4/2007",
+        "FAILYR": "2007",
+        "CITY": "LAKEVIEW",
+        "PSTALP": "OH",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 125362,
+        "QBFDEP": 119601
+      }
+    },
+    {
+      "record_key": "3558",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3558",
+        "NAME": "ANB FINANCIAL NATIONAL ASSOCIATION",
+        "CERT": 33901,
+        "FIN": "10005",
+        "FAILDATE": "5/9/2008",
+        "FAILYR": "2008",
+        "CITY": "BENTONVILLE",
+        "PSTALP": "AR",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1895545,
+        "QBFDEP": 1815691
+      }
+    },
+    {
+      "record_key": "3596",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3596",
+        "NAME": "1ST CENTENNIAL BANK",
+        "CERT": 33025,
+        "FIN": "10030",
+        "FAILDATE": "1/23/2009",
+        "FAILYR": "2009",
+        "CITY": "REDLANDS",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 797959,
+        "QBFDEP": 678570
+      }
+    },
+    {
+      "record_key": "3736",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3736",
+        "NAME": "ST. STEPHEN STATE BANK",
+        "CERT": 17522,
+        "FIN": "10169",
+        "FAILDATE": "1/15/2010",
+        "FAILYR": "2010",
+        "CITY": "ST. STEPHEN",
+        "PSTALP": "MN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 22895,
+        "QBFDEP": 23912
+      }
+    },
+    {
+      "record_key": "3893",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3893",
+        "NAME": "OGLETHORPE BANK",
+        "CERT": 57440,
+        "FIN": "10327",
+        "FAILDATE": "1/14/2011",
+        "FAILYR": "2011",
+        "CITY": "BRUNSWICK",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 211149,
+        "QBFDEP": 201369
+      }
+    },
+    {
+      "record_key": "3985",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3985",
+        "NAME": "CENTRAL FLORIDA STATE BANK",
+        "CERT": 57186,
+        "FIN": "10418",
+        "FAILDATE": "1/20/2012",
+        "FAILYR": "2012",
+        "CITY": "BELLEVIEW",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 71485,
+        "QBFDEP": 71080
+      }
+    },
+    {
+      "record_key": "4036",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4036",
+        "NAME": "COVENANT BANK",
+        "CERT": 22476,
+        "FIN": "10470",
+        "FAILDATE": "2/15/2013",
+        "FAILYR": "2013",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 58422,
+        "QBFDEP": 54202
+      }
+    },
+    {
+      "record_key": "4060",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4060",
+        "NAME": "SYRINGA BANK",
+        "CERT": 34296,
+        "FIN": "10494",
+        "FAILDATE": "1/31/2014",
+        "FAILYR": "2014",
+        "CITY": "BOISE",
+        "PSTALP": "ID",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 153361,
+        "QBFDEP": 145813
+      }
+    },
+    {
+      "record_key": "4078",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4078",
+        "NAME": "CAPITOL CITY BANK & TRUST COMPANY",
+        "CERT": 33938,
+        "FIN": "10512",
+        "FAILDATE": "2/13/2015",
+        "FAILYR": "2015",
+        "CITY": "ATLANTA",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 272311,
+        "QBFDEP": 262652
+      }
+    },
+    {
+      "record_key": "4086",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4086",
+        "NAME": "FIRST CORNERSTONE BANK",
+        "CERT": 35312,
+        "FIN": "10520",
+        "FAILDATE": "5/6/2016",
+        "FAILYR": "2016",
+        "CITY": "KING OF PRUSSIA",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 103307,
+        "QBFDEP": 101040
+      }
+    },
+    {
+      "record_key": "4091",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4091",
+        "NAME": "PROFICIO BANK",
+        "CERT": 35495,
+        "FIN": "10525",
+        "FAILDATE": "3/3/2017",
+        "FAILYR": "2017",
+        "CITY": "COTTONWOOD HEIGHTS",
+        "PSTALP": "UT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 68208,
+        "QBFDEP": 65042
+      }
+    },
+    {
+      "record_key": "4099",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4099",
+        "NAME": "RESOLUTE BANK",
+        "CERT": 58317,
+        "FIN": "10533",
+        "FAILDATE": "10/25/2019",
+        "FAILYR": "2019",
+        "CITY": "MAUMEE",
+        "PSTALP": "OH",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 23292,
+        "QBFDEP": 22885
+      }
+    },
+    {
+      "record_key": "4103",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4103",
+        "NAME": "FIRST CITY BANK OF FLORIDA",
+        "CERT": 16748,
+        "FIN": "10537",
+        "FAILDATE": "10/16/2020",
+        "FAILYR": "2020",
+        "CITY": "FORT WALTON BEACH",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 136566,
+        "QBFDEP": 133936
+      }
+    },
+    {
+      "record_key": "4107",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4107",
+        "NAME": "FIRST REPUBLIC BANK",
+        "CERT": 59017,
+        "FIN": "10543",
+        "FAILDATE": "5/1/2023",
+        "FAILYR": "2023",
+        "CITY": "SAN FRANCISCO",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 212638872,
+        "QBFDEP": 176436706
+      }
+    },
+    {
+      "record_key": "4",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4",
+        "NAME": "FLORENCE DEPOSIT BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/18/1934",
+        "FAILYR": "1934",
+        "CITY": "FLORENCE",
+        "PSTALP": "IN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 105,
+        "QBFDEP": 69
+      }
+    },
+    {
+      "record_key": "13",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "13",
+        "NAME": "THE FIRST STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "3/25/1935",
+        "FAILYR": "1935",
+        "CITY": "CHEYENNE",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 427,
+        "QBFDEP": 303
+      }
+    },
+    {
+      "record_key": "38",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "38",
+        "NAME": "PEOPLES BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/5/1936",
+        "FAILYR": "1936",
+        "CITY": "COLE CAMP",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 186,
+        "QBFDEP": 143
+      }
+    },
+    {
+      "record_key": "107",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "107",
+        "NAME": "FARMERS STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/18/1937",
+        "FAILYR": "1937",
+        "CITY": "CORSICA",
+        "PSTALP": "SD",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 205,
+        "QBFDEP": 164
+      }
+    },
+    {
+      "record_key": "183",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "183",
+        "NAME": "THE WOODMAN STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/22/1938",
+        "FAILYR": "1938",
+        "CITY": "WOODMAN",
+        "PSTALP": "WI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": null,
+        "QBFDEP": 152
+      }
+    },
+    {
+      "record_key": "256",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "256",
+        "NAME": "BANK OF HANCOCK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "1/12/1939",
+        "FAILYR": "1939",
+        "CITY": "HANCOCK",
+        "PSTALP": "WI",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": null,
+        "QBFDEP": 248
+      }
+    },
+    {
+      "record_key": "319",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "319",
+        "NAME": "BANKERS TRUST COMPANY",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/1/1940",
+        "FAILYR": "1940",
+        "CITY": "ATLANTIC CITY",
+        "PSTALP": "NJ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2131,
+        "QBFDEP": 986
+      }
+    },
+    {
+      "record_key": "359",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "359",
+        "NAME": "BANK OF BALDWYN",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "3/8/1941",
+        "FAILYR": "1941",
+        "CITY": "BALDWYN",
+        "PSTALP": "MS",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 233,
+        "QBFDEP": 179
+      }
+    },
+    {
+      "record_key": "374",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "374",
+        "NAME": "BANK OF DRAPER",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/6/1942",
+        "FAILYR": "1942",
+        "CITY": "DRAPER",
+        "PSTALP": "NC",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 129,
+        "QBFDEP": 83
+      }
+    },
+    {
+      "record_key": "394",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "394",
+        "NAME": "THE JEFFERSON COUNTY NAT BK -WATERTOWN",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "9/25/1943",
+        "FAILYR": "1943",
+        "CITY": "WATERTOWN",
+        "PSTALP": "NY",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 6677,
+        "QBFDEP": 5898
+      }
+    },
+    {
+      "record_key": "403",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "403",
+        "NAME": "PEOPLES BANK OF DONALDS",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "11/29/1947",
+        "FAILYR": "1947",
+        "CITY": "DONALDS",
+        "PSTALP": "SC",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 762,
+        "QBFDEP": 713
+      }
+    },
+    {
+      "record_key": "411",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "411",
+        "NAME": "FARMERS & MERCHANTS STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "10/8/1949",
+        "FAILYR": "1949",
+        "CITY": "SPENCERVILLE",
+        "PSTALP": "IN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 354,
+        "QBFDEP": 437
+      }
+    },
+    {
+      "record_key": "415",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "415",
+        "NAME": "FIRST NATIONAL BANK IN CECIL",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "10/9/1950",
+        "FAILYR": "1950",
+        "CITY": "CECIL",
+        "PSTALP": "PA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 638,
+        "QBFDEP": 2245
+      }
+    },
+    {
+      "record_key": "428",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "428",
+        "NAME": "JOSHUA MONUMENT NAT BANK-TWENTYNINE PALMS",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/25/1955",
+        "FAILYR": "1955",
+        "CITY": "TWENTYNINE PALMS",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3111,
+        "QBFDEP": 3714
+      }
+    },
+    {
+      "record_key": "436",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "436",
+        "NAME": "THE MANUFACTURERS' BANK OF EDGEWATER",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/17/1958",
+        "FAILYR": "1958",
+        "CITY": "EDGEWATER",
+        "PSTALP": "NJ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2365,
+        "QBFDEP": 2213
+      }
+    },
+    {
+      "record_key": "444",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "444",
+        "NAME": "THE FIRST NATIONAL BANK OF MAUD",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "12/19/1961",
+        "FAILYR": "1961",
+        "CITY": "MAUD",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1626,
+        "QBFDEP": 1509
+      }
+    },
+    {
+      "record_key": "452",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "452",
+        "NAME": "BELLEVIEW VALLEY BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/20/1964",
+        "FAILYR": "1964",
+        "CITY": "BELLEVIEW",
+        "PSTALP": "MO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1285,
+        "QBFDEP": 1189
+      }
+    },
+    {
+      "record_key": "459",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "459",
+        "NAME": "MALONE STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "2/25/1965",
+        "FAILYR": "1965",
+        "CITY": "MALONE",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 589,
+        "QBFDEP": 524
+      }
+    },
+    {
+      "record_key": "464",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "464",
+        "NAME": "SAGUACHE COUNTY NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "3/17/1966",
+        "FAILYR": "1966",
+        "CITY": "SAGUACHE",
+        "PSTALP": "CO",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 512,
+        "QBFDEP": 725
+      }
+    },
+    {
+      "record_key": "471",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "471",
+        "NAME": "THE CEDAR VALE NATIONAL BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "7/7/1967",
+        "FAILYR": "1967",
+        "CITY": "CEDAR VALE",
+        "PSTALP": "KS",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 4058,
+        "QBFDEP": 3818
+      }
+    },
+    {
+      "record_key": "478",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "478",
+        "NAME": "THE FIRST STATE BANK",
+        "CERT": null,
+        "FIN": "0",
+        "FAILDATE": "5/12/1969",
+        "FAILYR": "1969",
+        "CITY": "DODSON",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1134,
+        "QBFDEP": 1085
+      }
+    },
+    {
+      "record_key": "489",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "489",
+        "NAME": "EATONTOWN NATIONAL BANK",
+        "CERT": 19276,
+        "FIN": "0",
+        "FAILDATE": "8/7/1970",
+        "FAILYR": "1970",
+        "CITY": "EATONTOWN",
+        "PSTALP": "NJ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 21417,
+        "QBFDEP": 15912
+      }
+    },
+    {
+      "record_key": "494",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "494",
+        "NAME": "BANK OF SALEM",
+        "CERT": 8332,
+        "FIN": "0",
+        "FAILDATE": "4/5/1971",
+        "FAILYR": "1971",
+        "CITY": "SALEM",
+        "PSTALP": "NE",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 679,
+        "QBFDEP": 606
+      }
+    },
+    {
+      "record_key": "502",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "502",
+        "NAME": "THE FIRST STATE BANK",
+        "CERT": 11170,
+        "FIN": "0",
+        "FAILDATE": "7/16/1973",
+        "FAILYR": "1973",
+        "CITY": "VERNON",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 16242,
+        "QBFDEP": 14797
+      }
+    },
+    {
+      "record_key": "508",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "508",
+        "NAME": "CROMWELL STATE SAVINGS BANK",
+        "CERT": 14250,
+        "FIN": "0",
+        "FAILDATE": "10/9/1974",
+        "FAILYR": "1974",
+        "CITY": "CROMWELL",
+        "PSTALP": "IA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3502,
+        "QBFDEP": 3271
+      }
+    },
+    {
+      "record_key": "517",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "517",
+        "NAME": "CHICOPEE BANK & TRUST COMPANY",
+        "CERT": 19596,
+        "FIN": "0",
+        "FAILDATE": "5/9/1975",
+        "FAILYR": "1975",
+        "CITY": "CHICOPEE",
+        "PSTALP": "MA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 11406,
+        "QBFDEP": 9862
+      }
+    },
+    {
+      "record_key": "537",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "537",
+        "NAME": "SOUTH TEXAS BANK",
+        "CERT": 20294,
+        "FIN": "0",
+        "FAILDATE": "2/25/1976",
+        "FAILYR": "1976",
+        "CITY": "HOUSTON",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 7756,
+        "QBFDEP": 7074
+      }
+    },
+    {
+      "record_key": "545",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "545",
+        "NAME": "REPUBLIC NATIONAL BANK OF LOUISIANA",
+        "CERT": 21640,
+        "FIN": "0",
+        "FAILDATE": "7/29/1977",
+        "FAILYR": "1977",
+        "CITY": "NEW ORLEANS",
+        "PSTALP": "LA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 6267,
+        "QBFDEP": 4912
+      }
+    },
+    {
+      "record_key": "550",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "550",
+        "NAME": "BANCO CREDITO Y DE AHORRO PONCENO",
+        "CERT": 16875,
+        "FIN": "0",
+        "FAILDATE": "3/31/1978",
+        "FAILYR": "1978",
+        "CITY": "PONCE",
+        "PSTALP": "PR",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 712540,
+        "QBFDEP": 607611
+      }
+    },
+    {
+      "record_key": "554",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "554",
+        "NAME": "BANK OF ENVILLE",
+        "CERT": 9195,
+        "FIN": "0",
+        "FAILDATE": "6/16/1979",
+        "FAILYR": "1979",
+        "CITY": "ENVILLE",
+        "PSTALP": "TN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3468,
+        "QBFDEP": 3139
+      }
+    },
+    {
+      "record_key": "572",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "572",
+        "NAME": "THE CITIZENS STATE BANK",
+        "CERT": 17615,
+        "FIN": "6362",
+        "FAILDATE": "6/4/1980",
+        "FAILYR": "1980",
+        "CITY": "VIOLA",
+        "PSTALP": "KS",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 1980,
+        "QBFDEP": 1722
+      }
+    },
+    {
+      "record_key": "593",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "593",
+        "NAME": "ECONOMY S&LA",
+        "CERT": 30480,
+        "FIN": "0",
+        "FAILDATE": "5/18/1981",
+        "FAILYR": "1981",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 73869.766,
+        "QBFDEP": 58374.955
+      }
+    },
+    {
+      "record_key": "644",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "644",
+        "NAME": "TALMAN HOME, FS&LA",
+        "CERT": 28244,
+        "FIN": "0",
+        "FAILDATE": "2/20/1982",
+        "FAILYR": "1982",
+        "CITY": "CHICAGO",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 3402878.479,
+        "QBFDEP": 2661599.979
+      }
+    },
+    {
+      "record_key": "748",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "748",
+        "NAME": "STATE BANK OF BARNUM",
+        "CERT": 15748,
+        "FIN": "6409",
+        "FAILDATE": "2/9/1983",
+        "FAILYR": "1983",
+        "CITY": "BARNUM",
+        "PSTALP": "MN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 13873,
+        "QBFDEP": 13056
+      }
+    },
+    {
+      "record_key": "846",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "846",
+        "NAME": "UNION MUTUAL S&LA",
+        "CERT": 31584,
+        "FIN": "0",
+        "FAILDATE": "1/27/1984",
+        "FAILYR": "1984",
+        "CITY": "RICHMOND",
+        "PSTALP": "VA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 8641.148,
+        "QBFDEP": 7945.455
+      }
+    },
+    {
+      "record_key": "954",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "954",
+        "NAME": "THE FIRST NATIONAL BANK IN MARLOW",
+        "CERT": 4141,
+        "FIN": "2437",
+        "FAILDATE": "1/24/1985",
+        "FAILYR": "1985",
+        "CITY": "MARLOW",
+        "PSTALP": "OK",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 27447,
+        "QBFDEP": 27006
+      }
+    },
+    {
+      "record_key": "1133",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1133",
+        "NAME": "BANK OF DIXIE",
+        "CERT": 8147,
+        "FIN": "2529",
+        "FAILDATE": "1/10/1986",
+        "FAILYR": "1986",
+        "CITY": "LAKE PROVIDENCE",
+        "PSTALP": "LA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 41444,
+        "QBFDEP": 36452
+      }
+    },
+    {
+      "record_key": "1336",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1336",
+        "NAME": "STATE BANK OF CUBA",
+        "CERT": 12548,
+        "FIN": "2632",
+        "FAILDATE": "1/9/1987",
+        "FAILYR": "1987",
+        "CITY": "CUBA",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 18275,
+        "QBFDEP": 17717
+      }
+    },
+    {
+      "record_key": "1600",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "1600",
+        "NAME": "COLONIAL BANK",
+        "CERT": 19779,
+        "FIN": "2771",
+        "FAILDATE": "1/14/1988",
+        "FAILYR": "1988",
+        "CITY": "NEW ORLEANS",
+        "PSTALP": "LA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 50167,
+        "QBFDEP": 50407
+      }
+    },
+    {
+      "record_key": "2068",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2068",
+        "NAME": "THE NATIONAL BANK OF BOSSIER CITY",
+        "CERT": 17220,
+        "FIN": "2956",
+        "FAILDATE": "1/12/1989",
+        "FAILYR": "1989",
+        "CITY": "BOSSIER CITY",
+        "PSTALP": "LA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 73322,
+        "QBFDEP": 76353
+      }
+    },
+    {
+      "record_key": "2602",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2602",
+        "NAME": "BANNERBANC FS & LA",
+        "CERT": 30995,
+        "FIN": "7199",
+        "FAILDATE": "1/4/1990",
+        "FAILYR": "1990",
+        "CITY": "GARLAND",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 46028,
+        "QBFDEP": 55588
+      }
+    },
+    {
+      "record_key": "2984",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "2984",
+        "NAME": "FIRST FEDERAL SAVINGS & LOAN",
+        "CERT": 29638,
+        "FIN": "7262",
+        "FAILDATE": "1/4/1991",
+        "FAILYR": "1991",
+        "CITY": "SAN ANTONIO",
+        "PSTALP": "TX",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 638622,
+        "QBFDEP": 472426
+      }
+    },
+    {
+      "record_key": "3255",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3255",
+        "NAME": "PERPETUAL SAVINGS BANK",
+        "CERT": 31231,
+        "FIN": "2152",
+        "FAILDATE": "1/10/1992",
+        "FAILYR": "1992",
+        "CITY": "VIENNA",
+        "PSTALP": "VA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 2892072,
+        "QBFDEP": 2447078
+      }
+    },
+    {
+      "record_key": "3436",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3436",
+        "NAME": "VISTA FSA",
+        "CERT": 32484,
+        "FIN": "1220",
+        "FAILDATE": "1/29/1993",
+        "FAILYR": "1993",
+        "CITY": "CANOGA PARK",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 105114,
+        "QBFDEP": 94489
+      }
+    },
+    {
+      "record_key": "3486",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3486",
+        "NAME": "BARBARY COAST NATIONAL BANK",
+        "CERT": 27027,
+        "FIN": "4609",
+        "FAILDATE": "5/19/1994",
+        "FAILYR": "1994",
+        "CITY": "SAN FRANCISCO",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 10678,
+        "QBFDEP": 9296
+      }
+    },
+    {
+      "record_key": "3501",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3501",
+        "NAME": "CONTINENTAL SAVINGS OF AMERICA",
+        "CERT": 31899,
+        "FIN": "1310",
+        "FAILDATE": "4/28/1995",
+        "FAILYR": "1995",
+        "CITY": "SAN FRANCISCO",
+        "PSTALP": "CA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 359422,
+        "QBFDEP": 357025
+      }
+    },
+    {
+      "record_key": "3509",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3509",
+        "NAME": "FAIRFIELD FIRST BANK & TRUST CO",
+        "CERT": 26431,
+        "FIN": "4628",
+        "FAILDATE": "7/12/1996",
+        "FAILYR": "1996",
+        "CITY": "SOUTHPORT",
+        "PSTALP": "CT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 57267,
+        "QBFDEP": 57329
+      }
+    },
+    {
+      "record_key": "3519",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3519",
+        "NAME": "OCEANMARK BANK, A FSB",
+        "CERT": 32491,
+        "FIN": "6002",
+        "FAILDATE": "7/9/1999",
+        "FAILYR": "1999",
+        "CITY": "NORTH MIAMI BEACH",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 68981,
+        "QBFDEP": 61303
+      }
+    },
+    {
+      "record_key": "3527",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3527",
+        "NAME": "TOWN & COUNTRY BANK OF ALMELUND",
+        "CERT": 10985,
+        "FIN": "4643",
+        "FAILDATE": "7/14/2000",
+        "FAILYR": "2000",
+        "CITY": "ALMELUND",
+        "PSTALP": "MN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 25942,
+        "QBFDEP": 26667
+      }
+    },
+    {
+      "record_key": "3534",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3534",
+        "NAME": "SINCLAIR NATIONAL BANK",
+        "CERT": 34248,
+        "FIN": "4649",
+        "FAILDATE": "9/7/2001",
+        "FAILYR": "2001",
+        "CITY": "GRAVETTE",
+        "PSTALP": "AR",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 29792,
+        "QBFDEP": 26054
+      }
+    },
+    {
+      "record_key": "3538",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3538",
+        "NAME": "NEXTBANK",
+        "CERT": 22314,
+        "FIN": "4653",
+        "FAILDATE": "2/7/2002",
+        "FAILYR": "2002",
+        "CITY": "PHOENIX",
+        "PSTALP": "AZ",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 700180,
+        "QBFDEP": 551297
+      }
+    },
+    {
+      "record_key": "3552",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3552",
+        "NAME": "BANK OF EPHRAIM",
+        "CERT": 1249,
+        "FIN": "4665",
+        "FAILDATE": "6/25/2004",
+        "FAILYR": "2004",
+        "CITY": "EPHRAIM",
+        "PSTALP": "UT",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 56774,
+        "QBFDEP": 52329
+      }
+    },
+    {
+      "record_key": "3559",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3559",
+        "NAME": "FIRST INTEGRITY BANK, N.A.",
+        "CERT": 12736,
+        "FIN": "10006",
+        "FAILDATE": "5/30/2008",
+        "FAILYR": "2008",
+        "CITY": "STAPLES",
+        "PSTALP": "MN",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 52916,
+        "QBFDEP": 50178
+      }
+    },
+    {
+      "record_key": "3597",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3597",
+        "NAME": "OCALA NATIONAL BANK",
+        "CERT": 26538,
+        "FIN": "10032",
+        "FAILDATE": "1/30/2009",
+        "FAILYR": "2009",
+        "CITY": "OCALA",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 219424,
+        "QBFDEP": 204663
+      }
+    },
+    {
+      "record_key": "3737",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3737",
+        "NAME": "TOWN COMMUNITY BANK AND TRUST",
+        "CERT": 34705,
+        "FIN": "10170",
+        "FAILDATE": "1/15/2010",
+        "FAILYR": "2010",
+        "CITY": "ANTIOCH",
+        "PSTALP": "IL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 70758,
+        "QBFDEP": 68323
+      }
+    },
+    {
+      "record_key": "3894",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3894",
+        "NAME": "ENTERPRISE BANKING COMPANY",
+        "CERT": 19758,
+        "FIN": "10329",
+        "FAILDATE": "1/21/2011",
+        "FAILYR": "2011",
+        "CITY": "MCDONOUGH",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 99461,
+        "QBFDEP": 94591
+      }
+    },
+    {
+      "record_key": "3986",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "3986",
+        "NAME": "FIRST GUARANTY BANK AND TRUST COMPANY OF JACKSONVILLE",
+        "CERT": 16579,
+        "FIN": "10421",
+        "FAILDATE": "1/27/2012",
+        "FAILYR": "2012",
+        "CITY": "JACKSONVILLE",
+        "PSTALP": "FL",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 397082,
+        "QBFDEP": 378309
+      }
+    },
+    {
+      "record_key": "4037",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4037",
+        "NAME": "FRONTIER BANK",
+        "CERT": 16431,
+        "FIN": "10471",
+        "FAILDATE": "3/8/2013",
+        "FAILYR": "2013",
+        "CITY": "LAGRANGE",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 258840,
+        "QBFDEP": 224108
+      }
+    },
+    {
+      "record_key": "4061",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4061",
+        "NAME": "MILLENNIUM BANK, NATIONAL ASSOCIATION",
+        "CERT": 35096,
+        "FIN": "10495",
+        "FAILDATE": "2/28/2014",
+        "FAILYR": "2014",
+        "CITY": "STERLING",
+        "PSTALP": "VA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 130305,
+        "QBFDEP": 121704
+      }
+    },
+    {
+      "record_key": "4079",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4079",
+        "NAME": "DORAL BANK",
+        "CERT": 32102,
+        "FIN": "10513",
+        "FAILDATE": "2/27/2015",
+        "FAILYR": "2015",
+        "CITY": "SAN JUAN",
+        "PSTALP": "PR",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 5898515,
+        "QBFDEP": 4097734
+      }
+    },
+    {
+      "record_key": "4087",
+      "record_url": "https://api.fdic.gov/banks/failures?limit=10000&format=json",
+      "fields": {
+        "ID": "4087",
+        "NAME": "THE WOODBURY BANKING COMPANY",
+        "CERT": 11297,
+        "FIN": "10521",
+        "FAILDATE": "8/19/2016",
+        "FAILYR": "2016",
+        "CITY": "WOODBURY",
+        "PSTALP": "GA",
+        "RESTYPE": "FAILURE",
+        "QBFASSET": 21426,
+        "QBFDEP": 21122
+      }
+    }
+  ]
+}

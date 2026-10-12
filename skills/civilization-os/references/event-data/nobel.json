@@ -1,0 +1,3435 @@
+{
+  "dataset": "nobel",
+  "source_id": "R-NOBEL",
+  "retrievals": [
+    {
+      "source_url": "https://api.nobelprize.org/2.1/nobelPrizes?limit=1000",
+      "http_status": 200,
+      "retrieved_on": "2026-10-12",
+      "sha256": "ef61ea526ee1702ff655df9c6e73201750abd8a6a4beb0fec1240afcf680bd8d"
+    }
+  ],
+  "selection_rule": "50 records each for physics, chemistry and physiology or medicine. For each chronological category list through 2025, use round(i*(n-1)/49), i=0..49. All laureates of one annual category are one case. Scientific recognition, not proof of causal transfer.",
+  "records": [
+    {
+      "record_key": "phy:1901",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1901",
+      "fields": {
+        "award_year": "1901",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1901-11-12",
+        "laureates": [
+          {
+            "id": "1",
+            "name": "Wilhelm Conrad Röntgen",
+            "portion": "1",
+            "motivation": "in recognition of the extraordinary services he has rendered by the discovery of the remarkable rays subsequently named after him"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1903",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1903",
+      "fields": {
+        "award_year": "1903",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1903-11-12",
+        "laureates": [
+          {
+            "id": "4",
+            "name": "Henri Becquerel",
+            "portion": "1/2",
+            "motivation": "in recognition of the extraordinary services he has rendered by his discovery of spontaneous radioactivity"
+          },
+          {
+            "id": "5",
+            "name": "Pierre Curie",
+            "portion": "1/4",
+            "motivation": "in recognition of the extraordinary services they have rendered by their joint researches on the radiation phenomena discovered by Professor Henri Becquerel"
+          },
+          {
+            "id": "6",
+            "name": "Marie Curie",
+            "portion": "1/4",
+            "motivation": "in recognition of the extraordinary services they have rendered by their joint researches on the radiation phenomena discovered by Professor Henri Becquerel"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1906",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1906",
+      "fields": {
+        "award_year": "1906",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1906-11-12",
+        "laureates": [
+          {
+            "id": "10",
+            "name": "J.J. Thomson",
+            "portion": "1",
+            "motivation": "in recognition of the great merits of his theoretical and experimental investigations on the conduction of electricity by gases"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1908",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1908",
+      "fields": {
+        "award_year": "1908",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1908-11-10",
+        "laureates": [
+          {
+            "id": "12",
+            "name": "Gabriel Lippmann",
+            "portion": "1",
+            "motivation": "for his method of reproducing colours photographically based on the phenomenon of interference"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1911",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1911",
+      "fields": {
+        "award_year": "1911",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1911-11-07",
+        "laureates": [
+          {
+            "id": "16",
+            "name": "Wilhelm Wien",
+            "portion": "1",
+            "motivation": "for his discoveries regarding the laws governing the radiation of heat"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1913",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1913",
+      "fields": {
+        "award_year": "1913",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1913-11-11",
+        "laureates": [
+          {
+            "id": "18",
+            "name": "Heike Kamerlingh Onnes",
+            "portion": "1",
+            "motivation": "for his investigations on the properties of matter at low temperatures which led, inter alia, to the production of liquid helium"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1915",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1915",
+      "fields": {
+        "award_year": "1915",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1915-11-12",
+        "laureates": [
+          {
+            "id": "20",
+            "name": "William Bragg",
+            "portion": "1/2",
+            "motivation": "for their services in the analysis of crystal structure by means of X-rays"
+          },
+          {
+            "id": "21",
+            "name": "Lawrence Bragg",
+            "portion": "1/2",
+            "motivation": "for their services in the analysis of crystal structure by means of X-rays"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1919",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1919",
+      "fields": {
+        "award_year": "1919",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1919-11-13",
+        "laureates": [
+          {
+            "id": "24",
+            "name": "Johannes Stark",
+            "portion": "1",
+            "motivation": "for his discovery of the Doppler effect in canal rays and the splitting of spectral lines in electric fields"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1921",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1921",
+      "fields": {
+        "award_year": "1921",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1922-11-09",
+        "laureates": [
+          {
+            "id": "26",
+            "name": "Albert Einstein",
+            "portion": "1",
+            "motivation": "for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1924",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1924",
+      "fields": {
+        "award_year": "1924",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1925-11-12",
+        "laureates": [
+          {
+            "id": "29",
+            "name": "Manne Siegbahn",
+            "portion": "1",
+            "motivation": "for his discoveries and research in the field of X-ray spectroscopy"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1926",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1926",
+      "fields": {
+        "award_year": "1926",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1926-11-11",
+        "laureates": [
+          {
+            "id": "32",
+            "name": "Jean Baptiste Perrin",
+            "portion": "1",
+            "motivation": "for his work on the discontinuous structure of matter, and especially for his discovery of sedimentation equilibrium"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1928",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1928",
+      "fields": {
+        "award_year": "1928",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1929-11-12",
+        "laureates": [
+          {
+            "id": "35",
+            "name": "Owen Willans Richardson",
+            "portion": "1",
+            "motivation": "for his work on the thermionic phenomenon and especially for the discovery of the law named after him"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1932",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1932",
+      "fields": {
+        "award_year": "1932",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1933-11-09",
+        "laureates": [
+          {
+            "id": "38",
+            "name": "Werner Heisenberg",
+            "portion": "1",
+            "motivation": "for the creation of quantum mechanics, the application of which has, inter alia, led to the discovery of the allotropic forms of hydrogen"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1935",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1935",
+      "fields": {
+        "award_year": "1935",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1935-11-14",
+        "laureates": [
+          {
+            "id": "41",
+            "name": "James Chadwick",
+            "portion": "1",
+            "motivation": "for the discovery of the neutron"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1938",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1938",
+      "fields": {
+        "award_year": "1938",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1938-11-10",
+        "laureates": [
+          {
+            "id": "46",
+            "name": "Enrico Fermi",
+            "portion": "1",
+            "motivation": "for his demonstrations of the existence of new radioactive elements produced by neutron irradiation, and for his related discovery of nuclear reactions brought about by slow neutrons"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1943",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1943",
+      "fields": {
+        "award_year": "1943",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1944-11-09",
+        "laureates": [
+          {
+            "id": "48",
+            "name": "Otto Stern",
+            "portion": "1",
+            "motivation": "for his contribution to the development of the molecular ray method and his discovery of the magnetic moment of the proton"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1946",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1946",
+      "fields": {
+        "award_year": "1946",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1946-11-14",
+        "laureates": [
+          {
+            "id": "51",
+            "name": "Percy W. Bridgman",
+            "portion": "1",
+            "motivation": "for the invention of an apparatus to produce extremely high pressures, and for the discoveries he made therewith in the field of high pressure physics"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1948",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1948",
+      "fields": {
+        "award_year": "1948",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1948-11-04",
+        "laureates": [
+          {
+            "id": "53",
+            "name": "Patrick M.S. Blackett",
+            "portion": "1",
+            "motivation": "for his development of the Wilson cloud chamber method, and his discoveries therewith in the fields of nuclear physics and cosmic radiation"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1950",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1950",
+      "fields": {
+        "award_year": "1950",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1950-11-10",
+        "laureates": [
+          {
+            "id": "55",
+            "name": "Cecil Powell",
+            "portion": "1",
+            "motivation": "for his development of the photographic method of studying nuclear processes and his discoveries regarding mesons made with this method"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1953",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1953",
+      "fields": {
+        "award_year": "1953",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1953-11-04",
+        "laureates": [
+          {
+            "id": "60",
+            "name": "Frits Zernike",
+            "portion": "1",
+            "motivation": "for his demonstration of the phase contrast method, especially for his invention of the phase contrast microscope"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1955",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1955",
+      "fields": {
+        "award_year": "1955",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1955-11-02",
+        "laureates": [
+          {
+            "id": "63",
+            "name": "Willis E. Lamb",
+            "portion": "1/2",
+            "motivation": "for his discoveries concerning the fine structure of the hydrogen spectrum"
+          },
+          {
+            "id": "64",
+            "name": "Polykarp Kusch",
+            "portion": "1/2",
+            "motivation": "for his precision determination of the magnetic moment of the electron"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1958",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1958",
+      "fields": {
+        "award_year": "1958",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1958-10-28",
+        "laureates": [
+          {
+            "id": "70",
+            "name": "Pavel A. Cherenkov",
+            "portion": "1/3",
+            "motivation": "for the discovery and the interpretation of the Cherenkov effect"
+          },
+          {
+            "id": "721",
+            "name": "Il´ja M. Frank",
+            "portion": "1/3",
+            "motivation": "for the discovery and the interpretation of the Cherenkov effect"
+          },
+          {
+            "id": "71",
+            "name": "Igor Y. Tamm",
+            "portion": "1/3",
+            "motivation": "for the discovery and the interpretation of the Cherenkov effect"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1960",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1960",
+      "fields": {
+        "award_year": "1960",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1960-11-03",
+        "laureates": [
+          {
+            "id": "74",
+            "name": "Donald A. Glaser",
+            "portion": "1",
+            "motivation": "for the invention of the bubble chamber"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1962",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1962",
+      "fields": {
+        "award_year": "1962",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1962-11-01",
+        "laureates": [
+          {
+            "id": "77",
+            "name": "Lev Landau",
+            "portion": "1",
+            "motivation": "for his pioneering theories for condensed matter, especially liquid helium"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1965",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1965",
+      "fields": {
+        "award_year": "1965",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1965-10-21",
+        "laureates": [
+          {
+            "id": "84",
+            "name": "Sin-Itiro Tomonaga",
+            "portion": "1/3",
+            "motivation": "for their fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles"
+          },
+          {
+            "id": "85",
+            "name": "Julian Schwinger",
+            "portion": "1/3",
+            "motivation": "for their fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles"
+          },
+          {
+            "id": "86",
+            "name": "Richard P. Feynman",
+            "portion": "1/3",
+            "motivation": "for their fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1967",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1967",
+      "fields": {
+        "award_year": "1967",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1967-10-30",
+        "laureates": [
+          {
+            "id": "88",
+            "name": "Hans Bethe",
+            "portion": "1",
+            "motivation": "for his contributions to the theory of nuclear reactions, especially his discoveries concerning the energy production in stars"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1970",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1970",
+      "fields": {
+        "award_year": "1970",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1970-10-27",
+        "laureates": [
+          {
+            "id": "91",
+            "name": "Hannes Alfvén",
+            "portion": "1/2",
+            "motivation": "for fundamental work and discoveries in magnetohydro-dynamics with fruitful applications in different parts of plasma physics"
+          },
+          {
+            "id": "92",
+            "name": "Louis Néel",
+            "portion": "1/2",
+            "motivation": "for fundamental work and discoveries concerning antiferromagnetism and ferrimagnetism which have led to important applications in solid state physics"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1972",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1972",
+      "fields": {
+        "award_year": "1972",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1972-10-20",
+        "laureates": [
+          {
+            "id": "66",
+            "name": "John Bardeen",
+            "portion": "1/3",
+            "motivation": "for their jointly developed theory of superconductivity, usually called the BCS-theory"
+          },
+          {
+            "id": "95",
+            "name": "Leon N. Cooper",
+            "portion": "1/3",
+            "motivation": "for their jointly developed theory of superconductivity, usually called the BCS-theory"
+          },
+          {
+            "id": "96",
+            "name": "Robert Schrieffer",
+            "portion": "1/3",
+            "motivation": "for their jointly developed theory of superconductivity, usually called the BCS-theory"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1974",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1974",
+      "fields": {
+        "award_year": "1974",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1974-10-15",
+        "laureates": [
+          {
+            "id": "100",
+            "name": "Martin Ryle",
+            "portion": "1/2",
+            "motivation": "for their pioneering research in radio astrophysics: Ryle for his observations and inventions, in particular of the aperture synthesis technique, and Hewish for his decisive role in the discovery of pulsars"
+          },
+          {
+            "id": "101",
+            "name": "Antony Hewish",
+            "portion": "1/2",
+            "motivation": "for their pioneering research in radio astrophysics: Ryle for his observations and inventions, in particular of the aperture synthesis technique, and Hewish for his decisive role in the discovery of pulsars"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1977",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1977",
+      "fields": {
+        "award_year": "1977",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1977-10-11",
+        "laureates": [
+          {
+            "id": "107",
+            "name": "Philip W. Anderson",
+            "portion": "1/3",
+            "motivation": "for their fundamental theoretical investigations of the electronic structure of magnetic and disordered systems"
+          },
+          {
+            "id": "108",
+            "name": "Sir Nevill F. Mott",
+            "portion": "1/3",
+            "motivation": "for their fundamental theoretical investigations of the electronic structure of magnetic and disordered systems"
+          },
+          {
+            "id": "109",
+            "name": "John H. Van Vleck",
+            "portion": "1/3",
+            "motivation": "for their fundamental theoretical investigations of the electronic structure of magnetic and disordered systems"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1979",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1979",
+      "fields": {
+        "award_year": "1979",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1979-10-15",
+        "laureates": [
+          {
+            "id": "113",
+            "name": "Sheldon Glashow",
+            "portion": "1/3",
+            "motivation": "for their contributions to the theory of the unified weak and electromagnetic interaction between elementary particles, including, inter alia, the prediction of the weak neutral current"
+          },
+          {
+            "id": "114",
+            "name": "Abdus Salam",
+            "portion": "1/3",
+            "motivation": "for their contributions to the theory of the unified weak and electromagnetic interaction between elementary particles, including, inter alia, the prediction of the weak neutral current"
+          },
+          {
+            "id": "115",
+            "name": "Steven Weinberg",
+            "portion": "1/3",
+            "motivation": "for their contributions to the theory of the unified weak and electromagnetic interaction between elementary particles, including, inter alia, the prediction of the weak neutral current"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1982",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1982",
+      "fields": {
+        "award_year": "1982",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1982-10-18",
+        "laureates": [
+          {
+            "id": "121",
+            "name": "Kenneth G. Wilson",
+            "portion": "1",
+            "motivation": "for his theory for critical phenomena in connection with phase transitions"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1984",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1984",
+      "fields": {
+        "award_year": "1984",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1984-10-17",
+        "laureates": [
+          {
+            "id": "124",
+            "name": "Carlo Rubbia",
+            "portion": "1/2",
+            "motivation": "for their decisive contributions to the large project, which led to the discovery of the field particles W and Z, communicators of weak interaction"
+          },
+          {
+            "id": "125",
+            "name": "Simon van der Meer",
+            "portion": "1/2",
+            "motivation": "for their decisive contributions to the large project, which led to the discovery of the field particles W and Z, communicators of weak interaction"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1986",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1986",
+      "fields": {
+        "award_year": "1986",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1986-10-15",
+        "laureates": [
+          {
+            "id": "127",
+            "name": "Ernst Ruska",
+            "portion": "1/2",
+            "motivation": "for his fundamental work in electron optics, and for the design of the first electron microscope"
+          },
+          {
+            "id": "128",
+            "name": "Gerd Binnig",
+            "portion": "1/4",
+            "motivation": "for their design of the scanning tunneling microscope"
+          },
+          {
+            "id": "129",
+            "name": "Heinrich Rohrer",
+            "portion": "1/4",
+            "motivation": "for their design of the scanning tunneling microscope"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1989",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1989",
+      "fields": {
+        "award_year": "1989",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1989-10-12",
+        "laureates": [
+          {
+            "id": "135",
+            "name": "Norman F. Ramsey",
+            "portion": "1/2",
+            "motivation": "for the invention of the separated oscillatory fields method and its use in the hydrogen maser and other atomic clocks"
+          },
+          {
+            "id": "136",
+            "name": "Hans G. Dehmelt",
+            "portion": "1/4",
+            "motivation": "for the development of the ion trap technique"
+          },
+          {
+            "id": "137",
+            "name": "Wolfgang Paul",
+            "portion": "1/4",
+            "motivation": "for the development of the ion trap technique"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1991",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1991",
+      "fields": {
+        "award_year": "1991",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1991-10-16",
+        "laureates": [
+          {
+            "id": "141",
+            "name": "Pierre-Gilles de Gennes",
+            "portion": "1",
+            "motivation": "for discovering that methods developed for studying order phenomena in simple systems can be generalized to more complex forms of matter, in particular to liquid crystals and polymers"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1994",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1994",
+      "fields": {
+        "award_year": "1994",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1994-10-12",
+        "laureates": [
+          {
+            "id": "145",
+            "name": "Bertram N. Brockhouse",
+            "portion": "1/2",
+            "motivation": "for the development of neutron spectroscopy"
+          },
+          {
+            "id": "146",
+            "name": "Clifford G. Shull",
+            "portion": "1/2",
+            "motivation": "for the development of the neutron diffraction technique"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1996",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1996",
+      "fields": {
+        "award_year": "1996",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1996-10-09",
+        "laureates": [
+          {
+            "id": "149",
+            "name": "David M. Lee",
+            "portion": "1/3",
+            "motivation": "for their discovery of superfluidity in helium-3"
+          },
+          {
+            "id": "150",
+            "name": "Douglas D. Osheroff",
+            "portion": "1/3",
+            "motivation": "for their discovery of superfluidity in helium-3"
+          },
+          {
+            "id": "151",
+            "name": "Robert C. Richardson",
+            "portion": "1/3",
+            "motivation": "for their discovery of superfluidity in helium-3"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:1999",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/1999",
+      "fields": {
+        "award_year": "1999",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "1999-10-12",
+        "laureates": [
+          {
+            "id": "158",
+            "name": "Gerardus 't Hooft",
+            "portion": "1/2",
+            "motivation": "for elucidating the quantum structure of electroweak interactions in physics"
+          },
+          {
+            "id": "159",
+            "name": "Martinus J.G. Veltman",
+            "portion": "1/2",
+            "motivation": "for elucidating the quantum structure of electroweak interactions in physics"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2001",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2001",
+      "fields": {
+        "award_year": "2001",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2001-10-09",
+        "laureates": [
+          {
+            "id": "738",
+            "name": "Eric Cornell",
+            "portion": "1/3",
+            "motivation": "for the achievement of Bose-Einstein condensation in dilute gases of alkali atoms, and for early fundamental studies of the properties of the condensates"
+          },
+          {
+            "id": "739",
+            "name": "Wolfgang Ketterle",
+            "portion": "1/3",
+            "motivation": "for the achievement of Bose-Einstein condensation in dilute gases of alkali atoms, and for early fundamental studies of the properties of the condensates"
+          },
+          {
+            "id": "740",
+            "name": "Carl Wieman",
+            "portion": "1/3",
+            "motivation": "for the achievement of Bose-Einstein condensation in dilute gases of alkali atoms, and for early fundamental studies of the properties of the condensates"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2003",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2003",
+      "fields": {
+        "award_year": "2003",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2003-10-07",
+        "laureates": [
+          {
+            "id": "766",
+            "name": "Alexei Abrikosov",
+            "portion": "1/3",
+            "motivation": "for pioneering contributions to the theory of superconductors and superfluids"
+          },
+          {
+            "id": "767",
+            "name": "Vitaly L. Ginzburg",
+            "portion": "1/3",
+            "motivation": "for pioneering contributions to the theory of superconductors and superfluids"
+          },
+          {
+            "id": "768",
+            "name": "Anthony J. Leggett",
+            "portion": "1/3",
+            "motivation": "for pioneering contributions to the theory of superconductors and superfluids"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2006",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2006",
+      "fields": {
+        "award_year": "2006",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2006-10-03",
+        "laureates": [
+          {
+            "id": "804",
+            "name": "John C. Mather",
+            "portion": "1/2",
+            "motivation": "for their discovery of the blackbody form and anisotropy of the cosmic microwave background radiation"
+          },
+          {
+            "id": "805",
+            "name": "George F. Smoot",
+            "portion": "1/2",
+            "motivation": "for their discovery of the blackbody form and anisotropy of the cosmic microwave background radiation"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2008",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2008",
+      "fields": {
+        "award_year": "2008",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2008-10-07",
+        "laureates": [
+          {
+            "id": "826",
+            "name": "Yoichiro Nambu",
+            "portion": "1/2",
+            "motivation": "for the discovery of the mechanism of spontaneous broken symmetry in subatomic physics"
+          },
+          {
+            "id": "827",
+            "name": "Makoto Kobayashi",
+            "portion": "1/4",
+            "motivation": "for the discovery of the origin of the broken symmetry which predicts the existence of at least three families of quarks in nature"
+          },
+          {
+            "id": "828",
+            "name": "Toshihide Maskawa",
+            "portion": "1/4",
+            "motivation": "for the discovery of the origin of the broken symmetry which predicts the existence of at least three families of quarks in nature"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2011",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2011",
+      "fields": {
+        "award_year": "2011",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2011-10-04",
+        "laureates": [
+          {
+            "id": "864",
+            "name": "Saul Perlmutter",
+            "portion": "1/2",
+            "motivation": "for the discovery of the accelerating expansion of the Universe through observations of distant supernovae"
+          },
+          {
+            "id": "865",
+            "name": "Brian P. Schmidt",
+            "portion": "1/4",
+            "motivation": "for the discovery of the accelerating expansion of the Universe through observations of distant supernovae"
+          },
+          {
+            "id": "866",
+            "name": "Adam G. Riess",
+            "portion": "1/4",
+            "motivation": "for the discovery of the accelerating expansion of the Universe through observations of distant supernovae"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2013",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2013",
+      "fields": {
+        "award_year": "2013",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2013-10-08",
+        "laureates": [
+          {
+            "id": "887",
+            "name": "François Englert",
+            "portion": "1/2",
+            "motivation": "for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider"
+          },
+          {
+            "id": "888",
+            "name": "Peter Higgs",
+            "portion": "1/2",
+            "motivation": "for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2015",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2015",
+      "fields": {
+        "award_year": "2015",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2015-10-06",
+        "laureates": [
+          {
+            "id": "919",
+            "name": "Takaaki Kajita",
+            "portion": "1/2",
+            "motivation": "for the discovery of neutrino oscillations, which shows that neutrinos have mass"
+          },
+          {
+            "id": "920",
+            "name": "Arthur B. McDonald",
+            "portion": "1/2",
+            "motivation": "for the discovery of neutrino oscillations, which shows that neutrinos have mass"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2018",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2018",
+      "fields": {
+        "award_year": "2018",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2018-10-02",
+        "laureates": [
+          {
+            "id": "960",
+            "name": "Arthur Ashkin",
+            "portion": "1/2",
+            "motivation": "for the optical tweezers and their application to biological systems"
+          },
+          {
+            "id": "961",
+            "name": "Gérard Mourou",
+            "portion": "1/4",
+            "motivation": "for their method of generating high-intensity, ultra-short optical pulses"
+          },
+          {
+            "id": "962",
+            "name": "Donna Strickland",
+            "portion": "1/4",
+            "motivation": "for their method of generating high-intensity, ultra-short optical pulses"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2020",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2020",
+      "fields": {
+        "award_year": "2020",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2020-10-06",
+        "laureates": [
+          {
+            "id": "988",
+            "name": "Roger Penrose",
+            "portion": "1/2",
+            "motivation": "for the discovery that black hole formation is a robust prediction of the general theory of relativity"
+          },
+          {
+            "id": "989",
+            "name": "Reinhard Genzel",
+            "portion": "1/4",
+            "motivation": "for the discovery of a supermassive compact object at the centre of our galaxy"
+          },
+          {
+            "id": "990",
+            "name": "Andrea Ghez",
+            "portion": "1/4",
+            "motivation": "for the discovery of a supermassive compact object at the centre of our galaxy"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2023",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2023",
+      "fields": {
+        "award_year": "2023",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2023-10-03",
+        "laureates": [
+          {
+            "id": "1026",
+            "name": "Pierre Agostini",
+            "portion": "1/3",
+            "motivation": "for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter"
+          },
+          {
+            "id": "1027",
+            "name": "Ferenc Krausz",
+            "portion": "1/3",
+            "motivation": "for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter"
+          },
+          {
+            "id": "1028",
+            "name": "Anne L’Huillier",
+            "portion": "1/3",
+            "motivation": "for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "phy:2025",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/phy/2025",
+      "fields": {
+        "award_year": "2025",
+        "category": "Physics",
+        "category_code": "phy",
+        "date_awarded": "2025-10-07",
+        "laureates": [
+          {
+            "id": "1050",
+            "name": "John Clarke",
+            "portion": "1/3",
+            "motivation": "for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit"
+          },
+          {
+            "id": "1051",
+            "name": "Michel H. Devoret",
+            "portion": "1/3",
+            "motivation": "for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit"
+          },
+          {
+            "id": "1052",
+            "name": "John M. Martinis",
+            "portion": "1/3",
+            "motivation": "for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1901",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1901",
+      "fields": {
+        "award_year": "1901",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1901-11-12",
+        "laureates": [
+          {
+            "id": "160",
+            "name": "Jacobus H. van 't Hoff",
+            "portion": "1",
+            "motivation": "in recognition of the extraordinary services he has rendered by the discovery of the laws of chemical dynamics and osmotic pressure in solutions"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1903",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1903",
+      "fields": {
+        "award_year": "1903",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1903-11-12",
+        "laureates": [
+          {
+            "id": "162",
+            "name": "Svante Arrhenius",
+            "portion": "1",
+            "motivation": "in recognition of the extraordinary services he has rendered to the advancement of chemistry by his electrolytic theory of dissociation"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1906",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1906",
+      "fields": {
+        "award_year": "1906",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1906-11-12",
+        "laureates": [
+          {
+            "id": "165",
+            "name": "Henri Moissan",
+            "portion": "1",
+            "motivation": "in recognition of the great services rendered by him in his investigation and isolation of the element fluorine, and for the adoption in the service of science of the electric furnace called after him"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1908",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1908",
+      "fields": {
+        "award_year": "1908",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1908-11-10",
+        "laureates": [
+          {
+            "id": "167",
+            "name": "Ernest Rutherford",
+            "portion": "1",
+            "motivation": "for his investigations into the disintegration of the elements, and the chemistry of radioactive substances"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1910",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1910",
+      "fields": {
+        "award_year": "1910",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1910-11-12",
+        "laureates": [
+          {
+            "id": "169",
+            "name": "Otto Wallach",
+            "portion": "1",
+            "motivation": "in recognition of his services to organic chemistry and the chemical industry by his pioneer work in the field of alicyclic compounds"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1913",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1913",
+      "fields": {
+        "award_year": "1913",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1913-11-11",
+        "laureates": [
+          {
+            "id": "174",
+            "name": "Alfred Werner",
+            "portion": "1",
+            "motivation": "in recognition of his work on the linkage of atoms in molecules by which he has thrown new light on earlier investigations and opened up new fields of research especially in inorganic chemistry"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1915",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1915",
+      "fields": {
+        "award_year": "1915",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1915-11-11",
+        "laureates": [
+          {
+            "id": "176",
+            "name": "Richard Willstätter",
+            "portion": "1",
+            "motivation": "for his researches on plant pigments, especially chlorophyll"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1921",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1921",
+      "fields": {
+        "award_year": "1921",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1922-11-09",
+        "laureates": [
+          {
+            "id": "179",
+            "name": "Frederick Soddy",
+            "portion": "1",
+            "motivation": "for his contributions to our knowledge of the chemistry of radioactive substances, and his investigations into the origin and nature of isotopes"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1923",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1923",
+      "fields": {
+        "award_year": "1923",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1923-11-13",
+        "laureates": [
+          {
+            "id": "181",
+            "name": "Fritz Pregl",
+            "portion": "1",
+            "motivation": "for his invention of the method of micro-analysis of organic substances"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1926",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1926",
+      "fields": {
+        "award_year": "1926",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1926-11-11",
+        "laureates": [
+          {
+            "id": "183",
+            "name": "The Svedberg",
+            "portion": "1",
+            "motivation": "for his work on disperse systems"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1929",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1929",
+      "fields": {
+        "award_year": "1929",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1929-11-12",
+        "laureates": [
+          {
+            "id": "186",
+            "name": "Arthur Harden",
+            "portion": "1/2",
+            "motivation": "for their investigations on the fermentation of sugar and fermentative enzymes"
+          },
+          {
+            "id": "187",
+            "name": "Hans von Euler-Chelpin",
+            "portion": "1/2",
+            "motivation": "for their investigations on the fermentation of sugar and fermentative enzymes"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1931",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1931",
+      "fields": {
+        "award_year": "1931",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1931-11-12",
+        "laureates": [
+          {
+            "id": "189",
+            "name": "Carl Bosch",
+            "portion": "1/2",
+            "motivation": "in recognition of their contributions to the invention and development of chemical high pressure methods"
+          },
+          {
+            "id": "190",
+            "name": "Friedrich Bergius",
+            "portion": "1/2",
+            "motivation": "in recognition of their contributions to the invention and development of chemical high pressure methods"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1934",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1934",
+      "fields": {
+        "award_year": "1934",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1934-11-15",
+        "laureates": [
+          {
+            "id": "192",
+            "name": "Harold C. Urey",
+            "portion": "1",
+            "motivation": "for his discovery of heavy hydrogen"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1937",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1937",
+      "fields": {
+        "award_year": "1937",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1937-11-11",
+        "laureates": [
+          {
+            "id": "196",
+            "name": "Norman Haworth",
+            "portion": "1/2",
+            "motivation": "for his investigations on carbohydrates and vitamin C"
+          },
+          {
+            "id": "197",
+            "name": "Paul Karrer",
+            "portion": "1/2",
+            "motivation": "for his investigations on carotenoids, flavins and vitamins A and B2"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1939",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1939",
+      "fields": {
+        "award_year": "1939",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1939-11-09",
+        "laureates": [
+          {
+            "id": "199",
+            "name": "Adolf Butenandt",
+            "portion": "1/2",
+            "motivation": "for his work on sex hormones"
+          },
+          {
+            "id": "200",
+            "name": "Leopold Ruzicka",
+            "portion": "1/2",
+            "motivation": "for his work on polymethylenes and higher terpenes"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1945",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1945",
+      "fields": {
+        "award_year": "1945",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1945-11-15",
+        "laureates": [
+          {
+            "id": "203",
+            "name": "Artturi Virtanen",
+            "portion": "1",
+            "motivation": "for his research and inventions in agricultural and nutrition chemistry, especially for his fodder preservation method"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1947",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1947",
+      "fields": {
+        "award_year": "1947",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1947-11-13",
+        "laureates": [
+          {
+            "id": "207",
+            "name": "Sir Robert Robinson",
+            "portion": "1",
+            "motivation": "for his investigations on plant products of biological importance, especially the alkaloids"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1949",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1949",
+      "fields": {
+        "award_year": "1949",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1949-11-03",
+        "laureates": [
+          {
+            "id": "209",
+            "name": "William F. Giauque",
+            "portion": "1",
+            "motivation": "for his contributions in the field of chemical thermodynamics, particularly concerning the behaviour of substances at extremely low temperatures"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1952",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1952",
+      "fields": {
+        "award_year": "1952",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1952-11-06",
+        "laureates": [
+          {
+            "id": "214",
+            "name": "Archer J.P. Martin",
+            "portion": "1/2",
+            "motivation": "for their invention of partition chromatography"
+          },
+          {
+            "id": "215",
+            "name": "Richard L.M. Synge",
+            "portion": "1/2",
+            "motivation": "for their invention of partition chromatography"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1954",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1954",
+      "fields": {
+        "award_year": "1954",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1954-11-03",
+        "laureates": [
+          {
+            "id": "217",
+            "name": "Linus Pauling",
+            "portion": "1",
+            "motivation": "for his research into the nature of the chemical bond and its application to the elucidation of the structure of complex substances"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1956",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1956",
+      "fields": {
+        "award_year": "1956",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1956-11-01",
+        "laureates": [
+          {
+            "id": "219",
+            "name": "Sir Cyril Hinshelwood",
+            "portion": "1/2",
+            "motivation": "for their researches into the mechanism of chemical reactions"
+          },
+          {
+            "id": "220",
+            "name": "Nikolay Semenov",
+            "portion": "1/2",
+            "motivation": "for their researches into the mechanism of chemical reactions"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1959",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1959",
+      "fields": {
+        "award_year": "1959",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1959-10-26",
+        "laureates": [
+          {
+            "id": "223",
+            "name": "Jaroslav Heyrovsky",
+            "portion": "1",
+            "motivation": "for his discovery and development of the polarographic methods of analysis"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1961",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1961",
+      "fields": {
+        "award_year": "1961",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1961-11-02",
+        "laureates": [
+          {
+            "id": "225",
+            "name": "Melvin Calvin",
+            "portion": "1",
+            "motivation": "for his research on the carbon dioxide assimilation in plants"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1963",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1963",
+      "fields": {
+        "award_year": "1963",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1963-11-05",
+        "laureates": [
+          {
+            "id": "228",
+            "name": "Karl Ziegler",
+            "portion": "1/2",
+            "motivation": "for their discoveries in the field of the chemistry and technology of high polymers"
+          },
+          {
+            "id": "229",
+            "name": "Giulio Natta",
+            "portion": "1/2",
+            "motivation": "for their discoveries in the field of the chemistry and technology of high polymers"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1966",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1966",
+      "fields": {
+        "award_year": "1966",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1966-11-03",
+        "laureates": [
+          {
+            "id": "232",
+            "name": "Robert S. Mulliken",
+            "portion": "1",
+            "motivation": "for his fundamental work concerning chemical bonds and the electronic structure of molecules by the molecular orbital method"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1968",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1968",
+      "fields": {
+        "award_year": "1968",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1968-10-30",
+        "laureates": [
+          {
+            "id": "236",
+            "name": "Lars Onsager",
+            "portion": "1",
+            "motivation": "for the discovery of the reciprocal relations bearing his name, which are fundamental for the thermodynamics of irreversible processes"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1971",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1971",
+      "fields": {
+        "award_year": "1971",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1971-11-02",
+        "laureates": [
+          {
+            "id": "240",
+            "name": "Gerhard Herzberg",
+            "portion": "1",
+            "motivation": "for his contributions to the knowledge of electronic structure and geometry of molecules, particularly free radicals"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1973",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1973",
+      "fields": {
+        "award_year": "1973",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1973-10-23",
+        "laureates": [
+          {
+            "id": "244",
+            "name": "Ernst Otto Fischer",
+            "portion": "1/2",
+            "motivation": "for their pioneering work, performed independently, on the chemistry of the organometallic, so called sandwich compounds"
+          },
+          {
+            "id": "245",
+            "name": "Geoffrey Wilkinson",
+            "portion": "1/2",
+            "motivation": "for their pioneering work, performed independently, on the chemistry of the organometallic, so called sandwich compounds"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1975",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1975",
+      "fields": {
+        "award_year": "1975",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1975-10-17",
+        "laureates": [
+          {
+            "id": "247",
+            "name": "John Cornforth",
+            "portion": "1/2",
+            "motivation": "for his work on the stereochemistry of enzyme-catalyzed reactions"
+          },
+          {
+            "id": "248",
+            "name": "Vladimir Prelog",
+            "portion": "1/2",
+            "motivation": "for his research into the stereochemistry of organic molecules and reactions"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1978",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1978",
+      "fields": {
+        "award_year": "1978",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1978-10-17",
+        "laureates": [
+          {
+            "id": "251",
+            "name": "Peter Mitchell",
+            "portion": "1",
+            "motivation": "for his contribution to the understanding of biological energy transfer through the formulation of the chemiosmotic theory"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1980",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1980",
+      "fields": {
+        "award_year": "1980",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1980-10-14",
+        "laureates": [
+          {
+            "id": "254",
+            "name": "Paul Berg",
+            "portion": "1/2",
+            "motivation": "for his fundamental studies of the biochemistry of nucleic acids, with particular regard to recombinant-DNA"
+          },
+          {
+            "id": "255",
+            "name": "Walter Gilbert",
+            "portion": "1/4",
+            "motivation": "for their contributions concerning the determination of base sequences in nucleic acids"
+          },
+          {
+            "id": "222",
+            "name": "Frederick Sanger",
+            "portion": "1/4",
+            "motivation": "for their contributions concerning the determination of base sequences in nucleic acids"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1982",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1982",
+      "fields": {
+        "award_year": "1982",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1982-10-18",
+        "laureates": [
+          {
+            "id": "259",
+            "name": "Aaron Klug",
+            "portion": "1",
+            "motivation": "for his development of crystallographic electron microscopy and his structural elucidation of biologically important nucleic acid-protein complexes"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1985",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1985",
+      "fields": {
+        "award_year": "1985",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1985-10-16",
+        "laureates": [
+          {
+            "id": "262",
+            "name": "Herbert A. Hauptman",
+            "portion": "1/2",
+            "motivation": "for their outstanding achievements in the development of direct methods for the determination of crystal structures"
+          },
+          {
+            "id": "263",
+            "name": "Jerome Karle",
+            "portion": "1/2",
+            "motivation": "for their outstanding achievements in the development of direct methods for the determination of crystal structures"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1987",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1987",
+      "fields": {
+        "award_year": "1987",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1987-10-14",
+        "laureates": [
+          {
+            "id": "267",
+            "name": "Donald J. Cram",
+            "portion": "1/3",
+            "motivation": "for their development and use of molecules with structure-specific interactions of high selectivity"
+          },
+          {
+            "id": "268",
+            "name": "Jean-Marie Lehn",
+            "portion": "1/3",
+            "motivation": "for their development and use of molecules with structure-specific interactions of high selectivity"
+          },
+          {
+            "id": "269",
+            "name": "Charles J. Pedersen",
+            "portion": "1/3",
+            "motivation": "for their development and use of molecules with structure-specific interactions of high selectivity"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1989",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1989",
+      "fields": {
+        "award_year": "1989",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1989-10-12",
+        "laureates": [
+          {
+            "id": "273",
+            "name": "Sidney Altman",
+            "portion": "1/2",
+            "motivation": "for their discovery of catalytic properties of RNA"
+          },
+          {
+            "id": "274",
+            "name": "Thomas R. Cech",
+            "portion": "1/2",
+            "motivation": "for their discovery of catalytic properties of RNA"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1992",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1992",
+      "fields": {
+        "award_year": "1992",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1992-10-14",
+        "laureates": [
+          {
+            "id": "277",
+            "name": "Rudolph A. Marcus",
+            "portion": "1",
+            "motivation": "for his contributions to the theory of electron transfer reactions in chemical systems"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1994",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1994",
+      "fields": {
+        "award_year": "1994",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1994-10-12",
+        "laureates": [
+          {
+            "id": "280",
+            "name": "George A. Olah",
+            "portion": "1",
+            "motivation": "for his contribution to carbocation chemistry"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1997",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1997",
+      "fields": {
+        "award_year": "1997",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1997-10-15",
+        "laureates": [
+          {
+            "id": "287",
+            "name": "Paul D. Boyer",
+            "portion": "1/4",
+            "motivation": "for their elucidation of the enzymatic mechanism underlying the synthesis of adenosine triphosphate (ATP)"
+          },
+          {
+            "id": "288",
+            "name": "John E. Walker",
+            "portion": "1/4",
+            "motivation": "for their elucidation of the enzymatic mechanism underlying the synthesis of adenosine triphosphate (ATP)"
+          },
+          {
+            "id": "289",
+            "name": "Jens C. Skou",
+            "portion": "1/2",
+            "motivation": "for the first discovery of an ion-transporting enzyme, Na+, K+ -ATPase"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:1999",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/1999",
+      "fields": {
+        "award_year": "1999",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "1999-10-12",
+        "laureates": [
+          {
+            "id": "292",
+            "name": "Ahmed Zewail",
+            "portion": "1",
+            "motivation": "for his studies of the transition states of chemical reactions using femtosecond spectroscopy"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2001",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2001",
+      "fields": {
+        "award_year": "2001",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2001-10-10",
+        "laureates": [
+          {
+            "id": "741",
+            "name": "William Knowles",
+            "portion": "1/4",
+            "motivation": "for their work on chirally catalysed hydrogenation reactions"
+          },
+          {
+            "id": "742",
+            "name": "Ryoji Noyori",
+            "portion": "1/4",
+            "motivation": "for their work on chirally catalysed hydrogenation reactions"
+          },
+          {
+            "id": "743",
+            "name": "K. Barry Sharpless",
+            "portion": "1/2",
+            "motivation": "for his work on chirally catalysed oxidation reactions"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2004",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2004",
+      "fields": {
+        "award_year": "2004",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2004-10-06",
+        "laureates": [
+          {
+            "id": "779",
+            "name": "Aaron Ciechanover",
+            "portion": "1/3",
+            "motivation": "for the discovery of ubiquitin-mediated protein degradation"
+          },
+          {
+            "id": "780",
+            "name": "Avram Hershko",
+            "portion": "1/3",
+            "motivation": "for the discovery of ubiquitin-mediated protein degradation"
+          },
+          {
+            "id": "781",
+            "name": "Irwin Rose",
+            "portion": "1/3",
+            "motivation": "for the discovery of ubiquitin-mediated protein degradation"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2006",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2006",
+      "fields": {
+        "award_year": "2006",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2006-10-04",
+        "laureates": [
+          {
+            "id": "806",
+            "name": "Roger D. Kornberg",
+            "portion": "1",
+            "motivation": "for his studies of the molecular basis of eukaryotic transcription"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2008",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2008",
+      "fields": {
+        "award_year": "2008",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2008-10-08",
+        "laureates": [
+          {
+            "id": "829",
+            "name": "Osamu Shimomura",
+            "portion": "1/3",
+            "motivation": "for the discovery and development of the green fluorescent protein, GFP"
+          },
+          {
+            "id": "830",
+            "name": "Martin Chalfie",
+            "portion": "1/3",
+            "motivation": "for the discovery and development of the green fluorescent protein, GFP"
+          },
+          {
+            "id": "831",
+            "name": "Roger Y. Tsien",
+            "portion": "1/3",
+            "motivation": "for the discovery and development of the green fluorescent protein, GFP"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2011",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2011",
+      "fields": {
+        "award_year": "2011",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2011-10-05",
+        "laureates": [
+          {
+            "id": "867",
+            "name": "Dan Shechtman",
+            "portion": "1",
+            "motivation": "for the discovery of quasicrystals"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2013",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2013",
+      "fields": {
+        "award_year": "2013",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2013-10-09",
+        "laureates": [
+          {
+            "id": "889",
+            "name": "Martin Karplus",
+            "portion": "1/3",
+            "motivation": "for the development of multiscale models for complex chemical systems"
+          },
+          {
+            "id": "890",
+            "name": "Michael Levitt",
+            "portion": "1/3",
+            "motivation": "for the development of multiscale models for complex chemical systems"
+          },
+          {
+            "id": "891",
+            "name": "Arieh Warshel",
+            "portion": "1/3",
+            "motivation": "for the development of multiscale models for complex chemical systems"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2016",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2016",
+      "fields": {
+        "award_year": "2016",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2016-10-05",
+        "laureates": [
+          {
+            "id": "931",
+            "name": "Jean-Pierre Sauvage",
+            "portion": "1/3",
+            "motivation": "for the design and synthesis of molecular machines"
+          },
+          {
+            "id": "932",
+            "name": "Sir J. Fraser Stoddart",
+            "portion": "1/3",
+            "motivation": "for the design and synthesis of molecular machines"
+          },
+          {
+            "id": "933",
+            "name": "Bernard L. Feringa",
+            "portion": "1/3",
+            "motivation": "for the design and synthesis of molecular machines"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2018",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2018",
+      "fields": {
+        "award_year": "2018",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2018-10-03",
+        "laureates": [
+          {
+            "id": "963",
+            "name": "Frances H. Arnold",
+            "portion": "1/2",
+            "motivation": "for the directed evolution of enzymes"
+          },
+          {
+            "id": "964",
+            "name": "George P. Smith",
+            "portion": "1/4",
+            "motivation": "for the phage display of peptides and antibodies"
+          },
+          {
+            "id": "965",
+            "name": "Sir Gregory P. Winter",
+            "portion": "1/4",
+            "motivation": "for the phage display of peptides and antibodies"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2020",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2020",
+      "fields": {
+        "award_year": "2020",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2020-10-07",
+        "laureates": [
+          {
+            "id": "991",
+            "name": "Emmanuelle Charpentier",
+            "portion": "1/2",
+            "motivation": "for the development of a method for genome editing"
+          },
+          {
+            "id": "992",
+            "name": "Jennifer A. Doudna",
+            "portion": "1/2",
+            "motivation": "for the development of a method for genome editing"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2023",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2023",
+      "fields": {
+        "award_year": "2023",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2023-10-04",
+        "laureates": [
+          {
+            "id": "1029",
+            "name": "Moungi Bawendi",
+            "portion": "1/3",
+            "motivation": "for the discovery and synthesis of quantum dots"
+          },
+          {
+            "id": "1030",
+            "name": "Louis Brus",
+            "portion": "1/3",
+            "motivation": "for the discovery and synthesis of quantum dots"
+          },
+          {
+            "id": "1031",
+            "name": "Aleksey Yekimov ",
+            "portion": "1/3",
+            "motivation": "for the discovery and synthesis of quantum dots"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "che:2025",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/che/2025",
+      "fields": {
+        "award_year": "2025",
+        "category": "Chemistry",
+        "category_code": "che",
+        "date_awarded": "2025-10-08",
+        "laureates": [
+          {
+            "id": "1053",
+            "name": "Susumu Kitagawa",
+            "portion": "1/3",
+            "motivation": "for the development of metal–organic frameworks"
+          },
+          {
+            "id": "1054",
+            "name": "Richard Robson",
+            "portion": "1/3",
+            "motivation": "for the development of metal–organic frameworks"
+          },
+          {
+            "id": "1055",
+            "name": "Omar M. Yaghi",
+            "portion": "1/3",
+            "motivation": "for the development of metal–organic frameworks"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1901",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1901",
+      "fields": {
+        "award_year": "1901",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1901-10-30",
+        "laureates": [
+          {
+            "id": "293",
+            "name": "Emil von Behring",
+            "portion": "1",
+            "motivation": "for his work on serum therapy, especially its application against diphtheria, by which he has opened a new road in the domain of medical science and thereby placed in the hands of the physician a victorious weapon against illness and deaths"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1903",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1903",
+      "fields": {
+        "award_year": "1903",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1903-10-15",
+        "laureates": [
+          {
+            "id": "295",
+            "name": "Niels Ryberg Finsen",
+            "portion": "1",
+            "motivation": "in recognition of his contribution to the treatment of diseases, especially lupus vulgaris, with concentrated light radiation, whereby he has opened a new avenue for medical science"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1906",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1906",
+      "fields": {
+        "award_year": "1906",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1906-10-25",
+        "laureates": [
+          {
+            "id": "298",
+            "name": "Camillo Golgi",
+            "portion": "1/2",
+            "motivation": "in recognition of their work on the structure of the nervous system"
+          },
+          {
+            "id": "299",
+            "name": "Santiago Ramón y Cajal",
+            "portion": "1/2",
+            "motivation": "in recognition of their work on the structure of the nervous system"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1908",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1908",
+      "fields": {
+        "award_year": "1908",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1908-10-29",
+        "laureates": [
+          {
+            "id": "301",
+            "name": "Ilya Mechnikov",
+            "portion": "1/2",
+            "motivation": "in recognition of their work on immunity"
+          },
+          {
+            "id": "302",
+            "name": "Paul Ehrlich",
+            "portion": "1/2",
+            "motivation": "in recognition of their work on immunity"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1910",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1910",
+      "fields": {
+        "award_year": "1910",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1910-10-20",
+        "laureates": [
+          {
+            "id": "304",
+            "name": "Albrecht Kossel",
+            "portion": "1",
+            "motivation": "in recognition of the contributions to our knowledge of cell chemistry made through his work on proteins, including the nucleic substances"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1913",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1913",
+      "fields": {
+        "award_year": "1913",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1913-10-30",
+        "laureates": [
+          {
+            "id": "307",
+            "name": "Charles Richet",
+            "portion": "1",
+            "motivation": "in recognition of his work on anaphylaxis"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1919",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1919",
+      "fields": {
+        "award_year": "1919",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1920-10-28",
+        "laureates": [
+          {
+            "id": "309",
+            "name": "Jules Bordet",
+            "portion": "1",
+            "motivation": "for his discoveries relating to immunity"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1922",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1922",
+      "fields": {
+        "award_year": "1922",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1922-10-25",
+        "laureates": [
+          {
+            "id": "311",
+            "name": "Archibald V. Hill",
+            "portion": "1/2",
+            "motivation": "for his discovery relating to the production of heat in the muscle"
+          },
+          {
+            "id": "312",
+            "name": "Otto Meyerhof",
+            "portion": "1/2",
+            "motivation": "for his discovery of the fixed relationship between the consumption of oxygen and the metabolism of lactic acid in the muscle"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1926",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1926",
+      "fields": {
+        "award_year": "1926",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1927-10-27",
+        "laureates": [
+          {
+            "id": "316",
+            "name": "Johannes Fibiger",
+            "portion": "1",
+            "motivation": "for his discovery of the Spiroptera carcinoma"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1928",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1928",
+      "fields": {
+        "award_year": "1928",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1928-10-25",
+        "laureates": [
+          {
+            "id": "318",
+            "name": "Charles Nicolle",
+            "portion": "1",
+            "motivation": "for his work on typhus"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1930",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1930",
+      "fields": {
+        "award_year": "1930",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1930-10-30",
+        "laureates": [
+          {
+            "id": "321",
+            "name": "Karl Landsteiner",
+            "portion": "1",
+            "motivation": "for his discovery of human blood groups"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1933",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1933",
+      "fields": {
+        "award_year": "1933",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1933-10-20",
+        "laureates": [
+          {
+            "id": "325",
+            "name": "Thomas H. Morgan",
+            "portion": "1",
+            "motivation": "for his discoveries concerning the role played by the chromosome in heredity"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1935",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1935",
+      "fields": {
+        "award_year": "1935",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1935-10-24",
+        "laureates": [
+          {
+            "id": "329",
+            "name": "Hans Spemann",
+            "portion": "1",
+            "motivation": "for his discovery of the organizer effect in embryonic development"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1938",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1938",
+      "fields": {
+        "award_year": "1938",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1939-10-26",
+        "laureates": [
+          {
+            "id": "333",
+            "name": "Corneille Heymans",
+            "portion": "1",
+            "motivation": "for the discovery of the role played by the sinus and aortic mechanisms in the regulation of respiration"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1943",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1943",
+      "fields": {
+        "award_year": "1943",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1944-10-26",
+        "laureates": [
+          {
+            "id": "335",
+            "name": "Henrik Dam",
+            "portion": "1/2",
+            "motivation": "for his discovery of vitamin K"
+          },
+          {
+            "id": "336",
+            "name": "Edward A. Doisy",
+            "portion": "1/2",
+            "motivation": "for his discovery of the chemical nature of vitamin K"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1945",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1945",
+      "fields": {
+        "award_year": "1945",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1945-10-25",
+        "laureates": [
+          {
+            "id": "339",
+            "name": "Sir Alexander Fleming",
+            "portion": "1/3",
+            "motivation": "for the discovery of penicillin and its curative effect in various infectious diseases"
+          },
+          {
+            "id": "340",
+            "name": "Ernst B. Chain",
+            "portion": "1/3",
+            "motivation": "for the discovery of penicillin and its curative effect in various infectious diseases"
+          },
+          {
+            "id": "341",
+            "name": "Sir Howard Florey",
+            "portion": "1/3",
+            "motivation": "for the discovery of penicillin and its curative effect in various infectious diseases"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1948",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1948",
+      "fields": {
+        "award_year": "1948",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1948-10-28",
+        "laureates": [
+          {
+            "id": "346",
+            "name": "Paul Müller",
+            "portion": "1",
+            "motivation": "for his discovery of the high efficiency of DDT as a contact poison against several arthropods"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1950",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1950",
+      "fields": {
+        "award_year": "1950",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1950-10-26",
+        "laureates": [
+          {
+            "id": "349",
+            "name": "Edward C. Kendall",
+            "portion": "1/3",
+            "motivation": "for their discoveries relating to the hormones of the adrenal cortex, their structure and biological effects"
+          },
+          {
+            "id": "350",
+            "name": "Tadeus Reichstein",
+            "portion": "1/3",
+            "motivation": "for their discoveries relating to the hormones of the adrenal cortex, their structure and biological effects"
+          },
+          {
+            "id": "351",
+            "name": "Philip S. Hench",
+            "portion": "1/3",
+            "motivation": "for their discoveries relating to the hormones of the adrenal cortex, their structure and biological effects"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1952",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1952",
+      "fields": {
+        "award_year": "1952",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1952-10-23",
+        "laureates": [
+          {
+            "id": "353",
+            "name": "Selman A. Waksman",
+            "portion": "1",
+            "motivation": "for his discovery of streptomycin, the first antibiotic effective against tuberculosis"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1955",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1955",
+      "fields": {
+        "award_year": "1955",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1955-10-20",
+        "laureates": [
+          {
+            "id": "359",
+            "name": "Hugo Theorell",
+            "portion": "1",
+            "motivation": "for his discoveries concerning the nature and mode of action of oxidation enzymes"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1957",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1957",
+      "fields": {
+        "award_year": "1957",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1957-10-24",
+        "laureates": [
+          {
+            "id": "363",
+            "name": "Daniel Bovet",
+            "portion": "1",
+            "motivation": "for his discoveries relating to synthetic compounds that inhibit the action of certain body substances, and especially their action on the vascular system and the skeletal muscles"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1959",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1959",
+      "fields": {
+        "award_year": "1959",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1959-10-15",
+        "laureates": [
+          {
+            "id": "367",
+            "name": "Severo Ochoa",
+            "portion": "1/2",
+            "motivation": "for their discovery of the mechanisms in the biological synthesis of ribonucleic acid and deoxyribonucleic acid"
+          },
+          {
+            "id": "368",
+            "name": "Arthur Kornberg",
+            "portion": "1/2",
+            "motivation": "for their discovery of the mechanisms in the biological synthesis of ribonucleic acid and deoxyribonucleic acid"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1962",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1962",
+      "fields": {
+        "award_year": "1962",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1962-10-18",
+        "laureates": [
+          {
+            "id": "372",
+            "name": "Francis Crick",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning the molecular structure of nucleic acids and its significance for information transfer in living material"
+          },
+          {
+            "id": "373",
+            "name": "James Watson",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning the molecular structure of nucleic acids and its significance for information transfer in living material"
+          },
+          {
+            "id": "374",
+            "name": "Maurice Wilkins",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning the molecular structure of nucleic acids and its significance for information transfer in living material"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1964",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1964",
+      "fields": {
+        "award_year": "1964",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1964-10-15",
+        "laureates": [
+          {
+            "id": "378",
+            "name": "Konrad Bloch",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning the mechanism and regulation of the cholesterol and fatty acid metabolism"
+          },
+          {
+            "id": "379",
+            "name": "Feodor Lynen",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning the mechanism and regulation of the cholesterol and fatty acid metabolism"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1966",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1966",
+      "fields": {
+        "award_year": "1966",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1966-10-13",
+        "laureates": [
+          {
+            "id": "383",
+            "name": "Peyton Rous",
+            "portion": "1/2",
+            "motivation": "for his discovery of tumour-inducing viruses"
+          },
+          {
+            "id": "384",
+            "name": "Charles B. Huggins",
+            "portion": "1/2",
+            "motivation": "for his discoveries concerning hormonal treatment of prostatic cancer"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1969",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1969",
+      "fields": {
+        "award_year": "1969",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1969-10-16",
+        "laureates": [
+          {
+            "id": "391",
+            "name": "Max Delbrück",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning the replication mechanism and the genetic structure of viruses"
+          },
+          {
+            "id": "392",
+            "name": "Alfred D. Hershey",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning the replication mechanism and the genetic structure of viruses"
+          },
+          {
+            "id": "393",
+            "name": "Salvador E. Luria",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning the replication mechanism and the genetic structure of viruses"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1971",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1971",
+      "fields": {
+        "award_year": "1971",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1971-10-14",
+        "laureates": [
+          {
+            "id": "397",
+            "name": "Earl W. Sutherland, Jr.",
+            "portion": "1",
+            "motivation": "for his discoveries concerning the mechanisms of the action of hormones"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1973",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1973",
+      "fields": {
+        "award_year": "1973",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1973-10-11",
+        "laureates": [
+          {
+            "id": "400",
+            "name": "Karl von Frisch",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning organization and elicitation of individual and social behaviour patterns"
+          },
+          {
+            "id": "401",
+            "name": "Konrad Lorenz",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning organization and elicitation of individual and social behaviour patterns"
+          },
+          {
+            "id": "402",
+            "name": "Nikolaas Tinbergen",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning organization and elicitation of individual and social behaviour patterns"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1976",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1976",
+      "fields": {
+        "award_year": "1976",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1976-10-14",
+        "laureates": [
+          {
+            "id": "409",
+            "name": "Baruch S. Blumberg",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning new mechanisms for the origin and dissemination of infectious diseases"
+          },
+          {
+            "id": "410",
+            "name": "D. Carleton Gajdusek",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning new mechanisms for the origin and dissemination of infectious diseases"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1978",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1978",
+      "fields": {
+        "award_year": "1978",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1978-10-12",
+        "laureates": [
+          {
+            "id": "414",
+            "name": "Werner Arber",
+            "portion": "1/3",
+            "motivation": "for the discovery of restriction enzymes and their application to problems of molecular genetics"
+          },
+          {
+            "id": "415",
+            "name": "Daniel Nathans",
+            "portion": "1/3",
+            "motivation": "for the discovery of restriction enzymes and their application to problems of molecular genetics"
+          },
+          {
+            "id": "416",
+            "name": "Hamilton O. Smith",
+            "portion": "1/3",
+            "motivation": "for the discovery of restriction enzymes and their application to problems of molecular genetics"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1980",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1980",
+      "fields": {
+        "award_year": "1980",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1980-10-10",
+        "laureates": [
+          {
+            "id": "419",
+            "name": "Baruj Benacerraf",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning genetically determined structures on the cell surface that regulate immunological reactions"
+          },
+          {
+            "id": "420",
+            "name": "Jean Dausset",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning genetically determined structures on the cell surface that regulate immunological reactions"
+          },
+          {
+            "id": "421",
+            "name": "George D. Snell",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning genetically determined structures on the cell surface that regulate immunological reactions"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1983",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1983",
+      "fields": {
+        "award_year": "1983",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1983-10-10",
+        "laureates": [
+          {
+            "id": "428",
+            "name": "Barbara McClintock",
+            "portion": "1",
+            "motivation": "for her discovery of mobile genetic elements"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1985",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1985",
+      "fields": {
+        "award_year": "1985",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1985-10-14",
+        "laureates": [
+          {
+            "id": "432",
+            "name": "Michael S. Brown",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning the regulation of cholesterol metabolism"
+          },
+          {
+            "id": "433",
+            "name": "Joseph L. Goldstein",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning the regulation of cholesterol metabolism"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1987",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1987",
+      "fields": {
+        "award_year": "1987",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1987-10-12",
+        "laureates": [
+          {
+            "id": "436",
+            "name": "Susumu Tonegawa",
+            "portion": "1",
+            "motivation": "for his discovery of the genetic principle for generation of antibody diversity"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1990",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1990",
+      "fields": {
+        "award_year": "1990",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1990-10-08",
+        "laureates": [
+          {
+            "id": "442",
+            "name": "Joseph E. Murray",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning organ and cell transplantation in the treatment of human disease"
+          },
+          {
+            "id": "443",
+            "name": "E. Donnall Thomas",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning organ and cell transplantation in the treatment of human disease"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1992",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1992",
+      "fields": {
+        "award_year": "1992",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1992-10-12",
+        "laureates": [
+          {
+            "id": "446",
+            "name": "Edmond H. Fischer",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning reversible protein phosphorylation as a biological regulatory mechanism"
+          },
+          {
+            "id": "447",
+            "name": "Edwin G. Krebs",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning reversible protein phosphorylation as a biological regulatory mechanism"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1994",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1994",
+      "fields": {
+        "award_year": "1994",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1994-10-10",
+        "laureates": [
+          {
+            "id": "450",
+            "name": "Alfred G. Gilman",
+            "portion": "1/2",
+            "motivation": "for their discovery of G-proteins and the role of these proteins in signal transduction in cells"
+          },
+          {
+            "id": "451",
+            "name": "Martin Rodbell",
+            "portion": "1/2",
+            "motivation": "for their discovery of G-proteins and the role of these proteins in signal transduction in cells"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1997",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1997",
+      "fields": {
+        "award_year": "1997",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1997-10-06",
+        "laureates": [
+          {
+            "id": "457",
+            "name": "Stanley B. Prusiner",
+            "portion": "1",
+            "motivation": "for his discovery of Prions - a new biological principle of infection"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:1999",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/1999",
+      "fields": {
+        "award_year": "1999",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "1999-10-11",
+        "laureates": [
+          {
+            "id": "461",
+            "name": "Günter Blobel",
+            "portion": "1",
+            "motivation": "for the discovery that proteins have intrinsic signals that govern their transport and localization in the cell"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2002",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2002",
+      "fields": {
+        "award_year": "2002",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2002-10-07",
+        "laureates": [
+          {
+            "id": "750",
+            "name": "Sydney Brenner",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning genetic regulation of organ development and programmed cell death"
+          },
+          {
+            "id": "751",
+            "name": "H. Robert Horvitz",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning genetic regulation of organ development and programmed cell death"
+          },
+          {
+            "id": "752",
+            "name": "John E. Sulston",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning genetic regulation of organ development and programmed cell death"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2004",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2004",
+      "fields": {
+        "award_year": "2004",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2004-10-04",
+        "laureates": [
+          {
+            "id": "774",
+            "name": "Richard Axel",
+            "portion": "1/2",
+            "motivation": "for their discoveries of odorant receptors and the organization of the olfactory system"
+          },
+          {
+            "id": "775",
+            "name": "Linda B. Buck",
+            "portion": "1/2",
+            "motivation": "for their discoveries of odorant receptors and the organization of the olfactory system"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2006",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2006",
+      "fields": {
+        "award_year": "2006",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2006-10-02",
+        "laureates": [
+          {
+            "id": "802",
+            "name": "Andrew Z. Fire",
+            "portion": "1/2",
+            "motivation": "for their discovery of RNA interference - gene silencing by double-stranded RNA"
+          },
+          {
+            "id": "803",
+            "name": "Craig C. Mello",
+            "portion": "1/2",
+            "motivation": "for their discovery of RNA interference - gene silencing by double-stranded RNA"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2009",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2009",
+      "fields": {
+        "award_year": "2009",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2009-10-05",
+        "laureates": [
+          {
+            "id": "835",
+            "name": "Elizabeth H. Blackburn",
+            "portion": "1/3",
+            "motivation": "for the discovery of how chromosomes are protected by telomeres and the enzyme telomerase"
+          },
+          {
+            "id": "836",
+            "name": "Carol W. Greider",
+            "portion": "1/3",
+            "motivation": "for the discovery of how chromosomes are protected by telomeres and the enzyme telomerase"
+          },
+          {
+            "id": "837",
+            "name": "Jack W. Szostak",
+            "portion": "1/3",
+            "motivation": "for the discovery of how chromosomes are protected by telomeres and the enzyme telomerase"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2011",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2011",
+      "fields": {
+        "award_year": "2011",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2011-10-03",
+        "laureates": [
+          {
+            "id": "861",
+            "name": "Bruce A. Beutler",
+            "portion": "1/4",
+            "motivation": "for their discoveries concerning the activation of innate immunity"
+          },
+          {
+            "id": "862",
+            "name": "Jules A. Hoffmann",
+            "portion": "1/4",
+            "motivation": "for their discoveries concerning the activation of innate immunity"
+          },
+          {
+            "id": "863",
+            "name": "Ralph M. Steinman",
+            "portion": "1/2",
+            "motivation": "for his discovery of the dendritic cell and its role in adaptive immunity"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2013",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2013",
+      "fields": {
+        "award_year": "2013",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2013-10-07",
+        "laureates": [
+          {
+            "id": "884",
+            "name": "James E. Rothman",
+            "portion": "1/3",
+            "motivation": "for their discoveries of machinery regulating vesicle traffic, a major transport system in our cells"
+          },
+          {
+            "id": "885",
+            "name": "Randy W. Schekman",
+            "portion": "1/3",
+            "motivation": "for their discoveries of machinery regulating vesicle traffic, a major transport system in our cells"
+          },
+          {
+            "id": "886",
+            "name": "Thomas C. Südhof",
+            "portion": "1/3",
+            "motivation": "for their discoveries of machinery regulating vesicle traffic, a major transport system in our cells"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2016",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2016",
+      "fields": {
+        "award_year": "2016",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2016-10-03",
+        "laureates": [
+          {
+            "id": "927",
+            "name": "Yoshinori Ohsumi",
+            "portion": "1",
+            "motivation": "for his discoveries of mechanisms for autophagy"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2018",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2018",
+      "fields": {
+        "award_year": "2018",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2018-10-01",
+        "laureates": [
+          {
+            "id": "958",
+            "name": "James P. Allison",
+            "portion": "1/2",
+            "motivation": "for their discovery of cancer therapy by inhibition of negative immune regulation"
+          },
+          {
+            "id": "959",
+            "name": "Tasuku Honjo",
+            "portion": "1/2",
+            "motivation": "for their discovery of cancer therapy by inhibition of negative immune regulation"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2020",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2020",
+      "fields": {
+        "award_year": "2020",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2020-10-05",
+        "laureates": [
+          {
+            "id": "985",
+            "name": "Harvey J. Alter",
+            "portion": "1/3",
+            "motivation": "for the discovery of Hepatitis C virus"
+          },
+          {
+            "id": "986",
+            "name": "Michael Houghton",
+            "portion": "1/3",
+            "motivation": "for the discovery of Hepatitis C virus"
+          },
+          {
+            "id": "987",
+            "name": "Charles M. Rice",
+            "portion": "1/3",
+            "motivation": "for the discovery of Hepatitis C virus"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2023",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2023",
+      "fields": {
+        "award_year": "2023",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2023-10-02",
+        "laureates": [
+          {
+            "id": "1024",
+            "name": "Katalin Karikó",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19"
+          },
+          {
+            "id": "1025",
+            "name": "Drew Weissman",
+            "portion": "1/2",
+            "motivation": "for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19"
+          }
+        ]
+      }
+    },
+    {
+      "record_key": "med:2025",
+      "record_url": "https://api.nobelprize.org/2/nobelPrize/med/2025",
+      "fields": {
+        "award_year": "2025",
+        "category": "Physiology or Medicine",
+        "category_code": "med",
+        "date_awarded": "2025-10-06",
+        "laureates": [
+          {
+            "id": "1047",
+            "name": "Mary E. Brunkow",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning peripheral immune tolerance"
+          },
+          {
+            "id": "1048",
+            "name": "Fred Ramsdell",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning peripheral immune tolerance"
+          },
+          {
+            "id": "1049",
+            "name": "Shimon Sakaguchi",
+            "portion": "1/3",
+            "motivation": "for their discoveries concerning peripheral immune tolerance"
+          }
+        ]
+      }
+    }
+  ]
+}
