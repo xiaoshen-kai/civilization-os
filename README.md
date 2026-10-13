@@ -51,13 +51,27 @@ Civilization OS 是面向普通人的人生决策与学习 Skill，可以装进 
 
 | 材料与方法 | 对具体判断的作用 |
 | --- | --- |
-| 100 个跨学科模型 | 从不同角度检查遗漏：例如沉没成本看既有投入，机会成本看放弃的选择，贝叶斯看新证据应怎样改变判断；按前提选用，不要求背会全部模型 |
+| 100 个跨学科模型与操作卡 | 从不同角度检查遗漏：沉没成本看既有投入，机会成本看放弃的选择，贝叶斯看证据更新；每卡有具体步骤、教学例子、反例与停止条件，按前提选用 |
 | 100 个深度案例 | 阅读有出处的事件、来源报告的行动与结果、以及资料局限，检查哪些经验能够迁移，哪些条件不适用 |
 | 16 张诺贝尔奖与菲尔兹奖相关研究卡 | 依据官方授奖资料与实际读取的原论文、作者稿或技术讲座，说明原理、成立条件、证据和使用步骤；可帮助检查选择，也可用于知识学习 |
 | 900 个事实事件 | 定位具体官方记录与精选字段，为进一步查原文提供入口；字段本身不解释事件原因 |
 | 证据核查与决策复盘流程 | 说明建议依据、关键未知和改变建议的条件；需要复盘时回看当时信息，用户授权后才保存记录 |
 
 执行时按当前问题选取相关模型与资料，模型的前提、证据范围和未知条件都要说明，方便你核对建议。
+
+## 从底层原理到具体问题
+
+100 个模型各有一张操作卡：具体适用问题、带输入／动作／产出的步骤、原创教学例子、反例和停止条件。你不用先背模型，也不用照填全部字段；让 Skill 从当前困惑选择少量真正能改变判断的工具。
+
+| 阅读层次 | 解决什么问题 | 入口 |
+| --- | --- | --- |
+| 底层机制 | 当前需要弄清概率、因果、取舍、反馈、信息、合作，还是学习与检验？ | [底层机制导航](skills/civilization-os/references/foundations.md) |
+| 学科与行业问题 | 在这个情境里，关键变量是什么，哪些专业知识还需要补充？ | [学科与行业导航](skills/civilization-os/references/discipline-index.md) |
+| 研究与案例证据 | 原研究支持什么，历史经验在哪些条件下能够迁移？ | [诺贝尔奖与菲尔兹奖研究](skills/civilization-os/references/research-index.md) 与 [案例索引](skills/civilization-os/references/case-index.md) |
+
+例如“课程已经付费，但越来越不适合，还要继续吗？”可以用沉没成本分开既有投入与未来代价，再用机会成本比较真实可行的替代用途；决定继续后，再考虑合适的练习方式。课程条款、本人目标和可用时间仍要核对。
+
+导航包含 11 组学科问题和 10 组行业情境，菜单保持开放，未列出的问题也可以提出。现有模型不是各学科完整理论库，哲学、法律、医学和设计等专有知识需要按实际问题补源。操作卡区分条件分析、知识学习和待核验类比；100 个教学例子及 100 个反例独立于 1000 条历史案例记录，不是现实效果验证。
 
 ## 诺贝尔奖与菲尔兹奖：怎样用于决策与学习
 
@@ -197,6 +211,7 @@ Skill 为执行它的 AI 提供明确流程与参考材料。回答质量仍取�
 python -X utf8 skills/civilization-os/scripts/catalog.py stats
 python -X utf8 skills/civilization-os/scripts/catalog.py search "机会成本 复利"
 python -X utf8 skills/civilization-os/scripts/catalog.py show P058 --format md
+python -X utf8 skills/civilization-os/scripts/catalog.py search "选择" --model-application decision_support
 python -X utf8 skills/civilization-os/scripts/catalog.py search "退款" --cases --record-type deep_case --case-domain business --limit 5
 python -X utf8 skills/civilization-os/scripts/catalog.py search "随机" --cases --record-type evidence_event --model P050 --case-domain clinical_research --limit 5
 python -X utf8 skills/civilization-os/scripts/catalog.py show C061
@@ -208,6 +223,8 @@ python -X utf8 skills/civilization-os/scripts/catalog.py show A002
 `--cases` 切换到案例检索，`--record-type` 选择层级，`--model` 按模型 ID 过滤，`--case-domain` 按案例领域的精确字符串过滤。用 `stats` 查看实际领域，或直接读 [模型索引](skills/civilization-os/references/model-index.md) 与 [案例索引](skills/civilization-os/references/case-index.md) 。
 
 `--research` 检索获奖研究卡，`--application` 可筛选应用状态，研究卡也可用 `--model` 筛选关联模型。`show A002` 显示完整卡，`show AS-A002-1` 显示卡内来源；研究卡与案例筛选不能混用。
+
+`--model-application` 筛选模型操作用途，不能与案例或研究筛选混用；模型问题、步骤和教学例子可检索，反例与停止条件不作为正向命中。
 
 这是关键词检索；无结果时换关键词或读索引，不能据此断言没有合适模型或证据。安装后运行脚本时，将命令中的 `skills/civilization-os/` 替换为实际 Skill 路径；数据路径由脚本自身位置确定。
 

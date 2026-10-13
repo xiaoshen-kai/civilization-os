@@ -61,3 +61,7 @@ python -X utf8 scripts/build_release.py --output-dir ../civilization-os-release
 ## 报告错误
 
 报告事实错误时提供案例或主张 ID、正确的一手来源、定位和需要改正的措辞。报告程序问题时提供执行命令、Python 版本、预期与实际结果；去掉个人路径和敏感信息。报告因果解释问题时说明混淆、选择偏差、缺失比较或迁移条件，不只说某个来源“权威”或“可靠”。
+
+## 模型操作层贡献
+
+在已有 P 卡内维护 `application`，保留核心原理、来源与案例身份。具体字段、用途状态、原创教学例和跨学科导航要求见 [maintenance.md](skills/civilization-os/references/maintenance.md#模型操作与学科导航) 。教学例与反例须标明原创情境，不计入历史案例；跨学科连接保留适用前提与还需查证的专业知识。

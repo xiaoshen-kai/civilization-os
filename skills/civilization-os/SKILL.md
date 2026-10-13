@@ -17,19 +17,22 @@ description: "用跨学科模型和可追溯证据辅助普通人各类人生决
 | --- | --- |
 | 任意生活选择、人生方向或尚未理清的困惑 | [modes.md](references/modes.md) 中一般决策与人生选择 |
 | 商业、职业、学习或复盘等具体问题 | [modes.md](references/modes.md) 中相关模式；模式可组合 |
-| 选模型 | [model-index.md](references/model-index.md)，再读选中的模型卡 |
+| 按底层机制选模型 | [foundations.md](references/foundations.md)，再读选中的 P 卡 |
+| 从学科、行业或生活情境找入口 | [discipline-index.md](references/discipline-index.md)，核对该领域需要补充的知识 |
+| 查模型全目录及操作卡 | [model-index.md](references/model-index.md)，再读选中的模型卡 |
 | 查历史案例、事实事件或案例覆盖 | [case-index.md](references/case-index.md) |
 | 核验主张、讨论因果、引用当前事实 | [evidence.md](references/evidence.md) |
 | 学习获奖研究，或用其检查当前选择 | [awards.md](references/awards.md)，再按主题读 [research-index.md](references/research-index.md) 与选中研究卡 |
 | 用户授权保存、扩库或维护 | [maintenance.md](references/maintenance.md) |
 
-路径相对于本 Skill 目录。模型在 `references/models-*.json`；案例在 `references/cases.json` 与 `cases-*.json`；来源在 `sources-*.json`；四类事实事件的精选原始字段在 `references/event-data/`。获奖研究在 `references/award-research-*.json`，使用 A 编号，卡内来源为 AS 编号；独立于模型与案例。不要一次读入全部记录。
+路径相对于本 Skill 目录。模型在 `references/models-*.json`；案例在 `references/cases.json` 与 `cases-*.json`；来源在 `sources-*.json`；四类事实事件的精选原始字段在 `references/event-data/`。获奖研究在 `references/award-research-*.json`，使用 A 编号，卡内来源为 AS 编号；独立于模型与案例。模型的 `application` 提供输入／动作／产出步骤、原创教学例子、反例和停止条件；它们不计入历史案例，也不新增研究证据。不要一次读入全部记录。
 
 有 Python 时，将 `<skill-dir>` 替换为实际绝对路径：
 
 ```text
 python "<skill-dir>/scripts/catalog.py" search "机会成本 复利"
 python "<skill-dir>/scripts/catalog.py" show P058
+python "<skill-dir>/scripts/catalog.py" search "选择" --model-application decision_support
 python "<skill-dir>/scripts/catalog.py" search "失效" --cases --record-type deep_case --case-domain technology --limit 5
 python "<skill-dir>/scripts/catalog.py" search "监管" --cases --record-type evidence_event --case-domain regulatory_action --limit 5
 python "<skill-dir>/scripts/catalog.py" search "约束" --cases --model P007 --limit 5
@@ -48,6 +51,7 @@ python "<skill-dir>/scripts/catalog.py" stats
 1. **理清要决定什么。** 接住用户的困惑，区分想被理解、澄清方向、比较选项或马上行动。按需了解目标、时间窗、实际约束、不可接受的损失与价值偏好；选项未知时一起找选项。只询问会改变方向的缺口，其余用明确的条件假设继续；不代设家庭责任、承受力或人生目标。
 2. **拆出依据与取舍。** 分开已知事实、用户陈述、推断、待验证假设和价值选择。感受与价值偏好是决策输入，不当作需要外部证明的事实；只在问题定义妨碍解决时重构问题。
 3. **选相关模型。** 通常用 2 至 4 个互补模型，说明各自改变哪项判断、所需输入和失效条件。简单问题可以不用；数量不是完成标准。类比与模型不能替代对具体人的理解。
+   从机制或学科导航选候选后，读取原模型前提与 `application`。`decision_support` 支持该操作卡描述的条件分析；`learning_only` 用于原学科知识学习；`analogy_only` 只提出待验证的类比问题。操作卡的状态不代表整个学科的用途边界，也不证明生活效果。按实际需要用步骤，不要求照填全部字段。
    选到获奖研究时先看 `decision_application.status`、前提与限制。只有能说明它会改变当前哪项判断时才读并使用；`learning_only` 支持理解与练习，不直接生成生活建议。具体使用步骤见 [awards.md](references/awards.md)，未命中研究卡不限制问题或代替按需查证。
 
 4. **核查关键事实。** 读取实际出处与限制。涉及当前政策、价格、产品、市场、医疗、法律或金融事实与专业建议时查询当下一手来源；不为理解个人感受而强制检索。历史案例注明迁移条件和本次分析映射。

@@ -239,6 +239,61 @@ def search_research(rows: list[dict], query: str, limit: int,
     return sorted(matches, key=lambda x: (-x["match_score"], x["id"]))[:limit]
 
 
+MODEL_APPLICATIONS = {"decision_support", "learning_only", "analogy_only"}
+
+
+def check_model_application(row: dict) -> list[str]:
+    """Check optional operational instructions; legacy model cards remain readable."""
+    if "application" not in row:
+        return []
+    label = str(row.get("id", "model")) + ".application"
+    app = row["application"]
+    if not isinstance(app, dict):
+        return [label + ": expected an object"]
+    errors = []
+
+    def texts(obj: dict, fields: tuple[str, ...], where: str) -> None:
+        for key in fields:
+            if not isinstance(obj.get(key), str) or not obj[key].strip():
+                errors.append(where + ": missing/non-text " + key)
+
+    def strings(obj: dict, key: str, where: str) -> None:
+        value = obj.get(key)
+        if not isinstance(value, list) or not value or any(
+                not isinstance(x, str) or not x.strip() for x in value):
+            errors.append(where + ": " + key + " must be a nonempty text array")
+
+    status = app.get("status")
+    if not isinstance(status, str) or status not in MODEL_APPLICATIONS:
+        errors.append(label + ": invalid status")
+    texts(app, ("question",), label)
+    steps = app.get("steps")
+    if not isinstance(steps, list) or len(steps) < 2:
+        errors.append(label + ": steps require at least two input/action/output objects")
+    else:
+        for index, step in enumerate(steps):
+            where = label + ".steps[" + str(index) + "]"
+            if not isinstance(step, dict):
+                errors.append(where + ": expected an object")
+            else:
+                texts(step, ("input", "action", "output"), where)
+    example = app.get("example")
+    if not isinstance(example, dict):
+        errors.append(label + ": example must be an object")
+    else:
+        if example.get("type") != "teaching_example":
+            errors.append(label + ": example must be labelled teaching_example")
+        texts(example, ("context", "takeaway"), label + ".example")
+        strings(example, "walkthrough", label + ".example")
+    counter = app.get("counterexample")
+    if not isinstance(counter, dict):
+        errors.append(label + ": counterexample must be an object")
+    else:
+        texts(counter, ("context", "why_it_fails", "better_approach"), label + ".counterexample")
+    strings(app, "stop_conditions", label)
+    return errors
+
+
 def check_database(db: dict[str, list[dict]], root: Path | None = None) -> list[str]:
     errors: list[str] = []
 
@@ -347,6 +402,7 @@ def check_database(db: dict[str, list[dict]], root: Path | None = None) -> list[
             error(f"{label}: formula must be text or null")
         references(strings(row, "source_ids", label), source_ids, label)
         references(strings(row, "case_ids", label, empty=True), case_ids, label)
+        errors.extend(check_model_application(row))
 
     source_map = {row["id"]: row for row in db["sources"] if isinstance(row.get("id"), str)}
     seen_events: dict[str, str] = {}
@@ -527,6 +583,8 @@ def check_manifest(manifest: object, db: dict[str, list[dict]]) -> list[str]:
     if not isinstance(counts, dict):
         return errors + ["manifest: missing counts object"]
     for key, value in actual.items():
+        if key in {"model_applications", "model_teaching_examples", "model_counterexamples"} and value == 0 and key not in counts:
+            continue
         if type(counts.get(key)) is not int or counts[key] != value:
             errors.append(f"manifest: counts.{key} must equal {value}")
     return errors
@@ -539,6 +597,12 @@ def database_counts(db: dict[str, list[dict]]) -> dict[str, int]:
               "evidence_events": sum(record_type(row) == "evidence_event" for row in db["cases"]),
               "claims": sum(len(row["claims"]) for row in db["cases"]
                             if isinstance(row.get("claims"), list))}
+    apps = [row["application"] for row in db["models"]
+            if isinstance(row.get("application"), dict)]
+    counts.update({"model_applications": len(apps),
+                   "model_teaching_examples": sum(isinstance(x.get("example"), dict) and
+                                                  x["example"].get("type") == "teaching_example" for x in apps),
+                   "model_counterexamples": sum(isinstance(x.get("counterexample"), dict) for x in apps)})
     rows = db.get("research", [])
     # Legacy schema 2.0 libraries need no research counters. Invalid research data
     # remains reportable by check_research rather than crashing manifest checks.
@@ -562,7 +626,8 @@ def positive_text(value: object) -> str:
 def search_rows(rows: list[dict], query: str, limit: int,
                 domain: str | None = None, kind: str | None = None,
                 case_record_type: str | None = None, model: str | None = None,
-                case_domain: str | None = None) -> list[dict]:
+                case_domain: str | None = None,
+                model_application: str | None = None) -> list[dict]:
     terms = [v.casefold() for v in TOKEN.split(query.strip()) if v]
     if not terms:
         raise ValueError("Search requires at least one keyword")
@@ -580,9 +645,23 @@ def search_rows(rows: list[dict], query: str, limit: int,
             continue
         if case_domain and row.get("domain") != case_domain:
             continue
+        app = row.get("application")
+        if not isinstance(app, dict):
+            app = {}
+        if model_application and app.get("status") != model_application:
+            continue
         title = positive_text(row.get("name", row.get("title", ""))).casefold()
         words = positive_text(row.get("keywords", [])).casefold()
         body = " ".join(positive_text(row.get(field)) for field in SEARCH_FIELDS)
+        example = app.get("example")
+        body += " " + positive_text(app.get("question"))
+        if isinstance(example, dict):
+            body += " " + " ".join(positive_text(example.get(field))
+                                   for field in ("context", "walkthrough", "takeaway"))
+        steps = app.get("steps")
+        if isinstance(steps, list):
+            body += " " + " ".join(positive_text(step.get(field)) for step in steps
+                                   if isinstance(step, dict) for field in ("input", "action", "output"))
         claims = row.get("claims")
         if isinstance(claims, list):
             body += " " + " ".join(positive_text(x.get("claim"))
@@ -594,6 +673,10 @@ def search_rows(rows: list[dict], query: str, limit: int,
             summary = {"id": row["id"], "name": row.get("name", row.get("title")),
                        "domain": row.get("domain"), "kind": row.get("kind"),
                        "match_score": score, "source_ids": row.get("source_ids", [])}
+            if app:
+                summary.update({"application_status": app.get("status"),
+                                "application_question": app.get("question"),
+                                "example_type": "teaching_example"})
             if isinstance(claims, list):
                 verification = row.get("verification", {})
                 if not isinstance(verification, dict):
@@ -618,6 +701,10 @@ def database_stats(db: dict[str, list[dict]]) -> dict:
     case_groups = {origin_group(source_map[sid]) for row in db["cases"]
                    for sid in row.get("source_ids", []) if sid in source_map}
     return {**database_counts(db),
+            "model_application_statuses": dict(sorted(Counter(
+                row["application"]["status"] for row in db["models"]
+                if isinstance(row.get("application"), dict) and
+                isinstance(row["application"].get("status"), str)).items())),
             "research_applications": dict(sorted(Counter(x["decision_application"]["status"]
                                                          for x in db.get("research", [])).items())),
             "record_types": dict(sorted(Counter(record_type(row) for row in db["cases"]).items())),
@@ -677,6 +764,8 @@ def main(argv: list[str] | None = None) -> int:
     selection.add_argument("--cases", action="store_true")
     selection.add_argument("--research", action="store_true", help="Search award research cards")
     search.add_argument("--application", choices=sorted(APPLICATIONS))
+    search.add_argument("--model-application", choices=sorted(MODEL_APPLICATIONS),
+                        help="Filter model operational status; only for model search")
     search.add_argument("--limit", type=int, default=8)
     search.add_argument("--domain", choices=sorted(DOMAINS))
     search.add_argument("--kind", choices=sorted(KINDS))
@@ -692,6 +781,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         db = load_database()
         if args.command == "search":
+            if args.model_application and (args.cases or args.research):
+                raise ValueError("--model-application requires model search")
             if args.application and not args.research:
                 raise ValueError("--application requires --research")
             if args.research:
@@ -713,7 +804,7 @@ def main(argv: list[str] | None = None) -> int:
                 raise ValueError(f"Unknown model ID: {args.model}")
             rows = search_rows(db["cases" if args.cases else "models"], args.query,
                                args.limit, args.domain, args.kind, args.record_type,
-                               model, args.case_domain)
+                               model, args.case_domain, args.model_application)
             if not args.cases:
                 for match in rows:
                     match["research_card_ids"] = [card["id"] for card in db["research"]
